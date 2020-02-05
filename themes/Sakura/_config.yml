@@ -29,7 +29,7 @@ menus:
     歌单: {path: /music/, fa: fa-headphones },
     图集: {path: /tags/图集/, fa: fa-photo }
   } }
-  学习: { path: /learn, fa: fa-superscript faa-vertical, submenus: {
+  学习: { path: javascript:;, fa: fa-superscript faa-vertical, submenus: {
     天文: {path: /astronomical, fa: fa-connectdevelop },
     数学: {path: /mathematics, fa: fa-file-excel-o }
   } }

@@ -17,12 +17,12 @@ links:
   - group: 小伙伴们
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
     items:
-    - url: http://www.icycookies.com/links/
+    - url: http://www.icycookies.com/
       img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
       name: 好友1
       desc: 咕家寡人
     - url: https://2heng.xin/
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      img: https://avatars3.githubusercontent.com/u/20104266?s=400&v=4
       name: 好友2
       desc: 樱花庄的白猫
 ---
