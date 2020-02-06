@@ -15,7 +15,7 @@ notice: 进来看看呗~
 lazyloadImg: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
-  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  首页: { path: /, fa: fa-repeat fa-spin }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
     技术: {path: /categories/技术/, fa: fa-code }, 
     生活: {path: /categories/生活/, fa: fa-file-text-o }, 
@@ -117,3 +117,8 @@ v_appKey: jwiXUn9T1cuBDgoPnCfjE4Hu
 # 页面樱花飘落动效
 sakura:
   enable: true
+
+# Google Analytics
+google_analytics: 
+  tracking_id: UA-157728544-1
+  localhost_ignored: true
