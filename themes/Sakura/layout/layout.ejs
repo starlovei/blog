@@ -20,6 +20,10 @@
       </div>
     </div>
   </section>
+ <!-- 实现换肤功能 -->
+  <%- partial('_partial/setdisplay') %> 
+  <%- partial('_partial/set', null, {cache: !config.relative_link}) %>
+
   <%- partial('_partial/mheader', null, {cache: !config.relative_link}) %>
   <%- partial('_partial/aplayer', null, {cache: !config.relative_link}) %>
 </body>

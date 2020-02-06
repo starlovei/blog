@@ -61,4 +61,4 @@ bash <(curl -s -L https://git.io/v2ray.sh)
 v2ray url
 ```
 [下载v2ray](https://www.v2ray.com/)
-点击从剪贴板添加设置http代理.
+点击从剪贴板添加设置https代理.
