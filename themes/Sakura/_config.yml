@@ -51,19 +51,17 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cover/2.png
-  - https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cover/1.png
+  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/2.png
+  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/1.png
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dim
 
 # startdash url, title, desc img
 startdash: 
-  - {url: /theme-sakura/, title: 疫情更新, desc: 进来看一看, img: /img/startdash/yi.jpg}
+  - {url: https://starlovei.com/2020/02/05/%E7%96%AB%E6%83%85%E6%9B%B4%E6%96%B0/, title: 疫情更新, desc: 进来看一看, img: /img/startdash/yi.jpg}
   - {url: https://starlovei.com/2020/02/05/first/, title: 第一个, desc: 第一篇文章, img: /img/startdash/bilibili.jpg}
   - {url: https://2heng.xin/theme-sakura/, title: 关于主题, desc: Sakura, img: /img/startdash/sakura.md.png}
-
-
 
 # your site build time or founded date
 siteBuildingTime: 02/02/2020
@@ -118,7 +116,7 @@ v_appKey: jwiXUn9T1cuBDgoPnCfjE4Hu
 sakura:
   enable: true
 
-# Google Analytics
+# Google Analytics  谷歌统计
 google_analytics: 
   tracking_id: UA-157728544-1
   localhost_ignored: true

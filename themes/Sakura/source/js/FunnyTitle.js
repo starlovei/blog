@@ -4,7 +4,7 @@
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/img/trhx2.png");
-         document.title = '哇!崩溃了!';
+         document.title = '页面崩溃了!';
          clearTimeout(titleTime);
      }
      else {

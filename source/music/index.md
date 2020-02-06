@@ -4,7 +4,7 @@ date: 2018-12-20 23:14:28
 keywords: 喜欢的音乐
 description: 
 comments: false
-photos: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/banner/music.png
+photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/music.png
 ---
 
 <meting-js
