@@ -27,13 +27,22 @@
           <% }) %>
         </span>
       </div>
+      <% if(post.excerpt) { %>
+        <div class="readmore">
+          <%- post.excerpt %>
+         </div>
+        <% } else { %>
+        <p style="text-align:left"><%= post.description %></p>
+        <% } %>
+
       <div class="float-content">
-        <p><%= post.description %></p>
+        <p style="text-align:left"><%= post.description %></p>
         <div class="post-bottom">
           <a href="<%- url_for(post.path) %>" class="button-normal">
             <i class="iconfont icon-caidan"></i>
           </a>
         </div>
+  
       </div>
     </div>
   </div>

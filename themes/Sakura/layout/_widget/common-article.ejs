@@ -7,6 +7,7 @@
     <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
     </div>
     <header class="pattern-header single-header">
+      
       <h1 class="entry-title">
       <%- post.title %></h1>
       <p class="entry-census">
@@ -19,10 +20,32 @@
           <a href="<%- post.authorLink%>"><%- post.author %></a>
         </span>
         <span class="bull">
-        ·</span>
+        <i class="fa fa-calendar" aria-hidden="true"></i></span>
         <%= date(post.date, 'YYYY-M-D') %><span class="bull">
-        ·</span>
+        <i class="fa fa-eye" aria-hidden="true"></i></span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
+      <% if (post.tags && post.tags.length){ %>
+        <%  var tags = [];  post.tags.forEach(function(tag){tags.push('<li class="spfk-li"><span class="triangle"></span><a href="' + config.root + tag.path + '" class="butterfly-tags">' + tag.name + '</a></li>');});%>
+      <div>
+            <ul class="spfk-ul">
+              &nbsp<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<%- tags.join('') %>
+            </ul>
+          </div>
+          <script>
+              function colorInit(c,num){for(var i=1;i<=num;++i)c.push(i+'');}
+              function paintTags(){
+                  var colorNumber=8,tagColors=[],tags=document.getElementsByClassName('spfk-li');
+                  for(var i = 0 ; i < tags.length ; ++i){
+                      if(!tagColors.length)colorInit(tagColors,colorNumber);
+                      var j=Math.floor(Math.random()*tagColors.length);
+                      tags[i].classList.add("spfk-color"+tagColors[j]);
+                      tagColors.splice(j,1);
+          }
+              }
+              paintTags()
+          </script>
+      <% } %>
+  
     </header>
   </div>
 <% } %>

@@ -272,11 +272,11 @@ function code_highlight_style () {
   for (var i = 0; i < $('article pre').length; i++) {
     gen_top_bar(i)
   }
-  $('pre').on('click', function (e) {
-    if (e.target !== this) return
-    $(this).toggleClass('code-block-fullscreen')
-    $('html').toggleClass('code-block-fullscreen-html-scroll')
-  })
+  //$('pre').on('click', function (e) {
+    //if (e.target !== this) return
+    // $(this).toggleClass('code-block-fullscreen')
+    // $('html').toggleClass('code-block-fullscreen-html-scroll')
+  // })
   hljs.initLineNumbersOnLoad()
 }
 try {

@@ -5,11 +5,10 @@ author: 小枫叶
 avatar: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_p0.png
 photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/58001756_p0_master1200.jpg
 date: 2020-02-07 12:22:00
-description: 博客美化前提条件：有一定的前端基础，了解 HTML、CSS、JS，了解 CSS 预处理语言 Sass、Less、Stylus，搞懂 hexo 的目录结构。
 authorDesc: 一个好奇的人
 categories: 转载
 ---
-> ## 转载自: https://itrhx.blog.csdn.net/article/details/85010191
+> **转载自: https://itrhx.blog.csdn.net/article/details/85010191**
 **本文将讲述一些 Hexo 博客的美化，本文以作者 [luuman](https://blog.luuman.club/Home/H1/index.html) 的 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题和作者 [xaoxuu](https://xaoxuu.com/) 的 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题为例，实际效果欢迎访问[我的博客](https://www.itrhx.com/)进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！**
 
 **请注意**：不同主题可能方法有些不同，相同主题不同版本，配置方法也有所差异！
@@ -24,19 +23,19 @@ categories: 转载
 主流的评论系统有很多，比如：网易云跟帖、多说、友言、畅言、来必力（LiveRe）、Disqus、Valine、Gitment等等，目前网易云跟帖、多说、友言都已经关闭了，还有些可能需要翻墙，比较麻烦，百度了一下，最后还是选择了来必力评论系统
 
 进入[来必力官网](https://livere.com/), 注册一个账号（注册时可能需要翻墙）
-![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/001.png)
+![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif)
 注册完毕之后，登录，进入安装页面，选择 City 免费版安装，安装之后你会得到一段代码
-![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/002.png)
-![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/003.png)
-![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/004.png)
+![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/20190807103722227.png)
+![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/20190807103745470.png)
+![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyOWU3ZDYyYi5wbmc.jfif)
 我们打开主题文件下的 **_config.yml** 文件，添加如下代码:
-``` TEXT
+``` java
 livere:
   on: true
   live_uid: XXXX #这里填写你自己的uid
 ```
 在 **\themes\hexo-theme-spfk\layout\_partial\comments** 文件夹下新建一个 **livere.ejs** 的文件，在里面填写来必力提供的代码：
-``` TEXT
+``` java
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="这里是你的uid">
 	<script type="text/javascript">
@@ -63,12 +62,12 @@ livere:
 另外推荐使用 [Valine](https://valine.js.org/) 评论系统，和 gitalk 评论系统
 ## 2 添加字数统计和阅读时长
 先在博客目录下执行以下命令安装 **hexo-wordcount** 插件：
-``` TEXT
+``` java
 $ npm i --save hexo-wordcount
 ```
 注意：在 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题中，字数统计和阅读时长的功能我已提交 PR，在最新版本中，只需要安装插件后，在主题 *config.yml* 配置文件里，将 *word_count* 关键字设置为 *true* 即可，对于旧版本，可以通过以下方法实现：
 以 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题（版本 1.2.1）为例，在 **\themes\material-x\layout\_meta** 目录下创建 **word.ejs** 文件，在 **word.ejs** 文件中写入以下代码：
-``` TEXT
+``` java
 <% if(isPostList || !isPostList){ %>
   <% if (theme.word_count && !post.no_word_count) { %>
     <div style="margin-right: 10px;">
@@ -92,19 +91,19 @@ $ npm i --save hexo-wordcount
 <% } %>
 ```
 然后在主题的配置文件 **_config.yml** 找到 **meta** 关键字，将 **word** 填入 **header** 中：
-``` TEXT
+``` s
 meta:
   header: [title, author, date, categories, tags, counter, word, top]
   footer: [updated, share]
 ```
 最后在主题目录下的 **_config.yml** 添加以下配置即可
-``` TEXT
+``` s
 word_count: true
 ```
 效果图：
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/20191129201331969.png)
 同样的，以 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题为例，在 **\themes\hexo-theme-spfk\layout\_partial\post** 目录下创建 **word.ejs** 文件，在 **word.ejs** 文件中写入以下代码：
-``` TEXT
+``` s
 <div style="margin-top:10px;">
     <span class="post-time">
       <span class="post-meta-item-icon">
@@ -126,14 +125,14 @@ word_count: true
 然后在 **\themes\hexo-theme-spfk\layout\_partial\article.ejs** 中适当位置添加以下代码：
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1ZmU0ZTM2YS5wbmc.jfif)
 最后在主题目录下的 **_config.yml** 添加以下配置即可
-``` TEXT
+``` s
 word_count: true
 ```
 如果显示的位置不好，可以自行更改其位置，成功配置后的效果如下：
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/20190807104015998.png)
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk2ODkyZTRkYi5wbmc.jfif)
 另外：要在博客底部显示所有文章的总字数，可以[点击此处](https://www.npmjs.com/package/hexo-wordcount)，根据你博客底部文件的类型选择相应的代码放在适当的位置即可，前提是要安装好 **hexo-wordcount** 插件，例如我使用 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题，在 **\themes\material-x\layout\_partial** 目录下的 **footer.ejs** 文件中添加如下代码：
-``` TEXT
+``` s
 <i class="fas fa-chart-area"></i>
 <span class="post-count">字数统计：<%= totalcount(site) %></span>
 ```
@@ -142,7 +141,7 @@ word_count: true
 ## 3 添加网站运营时间
 一个比较好的小功能，可以看见自己的博客运行多久了，时间一天天的增加，成就感也会一天天增加的
 在 **\themes\hexo-theme-spfk\layout\_partial\footer.ejs** 文件下添加以下代码：
-``` TEXT
+``` s
 <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 <script>
     var now = new Date(); 
@@ -179,11 +178,11 @@ setInterval("createtime()",250);
 另外推荐：[友盟](https://web.umeng.com/main.php?c=user&a=index)，2010年4月在北京成立，安全、可靠、公正、第三方的网站流量统计分析系统
 ## 5 添加RSS订阅
 RSS订阅是站点用来和其他站点之间共享内容的一种简易方式，即Really Simple Syndication（简易信息聚合），如果不会使用，可以参见百度百科：https://baike.baidu.com/item/RSS%E8%AE%A2%E9%98%85/663114 ；首先我们安装feed插件，在本地hexo目录下右键*Git Bash Here*，输入以下命令：
-``` TEXT
+``` s
 $ npm install hexo-generator-feed
 ```
 等待安装完成后，打开hexo目录下的配置文件 **_config.yml**，在末尾添加以下配置：
-``` TEXT
+``` s
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 #RSS订阅
@@ -196,7 +195,7 @@ path: atom.xml
 limit: 20
 ```
 随后打开主题配置文件 **_config.yml**，添加以下配置：
-``` TEXT
+``` s
 rss: /atom.xml
 ```
 至此，RSS订阅功能添加完成
@@ -207,7 +206,7 @@ rss: /atom.xml
 ## 7 更改本地预览端口号
 hexo博客在执行*hexo s*进行本地预览的时候，默认端口号是4000，当该端口号被占用时会报错 *Error: listen EADDRINUSE 0.0.0.0:4000* ，此时可以关闭占用该端口的进程，也可以更换端口号，更换端口号可以通过以下两种方法实现：
 方法一：在根目录的*_config.yml*配置文件内加上如下代码更改*hexo s*运行时的端口号：
-``` TEXT
+``` s
 server:
   port: 5000
   compress: true
