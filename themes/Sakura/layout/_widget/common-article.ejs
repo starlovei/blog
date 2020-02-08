@@ -7,6 +7,7 @@
     <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
     </div>
     <header class="pattern-header single-header">
+    <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
       
       <h1 class="entry-title">
       <%- post.title %></h1>
@@ -75,7 +76,7 @@
           <%- post.content %>
         </div>
         <!-- .entry-content -->
-        <div class="single-reward">
+       <!-- <div class="single-reward">
           <div class="reward-open">赏
             <div class="reward-main">
               <ul class="reward-row">

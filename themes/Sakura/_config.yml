@@ -15,34 +15,34 @@ notice: 进来看看呗~
 lazyloadImg: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
-  首页: { path: /, fa: fa-repeat fa-spin }
-  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+  首页: { path: /, fa: fa-snowflake-o faa-spin }
+  归档: { path: /archives, fa: fa-folder-o faa-bounce, submenus: { 
     技术: {path: /categories/技术/, fa: fa-code }, 
     生活: {path: /categories/生活/, fa: fa-file-text-o }, 
     资源: {path: /categories/资源/, fa: fa-cloud-download }, 
     随想: {path: /categories/随想/, fa: fa-commenting-o },
-    转载: {path: /categories/转载/, fa: fa-book }
+    转载: {path: /categories/转载/, fa: fa-share-alt }
   } }
-  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+  清单: { path: javascript:;, fa: fa-list-ul faa-burst, submenus: { 
     书单: {path: /categories/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
-    歌单: {path: /music/, fa: fa-headphones },
+    歌单: {path: /music/, fa: fa-music },
     图集: {path: /categories/图集/, fa: fa-photo }
   } }
-  学习: { path: javascript:;, fa: fa-superscript faa-vertical, submenus: {
-    天文: {path: /astronomical, fa: fa-line-chart },
+  学习: { path: javascript:;, fa: fa-pie-chart faa-float, submenus: {
+    天文: {path: /astronomical, fa: fa-globe },
     物理: {path: /physical, fa: fa-exchange},
-    数学: {path: /mathematics, fa: fa-file-excel-o },
+    数学: {path: /mathematics, fa: fa-line-chart },
     书籍: {path: /books, fa: fa-book}
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
-  小伙伴: { path: /links/, fa: fa-link faa-shake }
+  小伙伴: { path: /links/, fa: fa-send faa-float }
   赞赏: { path: /donate/, fa: fa-heart faa-pulse }
-  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
-    我？: {path: /about/, fa: fa-meetup}, 
+  #关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    #我？: {path: /about/, fa: fa-meetup}, 
     #主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
-    Lab: {path: /lab/, fa: fa-cogs },
-  } }
+   # Lab: {path: /lab/, fa: fa-cogs },
+  #} }
   #客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 

@@ -30,7 +30,7 @@
               <li>
                 <a href="<%- url_for(theme.menus[menu].path) %>">
                   <span class="faa-parent animated-hover">
-                    <i class="fa  <%= theme.menus[menu].fa %>" aria-hidden="true"></i>
+                  <i class="fa  <%= theme.menus[menu].fa %>" aria-hidden="true"></i>
                     <%= menu %>
                   </span>
                 </a>
@@ -39,7 +39,7 @@
                     <% for (var submenu in theme.menus[menu].submenus){ %>
                       <li>
                         <a href="<%- url_for(theme.menus[menu].submenus[submenu].path) %>">
-                          <i class="fa <%= theme.menus[menu].submenus[submenu].fa %>" aria-hidden="true"></i>
+                        <i class="fa <%= theme.menus[menu].submenus[submenu].fa %>" aria-hidden="true"></i>
                           <%= submenu %>
                         </a>
                       </li>
