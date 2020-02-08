@@ -24,14 +24,16 @@ menus:
     转载: {path: /categories/转载/, fa: fa-book }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
-    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
+    书单: {path: /categories/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-headphones },
-    图集: {path: /tags/图集/, fa: fa-photo }
+    图集: {path: /categories/图集/, fa: fa-photo }
   } }
   学习: { path: javascript:;, fa: fa-superscript faa-vertical, submenus: {
-    天文: {path: /astronomical, fa: fa-connectdevelop },
-    数学: {path: /mathematics, fa: fa-file-excel-o }
+    天文: {path: /astronomical, fa: fa-line-chart },
+    物理: {path: /physical, fa: fa-exchange},
+    数学: {path: /mathematics, fa: fa-file-excel-o },
+    书籍: {path: /books, fa: fa-book}
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   小伙伴: { path: /links/, fa: fa-link faa-shake }
