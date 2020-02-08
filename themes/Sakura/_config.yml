@@ -27,7 +27,8 @@ menus:
     书单: {path: /categories/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-music },
-    图集: {path: /categories/图集/, fa: fa-photo }
+    图集: {path: /categories/图集/, fa: fa-photo },
+    标签: {path: /tags/, fa: fa-tags }
   } }
   爱好: { path: javascript:;, fa: fa-pie-chart faa-flash, submenus: {
     天文: {path: /astronomical, fa: fa-globe },
@@ -61,7 +62,7 @@ bgclass: filter-dim
 
 # startdash url, title, desc img
 startdash: 
-  - {url: https://starlovei.com/2020/02/05/%E7%96%AB%E6%83%85%E6%9B%B4%E6%96%B0/, title: 疫情更新, desc: 进来看一看, img: /img/startdash/yi.jpg}
+  - {url: https://starlovei.com/2020/02/05/%E7%96%AB%E6%83%85%E6%9B%B4%E6%96%B0/, title: 疫情更新, desc: 关于疫情, img: /img/startdash/yi.jpg}
   - {url: https://starlovei.com/2020/02/05/first/, title: 第一个, desc: 第一篇文章, img: /img/startdash/bilibili.jpg}
   - {url: https://2heng.xin/theme-sakura/, title: 关于主题, desc: Sakura, img: /img/startdash/sakura.md.png}
 
