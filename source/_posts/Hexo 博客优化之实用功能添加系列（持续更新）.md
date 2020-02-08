@@ -3,7 +3,7 @@ layout: Hexo
 title: 博客优化之实用功能添加系列（持续更新）
 author: 小枫叶
 avatar: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_p0.png
-photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/58001756_p0_master1200.jpg
+photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/68422578_p0.jpg
 date: 2020-02-07 12:22:00
 authorDesc: 一个好奇的人
 categories: 转载

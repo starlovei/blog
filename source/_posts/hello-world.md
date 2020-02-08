@@ -1,7 +1,8 @@
 ---
 title: Hello World
 avatar: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_p0.png
-photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/82034259_1092522847760966_6011835182145863680_o.jpg
+photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/62112145_p0.png
+categories: 技术
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
