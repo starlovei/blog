@@ -1,6 +1,6 @@
 # site name
-prefixName: 小枫叶
-siteName: 之家
+# prefixName: 小枫叶
+siteName: 小枫叶
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /img/my/a.jpg
@@ -9,7 +9,11 @@ description: 欢迎来到小世界
 cdn: https://cdn.jsdelivr.net/gh/starlovei/cdn
 pjax: 1
 # 1开启
-mathjax: 0
+math:
+  enable: true
+  per_page: true
+
+  engine: mathjax
 
 notice: 进来看看呗~
 lazyloadImg: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/loader/orange.progress-bar-stripe-loader.svg
@@ -33,16 +37,17 @@ menus:
   爱好: { path: javascript:;, fa: fa-pie-chart faa-flash, submenus: {
     天文: {path: /astronomical, fa: fa-globe },
     物理: {path: /physical, fa: fa-exchange},
-    高数: {path: /mathematics, fa: fa-line-chart }
+    高数: {path: /mathematics, fa: fa-line-chart },
+    百科: {path: /Encyclopedia, fa: fa-book}
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   小伙伴: { path: /links/, fa: fa-send faa-float }
   # 赞赏: { path: /donate/, fa: fa-heart faa-pulse }
-  #关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
-    #我？: {path: /about/, fa: fa-meetup}, 
-    #主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
-   # Lab: {path: /lab/, fa: fa-cogs },
-  #} }
+  # 关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+  #   #我？: {path: /about/, fa: fa-meetup}, 
+  #   主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
+  #  # Lab: {path: /lab/, fa: fa-cogs },
+  # } }
   #客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 

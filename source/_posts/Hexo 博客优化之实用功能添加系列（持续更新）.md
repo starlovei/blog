@@ -7,6 +7,9 @@ photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/68422578_
 date: 2020-02-07 12:22:00
 authorDesc: 一个好奇的人
 categories: 转载
+tags:
+    - 主题
+    - 网络
 ---
 > **转载自: https://itrhx.blog.csdn.net/article/details/85010191**
 **本文将讲述一些 Hexo 博客的美化，本文以作者 [luuman](https://blog.luuman.club/Home/H1/index.html) 的 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题和作者 [xaoxuu](https://xaoxuu.com/) 的 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题为例，实际效果欢迎访问[我的博客](https://www.itrhx.com/)进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！**

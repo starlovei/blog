@@ -29,4 +29,8 @@ links:
       img: https://avatars0.githubusercontent.com/u/54064610?s=460&v=4
       name: 好友3
       desc: 皮皮家园
+    - url: https://mozilan.com/
+      img: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+      desc: 蓝默空间
+      name: 好友4
 ---
