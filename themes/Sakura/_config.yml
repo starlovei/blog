@@ -35,10 +35,10 @@ menus:
     标签: {path: /tags/, fa: fa-tags }
   } }
   爱好: { path: javascript:;, fa: fa-pie-chart faa-flash, submenus: {
-    天文: {path: /astronomical, fa: fa-globe },
-    物理: {path: /physical, fa: fa-exchange},
-    高数: {path: /mathematics, fa: fa-line-chart },
-    百科: {path: /Encyclopedia, fa: fa-book}
+    天文: {path: /categories/天文, fa: fa-globe },
+    物理: {path: /categories/物理, fa: fa-exchange},
+    高数: {path: /categories/高数, fa: fa-line-chart },
+    百科: {path: /categories/百科, fa: fa-book}
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   小伙伴: { path: /links/, fa: fa-send faa-float }
@@ -58,7 +58,7 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://github.com/starlovei/Figure-bed/raw/master/images/72300463_p0.png
+  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/72300463_p0.png
   - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/2.png
   - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/56422576_p0.png
 

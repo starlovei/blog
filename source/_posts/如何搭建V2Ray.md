@@ -5,6 +5,8 @@ avatar: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
 categories: 技术
+tags:
+    - 网络
 comments: true
 date: 2020-02-05 18:04:05
 photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/ss.jpg
