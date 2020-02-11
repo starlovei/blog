@@ -30,4 +30,11 @@ links:
       img: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
       desc: 马同学的BLOG
       name: 
+    - url: https://starrycat.me/
+      img: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+      desc: 喵喵的灿烂星空
+    - url: https://blog.tcitr.com/
+      img: https://blog-tcitr.oss-cn-hangzhou.aliyuncs.com/img/%E4%BA%BA%E5%83%8F.png
+      desc: 稻田守望者
+      name: 一名医学僧的博客 生活、学习、音乐、图书、文章分享
 ---
