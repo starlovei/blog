@@ -32,7 +32,8 @@
           <% } %>
       
         <i class="fa fa-eye" aria-hidden="true"></i></span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+        <span id='/<%= page.path %>' class="leancloud-visitors" data-flag-title="<%= page.title %>"><a class="leancloud-visitors-count">1000000</a><a class="post-meta-item-text"> 次阅读</a></span>
+    </span>
       <% if (post.tags && post.tags.length){ %>
         <%  var tags = [];  post.tags.forEach(function(tag){tags.push('<li class="spfk-li"><span class="triangle"></span><a href="' + config.root + tag.path + '" class="butterfly-tags">' + tag.name + '</a></li>');});%>
       <div>
@@ -67,8 +68,8 @@
         <% if (!post.photos[0]){ %>
           <header class="entry-header">
             <h1 class="entry-title"><%- post.title %></h1>
-            <p class="entry-census"><%- post.author %>&nbsp;·&nbsp;<%= date(post.date, 'YYYY-M-D') %>&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
-
+            <span id='/<%= page.path %>' class="leancloud-visitors" data-flag-title="<%= page.title %>"><a class="leancloud-visitors-count">1000000</a><a class="post-meta-item-text"> 次阅读</a></span>
+          </span>
             <hr>
           </header>
         <% } %>

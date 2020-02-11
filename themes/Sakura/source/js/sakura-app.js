@@ -825,12 +825,13 @@ function add_copyright () {
 
   function setClipboardText (event) {
     event.preventDefault()
-    var htmlData = '' + '著作权归作者所有。<br>' + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>' + '作者：' + mashiro_option.author_name + '<br>' + '链接：' + window.location.href + '<br>' + '来源：' + mashiro_option.site_name + '<br><br>' + window.getSelection().toString().replace(/\r\n/g, '<br>')
-    var textData = '' + '著作权归作者所有。\n' + '商业转载请联系作者获得授权，非商业转载请注明出处。\n' + '' + mashiro_option.author_name + '\n' + '链接：' + window.location.href + '\n' + '来源：' + mashiro_option.site_name + '\n\n' + window.getSelection().toString().replace(/\r\n/g, '\n')
+    var htmlData = window.getSelection()
+    var textData = window.getSelection()
+
     if (event.clipboardData) {
       event.clipboardData.setData('text/html', htmlData)
       event.clipboardData.setData('text/plain', textData)
-      addComment.createButterbar('复制成功！<br>Copied to clipboard successfully!', 1000)
+      addComment.createButterbar('复制成功!', 1000)
     } else if (window.clipboardData) {
       return window.clipboardData.setData('text', textData)
     }
@@ -1085,7 +1086,7 @@ var home = location.href,
             $('.toc').removeClass('toc-fixed')
           }
         }
-        $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+        // $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
       }
     },
     AB: function () {
@@ -1104,6 +1105,7 @@ var home = location.href,
           el: '#vcomments',
           appId: mashiro_option.v_appId,
           appKey: mashiro_option.v_appKey,
+          visitor: true,
           path: window.location.pathname,
           placeholder: '你是我一生只会遇见一次的惊喜 ...'
         })

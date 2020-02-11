@@ -2,7 +2,7 @@
 # prefixName: 小枫叶
 siteName: 小枫叶
 # favicon and site master avatar
-favicon: /images/favicon.ico
+favicon: /images/fa.ico
 avatar: /img/my/a.jpg
 url: https://starlovei.com
 description: 欢迎来到小世界
@@ -34,7 +34,7 @@ menus:
     图集: {path: /categories/图集/, fa: fa-photo },
     标签: {path: /tags/, fa: fa-tags }
   } }
-  爱好: { path: javascript:;, fa: fa-pie-chart faa-flash, submenus: {
+  兴趣: { path: javascript:;, fa: fa-language faa-tada, submenus: {
     天文: {path: /categories/天文, fa: fa-globe },
     物理: {path: /categories/物理, fa: fa-exchange},
     高数: {path: /categories/高数, fa: fa-line-chart },
@@ -83,7 +83,7 @@ social:
   instagram: {url: https://www.instagram.com/star_love_l/, img: /img/social/instagram.png}
   github: {url: https://github.com/starlovei, img: /img/social/github.png}
   zhihu: {url: https://www.zhihu.com/people/qiu-feng-25-10-65, img: /img/social/zhihu.png}
-  #email: {mailto: tangwl12135@gmail.com, img: /img/social/email.svg}
+  email: {url: mailto:tangwl12135@gmail.com, img: /img/social/email.svg}
   wechat: {url: /#, qrcode: /img/custom/donate/wechat.jpg, img: /img/social/wechat.png}
 
 #social  url, img 移动端配置
@@ -132,3 +132,7 @@ google_analytics:
   localhost_ignored: true
 
 archivesimg: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/76117294_p0.png
+
+social_icons:
+  enable: true
+  Email: envelope
