@@ -1,14 +1,15 @@
 ---
 title: {{ title }}
 date: {{ date }}
-author: hojun
-avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
-authorLink: hojun.cn
-authorAbout: 一个好奇的人
-authorDesc: 一个好奇的人
-categories: 技术
+author: 小枫叶
+avatar: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_p0.png
+# authorLink: hojun.cn
+# authorAbout: 一个好奇的人
+# authorDesc: 一个好奇的人
+categories: 
 comments: true
-tags: 
+tags:
+    -
 keywords: 
 description: 
 photos: 

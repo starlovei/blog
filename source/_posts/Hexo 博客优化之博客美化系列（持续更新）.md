@@ -13,9 +13,8 @@ tags:
 keywords:
 photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78552913_p0.jpg
 ---
-> **转载自: https://itrhx.blog.csdn.net/article/details/85420403**
 
-本文将讲述一些 Hexo 博客的美化，本文以作者 [luuman](https://luuman.github.io/Home/H1/index.html) 的 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题和作者 [xaoxuu](https://xaoxuu.com/) 的 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题为例，实际效果欢迎访问我的博客进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！
+本文将讲述一些 Hexo 博客的美化，本文以作者 [luuman](https://luuman.github.io/Home/H1/index.html) 的 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题和作者 [xaoxuu](https://xaoxuu.com/) 的 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题为例，实际效果欢迎访问我的博客进行查看，<!-- more -->本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！
 
 **请注意**：不同主题可能方法有些不同，相同主题不同版本，配置方法也有所差异！阅读主题文档非常重要！
 
@@ -36,7 +35,7 @@ $ npm install --save hexo-helper-live2d
 $ npm install packagename
 ```
 打开站点目录下的 **_config.yml** 文件，添加如下代码：
-``` s
+``` 
 live2d:
 	enable: true
 	scriptFrom: local
@@ -541,3 +540,5 @@ canvas {
 ```
 最终效果：
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Meihua/20190807102432525.png)
+
+**转载自: https://itrhx.blog.csdn.net/article/details/85420403**

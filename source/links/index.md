@@ -14,6 +14,9 @@ links:
       img: https://avatars3.githubusercontent.com/u/20104266?s=400&v=4
       name: 偷偷加的
       desc: 樱花庄的白猫
+    - url: https://ctz45562.github.io/
+      img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
+      desc: ctz's blog
   - group: 伙伴
     items:
     - url: http://www.icycookies.com/
