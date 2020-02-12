@@ -7,10 +7,11 @@ avatar: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_
 # authorAbout: 一个好奇的人
 # authorDesc: 一个好奇的人
 categories: 
+mathjax:
 comments: true
 tags:
     -
-keywords: 
-description: 
+# keywords: 
+# description: 
 photos: 
 ---
