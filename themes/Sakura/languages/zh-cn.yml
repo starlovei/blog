@@ -43,35 +43,44 @@ insight:
 
 #category
 技术:
-    zh: 野生技术协会
+    zh: 技术
+    en: technology
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/63754669_p0.png
 生活:
     zh: 生活
-    en: live
+    en: life
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/49383596_p0.jpg
 资源:
     zh: 资源
+    en: Resources
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/74502138_p0_master1200.jpg
 随想:
     zh: 随想
+    en: Whatever
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/71849616_p0_master1200.jpg
 转载:
     zh: 转载
+    en: Reproduced
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/70217040_p0.png
 图集:
     zh: 图集
+    en: Atlas
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/1.png
 悦读:
     zh: 悦读
+    en: Reading
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/65897535_p0.jpg
 百科:
     zh: 百科
+    en: Encyclopedia
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/KE/58606862_p0.png
 天文:
     zh: 天文
+    en: astronomical
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/72300463_p0.png
 高数:
     zh: 高数
+    en: High number
     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/62112145_p0.png
 #tag
 图标:
