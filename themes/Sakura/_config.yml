@@ -77,11 +77,11 @@ siteBuildingTime: 02/02/2020
 
 #social  url, img PC端配置
 social:
-  facebook: {url: https://www.facebook.com/profile.php?id=100025785494085, img: /img/social/facebook.png}
+  # facebook: {url: https://www.facebook.com/profile.php?id=100025785494085, img: /img/social/facebook.png}
   twitter: {url: https://twitter.com/Star_love_l, img: /img/social/twitter.png}
-  instagram: {url: https://www.instagram.com/star_love_l/, img: /img/social/instagram.png}
+  # instagram: {url: https://www.instagram.com/star_love_l/, img: /img/social/instagram.png}
   github: {url: https://github.com/starlovei, img: /img/social/github.png}
-  zhihu: {url: https://www.zhihu.com/people/qiu-feng-25-10-65, img: /img/social/zhihu.png}
+  # zhihu: {url: https://www.zhihu.com/people/qiu-feng-25-10-65, img: /img/social/zhihu.png}
   email: {url: mailto:tangwl12135@gmail.com, img: /img/social/email.svg}
   wechat: {url: /#, qrcode: /img/custom/donate/wechat.jpg, img: /img/social/wechat.png}
 
