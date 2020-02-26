@@ -9,8 +9,8 @@ photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/51828936_
 links:
   - group: 老爷爷(学习用途)
     items:
-    - url: http://www.staff.science.uu.nl/~gadda001/goodtheorist/index.html
-      img: http://www.staff.science.uu.nl/~gadda001/goodtheorist/Images/gerardth.JPG
+    - url: https://www.staff.science.uu.nl/~gadda001/goodtheorist/index.html
+      img: https://www.staff.science.uu.nl/~gadda001/goodtheorist/Images/gerardth.JPG
       name: 
       desc: Gerard 't Hooft
     - url: https://www.haydenplanetarium.org/tyson/index.php
@@ -28,7 +28,7 @@ links:
       desc: ctz's blog
   - group: 伙伴
     items:
-    - url: http://www.icycookies.com/
+    - url: https://www.icycookies.com/
       img: https://pic1.zhimg.com/v2-a87651a052014ae0d46e833b3878b85c_xl.jpg
       name: 
       desc: 咕家寡人
