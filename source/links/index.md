@@ -42,6 +42,10 @@ links:
     - url: https://starrycat.me/
       img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/02bd-hyzpvis3933101.jpg
       desc: 喵喵的灿烂星空
+    - url: https://www.orchid-any.cf/
+      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/avatar.png
+      desc: BoringHacker
+      name:
   - group: 失踪人口
     items:
     - url: https://blog.tcitr.com/
