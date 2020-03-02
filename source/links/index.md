@@ -10,11 +10,11 @@ links:
   - group: 老爷爷(学习用途)
     items:
     - url: https://www.staff.science.uu.nl/~gadda001/goodtheorist/index.html
-      img: https://www.staff.science.uu.nl/~gadda001/goodtheorist/Images/gerardth.JPG
+      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/white-dwarf/gerardth.jfif
       name: 
       desc: Gerard 't Hooft
     - url: https://www.haydenplanetarium.org/tyson/index.php
-      img: https://www.haydenplanetarium.org/tyson/media/images/headers/2012-03-07-us-house.png
+      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/white-dwarf/2012-03-07-us-house.png
       desc: 尼尔·德格拉斯·泰森
   - group: 大神
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
