@@ -23,9 +23,9 @@ tags:
 **博客美化终极奥秘**：创作第一，体验第二，避免繁杂，简洁为上！
 
 ## 1 添加评论系统
-主流的评论系统有很多，比如：网易云跟帖、多说、友言、畅言、来必力（LiveRe）、Disqus、Valine、Gitment等等，目前网易云跟帖、多说、友言都已经关闭了，还有些可能需要翻墙，比较麻烦，百度了一下，最后还是选择了来必力评论系统
+主流的评论系统有很多，比如：网易云跟帖、多说、友言、畅言、来必力（LiveRe）、Disqus、Valine、Gitment等等，目前网易云跟帖、多说、友言都已经关闭了，还有些可能需要魔法，比较麻烦，百度了一下，最后还是选择了来必力评论系统
 
-进入[来必力官网](https://livere.com/), 注册一个账号（注册时可能需要翻墙）
+进入[来必力官网](https://livere.com/), 注册一个账号（注册时可能需要魔法）
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif)
 注册完毕之后，登录，进入安装页面，选择 City 免费版安装，安装之后你会得到一段代码
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/20190807103722227.png)

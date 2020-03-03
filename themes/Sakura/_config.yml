@@ -57,12 +57,11 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/65089776_p0.png
-  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/56498311_p0.png
-  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/yande.re 515650 hiten hitenkei seifuku yuri.jpg
+  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/72810724_p0.jpg
+  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/72203573_p0.jpg
+  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/50717513.jpg
   - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/68621743_p0.png
-  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/2.png
-
+  - https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/75145720_p0.jpg
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dim
 
