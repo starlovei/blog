@@ -31,7 +31,7 @@ menus:
     书单: {path: /categories/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-music },
-    视频: {path: /categories/图集/, fa: fa-photo }
+    视频: {path: /categories/视频/, fa: fa-photo }
   } }
   兴趣: { path: javascript:;, fa: fa-language faa-tada, submenus: {
     天文: {path: /categories/天文, fa: fa-globe },
