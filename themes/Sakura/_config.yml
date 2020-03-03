@@ -67,8 +67,8 @@ bgclass: filter-dim
 
 # startdash url, title, desc img
 startdash: 
-  - {url: https://ncov.dxy.cn/ncovh5/view/pneumonia, title: Github, desc: 加速GitHub, img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/SGSALES1159.jpg}
-  - {url: https://starlovei.com/2020/02/05/first/, title: 图像, desc: 函数, img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/KE/mathformula.jpg}
+  - {url: https://ncov.dxy.cn/ncovh5/view/pneumonia, title: Github, desc: 加速GitHub, img: /img/startdash/SGSALES1159.jpg}
+  - {url: https://starlovei.com/2020/02/05/first/, title: 图像, desc: 函数, img: /img/startdash/mathformula.jpg}
   - {url: https://2heng.xin/theme-sakura/, title: 关于主题, desc: Sakura, img: /img/startdash/sakura.md.png}
 
 # your site build time or founded date
