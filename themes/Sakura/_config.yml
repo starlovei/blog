@@ -27,14 +27,14 @@ menus:
     转载: {path: /categories/转载/, fa: fa-share-alt },
     标签: {path: /tags/, fa: fa-tags }
   } }
-  收藏: { path: javascript:;, fa: fa-list-ul faa-burst, submenus: { 
+  收藏: { path: javascript:;, fa: fa-bookmark-o faa-vertical, submenus: { 
     书单: {path: /categories/书单/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-music },
-    视频: {path: /categories/视频/, fa: fa-photo }
+    视频: {path: /categories/视频/, fa: fa-film }
   } }
-  兴趣: { path: javascript:;, fa: fa-language faa-tada, submenus: {
-    天文: {path: /categories/天文, fa: fa-globe },
+  兴趣: { path: javascript:;, fa: fa-barcode faa-tada, submenus: {
+    天文: {path: /categories/天文, fa: fa-fighter-jet },
     物理: {path: /categories/物理, fa: fa-exchange},
     高数: {path: /categories/高数, fa: fa-line-chart }
     # 百科: {path: /categories/百科, fa: fa-book}
