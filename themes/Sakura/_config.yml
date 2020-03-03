@@ -28,7 +28,7 @@ menus:
     标签: {path: /tags/, fa: fa-tags }
   } }
   收藏: { path: javascript:;, fa: fa-list-ul faa-burst, submenus: { 
-    书单: {path: /categories/悦读/, fa: fa-th-list faa-bounce }, 
+    书单: {path: /categories/书单/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-music },
     视频: {path: /categories/视频/, fa: fa-photo }

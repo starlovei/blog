@@ -26,11 +26,14 @@ links:
     - url: https://ctz45562.github.io/
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
       desc: ctz's blog
+    - url: https://www.julydate.com/
+      img: 
+      desc: 七夏浅笑
   - group: 伙伴
     items:
     - url: https://www.icycookies.com/
       img: https://pic1.zhimg.com/v2-a87651a052014ae0d46e833b3878b85c_xl.jpg
-      name: 
+      name: https://blog-tcitr.oss-cn-hangzhou.aliyuncs.com/img/%E4%BA%BA%E5%83%8F.png
       desc: 咕家寡人
     # - url: https://mozilan.com/
     #   img: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
