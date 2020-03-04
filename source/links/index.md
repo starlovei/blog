@@ -12,10 +12,10 @@ links:
     - url: https://www.staff.science.uu.nl/~gadda001/goodtheorist/index.html
       img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/white-dwarf/gerardth.jfif
       name: Gerard 't Hooft
-      desc: 
+      desc: 理论物理学教授
     - url: https://www.haydenplanetarium.org/tyson/index.php
       img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/white-dwarf/2012-03-07-us-house.png
-      desc: 
+      desc: 天体物理学家
       name: 尼尔·德格拉斯·泰森
   - group: 大神
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
@@ -30,24 +30,24 @@ links:
       name: ctz's blog
     - url: https://www.julydate.com/
       img: https://ae01.alicdn.com/kf/U3f38a4228e434dfdb6681986c7232051a.jpg
-      desc: 
+      desc: 七月之约，夏末浅笑
       name: 七夏浅笑
   - group: 伙伴
     items:
     - url: https://www.icycookies.com/
       img: https://pic1.zhimg.com/v2-a87651a052014ae0d46e833b3878b85c_xl.jpg
       name: 咕家寡人
-      desc:
+      desc: 一意咕行
     # - url: https://mozilan.com/
     #   img: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
     # #   desc: 蓝默空间
     - url: https://iwalyou.com/
       img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/4e5df3b131c1319aaf3e082e7bc6d639.png
-      desc:
+      desc: 喜欢数码产品，业余敲敲代码，小米科技的发烧粉。
       name: 马同学的BLOG
     - url: https://starrycat.me/
       img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/02bd-hyzpvis3933101.jpg
-      desc: 
+      desc: 一个天文爱好者 一只猫
       name: 喵喵的灿烂星空
     - url: https://www.orchid-any.cf/
       img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/avatar.png

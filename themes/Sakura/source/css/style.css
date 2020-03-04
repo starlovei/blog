@@ -8015,3 +8015,7 @@ td.hljs-ln-numbers {
 .hljs-ln-line.hljs-ln-n:hover{
     background-color: rgba(0,0,0,0) !important;
 }
+
+.logolink .sakurasono,.logolink .shironeko{
+    font-family: '字体名称';
+}
