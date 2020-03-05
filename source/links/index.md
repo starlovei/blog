@@ -21,7 +21,7 @@ links:
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
     items:
     - url: https://2heng.xin/
-      img: https://avatars3.githubusercontent.com/u/20104266?s=400&v=4
+      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/links/79011148_p0.png
       name: 樱花庄的白猫
       desc: 偷偷加的
     - url: https://ctz45562.github.io/
