@@ -24,9 +24,9 @@ menus:
     # 生活: {path: /categories/生活/, fa: fa-file-text-o }, 
     资源: {path: /categories/资源/, fa: fa-cloud-download }, 
     # 随想: {path: /categories/随想/, fa: fa-commenting-o },
-    转载: {path: /categories/转载/, fa: fa-share-alt },
-    标签: {path: /tags/, fa: fa-tags }
+    转载: {path: /categories/转载/, fa: fa-share-alt }
   } }
+  标签: { path: /tags/, fa: fa-tags faa-vertical }
   收藏: { path: javascript:;, fa: fa-bookmark-o faa-vertical, submenus: { 
     书单: {path: /categories/书单/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
