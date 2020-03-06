@@ -32,6 +32,10 @@ links:
       img: https://ae01.alicdn.com/kf/U3f38a4228e434dfdb6681986c7232051a.jpg
       desc: 七月之约，夏末浅笑
       name: 七夏浅笑
+    - url: https://yremp.live
+      img: https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/custom/head.jpg
+      desc: 流年，谁给过的倾城
+      name: Yremp
   - group: 伙伴
     items:
     - url: https://www.icycookies.com/
