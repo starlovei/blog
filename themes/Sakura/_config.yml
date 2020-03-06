@@ -19,28 +19,28 @@ lazyloadImg: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/loader/orange.progres
 
 menus:
   首页: { path: /, fa: fa-snowflake-o faa-spin }
-  归档: { path: /归档, fa: fa-folder-o faa-bounce, submenus: { 
-    技术: {path: /技术/, fa: fa-code }, 
+  归档: { path: /archives, fa: fa-folder-o faa-bounce, submenus: { 
+    技术: {path: /categories/技术/, fa: fa-code }, 
     # 生活: {path: /categories/生活/, fa: fa-file-text-o }, 
-    资源: {path: /资源/, fa: fa-cloud-download }, 
+    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
     # 随想: {path: /categories/随想/, fa: fa-commenting-o },
-    转载: {path: /转载/, fa: fa-share-alt }
+    转载: {path: /categories/转载/, fa: fa-share-alt }
   } }
-  标签: { path: /标签/, fa: fa-tags faa-vertical }
+  标签: { path: /tags/, fa: fa-tags faa-vertical }
   收藏: { path: javascript:;, fa: fa-bookmark-o faa-vertical, submenus: { 
-    书单: {path: /书单/, fa: fa-th-list faa-bounce }, 
-    番组: {path: /番组/, fa: fa-film faa-vertical }, 
-    歌单: {path: /歌单/, fa: fa-music },
-    影视: {path: /影视/, fa: fa-play-circle }
+    书单: {path: /categories/书单/, fa: fa-th-list faa-bounce }, 
+    番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
+    歌单: {path: /music/, fa: fa-music },
+    影视: {path: /categories/视频/, fa: fa-play-circle }
   } }
   兴趣: { path: javascript:;, fa: fa-barcode faa-tada, submenus: {
-    天文: {path: /天文, fa: fa-fighter-jet },
-    物理: {path: /物理, fa: fa-exchange},
-    高数: {path: /高数, fa: fa-line-chart }
+    天文: {path: /categories/天文/, fa: fa-fighter-jet },
+    物理: {path: /categories/物理/, fa: fa-exchange},
+    高数: {path: /categories/高数/, fa: fa-line-chart }
     # 百科: {path: /categories/百科, fa: fa-book}
   } }
-  留言板: { path: /留言板/, fa: fa-pencil-square-o faa-tada }
-  小伙伴: { path: /小伙伴/, fa: fa-send faa-float }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  小伙伴: { path: /links/, fa: fa-send faa-float }
   # 赞赏: { path: /donate/, fa: fa-heart faa-pulse }
   # 关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
   # #   #我？: {path: /about/, fa: fa-meetup}, 
