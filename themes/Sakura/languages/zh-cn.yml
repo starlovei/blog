@@ -26,7 +26,7 @@ share: 分享
 theme_by: Theme by
 rss_feed: RSS Feed
 category: Category
-tag: Tag
+tag: 标签
 connect: '联系我们'
 post_total_count: 嗯，目前共计%d篇文章
 read_more: '阅读全文'
