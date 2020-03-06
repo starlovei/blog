@@ -22,6 +22,7 @@ links:
     items:
     - url: https://2heng.xin/
       img: https://avatars0.githubusercontent.com/u/16148054?s=460&v=4
+      name: 樱花庄的白猫
       desc: 偷偷加的
     - url: https://ctz45562.github.io/
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
