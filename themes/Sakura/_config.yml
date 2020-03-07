@@ -35,11 +35,9 @@ menus:
     # 歌单: {path: /music/, fa: fa-music },
     影视: {path: /categories/视频/, fa: fa-play-circle }
   } }
-  关于: {path: /about/, fa: fa-meetup }
+  关于: {path: /about/, fa: fa-leaf faa-wrench }
   # 兴趣: { path: javascript:;, fa: fa-barcode faa-tada, submenus: {
-  #   天文: {path: /categories/天文/, fa: fa-fighter-jet },
     # 物理: {path: /categories/物理/, fa: fa-exchange},
-    # 高数: {path: /categories/高数/, fa: fa-line-chart }
   #   # 百科: {path: /categories/百科, fa: fa-book}
   # } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }

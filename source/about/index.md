@@ -21,7 +21,7 @@ mathjax: true
 ***
 # <center>自述</center>
 ***
-目前只会C,C++的菜鸟,爱好,非常喜欢天文,正在努力靠近!
+目前只会C,C++的菜鸟,非常喜欢天文,正在努力靠近!
 <!-- {% raw %}
 <!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->
 <!-- <div class="entry-content">
