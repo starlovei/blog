@@ -1,14 +1,14 @@
 ---
-title: about
+title: 关于
 date: 2018-12-12 22:14:36
 keywords: 关于
 description: 
 comments: false
-photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/music.png
+photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/75564215_p0%20.jpg
 mathjax: true
 ---
 
-# <center>歌单</center>
+# <center>「歌单」</center>
 {% raw %}
 <meting-js
   server="netease"
@@ -19,7 +19,7 @@ mathjax: true
 {% endraw %}
 
 ***
-# <center>自述</center>
+# <center>「自述」</center>
 ***
 目前只会C,C++的菜鸟,非常喜欢天文,正在努力靠近!
 <!-- {% raw %}
