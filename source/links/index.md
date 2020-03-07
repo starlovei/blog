@@ -7,6 +7,17 @@ description:
 comments: true
 photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/51828936_p0.png
 links:
+  - group: 管理
+    items:
+    - url: https://new.cnzz.com/v1/login.php?siteid=1278662133
+      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/links/agaga.jpg
+      name: CNZZ
+      desc: 访客统计
+    - url: https://l3oivt9vmdgk.leanapp.cn/
+      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/links/sagasg.jpg
+      name: 后台
+      desc: 登录
+
   - group: 智者(学习用途)
     items:
     - url: https://www.staff.science.uu.nl/~gadda001/goodtheorist/index.html
@@ -17,6 +28,7 @@ links:
       img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/white-dwarf/2012-03-07-us-house.png
       desc: 天体物理学家
       name: 尼尔·德格拉斯·泰森
+
   - group: 大神
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
     items:
@@ -36,6 +48,7 @@ links:
       img: https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/custom/head.jpg
       desc: 流年，谁给过的倾城
       name: Yremp
+
   - group: 伙伴
     items:
     - url: https://www.icycookies.com/

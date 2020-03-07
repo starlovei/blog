@@ -5,8 +5,9 @@ avatar: 'https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086
 comments: true
 tags:
   - 网络
+  - 转载
 date: 2020-03-03 15:33:11
-categories: 转载
+categories: 技术
 mathjax:
 photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/pGbUR5AXI4_small.jpg
 description: 半个月没更新博客都快忘了怎么写文章,果然还得不停练习

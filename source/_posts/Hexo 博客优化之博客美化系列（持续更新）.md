@@ -4,12 +4,13 @@ author: 小枫叶
 avatar: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_p0.png
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
-categories: 转载
+categories: 技术
 comments: true
 date: 2020-02-07 13:47:47
 tags:
     - 主题
     - 网络
+    - 转载
 keywords:
 photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78552913_p0.jpg
 ---
