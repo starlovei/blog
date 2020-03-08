@@ -95,7 +95,7 @@ backup:
   message: backup my blog of https://starlovei.github.io/
   repository:
     # 你的github仓库地址,备份分支名  （建议新建backup分支）
-    github: https://github.com/starlovei/backup.git
+    backup: https://github.com/starlovei/backup.git
     # coding: https://e.coding.net/starlovei/starlovei.git,backup
 
 #RSS
