@@ -48,6 +48,10 @@ links:
       img: https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/custom/head.jpg
       desc: 流年，谁给过的倾城
       name: Yremp
+    - url: https://meow3.family.blog/
+      img: https://mewfamilyblog.files.wordpress.com/2020/03/cropped-e8a197e5b882e8838ce699af-e58d9ae5aea2e9a298e59bbe.jpg
+      desc: 半文艺、半动漫的二次元美少女的涂鸦簿！
+      name: 恶魔菌
 
   - group: 伙伴
     items:
