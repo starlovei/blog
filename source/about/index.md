@@ -7,18 +7,13 @@ comments: false
 photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/75564215_p0%20.jpg
 mathjax: true
 ---
-
 # <center>「歌单」</center>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
 {% raw %}
 <meting-js
   server="netease"
   type="playlist"
-  id="104369664"
-  mutex="true">
+  id="104369664">
 </meting-js>
 {% endraw %}
 
