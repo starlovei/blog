@@ -13,7 +13,7 @@ mathjax: true
 <meting-js
   server="netease"
   type="playlist"
-  id="2648968583">
+  id="997760754">
 </meting-js>
 {% endraw %}
 
