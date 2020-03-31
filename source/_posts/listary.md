@@ -31,7 +31,7 @@ listary还支持快捷网站搜索
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/listary/8.jpg)
 设置方法:
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/listary/9.jpg)
-关键字和名称随意,路径填你要使用浏览器的路径,参数{query},当然也可以用其他例如https://www.baidu.com/s?wd={query},这样就变成了指定浏览器用百度搜索
+关键字和名称随意,路径填你要使用浏览器的路径,参数{query},当然也可以用其他例如:https://www.baidu.com/s?wd={query} 这样就变成了指定浏览器用百度搜索
 如果你不喜欢搜索界面可以更改外观
 ![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/listary/10.jpg)
 
