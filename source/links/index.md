@@ -17,6 +17,10 @@ links:
       img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/links/sagasg.jpg
       name: 后台
       desc: 登录
+    - url: https://starlovei.xyz
+      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/1200px-Logo_of_Google_Drive.svg.png
+      name: 云盘
+      desc: 个人网盘
 
   - group: 智者(学习用途)
     items:
