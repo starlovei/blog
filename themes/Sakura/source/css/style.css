@@ -1,7 +1,7 @@
-html {
+/* html {
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
     -webkit-filter: grayscale(100%);
-}
+} */
 .aplayer-container {
     position: absolute;
     bottom: 0;
