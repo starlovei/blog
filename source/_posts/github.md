@@ -26,7 +26,7 @@ mac/linux系统的hosts文件的位置如下：/etc/hosts
 140.82.114.4	github.com
 199.232.5.194	github.global.ssl.fastly.net
 ## .命令提示符中输入ping github.com
-![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-995655f0ee75bb13fb1b602a9ad67201_r.jpg)
-![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-df6267d10017a68eadb95c7c19bc251a_r.jpg)
+{% fb_img https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-995655f0ee75bb13fb1b602a9ad67201_r.jpg listary %}
+{% fb_img https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-df6267d10017a68eadb95c7c19bc251a_r.jpg listary %}
 再次访问流量器https://github.com, 秒出
-![logo](https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-edc4eecb647a91a45f5bb012181f5d5f_r.jpg)
+{% fb_img https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-edc4eecb647a91a45f5bb012181f5d5f_r.jpg listary %}
