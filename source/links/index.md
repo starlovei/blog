@@ -86,6 +86,10 @@ links:
       img: https://tc.yiki.tech/avatar.png
       desc: Error:No object found!
       name: Guan FuQing
+    - url: https://hexo.yuanjh.cn/
+      img: http://hexo.yuanjh.cn/images_out/logo.jpeg
+      desc: 逝者如斯夫，不舍昼夜(IT,Java,Python,量化,机器学习)
+      name: 闻鸡起舞
 
   - group: 失踪人口
     items:
