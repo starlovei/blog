@@ -4,8 +4,7 @@ date: 2018-12-12 22:14:36
 keywords: 关于
 description: 
 comments: false
-photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/75564215_p0%20.jpg
-mathjax: true
+photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ---
 # <center>「歌单」</center>
 

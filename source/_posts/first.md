@@ -1,8 +1,8 @@
 ---
 title: 函数, 图像和直线
 categories: 高数
-avatar: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_p0.png
-photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/KE/Integral_as_region_under_curve.svg
+avatar: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/78468086_p0.png
+photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/KE/Integral_as_region_under_curve.svg
 mathjax: true
 tags:
     - 微积分

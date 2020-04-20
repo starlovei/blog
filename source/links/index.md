@@ -5,33 +5,33 @@ date: 2018-12-19 23:11:06
 keywords: 小伙伴
 description: 
 comments: true
-photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/51828936_p0.png
+photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/51828936_p0.png
 links:
   - group: 管理
     items:
     - url: https://new.cnzz.com/v1/login.php?siteid=1278662133
-      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/links/agaga.jpg
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/agaga.jpg
       name: CNZZ
       desc: 访客统计
     - url: https://l3oivt9vmdgk.leanapp.cn/
-      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/links/sagasg.jpg
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/sagasg.jpg
       name: 后台
       desc: 登录
     - url: https://starlovei.xyz
-      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/1200px-Logo_of_Google_Drive.svg.png
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/1200px-Logo_of_Google_Drive.svg.png
       name: 云盘
       desc: 个人网盘
 
-  - group: 智者(学习用途)
+  - group: 站在巨人肩上
     items:
     - url: https://www.staff.science.uu.nl/~gadda001/goodtheorist/index.html
-      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/white-dwarf/gerardth.jfif
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/gerardth.jfif
       name: Gerard 't Hooft
       desc: 理论物理学教授
     - url: https://www.haydenplanetarium.org/tyson/index.php
-      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/white-dwarf/2012-03-07-us-house.png
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/2012-03-07-us-house.png
       desc: 天体物理学家
-      name: 尼尔·德格拉斯·泰森
+      name: Neil deGrasse Tyson
 
   - group: 大神
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
@@ -67,15 +67,15 @@ links:
     #   img: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
     # #   desc: 蓝默空间
     - url: https://iwalyou.com/
-      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/4e5df3b131c1319aaf3e082e7bc6d639.png
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/4e5df3b131c1319aaf3e082e7bc6d639.png
       desc: 喜欢数码产品，业余敲敲代码，小米科技的发烧粉。
       name: 马同学的BLOG
     - url: https://starrycat.me/
-      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/02bd-hyzpvis3933101.jpg
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/02bd-hyzpvis3933101.jpg
       desc: 一个天文爱好者 一只猫
       name: 喵喵的灿烂星空
     - url: https://www.orchid-any.cf/
-      img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/avatar.png
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/avatar.png
       desc: 
       name: BoringHacker
     - url: https://xn--6n2ao17b.com/

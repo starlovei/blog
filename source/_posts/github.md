@@ -1,7 +1,7 @@
 ---
 title: GitHub访问速度慢
 author: 小枫叶
-avatar: 'https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/Image/78468086_p0.png'
+avatar: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/78468086_p0.png
 comments: true
 tags:
   - 网络
@@ -9,7 +9,7 @@ tags:
 date: 2020-03-03 15:33:11
 categories: 技术
 mathjax:
-photos: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/pGbUR5AXI4_small.jpg
+photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/pGbUR5AXI4_small.jpg
 description: 半个月没更新博客都快忘了怎么写文章,果然还得不停练习
 ---
 > **作者: 月正明 链接: https://zhuanlan.zhihu.com/p/93436925**
@@ -26,7 +26,7 @@ mac/linux系统的hosts文件的位置如下：/etc/hosts
 140.82.114.4	github.com
 199.232.5.194	github.global.ssl.fastly.net
 ## .命令提示符中输入ping github.com
-{% fb_img https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-995655f0ee75bb13fb1b602a9ad67201_r.jpg listary %}
-{% fb_img https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-df6267d10017a68eadb95c7c19bc251a_r.jpg listary %}
+{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-995655f0ee75bb13fb1b602a9ad67201_r.jpg listary %}
+{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-df6267d10017a68eadb95c7c19bc251a_r.jpg listary %}
 再次访问流量器https://github.com, 秒出
-{% fb_img https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/GitHub/v2-edc4eecb647a91a45f5bb012181f5d5f_r.jpg listary %}
+{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-edc4eecb647a91a45f5bb012181f5d5f_r.jpg listary %}
