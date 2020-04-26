@@ -7,7 +7,10 @@ comments: false
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ---
 # <center>「歌单」</center>
-
+<!-- MetingJS音乐播放器 不能放到 head 导致系统功能加载异常-->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/starlovei/cdn/css/APlayer.min.css">
+<script src="//cdn.jsdelivr.net/gh/starlovei/cdn/js/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/Meting.min.js"></script>
 {% raw %}
 <meting-js
   server="netease"
