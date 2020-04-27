@@ -76,8 +76,8 @@ incomplete: true
 ## 网站灰色代码
 一些特殊节日有些网站会把网站变成灰色,同样在`Sakura/source/css/style.css`添加
 ``` css
-/* html {
+html {
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
     -webkit-filter: grayscale(100%);
-} */
+}
 ```
