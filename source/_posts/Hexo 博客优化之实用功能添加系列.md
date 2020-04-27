@@ -1,6 +1,6 @@
 ---
 layout: Hexo
-title: 博客优化之实用功能添加系列（持续更新）
+title: 博客优化之实用功能添加系列
 author: 小枫叶
 avatar: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/78468086_p0.png
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/68422578_p0.jpg
