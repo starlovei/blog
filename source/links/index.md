@@ -22,6 +22,14 @@ links:
       name: 云盘
       desc: 个人网盘
 
+  - group: 工具
+    items:
+    - url: https://tinify.cn/
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/TinyPNG.jpg
+      name: TinyPNG
+      desc: 图片压缩
+    
+
   - group: 站在巨人肩上
     items:
     - url: https://www.staff.science.uu.nl/~gadda001/goodtheorist/index.html

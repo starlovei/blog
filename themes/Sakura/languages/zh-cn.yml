@@ -50,10 +50,10 @@ insight:
 #     zh: 生活
 #     en: life
 #     img: https://starlovei-1257629504.cos.ap-chengdu.myqcloud.com/NEXT/49383596_p0.jpg
-资源:
-    zh: 资源
-    en: Resources
-    img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/74502138_p0_master1200.jpg
+# 资源:
+#     zh: 资源
+#     en: Resources
+#     img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/56422576_p0.png
 # 随想:
 #     zh: 随想
 #     en: Whatever
@@ -83,9 +83,9 @@ insight:
     en: High number
     img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/62112145_p0.png
 #tag
-图标:
-    zh: 图标
-    img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/58606862_p0.png
+# 图标:
+#     zh: 图标
+#     img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/58606862_p0.png
 主题:
     zh: 主题
     img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/68632704_p0.jpg
@@ -109,7 +109,7 @@ C语言:
     img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/62258773_p0.png
 宇宙:
     zh: 宇宙
-    img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/56422576_p0.png
+    img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/58606862_p0.png
 转载:
     zh: 转载
     img: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/70217040_p0.png

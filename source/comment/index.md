@@ -4,7 +4,7 @@ date: 2018-12-20 23:13:48
 keywords: 留言板
 description: 
 comments: true
-photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/61182674_p0.png
+photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/74502138_p0_master1200.jpg
 ---
 {% raw %}
 <div class="entry-content">
