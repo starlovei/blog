@@ -1,9 +1,11 @@
 ---
 title: 函数, 图像和直线
+author: 小枫叶
 categories: 高数
 avatar: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/78468086_p0.png
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/KE/Integral_as_region_under_curve.svg
 mathjax: true
+date: 2020-02-05 12:47:39
 tags:
     - 微积分
     - 函数
@@ -13,4 +15,5 @@ tags:
 + 函数, 其定义域, 上域, 值域和垂线检验;
 + 反函数和水平线检验
 
-$ 1^2 $
+<!-- $ 1^2 $ -->
+asjkgal;sgja;ljgag$ f(x)=x^{2} $gjlasgas;gjkalsg

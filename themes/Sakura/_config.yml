@@ -9,10 +9,10 @@ description: 欢迎来到小世界
 cdn: https://cdn.jsdelivr.net/gh/starlovei/cdn
 pjax: 1
 # 1开启
-math:
-  enable: true
-  per_page: true
-  engine: mathjax
+# math:
+#   enable: true
+#   per_page: true
+#   engine: mathjax
 
 notice: 欢迎~
 lazyloadImg: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/loader/orange.progress-bar-stripe-loader.svg
@@ -71,7 +71,7 @@ bgclass: filter-dim
 # startdash url, title, desc img
 startdash: 
   - {url: https://starlovei.com/2020/03/03/github/, title: Github, desc: 加速GitHub, img: /img/startdash/SGSALES1159.jpg}
-  - {url: https://starlovei.com/2020/02/05/first/, title: 图像, desc: 函数, img: /img/startdash/mathformula.jpg}
+  - {url: https://starlovei.com/2020/02/05/function/, title: 图像, desc: 函数, img: /img/startdash/mathformula.jpg}
   - {url: https://2heng.xin/theme-sakura/, title: 关于主题, desc: Sakura, img: /img/startdash/sakura.md.png}
 
 # your site build time or founded date
