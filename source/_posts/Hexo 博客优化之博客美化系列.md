@@ -50,11 +50,11 @@ live2d:
 设置好过后我们就拥有了一个卡通人物
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190803152152975.png listary %}
 ## 2 添加鼠标点击爱心效果
-在 **\themes\hexo-theme-spfk\source\js** 下新建文件 **love.js**，在 **love.js** 文件中添加以下代码：
+在 `\themes\hexo-theme-spfk\source\js` 下新建文件 `love.js`，在 `love.js` 文件中添加以下代码：
 ``` s
 !function(e,t,a){function n(){c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 500%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),o(),r()}function r(){for(var e=0;e<d.length;e++)d[e].alpha<=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText="left:"+d[e].x+"px;top:"+d[e].y+"px;opacity:"+d[e].alpha+";transform:scale("+d[e].scale+","+d[e].scale+") rotate(45deg);background:"+d[e].color+";z-index:99999");requestAnimationFrame(r)}function o(){var t="function"==typeof e.onclick&&e.onclick;e.onclick=function(e){t&&t(),i(e)}}function i(e){var a=t.createElement("div");a.className="heart",d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement("style");a.type="text/css";try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName("head")[0].appendChild(a)}function s(){return"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);
 ```
-在 **\themes\hexo-theme-spfk\layout\layout.ejs** 文件末尾添加以下代码：
+在 `\themes\hexo-theme-spfk\layout\layout.ejs` 文件末尾添加以下代码：
 ``` s
 <!-- 页面点击小红心 -->
 <script type="text/sscript" src="/js/love.js"></script>
@@ -62,7 +62,7 @@ live2d:
 完成以上操作后，当我们点击鼠标的时候就可以看见爱心的特效了
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/3.jfif istary %}
 ## 3 添加鼠标点击显示字体效果
-在 **/themes/hexo-theme-spfk/source/js** 下新建文件 **click_show_text.js**，在 **click_show_text.js** 文件中添加以下代码：
+在 `/themes/hexo-theme-spfk/source/js` 下新建文件 `click_show_text.js`，在 `click_show_text.js` 文件中添加以下代码：
 ``` java
 var a_idx = 0;
 jQuery(document).ready(function($) {
@@ -100,11 +100,11 @@ function delay() {
 ```
 其中的社会主义核心价值观可以根据你自己的创意替换为其他文字
 
-如果想要每次点击显示的文字为不同颜色，可以将其中 *color* 值进行如下更改：
+如果想要每次点击显示的文字为不同颜色，可以将其中 `color` 值进行如下更改：
 ``` css
 "color": "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
 ```
-然后在 **\themes\hexo-theme-spfk\layout\layout.ejs** 文件末尾添加以下代码：
+然后在 `\themes\hexo-theme-spfk\layout\layout.ejs` 文件末尾添加以下代码：
 ``` css
 <!--单击显示文字-->
 <script type="text/javascript" src="/js/click_show_text.js"></script>
@@ -112,11 +112,11 @@ function delay() {
 最终实现效果如下：
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102038173.png listary %}
 ## 4 添加鼠标点击烟花爆炸效果
-在 **\themes\material-x\source\js** 目录下新建一个 **fireworks.js** 的文件，里面写入以下代码：
+在 `\themes\material-x\source\js` 目录下新建一个 `fireworks.js` 的文件，里面写入以下代码：
 ``` css
 "use strict";function updateCoords(e){pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[0].clientY-canvasEl.getBoundingClientRect().top}function setParticuleDirection(e){var t=anime.random(0,360)*Math.PI/180,a=anime.random(50,180),n=[-1,1][anime.random(0,1)]*a;return{x:e.x+n*Math.cos(t),y:e.y+n*Math.sin(t)}}function createParticule(e,t){var a={};return a.x=e,a.y=t,a.color=colors[anime.random(0,colors.length-1)],a.radius=anime.random(16,32),a.endPos=setParticuleDirection(a),a.draw=function(){ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.fillStyle=a.color,ctx.fill()},a}function createCircle(e,t){var a={};return a.x=e,a.y=t,a.color="#F00",a.radius=0.1,a.alpha=0.5,a.lineWidth=6,a.draw=function(){ctx.globalAlpha=a.alpha,ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.lineWidth=a.lineWidth,ctx.strokeStyle=a.color,ctx.stroke(),ctx.globalAlpha=1},a}function renderParticule(e){for(var t=0;t<e.animatables.length;t++){e.animatables[t].target.draw()}}function animateParticules(e,t){for(var a=createCircle(e,t),n=[],i=0;i<numberOfParticules;i++){n.push(createParticule(e,t))}anime.timeline().add({targets:n,x:function(e){return e.endPos.x},y:function(e){return e.endPos.y},radius:0.1,duration:anime.random(1200,1800),easing:"easeOutExpo",update:renderParticule}).add({targets:a,radius:anime.random(80,160),lineWidth:0,alpha:{value:0,easing:"linear",duration:anime.random(600,800)},duration:anime.random(1200,1800),easing:"easeOutExpo",update:renderParticule,offset:0})}function debounce(e,t){var a;return function(){var n=this,i=arguments;clearTimeout(a),a=setTimeout(function(){e.apply(n,i)},t)}}var canvasEl=document.querySelector(".fireworks");if(canvasEl){var ctx=canvasEl.getContext("2d"),numberOfParticules=30,pointerX=0,pointerY=0,tap="mousedown",colors=["#FF1461","#18FF92","#5A87FF","#FBF38C"],setCanvasSize=debounce(function(){canvasEl.width=2*window.innerWidth,canvasEl.height=2*window.innerHeight,canvasEl.style.width=window.innerWidth+"px",canvasEl.style.height=window.innerHeight+"px",canvasEl.getContext("2d").scale(2,2)},500),render=anime({duration:1/0,update:function(){ctx.clearRect(0,0,canvasEl.width,canvasEl.height)}});document.addEventListener(tap,function(e){"sidebar"!==e.target.id&&"toggle-sidebar"!==e.target.id&&"A"!==e.target.nodeName&&"IMG"!==e.target.nodeName&&(render.play(),updateCoords(e),animateParticules(pointerX,pointerY))},!1),setCanvasSize(),window.addEventListener("resize",setCanvasSize,!1)}"use strict";function updateCoords(e){pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[0].clientY-canvasEl.getBoundingClientRect().top}function setParticuleDirection(e){var t=anime.random(0,360)*Math.PI/180,a=anime.random(50,180),n=[-1,1][anime.random(0,1)]*a;return{x:e.x+n*Math.cos(t),y:e.y+n*Math.sin(t)}}function createParticule(e,t){var a={};return a.x=e,a.y=t,a.color=colors[anime.random(0,colors.length-1)],a.radius=anime.random(16,32),a.endPos=setParticuleDirection(a),a.draw=function(){ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.fillStyle=a.color,ctx.fill()},a}function createCircle(e,t){var a={};return a.x=e,a.y=t,a.color="#F00",a.radius=0.1,a.alpha=0.5,a.lineWidth=6,a.draw=function(){ctx.globalAlpha=a.alpha,ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.lineWidth=a.lineWidth,ctx.strokeStyle=a.color,ctx.stroke(),ctx.globalAlpha=1},a}function renderParticule(e){for(var t=0;t<e.animatables.length;t++){e.animatables[t].target.draw()}}function animateParticules(e,t){for(var a=createCircle(e,t),n=[],i=0;i<numberOfParticules;i++){n.push(createParticule(e,t))}anime.timeline().add({targets:n,x:function(e){return e.endPos.x},y:function(e){return e.endPos.y},radius:0.1,duration:anime.random(1200,1800),easing:"easeOutExpo",update:renderParticule}).add({targets:a,radius:anime.random(80,160),lineWidth:0,alpha:{value:0,easing:"linear",duration:anime.random(600,800)},duration:anime.random(1200,1800),easing:"easeOutExpo",update:renderParticule,offset:0})}function debounce(e,t){var a;return function(){var n=this,i=arguments;clearTimeout(a),a=setTimeout(function(){e.apply(n,i)},t)}}var canvasEl=document.querySelector(".fireworks");if(canvasEl){var ctx=canvasEl.getContext("2d"),numberOfParticules=30,pointerX=0,pointerY=0,tap="mousedown",colors=["#FF1461","#18FF92","#5A87FF","#FBF38C"],setCanvasSize=debounce(function(){canvasEl.width=2*window.innerWidth,canvasEl.height=2*window.innerHeight,canvasEl.style.width=window.innerWidth+"px",canvasEl.style.height=window.innerHeight+"px",canvasEl.getContext("2d").scale(2,2)},500),render=anime({duration:1/0,update:function(){ctx.clearRect(0,0,canvasEl.width,canvasEl.height)}});document.addEventListener(tap,function(e){"sidebar"!==e.target.id&&"toggle-sidebar"!==e.target.id&&"A"!==e.target.nodeName&&"IMG"!==e.target.nodeName&&(render.play(),updateCoords(e),animateParticules(pointerX,pointerY))},!1),setCanvasSize(),window.addEventListener("resize",setCanvasSize,!1)};
 ```
-然后在 **\themes\material-x\layout\layout.ejs** 文件中写入以下代码：
+然后在 `\themes\material-x\layout\layout.ejs` 文件中写入以下代码：
 ``` css
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
@@ -125,7 +125,7 @@ function delay() {
 最终效果：
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1MjFlZDhlMy5naWY.jfif listary %}
 ## 5 自定义鼠标指针样式
-在 **\themes\material-x\source\less\_base.less** 文件 *body* 样式里写入如下代码：
+在 `\themes\material-x\source\less\_base.less` 文件 `body` 样式里写入如下代码：
 ``` css
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur),auto;
@@ -189,13 +189,13 @@ body {
 打开网页版[网易云音乐](https://music.163.com/)，选择你准备添加的背景音乐，点击生成外链播放器，前提是要有版权，不然是无法生成外链播放器的，复制底下的HTML代码
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MDkzY2I1NS5wbmc.jfif %}
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MzY2MmUzZS5wbmc.jfif %}
-然后将此代码放到你想要放的地方，比如放在博客的左侧，则打开 **\themes\hexo-theme-spfk\layout\_partial\left-col.ejs** 文件，将复制的HTML代码粘贴进去，再进行适当的位置设置让播放器更美观，其中 **auto=1** 表示打开网页自动播放音乐，**auto=0** 表示关闭自动播放音乐
+然后将此代码放到你想要放的地方，比如放在博客的左侧，则打开 `\themes\hexo-theme-spfk\layout\_partial\left-col.ejs` 文件，将复制的HTML代码粘贴进去，再进行适当的位置设置让播放器更美观，其中 `auto=1` 表示打开网页自动播放音乐，`auto=0` 表示关闭自动播放音乐
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102132566.png %}
 最后效果如下：
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102211588.png %}
-这种网易云音乐外链的方式有很多局限性，因此推荐使用**aplayer**，GitHub地址为：*https://github.com/MoePlayer/APlayer* ，参考教程：[《hexo上的aplayer应用》](https://blog.yleao.com/2018/0902/hexo%E4%B8%8A%E7%9A%84aplayer%E5%BA%94%E7%94%A8.html)
+这种网易云音乐外链的方式有很多局限性，因此推荐使用`aplayer`，GitHub地址为：*https://github.com/MoePlayer/APlayer* ，参考教程：[《hexo上的aplayer应用》](https://blog.yleao.com/2018/0902/hexo%E4%B8%8A%E7%9A%84aplayer%E5%BA%94%E7%94%A8.html)
 ## 8 浏览器网页标题恶搞
-当用户访问你的博客时点击到了其他网页，我们可以恶搞一下网页标题，呼唤用户回来，首先在目录 **\themes\material-x\source\js** 下新建一个 **FunnyTitle.js** 文件，在里面填写如下代码：
+当用户访问你的博客时点击到了其他网页，我们可以恶搞一下网页标题，呼唤用户回来，首先在目录 `\themes\material-x\source\js` 下新建一个 `FunnyTitle.js` 文件，在里面填写如下代码：
 ``` js
 // 浏览器搞笑标题
 var OriginTitle = document.title;
@@ -215,7 +215,7 @@ document.addEventListener('visibilitychange', function () {
     }
 });
 ```
-其中 *funny.ico* 是用户切换到其他标签后你网站的图标，*favicon.ico* 是正常图标，然后在 **\themes\material-x\layout\layout.ejs** 文件中添加如下代码：
+其中 `funny.ico` 是用户切换到其他标签后你网站的图标，`favicon.ico` 是正常图标，然后在 `\themes\material-x\layout\layout.ejs` 文件中添加如下代码：
 ``` js
 <!--浏览器搞笑标题-->
 <script type="text/javascript" src="/js/FunnyTitle.js"></script>
@@ -224,7 +224,7 @@ document.addEventListener('visibilitychange', function () {
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150326168.png %}
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150338873.png %}
 ## 9 背景添加动态线条效果
-在 **\Hexo\themes\hexo-theme-spfk\layout\layout.ejs** 文件中添加如下代码：
+在 `\Hexo\themes\hexo-theme-spfk\layout\layout.ejs` 文件中添加如下代码：
 ``` js
 <!--动态线条背景-->
 <script type="text/javascript"
@@ -260,7 +260,7 @@ https://www.seniverse.com/widget/get 心知天气提供基于Web的免费天气�
 样式一和样式二分别如下：
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103144792.png %}
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103041166.png %}
-实现方法：在 **\Hexo\themes\hexo-theme-spfk\source\js** 目录下新建一个 **snow.js** 文件，粘贴以下代码：
+实现方法：在 `\Hexo\themes\hexo-theme-spfk\source\js` 目录下新建一个 `snow.js` 文件，粘贴以下代码：
 ``` js
 /*样式一*/
 (function($){
@@ -435,7 +435,7 @@ function drawSnow() {
 var snow = new snowFall({maxFlake:60});
 snow.start();
 ```
-然后在 **\Hexo\themes\hexo-theme-spfk\layout\layout.ejs** 文件里引用即可：
+然后在 `\Hexo\themes\hexo-theme-spfk\layout\layout.ejs` 文件里引用即可：
 ``` js
 <!-- 雪花特效 -->
 <script type="text/javascript" src="\js\snow.js"></script>
@@ -449,7 +449,7 @@ snow.start();
 ## 12 添加背景动态彩带效果
 样式一是鼠标点击后彩带自动更换样式，样式二是飘动的彩带：
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103419221.png %}
-实现方法：在 **\themes\material-x\layout\layout.ejs** 文件的**body**前面添加如下代码：
+实现方法：在 `\themes\material-x\layout\layout.ejs` 文件的`body`前面添加如下代码：
 ``` js
 <!-- 样式一（鼠标点击更换样式） -->
 <script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>
@@ -459,7 +459,7 @@ snow.start();
 <script src="https://g.joyinshare.com/hc/piao.js" type="text/javascript"></script>
 ```
 ## 13 添加背景代码雨特效
-新建 *DigitalRain.js*，写入以下代码：
+新建 `DigitalRain.js`，写入以下代码：
 ``` js
 window.onload = function(){
     //获取画布对象
@@ -519,7 +519,7 @@ window.onload = function(){
     setInterval(draw,35);
 };
 ```
-在主题文件的相关css文件中（以 **Material X 1.2.1** 主题为例，在**\themes\material-x-1.2.1\source\less\_main.less* 文件末尾）添加以下代码：
+在主题文件的相关css文件中（以 `Material X 1.2.1` 主题为例，在`\themes\material-x-1.2.1\source\less\_main.less` 文件末尾）添加以下代码：
 ``` cs
 canvas {
   position: fixed;
@@ -532,7 +532,7 @@ canvas {
   z-index: -1;
 }
 ```
-然后在主题的 **layout.ejs** 文件中引入即可：
+然后在主题的 `layout.ejs` 文件中引入即可：
 ``` css
   <!-- 数字雨 -->
   <canvas id="canvas" width="1440" height="900" ></canvas>

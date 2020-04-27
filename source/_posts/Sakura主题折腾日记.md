@@ -53,7 +53,7 @@ incomplete: true
 ```
 ## 归档页面时间轴颜色
 找了好久才找到
-在Sakura/source/css/style.css里
+在`Sakura/source/css/style.css`里
 ``` css
 .art-content #archives .al_mon_list:before {
     max-height:100%;
@@ -74,7 +74,7 @@ incomplete: true
 ```
 修改颜色编码
 ## 网站灰色代码
-一些特殊节日有些网站会把网站变成灰色,同样在Sakura/source/css/style.css添加
+一些特殊节日有些网站会把网站变成灰色,同样在`Sakura/source/css/style.css`添加
 ``` css
 /* html {
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);

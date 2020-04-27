@@ -2132,7 +2132,7 @@ i.iconfont.hotpost {
 }
 .entry-content code {
     background:rgba(147,112,219);
-    color:BlueViolet;
+    color:#000;
     word-break:break-word;
     font-family:'Source Code Pro',monospace,Helvetica,Tahoma,Arial,STXihei,"STHeiti Light","Microsoft YaHei",sans-serif;
     padding:2px;
