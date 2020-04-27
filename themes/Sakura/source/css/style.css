@@ -2139,34 +2139,40 @@ i.iconfont.hotpost {
     text-shadow:none;
     border-radius:5px
 }
-.entry-content a {
-    color:BlueViolet;
-    text-decoration: none;
-	position:relative;
+/* 文章中的超链接,鼠标悬浮特效*/
+.entry-content a{
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    font-family: lucida console;/* 这种字体的英文比较好看（像代码样式） */
 }
-.entry-content a:hover {
-    color:BlueViolet;
-    text-decoration: none;
+/* 鼠标悬浮时，变色 */
+.entry-content a:hover{
+    color: #8A2BE2;
+    transition:.8s;
 }
-.entry-content a::after{
-    content:'';
-    display:block;
-    /*开始时候下划线的宽度为100%*/
-    width:100%;
-    height:1px;
-    position:absolute;
-    bottom:-3px;
-    background:#8A2BE2;
-    transition:all 0.3s ease-in-out;
-    /*通过transform的缩放scale来让初始时x轴为0*/
-    transform: scale3d(0,1,1);
-    /*将坐标原点移到元素的中间，以原点为中心进行缩放*/
-    transform-origin:50% 0;
-}
-
+/* 鼠标悬浮时，下划线从中间向两边延伸 */
 .entry-content a:hover::after{
-    /*鼠标经过时还原到正常比例*/
-    transform:scale3d(1,1,1);
+  transform: scaleX(1);
+  /* 旋转，与transform连用；这里作用：鼠标悬浮时，底部的下划线从中间扩散到两边。
+   bottom right :左到右出现，左到右消失（需配合上面的::after）
+  */
+  transform-origin: bottom center;
+}
+/* 鼠标移开后，下划线从两边向中间消失 */
+.entry-content a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #8A2BE2;
+  /* 详见：https://www.w3school.com.cn/cssref/pr_transform-origin.asp,
+  旋转，与transform连用；这里作用：鼠标移开后，底部的下划线从中间开始消失 */
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-out;
 }
 h1.entry-title {
     font-size:24px;
