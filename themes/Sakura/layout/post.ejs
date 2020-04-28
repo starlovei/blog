@@ -1,1 +1,13 @@
 <%- partial('_partial/_post', {post: page, index: false}) %>
+<!-- post.md  -->
+When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+<script>
+if (!window.MathJax || !MathJax.Hub) {
+  const script = document.createElement('script');
+  script.src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  document.head.appendChild(script);
+} else MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
+</script>
