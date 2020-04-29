@@ -2,7 +2,7 @@
 title: 函数, 图像和直线
 author: 小枫叶
 categories: 高数
-avatar: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/78468086_p0.png
+avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/my/avatar.png
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/KE/Integral_as_region_under_curve.svg
 mathjax: true
 incomplete: true
