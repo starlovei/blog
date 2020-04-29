@@ -28,6 +28,10 @@ links:
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/TinyPNG.jpg
       name: TinyPNG
       desc: 图片压缩
+    - url: https://www.ipip.net/
+      img: https://cdn.ipip.net/loveapp/ipip/www_v2/theme/css/img/Logo_IPIP.png
+      name: IPIP
+      desc: 专业的IP地址库
     
 
   - group: 站在巨人肩上
