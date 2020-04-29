@@ -7,6 +7,7 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/68422578_p0.jpg
 date: 2020-02-07 12:22:00
 incomplete: true
 categories: 技术
+description: 本文将讲述一些 Hexo 博客的美化，本文以作者的主题和作者的主题为例，实际效果欢迎访问我的博客进行查看，本文章会不定时进行更新。
 tags:
     - 主题
     - 网络

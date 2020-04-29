@@ -4,6 +4,7 @@ author: 小枫叶
 avatar: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/78468086_p0.png
 categories: 技术
 incomplete: true
+description: 本文将讲述一些 Hexo 博客的美化，本文以作者的主题和作者的主题为例，实际效果欢迎访问我的博客进行查看，本文章会不定时进行更新。
 date: 2020-02-07 13:47:47
 tags:
     - 主题
@@ -13,7 +14,7 @@ keywords:
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/78552913_p0.jpg
 ---
 
-本文将讲述一些 Hexo 博客的美化，本文以作者 [luuman](https://luuman.github.io/Home/H1/index.html) 的 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题和作者 [xaoxuu](https://xaoxuu.com/) 的 [Material X](https://xaoxuu.com/wiki/material-x/) 主题为例，实际效果欢迎访问我的博客进行查看，<!-- more -->本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！
+本文将讲述一些 Hexo 博客的美化，本文以作者 [luuman](https://luuman.github.io/Home/H1/index.html) 的 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题和作者 [xaoxuu](https://xaoxuu.com/) 的 [Material X](https://xaoxuu.com/wiki/material-x/) 主题为例，实际效果欢迎访问我的博客进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！
 
 **请注意**：不同主题可能方法有些不同，相同主题不同版本，配置方法也有所差异！阅读主题文档非常重要！
 
