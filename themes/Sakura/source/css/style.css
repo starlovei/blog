@@ -7872,13 +7872,37 @@ td.hljs-ln-numbers {
     margin-top:10px;
 }
 .readmore a {
-    color:#08f;
-    text-decoration:underline dotted rgba(0,0,0,.1)
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    font-family: lucida console;/* 这种字体的英文比较好看（像代码样式） */
 }
 .readmore a:hover {
-    color:#05f !important;
-    text-decoration:underline #05f
+    color: #8A2BE2;
+    transition:.8s;
 }
+.readmore a:hover::after{
+    transform: scaleX(1);
+    /* 旋转，与transform连用；这里作用：鼠标悬浮时，底部的下划线从中间扩散到两边。
+     bottom right :左到右出现，左到右消失（需配合上面的::after）
+    */
+    transform-origin: bottom center;
+  }
+  /* 鼠标移开后，下划线从两边向中间消失 */
+  .readmore a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #8A2BE2;
+    /* 详见：https://www.w3school.com.cn/cssref/pr_transform-origin.asp,
+    旋转，与transform连用；这里作用：鼠标移开后，底部的下划线从中间开始消失 */
+    transform-origin: bottom center;
+    transition: transform 0.5s ease-out;
+  }
 .readmore p {
     color:#5c5c5c;
     line-height:27px;
