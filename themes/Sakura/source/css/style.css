@@ -2,7 +2,7 @@
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
     -webkit-filter: grayscale(100%);
 } */
-.aplayer-container {
+/* .aplayer-container {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -616,10 +616,10 @@ to {
 }
 }
 /*# sourceMappingURL=APlayer.min.css.map*/
-    #wpadminbar #wp-admin-bar-wp-statistic-menu .ab-icon:before {
+    /* #wpadminbar #wp-admin-bar-wp-statistic-menu .ab-icon:before {
     content:'\f184';
-    top:2px
-}
+    top:2px */
+/* } */ 
 .wp-statistics-opt-out {
     width:100%;
     background:#e2e2e2;
