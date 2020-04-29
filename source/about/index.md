@@ -19,6 +19,12 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 # <center>「自述」</center>
 ***
 目前只会C,C++的菜鸟,非常喜欢天文,正在努力靠近!
+***
+# <center> 「过程」</center>
+***
++ 2019/09/03,第一次搭建博客
++ 2020/02/03,WordPress迁移到hexo,主题更换为[Skura](https://docs.hojun.cn/sakura/docs/#/)在[ctr](https://ctz45562.github.io/2019/06/04/blog%E3%81%AE%E6%90%AD%E5%BB%BA%E4%B9%8Bsakura/)教程下魔改
+
 <!-- {% raw %}
 <!-- 因为vue和botui更新导至bug,现将对话移至js下的botui中配置 -->
 <!-- <div class="entry-content">
