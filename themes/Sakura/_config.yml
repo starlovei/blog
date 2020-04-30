@@ -36,10 +36,6 @@ menus:
     影视: {path: /categories/视频/, fa: fa-play-circle }
   } }
   关于: {path: /about/, fa: fa-leaf faa-wrench }
-  # 兴趣: { path: javascript:;, fa: fa-barcode faa-tada, submenus: {
-    # 物理: {path: /categories/物理/, fa: fa-exchange},
-  #   # 百科: {path: /categories/百科, fa: fa-book}
-  # } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   小伙伴: { path: /links/, fa: fa-send faa-float }
   # 赞赏: { path: /donate/, fa: fa-heart faa-pulse }

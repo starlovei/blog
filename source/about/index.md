@@ -7,13 +7,8 @@ comments: false
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ---
 # <center>「歌单」</center>
-{% raw %}
-<meting-js
-  server="netease"
-  type="playlist"
-  id="3123038636">
-</meting-js>
-{% endraw %}
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=950 height=240 src="//music.163.com/outchain/player?type=0&id=4994712338&auto=0&height=430"></iframe>
 
 ***
 # <center>「自述」</center>
