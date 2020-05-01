@@ -21,4 +21,4 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ***
 + 2019/09/03,博客诞生
 
-+ 2020/02/03,WordPress迁移到hexo,主题更换为[Skura](starlovei.com)
++ 2020/02/03,WordPress迁移到hexo,主题更换为Skura
