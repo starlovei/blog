@@ -20,19 +20,7 @@ links:
     - url: https://starlovei.xyz
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/1200px-Logo_of_Google_Drive.svg.png
       name: 云盘
-      desc: 个人网盘
-
-  - group: 工具
-    items:
-    - url: https://tinify.cn/
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/TinyPNG.jpg
-      name: TinyPNG
-      desc: 图片压缩
-    - url: https://www.ipip.net/
-      img: https://cdn.ipip.net/loveapp/ipip/www_v2/theme/css/img/Logo_IPIP.png
-      name: IPIP
-      desc: 专业的IP地址库
-    
+      desc: 个人网盘    
 
   - group: 站在巨人肩上
     items:
@@ -103,10 +91,10 @@ links:
       desc: 逝者如斯夫，不舍昼夜(IT,Java,Python,量化,机器学习)
       name: 闻鸡起舞
 
-  - group: 失踪人口
-    items:
-    - url: https://blog.tcitr.com/
-      img: https://blog-tcitr.oss-cn-hangzhou.aliyuncs.com/img/%E4%BA%BA%E5%83%8F.png
-      desc: 一名医学僧的博客 生活、学习、音乐、图书、文章分享
-      name: 稻田守望者
+  # - group: 失踪人口
+  #   items:
+  #   - url: https://blog.tcitr.com/
+  #     img: https://blog-tcitr.oss-cn-hangzhou.aliyuncs.com/img/%E4%BA%BA%E5%83%8F.png
+  #     desc: 一名医学僧的博客 生活、学习、音乐、图书、文章分享
+  #     name: 稻田守望者
 ---
