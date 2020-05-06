@@ -22,17 +22,6 @@ links:
       name: 云盘
       desc: 个人网盘    
 
-  - group: 站在巨人肩上
-    items:
-    - url: https://www.staff.science.uu.nl/~gadda001/goodtheorist/index.html
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/gerardth.jfif
-      name: Gerard 't Hooft
-      desc: 理论物理学教授
-    - url: https://www.haydenplanetarium.org/tyson/index.php
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/2012-03-07-us-house.png
-      desc: 天体物理学家
-      name: Neil deGrasse Tyson
-
   - group: 大神
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
     items:
