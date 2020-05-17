@@ -7,10 +7,15 @@ comments: false
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ---
 # <center>「歌单」</center>
-<!-- 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=950 height=240 src="//music.163.com/outchain/player?type=0&id=4994712338&auto=0&height=430"></iframe> -->
 
-<iframe src="https://open.spotify.com/embed/playlist/4a7hzm4J7TbARD4NkgNMwK" width="1000" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+{% raw %}
+<meting-js
+  server="netease"
+  type="playlist"
+  id="104369664"
+  mutex="true">
+</meting-js>
+{% endraw %}
 
 ***
 # <center>「自述」</center>
