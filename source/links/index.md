@@ -68,7 +68,7 @@ links:
       desc: 
       name: BoringHacker
     - url: https://xn--6n2ao17b.com/
-      img: https://pics.xn--6n2ao17b.com/images/2020/02/27/ed9fb11994a5937a3c24e1d7584f68e9.png
+      img: https://cdn.jsdelivr.net/gh/AidenOfficial/JSDBoost@master/500001500194_218926.jpg
       desc: 人生何处不青山
       name: Aiden's World
     - url: https://yiki.tech/
