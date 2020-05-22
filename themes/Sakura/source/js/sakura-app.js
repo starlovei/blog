@@ -521,7 +521,7 @@ $(document).ready(function () {
   $('.skin-menu #dark-bg').click(function () {
     mashiro_global.variables.skinSecter = true
     mashiro_global.variables.isNight = true
-    $('body').css('background-image', 'url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/starry_sky.png)')
+    $('body').css('background-image', 'url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/starry_sky.jpg)')
     $('.blank').css('background-color', 'rgba(255,255,255,.8)')
     $('#night-mode-cover').css('visibility', 'visible')
     // $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
