@@ -31,7 +31,7 @@ links:
       desc: 偷偷加的
     - url: https://ctz45562.github.io/
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
-      desc:
+      desc: 来自SD-SLYZ的蒟蒻OIer，基本只在洛谷刷题。
       name: ctz's blog
     - url: https://www.julydate.com/
       img: https://ae01.alicdn.com/kf/U3f38a4228e434dfdb6681986c7232051a.jpg
@@ -64,8 +64,8 @@ links:
       desc: 一个天文爱好者 一只猫
       name: 喵喵的灿烂星空
     - url: https://www.orchid-any.cf/
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/avatar.png
-      desc: 
+      img: https://cdn.jsdelivr.net/gh/BoringHacker/cdn/images/icons/avatar.png
+      desc: Stay Hungry, Stay Foolish
       name: BoringHacker
     - url: https://xn--6n2ao17b.com/
       img: https://cdn.jsdelivr.net/gh/AidenOfficial/JSDBoost@master/500001500194_218926.jpg
