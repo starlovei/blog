@@ -9,10 +9,10 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/51828936_p0.png
 links:
   - group: 管理
     items:
-    - url: https://new.cnzz.com/v1/login.php?siteid=1278662133
+    - url: https://tongji.baidu.com/web/welcome/login
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/agaga.jpg
-      name: CNZZ
-      desc: 访客统计
+      name: 统计
+      desc: 百度统计
     - url: https://l3oivt9vmdgk.leanapp.cn/
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/sagasg.jpg
       name: 后台
