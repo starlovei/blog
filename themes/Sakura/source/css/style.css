@@ -1523,8 +1523,8 @@ i.iconfont.hotpost {
     color:#ff6d6d
 }
 .entry-content code {
-    background:rgba(147,112,219);
-    color:#000;
+    background:rgba(242, 242, 242,1);
+    color:#1e1e1e;
     word-break:break-word;
     font-family:'Source Code Pro',monospace,Helvetica,Tahoma,Arial,STXihei,"STHeiti Light","Microsoft YaHei",sans-serif;
     padding:2px;
@@ -1532,39 +1532,23 @@ i.iconfont.hotpost {
     border-radius:5px
 }
 /* 文章中的超链接,鼠标悬浮特效*/
-.entry-content a{
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-    font-family: lucida console;/* 这种字体的英文比较好看（像代码样式） */
+.entry-content a {
+    color:#0087ca;
+    font-family: lucida console;
+    display: inline;
+    padding-bottom: 2px;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    background-position: 50% 100%;
+    -webkit-transition: all .32s ease-in-out;
+    -moz-transition: all .32s ease-in-out;
+    -o-transition: all .32s ease-in-out;
+    transition: all .32s ease-in-out;
+    background-image: linear-gradient(to right, #8A2BE2 0%,#8A2BE2 50%);
 }
-/* 鼠标悬浮时，变色 */
-.entry-content a:hover{
-    color: #8A2BE2;
-    transition:.8s;
-}
-/* 鼠标悬浮时，下划线从中间向两边延伸 */
-.entry-content a:hover::after{
-  transform: scaleX(1);
-  /* 旋转，与transform连用；这里作用：鼠标悬浮时，底部的下划线从中间扩散到两边。
-   bottom right :左到右出现，左到右消失（需配合上面的::after）
-  */
-  transform-origin: bottom center;
-}
-/* 鼠标移开后，下划线从两边向中间消失 */
-.entry-content a::after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1.5px;
-  bottom: 0;
-  left: 0;
-  background-color: #8A2BE2;
-  /* 详见：https://www.w3school.com.cn/cssref/pr_transform-origin.asp,
-  旋转，与transform连用；这里作用：鼠标移开后，底部的下划线从中间开始消失 */
-  transform-origin: bottom center;
-  transition: transform 0.5s ease-out;
+.entry-content a:hover {
+    color:#8A2BE2 !important;
+    background-size: 100% 1px;	
 }
 h1.entry-title {
     font-size:24px;
@@ -7259,46 +7243,31 @@ td.hljs-ln-numbers {
 }
 
 .readmore{
-    text-align:left;
-    position:relative;
-    margin-top:10px;
+	text-align:left;
+	position:relative;
+	margin-top:10px;
 }
 .readmore a {
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-    font-family: lucida console;/* 这种字体的英文比较好看（像代码样式） */
+    color:#08f;
+    display: inline;
+    padding-bottom: 2px;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    background-position: 50% 100%;
+    -webkit-transition: all .32s ease-in-out;
+    -moz-transition: all .32s ease-in-out;
+    -o-transition: all .32s ease-in-out;
+    transition: all .32s ease-in-out;
+    background-image: linear-gradient(to right, #03f 0%,#03f 50%);
 }
 .readmore a:hover {
-    color: #8A2BE2;
-    transition:.8s;
+    color:#03f !important;
+    background-size: 100% 1px;	
 }
-.readmore a:hover::after{
-    transform: scaleX(1);
-    /* 旋转，与transform连用；这里作用：鼠标悬浮时，底部的下划线从中间扩散到两边。
-     bottom right :左到右出现，左到右消失（需配合上面的::after）
-    */
-    transform-origin: bottom center;
-  }
-  /* 鼠标移开后，下划线从两边向中间消失 */
-  .readmore a::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #8A2BE2;
-    /* 详见：https://www.w3school.com.cn/cssref/pr_transform-origin.asp,
-    旋转，与transform连用；这里作用：鼠标移开后，底部的下划线从中间开始消失 */
-    transform-origin: bottom center;
-    transition: transform 0.5s ease-out;
-  }
 .readmore p {
-    color:#5c5c5c;
-    line-height:27px;
-    margin: 0;
+    color:#3a3a3a;
+	line-height:27px;
+	margin: 0;
 }
 .readmore hr {
     margin-top:40px;
@@ -7319,9 +7288,9 @@ td.hljs-ln-numbers {
 }
 .readmore img{transform:none!important;}
 .readmore blockquote {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
     padding:10px 15px;
-    border-radius: 1.3rem;
+	border-radius: 1.3rem;
 }
 .readmore blockquote:before {
     font-size:1.2rem;
@@ -7435,9 +7404,9 @@ td.hljs-ln-numbers {
     line-height: 0 !important;
     margin: 0;
     padding: 0.55rem 0.2rem;
-    border: 1px solid #0a87ff;
+    border: 1px solid #8A2BE2;
     background: rgba(255, 255, 255, 0.93);
-    color: #0a87ff !important;
+    color: #8A2BE2 !important;
     text-decoration: none;
     font-size: 13px;
     text-shadow: none;
@@ -7448,7 +7417,7 @@ td.hljs-ln-numbers {
 .article-category:hover{
     transition: all 0.1s linear;
     color: #fff !important;
-    background: #0a89ffec;
+    background: #8A2BE2;
 }
 .article-category a{color:inherit !important;}
 
