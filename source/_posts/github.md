@@ -1,7 +1,7 @@
 ---
 title: GitHub访问速度慢
 author: 小枫叶
-avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/my/avatar.png
+avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/my/avatar.jpg
 comments: true
 tags:
   - 网络

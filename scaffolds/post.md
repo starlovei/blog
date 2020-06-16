@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 author: 小枫叶
-avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/my/avatar.png
+avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/my/avatar.jpg
 photos: 
 categories: 
 mathjax:
