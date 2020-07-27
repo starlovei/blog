@@ -13,14 +13,21 @@ links:
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/agaga.jpg
       name: 统计
       desc: 百度统计
+
     - url: https://l3oivt9vmdgk.leanapp.cn/
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/sagasg.jpg
       name: 后台
       desc: 登录
+
     - url: https://starlovei.xyz
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/1200px-Logo_of_Google_Drive.svg.png
       name: 云盘
-      desc: 个人网盘    
+      desc: 个人网盘
+
+    - url: https://starloveii.xyz
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
+      name: RSS订阅
+      desc: 欢迎使用,请勿爆破 
 
   - group: 大神
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
