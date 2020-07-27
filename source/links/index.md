@@ -17,7 +17,7 @@ links:
     - url: https://l3oivt9vmdgk.leanapp.cn/
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/sagasg.jpg
       name: 后台
-      desc: 登录
+      desc: 评论管理
 
     - url: https://starlovei.xyz
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/1200px-Logo_of_Google_Drive.svg.png
