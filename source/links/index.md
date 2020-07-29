@@ -69,6 +69,11 @@ links:
       img: https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg
       desc: 万物皆可萌
       name: 杯子萌
+
+    - url: https://www.umr2333.com/
+      img: https://www.umr2333.com/wp-content/uploads/2019/08/cropped-5633172a952df16c-3.jpg
+      desc: b站沙雕世纪更up的破站～
+      name: 土间被活埋
       
 
     - url: https://iwalyou.com/
