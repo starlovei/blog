@@ -6854,7 +6854,7 @@ to {
     overflow:hidden
 }
 .chinese-font {
-    font-family: zhanku, 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
+    font-family: 'ZCOOL KuaiLe', cursive;
     /* font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif */
 }
 .chinese-tranditional-font {
@@ -6873,12 +6873,12 @@ to {
     font-family:'Ubuntu',sans-serif
 }
 .serif {
-    font-family: zhanku, 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif
+    font-family: 'ZCOOL KuaiLe', cursive;
     /* font-family: 'Noto Sans', 'Noto Sans SC', serif */
 }
 @media(max-width:860px) {
     .serif {
-    font-family: zhanku, 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
+    font-family: 'ZCOOL KuaiLe', cursive;
     /* font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif */
 }
 }.moe-mashiro {
@@ -7438,17 +7438,4 @@ td.hljs-ln-numbers {
 
 .logolink .sakurasono,.logolink .shironeko{
     font-family: 'STXingkai';
-}
-
-/* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
-/* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
-@font-face {
-    font-family: "zhanku";
-    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku.eot"); /* IE9 */
-    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */  
-    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku.woff") format("woff"), /* chrome、firefox */
-    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-    url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.svg#zhanku") format("svg"); /* iOS 4.1- */
-    font-style: normal;
-    font-weight: normal;
 }
