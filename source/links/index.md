@@ -27,7 +27,11 @@ links:
     - url: https://starloveii.xyz
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
       name: RSS订阅
-      desc: 欢迎使用,请勿爆破 
+      desc: 欢迎使用,请勿爆破
+
+    - url: https://rss.starlovei.com
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
+      name: 监控
 
   - group: 大神
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
