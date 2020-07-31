@@ -1,9 +1,8 @@
 <%- partial('_partial/_post', {post: page, index: false}) %>
 <!-- post.md  -->
-<script>
-if (!window.MathJax || !MathJax.Hub) {
-  const script = document.createElement('script');
-  script.src='//cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML';
-  document.head.appendChild(script);
-} else MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
-</script>
+plugins:
+  - position: post
+    template: |
+      <script>
+       window.MathJax && MathJax.Hub && MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
+      </script>
