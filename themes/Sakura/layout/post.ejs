@@ -1,8 +1,5 @@
 <%- partial('_partial/_post', {post: page, index: false}) %>
 <!-- post.md  -->
-plugins:
-  - position: post
-    template: |
-      <script>
-       window.MathJax && MathJax.Hub && MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
-      </script>
+<script>
+  window.MathJax && MathJax.Hub && MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
+</script>
