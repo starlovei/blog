@@ -6563,7 +6563,6 @@ to {
 .top-feature-row {
     width: 100%;
     height: auto;
-    font-family: 'Noto Serif SC';/*这边用原来字体主要是怕聚焦图错位*/
     margin-top: 55px
 }
 .top-feature-v2 {
@@ -6854,8 +6853,8 @@ to {
     overflow:hidden
 }
 .chinese-font {
-    font-family: 'ZCOOL KuaiLe', sans-serif;
-    /* font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif */
+    /* font-family: 'ZCOOL KuaiLe', sans-serif; */
+    font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
 .chinese-tranditional-font {
     font-family:Helvetica,Tahoma,Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei","標楷體",DFKai-SB,sans-serif
@@ -6873,13 +6872,13 @@ to {
     font-family:'Ubuntu',sans-serif
 }
 .serif {
-    font-family: 'ZCOOL KuaiLe', serif;
-    /* font-family: 'Noto Sans', 'Noto Sans SC', serif */
+    /* font-family: 'ZCOOL KuaiLe', serif; */
+    font-family: 'Noto Sans', 'Noto Sans SC', serif
 }
 @media(max-width:860px) {
     .serif {
-    font-family: 'ZCOOL KuaiLe', sans-serif;
-    /* font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif */
+    /* font-family: 'ZCOOL KuaiLe', sans-serif; */
+    font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
 }.moe-mashiro {
     font-family:'Moe-Mashiro','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
