@@ -5,7 +5,8 @@ date: 2018-12-19 23:11:06
 keywords: 小伙伴
 description: 
 comments: true
-photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/82284613_p0.png
+photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/49383596_p0.jpg
+        # https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/82284613_p0.png
 links:
   - group: 管理
     items:
