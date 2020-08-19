@@ -15,7 +15,7 @@ links:
       name: 统计
       desc: 百度统计
 
-    - url: https://l3oivt9vmdgk.leanapp.cn/
+    - url: https://sourl.cn/GGfU5Y
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/sagasg.jpg
       name: 后台
       desc: 评论管理
