@@ -2,7 +2,6 @@
 title: 关于
 date: 2018-12-12 22:14:36
 keywords: 关于
-description: 
 comments: false
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ---
@@ -20,7 +19,8 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ***
 # <center>「自述」</center>
 ***
-目前只会C,C++的菜鸟,非常喜欢天文,正在努力靠近!
+目前只会C,C++的菜鸟
+兴趣爱好: 天文,电音
 ***
 # <center> 「过程」</center>
 ***

@@ -40,7 +40,7 @@ links:
     - url: https://2heng.xin/
       img: https://avatars0.githubusercontent.com/u/16148054?s=460&v=4
       name: 樱花庄的白猫
-      desc: 偷偷加的
+      desc: 偷偷加的~
 
     - url: https://ctz45562.github.io/
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
@@ -63,13 +63,7 @@ links:
       desc: 半文艺、半动漫的二次元美少女的涂鸦簿！
       
   - group: 伙伴
-    items:
-    - url: https://www.icycookies.com/
-      img: https://pic1.zhimg.com/v2-a87651a052014ae0d46e833b3878b85c_xl.jpg
-      name: 咕家寡人
-      desc: 一意咕行
-      
-      
+    items:   
     - url: https://www.cupmoe.com/
       img: https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg
       name: 杯子萌
@@ -99,14 +93,11 @@ links:
       img: https://cdn.jsdelivr.net/gh/AidenOfficial/JSDBoost@master/500001500194_218926.jpg
       name: Aiden's World
       desc: 人生何处不青山
-      
-    - url: https://yiki.tech/
-      img: https://cdn.jsdelivr.net/gh/fuqingguan/cdn@V1.2/avatar.png
-      name: Guan FuQing
-      desc: Error:No object found!
-      
-    - url: https://hexo.yuanjh.cn/
-      img: https://hexo.yuanjh.cn/images_out/logo.jpeg
-      name: 闻鸡起舞
-      desc: 逝者如斯夫，不舍昼夜(IT,Java,Python,量化,机器学习)
+
+  - group: 失踪人口
+    items:
+    - url: https://www.icycookies.com/
+      img: https://pic1.zhimg.com/v2-a87651a052014ae0d46e833b3878b85c_xl.jpg
+      name: 咕家寡人
+      desc: 一意咕行
 ---
