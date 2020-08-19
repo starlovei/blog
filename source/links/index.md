@@ -101,7 +101,7 @@ links:
       desc: 人生何处不青山
       
     - url: https://yiki.tech/
-      img: https://tc.yiki.tech/avatar.png
+      img: https://cdn.jsdelivr.net/gh/fuqingguan/cdn@V1.2/avatar.png
       name: Guan FuQing
       desc: Error:No object found!
       
