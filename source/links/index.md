@@ -69,7 +69,6 @@ links:
       desc: 一意咕行
       name: 咕家寡人
       
-
     - url: https://www.cupmoe.com/
       img: https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg
       desc: 万物皆可萌
@@ -86,10 +85,10 @@ links:
       desc: 喜欢数码产品，业余敲敲代码，小米科技的发烧粉。
       name: 马同学的BLOG
 
-    - url: https://starrycat.me/
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/02bd-hyzpvis3933101.jpg
-      desc: 一个天文爱好者 一只猫
-      name: 喵喵的灿烂星空
+    - url: https://zik05.cn/
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/g.jfif
+      desc: 孑然一身
+      name: 只想这一切自在且不荒唐的度过
 
     - url: https://www.orchid-any.cf/
       img: https://cdn.jsdelivr.net/gh/BoringHacker/cdn/images/icons/avatar.png
