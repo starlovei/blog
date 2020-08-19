@@ -1072,7 +1072,7 @@ var home = location.href,
           appKey: mashiro_option.v_appKey,
           visitor: true,
           path: window.location.pathname,
-          placeholder: '你是我一生只会遇见一次的惊喜 ...'
+          placeholder: '留下足迹 ...'
         })
       }
     },
