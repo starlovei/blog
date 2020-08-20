@@ -24,7 +24,7 @@ menus:
   } }
   标签: { path: /tags/, fa: fa-tags faa-vertical }
   清单: { path: javascript:;, fa: fa-bookmark-o faa-vertical, submenus: { 
-    书单: {path: /categories/书单/, fa: fa-th-list faa-bounce }, 
+    书单: {path: /books/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }
     # 歌单: {path: /music/, fa: fa-music }
   } }
