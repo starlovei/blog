@@ -52,9 +52,9 @@ bgclass: filter-dim
 
 # startdash url, title, desc img
 startdash: 
-  - {url: https://starlovei.com/2020/03/03/github/, title: Github, desc: 加速GitHub, img: /img/startdash/SGSALES1159.jpg}
-  - {url: https://starlovei.com/2020/02/05/function/, title: 图像, desc: 函数, img: /img/startdash/mathformula.jpg}
-  - {url: https://starlovei.com/2020/05/31/24G%E9%93%B6%E6%B2%B3%E7%B3%BB%E4%B8%AD%E5%BF%83%E5%9B%BE/, title: 24G银河系中心图, desc: 分享, img: /img/startdash/175016.jpg}
+  - {url: https://www.starlovei.com/2020/03/03/github/, title: Github, desc: 加速GitHub, img: /img/startdash/SGSALES1159.jpg}
+  - {url: https://www.starlovei.com/2020/02/05/function/, title: 图像, desc: 函数, img: /img/startdash/mathformula.jpg}
+  - {url: https://www.starlovei.com/2020/05/31/24G%E9%93%B6%E6%B2%B3%E7%B3%BB%E4%B8%AD%E5%BF%83%E5%9B%BE/, title: 24G银河系中心图, desc: 分享, img: /img/startdash/175016.jpg}
 
 # your site build time or founded date
 siteBuildingTime: 02/02/2020
