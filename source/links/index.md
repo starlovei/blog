@@ -34,34 +34,6 @@ links:
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
       name: 监控
 
-  - group: 大神
-    desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
-    items:
-    - url: https://2heng.xin/
-      img: https://avatars0.githubusercontent.com/u/16148054?s=460&v=4
-      name: 樱花庄的白猫
-      desc: 偷偷加的~
-
-    - url: https://ctz45562.github.io/
-      img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
-      name: ctz's blog
-      desc: 来自SD-SLYZ的蒟蒻OIer，基本只在洛谷刷题。
-      
-    - url: https://www.julydate.com/
-      img: https://ae01.alicdn.com/kf/U3f38a4228e434dfdb6681986c7232051a.jpg
-      name: 七夏浅笑
-      desc: 七月之约，夏末浅笑
-      
-    - url: https://yremp.live
-      img: https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/custom/head.jpg
-      name: Yremp
-      desc: 流年，谁给过的倾城
-      
-    - url: https://meow3.family.blog/
-      img: https://mewfamilyblog.files.wordpress.com/2019/03/f39fd-e79fade58f91e7b4abe889b2e7b3bbe5a4b4e5838f.jpeg
-      name: 恶魔菌
-      desc: 半文艺、半动漫的二次元美少女的涂鸦簿！
-      
   - group: 伙伴
     items:   
     - url: https://www.cupmoe.com/
@@ -73,6 +45,11 @@ links:
       img: https://www.umr2333.com/wp-content/uploads/2019/08/cropped-5633172a952df16c-3.jpg
       name: 土间被活埋
       desc: b站沙雕世纪更up的破站～
+
+    - url: https://owomoe.net/
+      img: https://cdn.jsdelivr.net/gh/AyagawaSeirin/Assets/img/logo.jpg
+      name: 皮皮凛の小窝
+      desc: 永远相信美好的事情即将发生~
       
     - url: https://iwalyou.com/
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/4e5df3b131c1319aaf3e082e7bc6d639.png
@@ -93,6 +70,31 @@ links:
       img: https://cdn.jsdelivr.net/gh/AidenOfficial/JSDBoost@master/500001500194_218926.jpg
       name: Aiden's World
       desc: 人生何处不青山
+
+    # - url: https://2heng.xin/
+    #   img: https://avatars0.githubusercontent.com/u/16148054?s=460&v=4
+    #   name: 樱花庄的白猫
+    #   desc: 偷偷加的~
+
+    - url: https://ctz45562.github.io/
+      img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
+      name: ctz's blog
+      desc: 来自SD-SLYZ的蒟蒻OIer，基本只在洛谷刷题。
+      
+    - url: https://www.julydate.com/
+      img: https://ae01.alicdn.com/kf/U3f38a4228e434dfdb6681986c7232051a.jpg
+      name: 七夏浅笑
+      desc: 七月之约，夏末浅笑
+      
+    - url: https://yremp.live
+      img: https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/custom/head.jpg
+      name: Yremp
+      desc: 流年，谁给过的倾城
+      
+    - url: https://meow3.family.blog/
+      img: https://mewfamilyblog.files.wordpress.com/2019/03/f39fd-e79fade58f91e7b4abe889b2e7b3bbe5a4b4e5838f.jpeg
+      name: 恶魔菌
+      desc: 半文艺、半动漫的二次元美少女的涂鸦簿！
 
   - group: 失踪人口
     items:
