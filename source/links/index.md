@@ -96,6 +96,11 @@ links:
       name: 蝉时雨
       desc: 蝉鸣如雨，花宵道中
 
+    - url: https://kayleh.top/
+      img: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/2.jpg
+      name: Kayleh
+      desc: 求知若渴,虚心若愚
+
   - group: 失踪人口
     items:
     - url: https://www.icycookies.com/
