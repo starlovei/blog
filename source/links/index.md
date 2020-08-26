@@ -71,11 +71,6 @@ links:
       name: Aiden's World
       desc: 人生何处不青山
 
-    # - url: https://2heng.xin/
-    #   img: https://avatars0.githubusercontent.com/u/16148054?s=460&v=4
-    #   name: 樱花庄的白猫
-    #   desc: 偷偷加的~
-
     - url: https://ctz45562.github.io/
       img: https://cdn.jsdelivr.net/gh/ctz45562/cdn@1.4.1/avatar.jpg
       name: ctz's blog
@@ -95,6 +90,11 @@ links:
       img: https://mewfamilyblog.files.wordpress.com/2019/03/f39fd-e79fade58f91e7b4abe889b2e7b3bbe5a4b4e5838f.jpeg
       name: 恶魔菌
       desc: 半文艺、半动漫的二次元美少女的涂鸦簿！
+
+    - url: https://chanshiyu.com
+      img: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
+      name: 蝉时雨
+      desc: 蝉鸣如雨，花宵道中
 
   - group: 失踪人口
     items:
