@@ -27,8 +27,8 @@ links:
 
     - url: https://starloveii.xyz
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
-      name: 网盘2
-      desc: 同上
+      name: RSS订阅
+      desc: 
 
     - url: https://rss.starlovei.com
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
