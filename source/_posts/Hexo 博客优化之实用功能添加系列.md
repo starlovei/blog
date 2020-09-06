@@ -2,7 +2,7 @@
 layout: Hexo
 title: 博客优化之实用功能添加系列
 author: 小枫叶
-avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/my/avatar.jpg
+avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/68422578_p0.jpg
 date: 2020-02-07 12:22:00
 incomplete: true

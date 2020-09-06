@@ -1,7 +1,7 @@
 ---
 title: Linux部分命令
 author: 小枫叶
-avatar: 'https://cdn.jsdelivr.net/gh/starlovei/cdn/img/my/avatar.jpg'
+avatar: 'https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg'
 tags:
   - 网络
 date: 2020-07-28 16:27:48

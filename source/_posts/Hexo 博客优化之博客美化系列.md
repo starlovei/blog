@@ -1,7 +1,7 @@
 ---
 title: Hexo 博客优化之博客美化系列
 author: 小枫叶
-avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/my/avatar.jpg
+avatar: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg
 categories: 技术
 incomplete: true
 description: 本文将讲述一些 Hexo 博客的美化，本文以作者的主题和作者的主题为例，实际效果欢迎访问我的博客进行查看，本文章会不定时进行更新。
