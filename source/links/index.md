@@ -25,14 +25,14 @@ links:
       name: 云盘
       desc: 个人网盘
 
-    - url: https://starloveii.xyz
+    - url: https://rss.starlovei.com
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
       name: RSS订阅
       desc: 
 
-    - url: https://rss.starlovei.com
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
-      name: 监控
+    # - url: https://rss.starlovei.com
+    #   img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
+    #   name: 监控
 
   - group: 伙伴
     items:   
