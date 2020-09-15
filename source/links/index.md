@@ -15,7 +15,7 @@ links:
       name: 统计
       desc: 百度统计
 
-    - url: https://sourl.cn/GGfU5Y
+    - url: https://stats.starlovei.com
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/sagasg.jpg
       name: 后台
       desc: 评论管理
@@ -30,9 +30,9 @@ links:
       name: RSS订阅
       desc: 
 
-    # - url: https://rss.starlovei.com
-    #   img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
-    #   name: 监控
+    - url: https://sourl.cn/Ah4tcP
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
+      name: 监控
 
   - group: 伙伴
     items:   
