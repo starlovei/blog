@@ -91,10 +91,10 @@ links:
       name: 恶魔菌
       desc: 半文艺、半动漫的二次元美少女的涂鸦簿！
 
-    - url: https://chanshiyu.com
-      img: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
-      name: 蝉时雨
-      desc: 蝉鸣如雨，花宵道中
+    # - url: https://chanshiyu.com
+    #   img: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
+    #   name: 蝉时雨
+    #   desc: 蝉鸣如雨，花宵道中
 
     - url: https://kayleh.top/
       img: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/2.jpg
