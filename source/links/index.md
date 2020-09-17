@@ -35,7 +35,7 @@ links:
       name: RSS订阅
       desc: 
 
-    - url: https://sourl.cn/Ah4tcP
+    - url: https://mir.starlovei.com
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
       name: 监控
 
