@@ -10,7 +10,7 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/49383596_p0.jpg
 links:
   - group: 管理
     items:
-    - url: https://tongji.baidu.com/web/welcome/login
+    - url: https://tongji.baidu.com/
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/agaga.jpg
       name: 统计
       desc: 百度统计
