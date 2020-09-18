@@ -33,11 +33,11 @@ links:
     - url: https://rss.starlovei.com
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
       name: RSS订阅
-      desc: 
+      desc: 万物皆可~~
 
     - url: https://mir.starlovei.com
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
-      name: 监控
+      name: 站点监控
 
   - group: 伙伴
     items:   
