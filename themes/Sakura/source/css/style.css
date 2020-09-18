@@ -3,6 +3,8 @@
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
     -webkit-filter: grayscale(100%);
 } */
+
+/*输入界面背景图*/
 #veditor {
     background-image: url(https://cdn.jsdelivr.net/gh/starlovei/picgo/valine/20200409110727.webp);
     background-size: contain;
@@ -15,10 +17,11 @@
 	background-position-y: 200px;
 	transition: all 0.2s ease-in-out 0s;
 }
+
+/*评论头像旋转*/
 img.vimg {
     transition: all 1s   /* 旋转时间为 1s */
 }
-
 img.vimg:hover {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
@@ -26,6 +29,8 @@ img.vimg:hover {
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
 }
+
+/*评论卡片背景*/
 #vcomments .vcards .vcard {
 	padding: 15px 20px 0 20px;
 	border-radius: 10px;
@@ -33,15 +38,41 @@ img.vimg:hover {
 	box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
 	transition: all .3s
 }
-
 #vcomments .vcards .vcard:hover {
 	box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
 }
-
 #vcomments .vcards .vcard .vh .vcard {
 	border: none;
 	box-shadow: none;
 }
+
+/*评论边框*/
+#vcomments .vheader .vnick {
+    width: 29%;
+    border: 2px solid #dedede;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px
+}
+
+#vcomments .vheader .vmail {
+    width: 29%;
+    border: 2px solid #dedede;
+    margin-left: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px
+}
+
+#vcomments .vheader .vlink {
+    width: 29%;
+    border: 2px solid #dedede;
+    margin-left: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px
+}
+
 .post-meta em {
     margin: 0 5px;
     color: #666;
