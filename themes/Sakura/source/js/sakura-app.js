@@ -1063,19 +1063,24 @@ var home = location.href,
         })
       }
     },
-    // VA: function () {
-    //   if (!valine) {
-    //     var valine = new Valine()
-    //     valine.init({
-    //       el: '#vcomments',
-    //       appId: mashiro_option.v_appId,
-    //       appKey: mashiro_option.v_appKey,
-    //       visitor: true,
-    //       path: window.location.pathname,
-    //       placeholder: '留下足迹 ...'
-    //     })
-    //   }
-    // },
+    VA: function () {
+      if (!valine) {
+        var valine = new Valine()
+        valine.init({
+          el: '#vcomments',
+          appId: mashiro_option.v_appId,
+          appKey: mashiro_option.v_appKey,
+          master: '5c6349399eaa71523af5bd5e1aa5734c',   //博主邮箱md5
+          tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+          friends:  ["261294d20e9e42234ae2fb2a7f1c46cd","29c4d17e7407432f87a422dcd736d2d2","9e547d05b6be799568cc2dacf8263179","4e5df3b131c1319aaf3e082e7bc6d639"],  //小伙伴邮箱Md5
+          metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）","link":"网址 (https)"},
+          placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
+          avatar: 'wavatar',
+          // visitor: true,
+          path: window.location.pathname,
+        })
+      }
+    },
     MJ: function () {
       if (mashiro_option.mathjax == '1') {
         $.getScript('https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML', function () {
