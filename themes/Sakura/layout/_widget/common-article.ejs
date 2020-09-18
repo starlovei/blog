@@ -64,15 +64,15 @@
     <main id="main" class="site-main" role="main">
       <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
         <div class="toc"></div>
-        <!--<div class="toc-entry-content">套嵌目录使用（主要为了支援评论）-->
-        <!-- <% if (!post.photos[0]){ %>
+        <div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        <% if (!post.photos[0]){ %>
           <header class="entry-header">
             <h1 class="entry-title"><%- post.title %></h1>
-             <span id='/<%= page.path %>' class="leancloud-visitors" data-flag-title="<%= page.title %>"><a class="leancloud-visitors-count">reading...</a><a class="post-meta-item-text"> 次阅读</a></span>
-          </span> -->
-            <!-- <hr>
+             <span id='/<%= page.path %>' class="leancloud-visitors" data-flag-title="<%= page.title %>"><a class="leancloud-visitors-count">加载中...</a><a class="post-meta-item-text"> 次阅读</a></span>
+          </span>
+            <hr>
           </header>
-        <% } %> -->
+        <% } %>
         <div class="entry-content">
           <%- post.content %>
           <% if(post.incomplete&&post.incomplete==true) {%>
