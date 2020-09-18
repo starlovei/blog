@@ -6668,6 +6668,8 @@ to {
     -o-transform:scale(1);
     transform:scale(1)
 }
+
+/*主页startdash*/
 .the-feature.from_left_and_right .info {
     position:absolute;
     top:0;
@@ -6677,31 +6679,38 @@ to {
     text-align:center;
     -webkit-backface-visibility:hidden;
     backface-visibility:hidden;
-    background:#333;
-    background:rgba(0,0,0,.6);
-    visibility:hidden;
-    opacity:0;
+    background:transparent;
     -webkit-transition:all .35s ease-in-out;
     -moz-transition:all .35s ease-in-out;
     transition:all .35s ease-in-out
 }
 .the-feature.from_left_and_right .info h3 {
     text-transform:uppercase;
-    color:#fff;
+    color:rgba(255, 255, 255);
     text-align:center;
-    font-size:17px;
+    font-size:22px;
+    letter-spacing:1px;
+    text-shadow: 0 0 8px #000,0 0 8px #000;
+    font-weight:bold;
     padding:10px;
-    background:#111;
     margin:30px 0 0 0;
+    background:transparent;
     -webkit-transition:all .35s ease-in-out;
     -moz-transition:all .35s ease-in-out;
     transition:all .35s ease-in-out;
-    -webkit-transform:translateX(-100%);
-    -moz-transform:translateX(-100%);
-    -ms-transform:translateX(-100%);
-    -o-transform:translateX(-100%);
-    transform:translateX(-100%)
+    -webkit-transform:translateY(50%);
+    -moz-transform:translateY(50%);
+    -ms-transform:translateY(50%);
+    -o-transform:translateY(50%);
+    transform:translateY(50%)
 }
+.the-feature.from_left_and_right .info:hover h3{
+    background:rgba(22, 22, 22, 0.85);
+    letter-spacing: 0;
+    text-shadow: none;
+    font-size:17px;
+}
+
 .the-feature.from_left_and_right .info p {
     font-style:italic;
     font-size:12px;
@@ -6726,6 +6735,7 @@ to {
     transform:scale(1.2)
 }
 .the-feature.from_left_and_right a:hover .info {
+    background: rgba(0,0,0,0.6);
     visibility:visible;
     opacity:1
 }
