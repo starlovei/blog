@@ -1063,19 +1063,19 @@ var home = location.href,
         })
       }
     },
-    VA: function () {
-      if (!valine) {
-        var valine = new Valine()
-        valine.init({
-          el: '#vcomments',
-          appId: mashiro_option.v_appId,
-          appKey: mashiro_option.v_appKey,
-          visitor: true,
-          path: window.location.pathname,
-          placeholder: '留下足迹 ...'
-        })
-      }
-    },
+    // VA: function () {
+    //   if (!valine) {
+    //     var valine = new Valine()
+    //     valine.init({
+    //       el: '#vcomments',
+    //       appId: mashiro_option.v_appId,
+    //       appKey: mashiro_option.v_appKey,
+    //       visitor: true,
+    //       path: window.location.pathname,
+    //       placeholder: '留下足迹 ...'
+    //     })
+    //   }
+    // },
     MJ: function () {
       if (mashiro_option.mathjax == '1') {
         $.getScript('https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML', function () {
