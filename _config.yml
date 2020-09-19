@@ -108,3 +108,8 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+server:
+  port: 2845
+  compress: true
+  header: true
