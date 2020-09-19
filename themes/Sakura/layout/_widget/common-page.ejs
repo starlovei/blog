@@ -11,49 +11,51 @@
     </div>
   <% } %>
 
-  <% if (page.path === "tags/index.html"){ %>
-    <div class="site-content">
-        <br><br>
-        <div class="tag-cloud-title" style="text-align:center">
-          目前共计 <%=site.tags.length%> 个标签
-        </div>
-        <p></p>
-        <div class="tags" style="text-align:center">
-            <%- tagcloud({
-                min_font: 14, 
-                max_font: 35, 
-                amount: 999, 
-                color: true, 
-                start_color: 'gray', 
-                end_color: 'black',
-            }) %>
-        </div>
-        <style>
-            .article-entry ul li:before{
-                display: none;
-            }
-            .article-inner  {
-                text-align: center;
-            }
-            .tags {
-                max-width: 40em;
-                margin: 2em auto;
-                margin-top: 0em;
-            }
-            .tags a {
-                margin-right: 1em;
-                border-bottom: 1px solid gray;
-                line-height: 65px;
-                white-space: nowrap;
-            }
-            .tags a:hover {
-                transition: all 0.15s linear 0s;
-                border-bottom-color: #9400D3 !important;
-                color: #9400D3 !important;
-            }
-        </style>
-        </div>
-    <% } %>
+  <%
+  var colorArr = ['#F9EBEA', '#F5EEF8', '#D5F5E3', '#E8F8F5', '#FEF9E7',
+      '#F8F9F9', '#82E0AA', '#D7BDE2', '#A3E4D7', '#85C1E9', '#F8C471', '#F9E79F', '#FFF'];
+  var colorCount = colorArr.length;
+  var hashCode = function (str) {
+      if (!str && str.length === 0) {
+          return 0;
+      }
+  
+      var hash = 0;
+      for (var i = 0, len = str.length; i < len; i++) {
+          hash = ((hash << 5) - hash) + str.charCodeAt(i);
+          hash |= 0;
+      }
+      return hash;
+  };
+  var i = 0;
+  var isTag = is_tag();
+  %>
+  
+  <div id="tags" class="container chip-container">
+      <div class="card">
+          <div class="card-content">
+              <div class="tag-title center-align">
+                  目前共计 <%=site.tags.length%> 个标签
+              </div>
+              <div class="tag-chips">
+                  <% site.tags.map(function(tag) { %>
+                  <%
+                      i++;
+                      var color = i >= colorCount ? colorArr[Math.abs(hashCode(tag.name) % colorCount)]
+                              : colorArr[i - 1];
+                  %>
+                  <a href="<%- url_for(tag.path) %>" title="<%- tag.name %>: <%- tag.length %>">
+                      <span class="chip center-align waves-effect waves-light
+                              <% if (isTag && tag.name == page.tag) { %> chip-active <% } else { %> chip-default <% } %>"
+                              data-tagname="<%- tag.name %>" style="background-color: <%- color %>;"><%- tag.name %>
+                          <span class="tag-length"><%- tag.length %></span>
+                      </span>
+                  </a>
+                  <% }); %>
+              </div>
+          </div>
+      </div>
+  </div>
     
   <div id="content" class="site-content">
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
