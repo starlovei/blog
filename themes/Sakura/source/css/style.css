@@ -46,33 +46,6 @@ img.vimg:hover {
 	box-shadow: none;
 }
 
-/*评论边框*/
-#vcomments .vheader .vnick {
-    width: 29%;
-    border: 2px solid #dedede;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px
-}
-
-#vcomments .vheader .vmail {
-    width: 29%;
-    border: 2px solid #dedede;
-    margin-left: 34px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px
-}
-
-#vcomments .vheader .vlink {
-    width: 29%;
-    border: 2px solid #dedede;
-    margin-left: 34px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px
-}
-
 .post-meta em {
     margin: 0 5px;
     color: #666;
