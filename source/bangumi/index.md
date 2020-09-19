@@ -3,8 +3,6 @@ layout: bangumi
 title: 番组
 comments: false
 date: 2019-02-10 21:32:48
-keywords:
-description:
 bangumis:
   - img: https://cdn.jsdelivr.net/gh/starlovei/picgo/bangumi/0.jfif
     title: 名侦探柯南
