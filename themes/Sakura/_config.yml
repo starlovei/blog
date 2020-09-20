@@ -26,10 +26,7 @@ menus:
   关于: { path: /about/, fa: fa-leaf faa-wrench }
   留言板: { path: /comment/, fa: fa-comments faa-tada }
   小伙伴: { path: /links/, fa: fa-send faa-float }
-  # 赞赏: { path: /donate/, fa: fa-heart faa-vertical }
-  # 关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
-  # #   主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
-  # } }
+  赞赏: { path: /donate/, fa: fa-heart faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-tada }
 
 # Home page sort type: -1: newer first，1: older first.
@@ -98,7 +95,7 @@ google_analytics:
   tracking_id: UA-157728544-1
   localhost_ignored: true
 
-archivesimg: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/76117294_p0.png
+archivesimg: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/76117294_p0.jpg
 
 social_icons:
   enable: true
