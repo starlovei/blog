@@ -84,20 +84,20 @@
 #donateBox a {
   display: block;
 }
-#donateBox #PayPal {
+/* #donateBox #PayPal {
   background-image: url(/images/donate/paypal.svg);
-}
-#donateBox>#BTC {
+} */
+/* #donateBox>#BTC {
   background-image: url(/images/donate/bitcoin.svg);
   line-height: 28px;
-}
-#donateBox>#BTC:hover {
+} */
+/* #donateBox>#BTC:hover {
   overflow: visible;
-}
-#BTC>button {
+} */
+/* #BTC>button {
   opacity: 0;
   cursor: pointer;
-}
+} */
 #donateBox #AliPay {
   background-image: url(/images/donate/alipay.svg);
 }
