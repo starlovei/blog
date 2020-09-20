@@ -203,10 +203,6 @@ svg:not(:root) {
 figure {
     margin:1em 40px
 }
-hr {
-    box-sizing:content-box;
-    height:0
-}
 pre {
     overflow:auto
 }
@@ -383,12 +379,6 @@ blockquote:before,blockquote:after,q:before,q:after {
 }
 blockquote,q {
     quotes:"" ""
-}
-hr {
-    background-color:#ccc;
-    border:0;
-    height:1px;
-    margin-bottom:1.5em
 }
 ul,ol {
     margin:0 0 1.5em 3em
@@ -1623,7 +1613,6 @@ h1.entry-title {
     background:none
 }
 .entry-content hr:before {
-    content:'...';
     display:inline-block;
     margin-left:.6em;
     color:rgba(0,0,0,.8);
@@ -1631,6 +1620,12 @@ h1.entry-title {
     top:-30px;
     font-size:28px;
     letter-spacing:.6em
+}
+hr {
+    height: 3px !important;
+    border: none !important;
+    background-color: #bfbfbf !important;
+    background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px) !important;
 }
 .entry-content .post-password-form {
     text-align:center
@@ -7494,3 +7489,82 @@ td.hljs-ln-numbers {
 .chip-default .tag-length {    color: #e91e63;    margin-top: 1px;}
 .chip-active .tag-length {    color: #fff;}
 .tag-title.center-align{    margin-top: 100px;    text-align : center;}
+
+/*note标签*/
+span.inline-tag {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 90%;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .1rem;
+    border-radius: 6px;
+    background-color: var(--Color)
+}
+
+p.red,
+span.red {
+    --Color: rgb(233, 30, 100);
+    --ColorA: rgba(233, 30, 100, 0.2);
+}
+
+p.green,
+span.green {
+    --Color: rgb(139, 195, 74);
+    --ColorA: rgba(139, 195, 74, 0.2);
+}
+
+p.blue,
+span.blue {
+    --Color: rgb(3, 169, 244);
+    --ColorA: rgba(3, 169, 244, 0.2);
+}
+
+p.yellow,
+span.yellow {
+    --Color: rgb(255, 193, 7);
+    --ColorA: rgba(255, 193, 7, 0.2);
+}
+
+p.purple,
+span.purple {
+    --Color: rgb(160, 32, 240);
+    --ColorA: rgba(160, 32, 240, 0.2);
+}
+
+p.grey,
+span.grey {
+    --Color: rgb(76, 76, 76);
+    --ColorA: rgba(76, 76, 76, 0.2);
+}
+
+p.div-border {
+    padding: 10px;
+    border: 1px solid var(--Color,#333);
+    border-radius: 0.4rem;
+    background-color: var(--ColorA, transparent);
+}
+
+p.left {
+    border-left-width: 5px;
+    border-left-color: var(--Color);
+}
+
+p.bottom {
+    border-bottom-width: 5px;
+    border-bottom-color: var(--Color);
+}
+
+p.right {
+    border-right-width: 5px;
+    border-right-color: var(--Color);
+}
+
+p.top {
+    border-top-width: 5px;
+    border-top-color: var(--Color);
+}
