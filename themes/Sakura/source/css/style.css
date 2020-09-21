@@ -301,7 +301,7 @@ blockquote:before {
     position:absolute;
     top:-25px;
     left:2px;
-    color:BlueViolet;
+    color:Orchid;
     font-family:FontAwesome
 }
 blockquote:after {
@@ -310,7 +310,7 @@ blockquote:after {
     position:absolute;
     bottom:-25px;
     right:0px;
-    color:BlueViolet;
+    color:Orchid;
     font-family:FontAwesome
 }
 
@@ -453,11 +453,11 @@ a {
     -moz-transition:color .2s ease-out,border .2s ease-out,opacity .2s ease-out;
     transition:color .2s ease-out,border .2s ease-out,opacity .2s ease-out
 }
-a:hover,a:focus,a:active {color:#8A2BE2}
+a:hover,a:focus,a:active {color:Orchid}
 a:focus {outline:0}
 a:hover,a:active {
     outline:0;
-    color:#8A2BE2
+    color:Orchid
 }
 .site-top {
     width:100%;
@@ -804,7 +804,7 @@ a:hover,a:active {
     font-weight:400
 }
 .site-title a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .site-title img {
     height:40px;
@@ -897,10 +897,10 @@ a:hover,a:active {
 .site-top ul li a {
     padding:10px 0;
     display:inline-block;
-    color:#666
+    color:Orchid
 }
 .site-top ul li a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .site-top ul li a:after {
     content:"";
@@ -908,7 +908,7 @@ a:hover,a:active {
     position:absolute;
     bottom:-16px;
     height:6px;
-    background-color:#8A2BE2;
+    background-color:Orchid;
     width:100%;
     max-width:0;
     transition:max-width .25s ease-in-out
@@ -919,7 +919,7 @@ a:hover,a:active {
     position:absolute;
     bottom:-21px;
     height:6px;
-    background-color:#8A2BE2;
+    background-color:Orchid;
     width:100%;
     max-width:0;
     transition:max-width .25s ease-in-out
@@ -1092,7 +1092,7 @@ a:hover,a:active {
     color:#504e4e
 }
 .entry-title a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .p-time {
     position:absolute;
@@ -1428,8 +1428,8 @@ i.iconfont.hotpost {
 }
 .navigator i:hover {
     color:#fff;
-    background:BlueViolet;
-    border:2px solid BlueViolet;
+    background:Orchid;
+    border:2px solid Orchid;
     -webkit-transition:all .2s ease-in-out;
     -moz-transition:all .2s ease-in-out;
     -o-transition:all .2s ease-in-out;
@@ -1451,7 +1451,7 @@ i.iconfont.hotpost {
     color:#b9b9b9
 }
 .site-info a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .footertext p {
     margin-bottom:8px
@@ -1568,10 +1568,10 @@ i.iconfont.hotpost {
     -moz-transition: all .32s ease-in-out;
     -o-transition: all .32s ease-in-out;
     transition: all .32s ease-in-out;
-    background-image: linear-gradient(to right, #8A2BE2 0%,#8A2BE2 50%);
+    background-image: linear-gradient(to right, Orchid 0%,Orchid 50%);
 }
 .entry-content a:hover {
-    color:#8A2BE2 !important;
+    color:Orchid !important;
     background-size: 100% 1px;	
 }
 h1.entry-title {
@@ -1757,7 +1757,7 @@ h1.page-title.mb- {
     margin-right:5px
 }
 .post-tags a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .post-tags i {
     margin-right:5px
@@ -1817,7 +1817,7 @@ h1.page-title.mb- {
     margin-right:10px
 }
 .post-share ul li a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .post-share .show-share {
     margin-left:10px;
@@ -2283,7 +2283,7 @@ h3#comments-list-title {
     margin:auto
 }
 .butterBar-message {
-    background:#8A2BE2;
+    background:Orchid;
     color:#fff;
     border-bottom-left-radius:4px;
     border-bottom-right-radius:4px;
@@ -2456,7 +2456,7 @@ h1.works-title {
     font-style:italic;
     font-size:20px;
     font-weight:400;
-    color:BlueViolet;
+    color:Orchid;
     margin-left:30px;
     margin-top:50px
 }
@@ -2482,7 +2482,7 @@ span.time {
 .ar-time i {
     padding:10px;
     border-radius:100px;
-    background:BlueViolet;
+    background:Orchid;
     color:#fff
 }
 .ar-time {
@@ -2508,7 +2508,7 @@ span.time {
 span.ar-circle {
     height:10px;
     width:10px;
-    background:BlueViolet;
+    background:Orchid;
     display:inline-block;
     position:absolute;
     left:-5px;
@@ -2590,7 +2590,7 @@ header.page-header {
     -ms-transform:rotate(360deg)
 }
 span.sitename {
-    color:BlueViolet;
+    color:Orchid;
     padding-bottom:10px;
     display:block;
     -webkit-transition:all .3s;
@@ -2621,11 +2621,11 @@ span.sitename {
 }
 .link-title span.fake-title {
     padding-left:10px;
-    border-left:3px solid BlueViolet
+    border-left:3px solid Orchid
 }
 .links ul li:before {
     content:"";
-    background-color:BlueViolet;
+    background-color:Orchid;
     -webkit-transform:skew(45deg,0);
     transform:skew(45deg,0);
     width:0;
@@ -2639,7 +2639,7 @@ span.sitename {
 }
 .links ul li:hover {
     color:#27323a;
-    border:1px solid BlueViolet
+    border:1px solid Orchid
 }
 .links ul li:hover:before {
     width:180%
@@ -2916,7 +2916,7 @@ a.page-numbers {
     font-weight:600
 }
 .comment h4 a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .comment hr {
     clear:both;
@@ -3069,9 +3069,9 @@ a.page-numbers {
     text-shadow:none
 }
 .comment-respond input[type='submit']:hover {
-    border:1px solid #8A2BE2;
+    border:1px solid Orchid;
     background:none !important;
-    color:#8A2BE2
+    color:Orchid
 }
 .comment-respond input[type='submit']:hover {
     background:#5aa738
@@ -3165,7 +3165,7 @@ a.page-numbers {
     line-height:1
 }
 .siren-checkbox-radio:checked+.siren-checkbox-radioInput:after {
-    background-color:#8A2BE2;
+    background-color:Orchid;
     border-radius:100%;
     content:"";
     display:block;
@@ -3496,7 +3496,7 @@ li.feature-2 {
     transition:transform .5s cubic-bezier(0.175,.885,.32,1.275),-webkit-transform .5s cubic-bezier(0.175,.885,.32,1.275)
 }
 .wisteria {
-    color:#8e44ad
+    color:Orchid
 }
 .belize {
     color:#2980b9
@@ -3791,7 +3791,7 @@ i.iconfont.js-toggle-search.iconsearch {
     padding:10px 0
 }
 .sorry li a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .sorry-inner {
     padding:20px;
@@ -3806,14 +3806,14 @@ i.iconfont.js-toggle-search.iconsearch {
 .err-button.back a {
     padding:10px 30px;
     margin:0 10px;
-    border:1px solid BlueViolet;
-    color:BlueViolet;
+    border:1px solid Orchid;
+    color:Orchid;
     -webkit-border-radius:50px;
     -moz-border-radius:50px;
     border-radius:50px
 }
 #gohome {
-    background:BlueViolet;
+    background:Orchid;
     color:#fff
 }
 .err-button.back a:hover {
@@ -3926,7 +3926,7 @@ embed,iframe,object {
     position:absolute
 }
 #nprogress .bar {
-    background:BlueViolet;
+    background:Orchid;
     position:fixed;
     z-index:1031;
     top:0;
@@ -3940,7 +3940,7 @@ embed,iframe,object {
     right:0;
     width:100px;
     height:100%;
-    box-shadow:0 0 10px BlueViolet,0 0 5px BlueViolet;
+    box-shadow:0 0 10px Orchid,0 0 5px Orchid;
     opacity:1;
     -webkit-transform:rotate(3deg) translate(0px,-4px);
     -ms-transform:rotate(3deg) translate(0px,-4px);
@@ -3962,8 +3962,8 @@ embed,iframe,object {
     height:20px;
     box-sizing:border-box;
     border:solid 3px transparent;
-    border-top-color:BlueViolet;
-    border-left-color:BlueViolet;
+    border-top-color:Orchid;
+    border-left-color:Orchid;
     border-radius:50%;
     -webkit-animation:nprogress-spinner 400ms linear infinite;
     animation:nprogress-spinner 400ms linear infinite
@@ -4067,8 +4067,8 @@ i.iconfont.down {
     font-size:15px
 }
 #pagination a:hover {
-    border:1px solid BlueViolet;
-    color:BlueViolet
+    border:1px solid Orchid;
+    color:Orchid
 }
 #pagination .loading {
     background:url("https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/wordpress-rotating-ball-o.svg");
@@ -4231,7 +4231,7 @@ i.iconfont.down {
         display:none
     }
     .links ul li:hover .sitename {
-        color:BlueViolet
+        color:Orchid
     }
     .links ul li:hover .linkdes {
         color:#949494;
@@ -4444,7 +4444,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }
 #mo-nav ul li a:hover {
     cursor:pointer;
-    color:BlueViolet
+    color:Orchid
 }
 .we-content li {
     height:250px
@@ -5239,11 +5239,11 @@ button.botui-actions-buttons-button {
     width:auto
 }
 .logolink a:hover .sakurasono {
-    background-color:BlueViolet;
+    background-color:Orchid;
     color:#fff
 }
 .logolink a:hover .shironeko,.logolink a:hover rt {
-    color:BlueViolet
+    color:Orchid
 }
 .logolink.moe-mashiro a {
     color:#464646;
@@ -5626,7 +5626,7 @@ button.botui-actions-buttons-button {
 }
 @media(min-width:861px) {
     .hide-live2d {
-    background-color:BlueViolet;
+    background-color:Orchid;
     bottom:156px;
     visibility:visible;
     min-height:38.75px
@@ -6034,7 +6034,7 @@ progress {
     color:#000
 }
 .art .art-content #archives a:hover {
-    color:BlueViolet
+    color:Orchid
 }
 .art .art-content #archives .al_year {
     padding-left:100px
@@ -6106,7 +6106,7 @@ progress {
     max-height:100%;
     height:100%;
     width:4px;
-    background:#8A2BE2;
+    background:Orchid;
     position:absolute;
     left:120px;
     content:"";
@@ -6117,7 +6117,7 @@ progress {
     box-shadow:1px 1px 1px #bbb
 }
 .art-content #archives .al_mon_list .al_mon:after,.art .art-content .al_mon_list .al_post_list>li:after {
-    background:#8A2Be2
+    background:Orchid
 }
 .toc-container {
     z-index:98;
@@ -6185,7 +6185,7 @@ a.toc-link {
     width:2px
 }
 .is-active-link::before {
-    background-color:BlueViolet !important
+    background-color:Orchid !important
 }
 .flipx {
     -moz-transform:scaleX(-1);
@@ -6319,10 +6319,10 @@ to {
 }
 .motion-switcher-table th:hover {
     background-color:rgba(245,245,245,.5);
-    color:BlueViolet
+    color:Orchid
 }
 .motion-switcher-table .on-hover {
-    color:BlueViolet
+    color:Orchid
 }
 .motion-container {
     height:110px;
@@ -6554,8 +6554,8 @@ to {
     cursor:pointer
 }
 .insert-image-tips:hover {
-    color:BlueViolet;
-    border:1px solid BlueViolet
+    color:Orchid;
+    border:1px solid Orchid
 }
 .insert-image-button {
     opacity:0;
@@ -6568,8 +6568,8 @@ to {
     cursor:pointer
 }
 .insert-image-tips-hover {
-    color:BlueViolet;
-    border:1px solid BlueViolet
+    color:Orchid;
+    border:1px solid Orchid
 }
 .upload-image-preview {
     display:inline-block;
@@ -7465,9 +7465,9 @@ td.hljs-ln-numbers {
     line-height: 0 !important;
     margin: 0;
     padding: 0.55rem 0.2rem;
-    border: 1px solid #8A2BE2;
+    border: 1px solid Orchid;
     background: rgba(255, 255, 255, 0.93);
-    color: #8A2BE2 !important;
+    color: Orchid !important;
     text-decoration: none;
     font-size: 13px;
     text-shadow: none;
@@ -7478,7 +7478,7 @@ td.hljs-ln-numbers {
 .article-category:hover{
     transition: all 0.1s linear;
     color: #fff !important;
-    background: #8A2BE2;
+    background: Orchid;
 }
 .article-category a{color:inherit !important;}
 
@@ -7547,8 +7547,8 @@ span.yellow {
 
 p.purple,
 span.purple {
-    --Color: rgb(160, 32, 240);
-    --ColorA: rgba(160, 32, 240, 0.2);
+    --Color: rgb(218, 112, 214);
+    --ColorA: rgba(218, 112, 214, 0.2);
 }
 
 p.grey,
@@ -7691,7 +7691,7 @@ p.top {
 .logolink .sakuraso {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 5px;
-    color: #464646;
+    color: Orchid;
     height: auto;
     line-height: 25px;
     margin-right: 0;
@@ -7702,18 +7702,18 @@ p.top {
 }
  
 .logolink a:hover .sakuraso {
-    background-color: blueviolet;
+    background-color: Orchid;
     color: #fff;
 }
  
 .logolink a:hover .shironeko,
 .logolink a:hover .no,
 .logolink a:hover rt {
-    color: BlueViolet;
+    color: Orchid;
 }
  
 .logolink.moe-mashiro a {
-    color: #464646;
+    color: Orchid;
     float: left;
     font-size: 25px;
     font-weight: 800;

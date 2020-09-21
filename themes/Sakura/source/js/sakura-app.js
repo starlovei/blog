@@ -416,7 +416,7 @@ function scrollBar () {
           $('#bar').css('background', '#5aaadb')
         }
       } else {
-        $('#bar').css('background', 'BlueViolet')
+        $('#bar').css('background', 'Orchid')
       }
       $('.toc-container').css('height', $('.site-content').outerHeight())
       $('.skin-menu').removeClass('show')
@@ -1673,7 +1673,7 @@ function web_audio() {
                             top: p - 20,
                             left: h,
                             position: "absolute",
-                            color: "#FF6EB4"
+                            color: "Orchid"
                         }), cached_body.append(u), u.animate({
                             top: p - 180,
                             opacity: 0
