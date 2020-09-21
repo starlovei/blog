@@ -17,8 +17,7 @@ menus:
   标签: { path: /tags/, fa: fa-tags faa-vertical }
   清单: { path: javascript:;, fa: fa-cloud-sun faa-float, submenus: { 
     书单: { path: /books/, fa: fa-th-list faa-bounce }, 
-    番组: { path: /bangumi/, fa: fa-film faa-vertical },
-    # 统计: { path: /analytics/ , fa: fa-line-chart }
+    番组: { path: /bangumi/, fa: fa-film faa-vertical }
   } }
   关于: { path: /about/, fa: fa-leaf faa-wrench }
   留言板: { path: /comment/, fa: fa-comments faa-tada }
