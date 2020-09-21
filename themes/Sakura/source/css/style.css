@@ -6592,6 +6592,7 @@ to {
 .top-feature-row {
     width: 100%;
     height: auto;
+    font-family: Noto Serif SC;/*这边用原来字体主要是怕聚焦图错位*/
     margin-top: 55px
 }
 .top-feature-v2 {
@@ -6891,9 +6892,14 @@ to {
 .code-block-fullscreen-html-scroll {
     overflow:hidden
 }
-.chinese-font {
-    /* font-family: 'ZCOOL KuaiLe', sans-serif; */
+/*原字体*/
+/* .chinese-font {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
+} */
+
+/*现字体*/
+.chinese-font {
+    font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
 }
 .chinese-tranditional-font {
     font-family:Helvetica,Tahoma,Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei","標楷體",DFKai-SB,sans-serif
@@ -6910,16 +6916,29 @@ to {
 .Ubuntu-font {
     font-family:'Ubuntu',sans-serif
 }
-.serif {
-    /* font-family: 'ZCOOL KuaiLe', serif; */
+/*原字体*/
+/* .serif {
     font-family: 'Noto Sans', 'Noto Sans SC', serif
+} */
+
+/*现字体*/
+.serif {
+    font-family: 'zhanku', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif
 }
-@media(max-width:860px) {
+/*原字体*/
+/* @media(max-width:860px) {
     .serif {
-    /* font-family: 'ZCOOL KuaiLe', sans-serif; */
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
+    }
+} */
+
+/*现字体*/
+@media (max-width:860px) {
+    .serif {
+        font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
+    }
 }
-}.moe-mashiro {
+.moe-mashiro {
     font-family:'Moe-Mashiro','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
 .skin-menu {
@@ -7645,4 +7664,16 @@ p.top {
 		transform: translateY(0%);
 		opacity: 1
 	}
+}
+
+/* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
+@font-face {
+    font-family: "zhanku";
+    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot"); /* IE9 */
+    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */  
+    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.woff") format("woff"), /* chrome、firefox */
+    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
