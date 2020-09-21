@@ -283,33 +283,25 @@ dfn,cite,em,i {
     font-style:italic
 }
 blockquote {
-    width:fit-content;
-    width:-webkit-fit-content;
-    width:-moz-fit-content;
-    width:-ms-fit-content;
-    width:-o-fit-content;
     margin:0;
-    margin-bottom: 20px;
-    padding:12px 45px;
-    position:relative;
-    border-radius: 1.5rem;
-    background: rgba(192, 125, 25, 0.43);
+    padding:30px 60px;
+    position:relative
 }
 blockquote:before {
     content:"\f10d" !important;
-    font-size:2rem;
+    font-size:3rem;
     position:absolute;
     top:-25px;
-    left:2px;
+    left:12px;
     color:Orchid;
     font-family:FontAwesome
 }
 blockquote:after {
     content:'\f10e' !important;
-    font-size:2rem;
+    font-size:3rem;
     position:absolute;
     bottom:-25px;
-    right:0px;
+    right:-5px;
     color:Orchid;
     font-family:FontAwesome
 }
