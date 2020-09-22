@@ -49,7 +49,7 @@ live2d:
 		show: false      #是否在手机端显示
 ```
 设置好过后我们就拥有了一个卡通人物
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190803152152975.png listary %}
+{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190803152152975.png %}
 ## 2 添加鼠标点击爱心效果
 在 `\themes\hexo-theme-spfk\source\js` 下新建文件 `love.js`，在 `love.js` 文件中添加以下代码：
 ``` s
@@ -61,7 +61,7 @@ live2d:
 <script type="text/sscript" src="/js/love.js"></script>
 ```
 完成以上操作后，当我们点击鼠标的时候就可以看见爱心的特效了
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/3.jfif istary %}
+{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/3.jfif %}
 ## 3 添加鼠标点击显示字体效果
 在 `/themes/hexo-theme-spfk/source/js` 下新建文件 `click_show_text.js`，在 `click_show_text.js` 文件中添加以下代码：
 ``` java
@@ -111,7 +111,7 @@ function delay() {
 <script type="text/javascript" src="/js/click_show_text.js"></script>
 ```
 最终实现效果如下：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102038173.png listary %}
+{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102038173.png %}
 ## 4 添加鼠标点击烟花爆炸效果
 在 `\themes\material-x\source\js` 目录下新建一个 `fireworks.js` 的文件，里面写入以下代码：
 ``` css
@@ -124,7 +124,7 @@ function delay() {
 <script type="text/javascript" src="/js/fireworks.js"></script>
 ```
 最终效果：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1MjFlZDhlMy5naWY.jfif listary %}
+{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1MjFlZDhlMy5naWY.jfif %}
 ## 5 自定义鼠标指针样式
 在 `\themes\material-x\source\less\_base.less` 文件 `body` 样式里写入如下代码：
 ``` css
@@ -136,7 +136,7 @@ body {
 }
 ```
 鼠标指针可以用 Axialis CursorWorkshop 这个软件自己制作，不同主题具体放的文件有所不同，确保在博客主体 body 的 CSS 文件中即可，其中的鼠标指针链接可替换成自己的，首先尝试加载*https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur* ，如果该文件不存在或由于其他原因无效，那么 auto 会被使用，也就是自动默认效果，图片格式为.ico、.ani、.cur，建议使用.cur，如果使用.ani或者其他格式无效，原因是浏览器兼容问题，请阅读[参考文档](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Basic_User_Interface/Using_URL_values_for_the_cursor_property)或者参考以下兼容表：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/140633.jpg listary %}
+{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/140633.jpg  %}
 拓展阅读：[《CSS鼠标样式cursor属性》](https://blog.csdn.net/ixygj197875/article/details/79338360) （By：歪脖先生的博客）
 ## 6 添加彩色滚动变换字体
 在你想要添加彩色滚动变换字体的地方写入以下代码即可，其中文字可自行更改
