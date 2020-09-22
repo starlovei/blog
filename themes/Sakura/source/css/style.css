@@ -1507,7 +1507,7 @@ i.iconfont.hotpost {
 .entry-content h2:after {
     content:"\00B6";
     position:absolute;
-    color:#ff6d6d;
+    color:#DA70D6;
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif;
     padding-left:6px;
     font-size:1.03em
@@ -1515,7 +1515,7 @@ i.iconfont.hotpost {
 .serif .entry-content h2:after {
     content:"\00B6";
     position:absolute;
-    color:#ff6d6d;
+    color:#DA70D6;
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif;
     padding-left:6px;
     font-size:1.13em
@@ -1524,19 +1524,19 @@ i.iconfont.hotpost {
     content:"#";
     left:0;
     position:absolute;
-    color:#ff6d6d
+    color:#DA70D6
 }
 .entry-content h4:after {
     content:"▌";
     left:0;
     position:absolute;
-    color:#ff6d6d
+    color:#DA70D6
 }
 .entry-content h5:after {
     content:"♯";
     left:0;
     position:absolute;
-    color:#ff6d6d
+    color:#DA70D6
 }
 .entry-content code {
     background:rgba(242, 242, 242,1);
@@ -3392,7 +3392,7 @@ li.feature-2 {
     width: 100%;
     z-index: 0;
 }
-}.blank {
+.blank {
     padding-top:80px;
     background-color:rgba(255,255,255,1)
 }
@@ -5043,13 +5043,13 @@ i.iconfont.js-toggle-search.iconsearch {
 }.popcontainer h4:before {
     content:" ";
     margin-right:0;
-    color:#ff6d6d
+    color:#DA70D6
 }
 .popcontainer h4:after {
     content:" ";
     left:0;
     position:absolute;
-    color:#ff6d6d
+    color:#DA70D6
 }
 .slide-fade-enter-active {
     transition:all .3s ease
@@ -5189,20 +5189,20 @@ button.botui-actions-buttons-button {
     height:100%;
     position:absolute;
     box-sizing:border-box;
-    border:5px solid #d34836;
+    border:5px solid #DA70D6;
     line-height:50px;
     font-size:17pt;
     text-align:center;
     text-transform:uppercase
 }
 .load-button span:nth-child(1) {
-    color:#d34836;
+    color:#DA70D6;
     transform:translate3d(0,0,30px);
     -webkit-transform:translate3d(0,0,30px)
 }
 .load-button span:nth-child(2) {
     color:white;
-    background:#d34836;
+    background:#DA70D6;
     transform:rotateX(90deg) translate3d(0,0,30px);
     -webkit-transform:rotateX(90deg) translate3d(0,0,30px)
 }
@@ -5985,10 +5985,10 @@ progress {
     width:0
 }
 .skill-1::-webkit-progress-value {
-    background:#ff9e2c
+    background:#DA70D6
 }
 .skill-1::-moz-progress-bar {
-    background:#ff9e2c
+    background:#DA70D6
 }
 @-webkit-keyframes bar-fill {
     0% {
