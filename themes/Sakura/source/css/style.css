@@ -3503,7 +3503,7 @@ li.feature-2 {
     margin-left:-15px;
     border-width:15px;
     border-style:solid;
-    border-color:transparent transparent rgba(0,0,0,.5) transparent
+    border-color:transparent transparent rgba(218,112,214,.8) transparent
 }
 .header-info p {
     margin:0;
@@ -6866,14 +6866,14 @@ to {
     overflow:hidden
 }
 /*原字体*/
-/* .chinese-font {
+.chinese-font {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
-} */
+}
 
 /*现字体*/
-.chinese-font {
+/* .chinese-font {
     font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
-}
+} */
 .chinese-tranditional-font {
     font-family:Helvetica,Tahoma,Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei","標楷體",DFKai-SB,sans-serif
 }
@@ -6890,27 +6890,27 @@ to {
     font-family:'Ubuntu',sans-serif
 }
 /*原字体*/
-/* .serif {
+.serif {
     font-family: 'Noto Sans', 'Noto Sans SC', serif
-} */
+}
 
 /*现字体*/
-.serif {
+/* .serif {
     font-family: 'zhanku', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif
-}
+} */
 /*原字体*/
-/* @media(max-width:860px) {
+@media(max-width:860px) {
     .serif {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
     }
-} */
+}
 
 /*现字体*/
-@media (max-width:860px) {
+/* @media (max-width:860px) {
     .serif {
         font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
     }
-}
+} */
 .moe-mashiro {
     font-family:'Moe-Mashiro','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
@@ -7636,16 +7636,16 @@ p.top {
 }
 
 /* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
-@font-face {
+/* @font-face {
     font-family: "zhanku";
-    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot"); /* IE9 */
-    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */  
-    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.woff") format("woff"), /* chrome、firefox */
-    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg"); /* iOS 4.1- */
+    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot");
+    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.woff") format("woff"),
+    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.ttf") format("truetype"),
+    url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg");
     font-style: normal;
     font-weight: normal;
-}
+} */
 
 /*  logo  */
 .logolink a {
@@ -7733,14 +7733,14 @@ p.top {
     opacity: 1
 }
 .moe-mashiro {
-    font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;;
+    font-family: 'STXingkai', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;;
 }
 
 /*卡片样式*/
 /*大于1024宽度才会生效*/
 @media (min-width: 1024px) {
     .post-date {
-        background-color: #DA70D6 !important;
+        background-color: rgb(255,182,193) !important;
         padding: 2px 7px;
         border-radius: 10px;
         color: #ffffff !important;
@@ -7749,7 +7749,7 @@ p.top {
         margin-top: 5%;
     }
  
-    .icon-time::before {
+    /* .icon-time::before {
         content: "\e689";
         color: #ffffff !important;
         font-size: 10px;
@@ -7767,7 +7767,7 @@ p.top {
     }
  
     .post-meta span:nth-child(1) {
-        background-color: red;
+        background-color: rgb(255,0,0,.7);
     }
  
     .post-meta span:nth-child(2) {
@@ -7808,15 +7808,15 @@ p.top {
         font-size: 14px;
         margin-top: 10px;
         text-align: center;
-    }
+    } */
  
-    .post-list-thumb .post-title h3 {
+    /* .post-list-thumb .post-title h3 {
         text-align: center;
-    }
+    } */
  
-    .float-content p {
+    /* .float-content p {
         margin-top: 5px;
-    }
+    } */
  
     .post-content {
         display: flex;

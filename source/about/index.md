@@ -42,7 +42,7 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 {% endraw %}
 
 ***
-<div class="moe-mashiroa" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Orchid">
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Orchid">
   「回顾」
 </div>
 ***
