@@ -6,9 +6,8 @@ tags:
   - 网络
 date: 2020-07-28 16:27:48
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Linux/windows-desktop-tux.png
-categories:
-mathjax:
-description:
+categories: 技术
+description: 个人收藏
 ---
 ## Debian:
 git command not found
