@@ -1550,7 +1550,7 @@ i.iconfont.hotpost {
 /* 文章中的超链接,鼠标悬浮特效*/
 .entry-content a {
     color:#0087ca;
-    font-family: lucida console;
+    font-family: 'lucida console';
     display: inline;
     padding-bottom: 2px;
     background-repeat: no-repeat;
@@ -1564,7 +1564,7 @@ i.iconfont.hotpost {
 }
 .entry-content a:hover {
     color:Orchid !important;
-    background-size: 100% 1px;	
+    background-size: 100% 1px;
 }
 h1.entry-title {
     font-size:24px;

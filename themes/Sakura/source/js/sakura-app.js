@@ -1016,9 +1016,6 @@ mashiro_global.ini.normalize()
 var home = location.href,
   s = $('#bgvideo')[0],
   Siren = {
-    BSZ: function() {
-      $.getScript('//cdn.jsdelivr.net/gh/starlovei/cdn/js/busuanzi.pure.mini.js')
-    },
     TOC: function () {
       if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
         if ($(".pattern-center").length > 0) { //有图的情况
@@ -1523,7 +1520,6 @@ $(function () {
       Siren.MJ()
       Siren.AB()
       Siren.TOC()
-      Siren.BSZ()
       if (mashiro_option.NProgressON) NProgress.done()
       mashiro_global.ini.pjax()
       $('#loading').fadeOut(500)
