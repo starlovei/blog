@@ -1539,8 +1539,8 @@ i.iconfont.hotpost {
     color:#DA70D6
 }
 .entry-content code {
-    background:rgba(242, 242, 242,1);
-    color:#1e1e1e;
+    background:rgba(255,105,180,0.2);
+    color:#DA70D6;
     word-break:break-word;
     font-family:'Source Code Pro',monospace,Helvetica,Tahoma,Arial,STXihei,"STHeiti Light","Microsoft YaHei",sans-serif;
     padding:2px;
@@ -6983,7 +6983,7 @@ to {
     cursor:pointer
 }
 .menu-list li:hover {
-    background-color:#fc3;
+    background-color:#DA70D6;
     color:#fff
 }
 .skin-menu .row-container.font-family-controls {
@@ -7007,7 +7007,7 @@ to {
     cursor:pointer
 }
 .font-family-controls button.selected {
-    background-color:#fc3;
+    background-color:#DA70D6;
     color:#fff
 }
 .control-btn-serif {
