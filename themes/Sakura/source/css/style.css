@@ -6866,14 +6866,14 @@ to {
     overflow:hidden
 }
 /*原字体*/
-.chinese-font {
+/* .chinese-font {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
-}
+} */
 
 /*现字体*/
-/* .chinese-font {
+.chinese-font {
     font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
-} */
+}
 .chinese-tranditional-font {
     font-family:Helvetica,Tahoma,Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei","標楷體",DFKai-SB,sans-serif
 }
@@ -6890,27 +6890,27 @@ to {
     font-family:'Ubuntu',sans-serif
 }
 /*原字体*/
-.serif {
+/* .serif {
     font-family: 'Noto Sans', 'Noto Sans SC', serif
-}
+} */
 
 /*现字体*/
-/* .serif {
+.serif {
     font-family: 'zhanku', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif
-} */
+}
 /*原字体*/
-@media(max-width:860px) {
+/* @media(max-width:860px) {
     .serif {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
     }
-}
+} */
 
 /*现字体*/
-/* @media (max-width:860px) {
+@media (max-width:860px) {
     .serif {
         font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
     }
-} */
+}
 .moe-mashiro {
     font-family:'Moe-Mashiro','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
@@ -7433,27 +7433,6 @@ td.hljs-ln-numbers {
     border-color: #cb3800;
 }
 .spfk-color8 span{border-right-color: #cb3800;}
-.article-category{
-    display: inline-block;
-    line-height: 0 !important;
-    margin: 0;
-    padding: 0.55rem 0.2rem;
-    border: 1px solid Orchid;
-    background: rgba(255, 255, 255, 0.93);
-    color: Orchid !important;
-    text-decoration: none;
-    font-size: 13px;
-    text-shadow: none;
-    box-shadow: 0 0 6px #111;
-    transition: all 0.1s linear;
-    border-radius:10%;
-}
-.article-category:hover{
-    transition: all 0.1s linear;
-    color: #fff !important;
-    background: Orchid;
-}
-.article-category a{color:inherit !important;}
 
 #v-qq{height:30px;}
 #v-menhera:not(.v-avoid){max-width: 6.5%;}
@@ -7636,7 +7615,7 @@ p.top {
 }
 
 /* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
-/* @font-face {
+@font-face {
     font-family: "zhanku";
     src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot");
     src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"),
@@ -7645,7 +7624,7 @@ p.top {
     url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg");
     font-style: normal;
     font-weight: normal;
-} */
+}
 
 /*  logo  */
 .logolink a {
@@ -7733,7 +7712,7 @@ p.top {
     opacity: 1
 }
 .moe-mashiro {
-    font-family: 'STXingkai', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;;
+    font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;;
 }
 
 /*卡片样式*/

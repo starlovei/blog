@@ -20,42 +20,11 @@
         <span>
           <a href="<%- post.authorLink%>"><%- post.author %></a>
         </span>
-        <span class="bull">
-        <i class="fa fa-calendar-alt" aria-hidden="true"></i></span>
-        <%= date(post.date, 'YYYY-M-D') %><span class="bull">
-          </span>
-          <% if(post.categories && post.categories.length){ %>
-            <span><i class="fa fa-archive"></i> 分类于  
-              <% post.categories.each((category)=>{ %><span class="article-category"><a href="<%- url_for(category.path) %>" > <%= category.name %></a></span>
-            <% }) %>
-          </span>
-          <% } %>
-      
-        <i class="fa fa-eye" aria-hidden="true"></i></span>
+        ·<%= date(post.date, 'YYYY-M-D') %><span class="bull">
+
+        ·</i></span>
         
 <span id='/<%= page.path %>' class="leancloud-visitors" data-flag-title="<%= page.title %>"><a class="leancloud-visitors-count">加载中...</a><a class="post-meta-item-text"> 次阅读</a></span>
-    </span>
-      <% if (post.tags && post.tags.length){ %>
-        <%  var tags = [];  post.tags.forEach(function(tag){tags.push('<li class="spfk-li"><span class="triangle"></span><a href="' + config.root + tag.path + '" class="butterfly-tags">' + tag.name + '</a></li>');});%>
-      <div>
-            <ul class="spfk-ul">
-              &nbsp<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<%- tags.join('') %>
-            </ul>
-          </div>
-          <script>
-              function colorInit(c,num){for(var i=1;i<=num;++i)c.push(i+'');}
-              function paintTags(){
-                  var colorNumber=8,tagColors=[],tags=document.getElementsByClassName('spfk-li');
-                  for(var i = 0 ; i < tags.length ; ++i){
-                      if(!tagColors.length)colorInit(tagColors,colorNumber);
-                      var j=Math.floor(Math.random()*tagColors.length);
-                      tags[i].classList.add("spfk-color"+tagColors[j]);
-                      tagColors.splice(j,1);
-          }
-              }
-              paintTags()
-          </script>
-      <% } %>
   
     </header>
   </div>
