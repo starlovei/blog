@@ -3399,7 +3399,7 @@ li.feature-2 {
 .focusinfo .header-tou img {
     width:130px;
     height:130px;
-    box-shadow:inset 0 0 10px #000;
+    box-shadow:inset 0 0 10px #DA70D6;
     padding:5px;
     opacity:1;
     transform:rotate(0deg);
@@ -3485,8 +3485,8 @@ li.feature-2 {
     width:63%;
     margin:auto;
     font-size:16px;
-    color:#EE9CA7;
-    background:rgba(255,250,250,0.5);
+    color:#DA70D6;
+    background:rgba(255,250,250,0.8);
     padding:15px;
     margin-top:22px;
     letter-spacing:0;
@@ -4042,7 +4042,7 @@ i.iconfont.down {
     color:Orchid
 }
 #pagination .loading {
-    background:url("https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/wordpress-rotating-ball-o.svg");
+    background:url("https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/ball.svg");
     background-position:center;
     background-repeat:no-repeat;
     color:#555;
@@ -6017,7 +6017,7 @@ progress {
     padding:0;
     border-radius:0;
     margin:0;
-    color:#000;
+    color:#DA70D6;
     background:none;
     font-weight:normal
 }
@@ -7740,7 +7740,7 @@ p.top {
 /*大于1024宽度才会生效*/
 @media (min-width: 1024px) {
     .post-date {
-        background-color: #3cdc82 !important;
+        background-color: #DA70D6 !important;
         padding: 2px 7px;
         border-radius: 10px;
         color: #ffffff !important;
