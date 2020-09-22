@@ -3485,8 +3485,8 @@ li.feature-2 {
     width:63%;
     margin:auto;
     font-size:16px;
-    color:#eaeadf;
-    background:rgba(0,0,0,.5);
+    color:#EE9CA7;
+    background:rgba(255,250,250,0.5);
     padding:15px;
     margin-top:22px;
     letter-spacing:0;
@@ -7771,11 +7771,11 @@ p.top {
     }
  
     .post-meta span:nth-child(2) {
-        background-color: #66ccff;
+        background-color: orange;
     }
  
     .post-meta span:nth-child(3) {
-        background-color: orange;
+        background-color: #66ccff;
     }
  
     .icon-attention::before {
