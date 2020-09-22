@@ -6584,7 +6584,7 @@ to {
 .top-feature-row {
     width: 100%;
     height: auto;
-    font-family: Noto Serif SC;/*这边用原来字体主要是怕聚焦图错位*/
+    font-family: Merriweather Sans;/*这边用原来字体主要是怕聚焦图错位*/
     margin-top: 55px
 }
 .top-feature-v2 {
@@ -6647,11 +6647,11 @@ to {
 }
 .the-feature.from_left_and_right .info h3 {
     text-transform:uppercase;
-    color:rgba(255, 255, 255);
+    color:Magenta;
     text-align:center;
-    font-size:22px;
+    font-size:20px;
     letter-spacing:1px;
-    text-shadow: 0 0 8px #000,0 0 8px #000;
+    /* text-shadow: 0 0 8px #000,0 0 8px #000; */
     font-weight:bold;
     padding:10px;
     margin:30px 0 0 0;
@@ -6666,17 +6666,19 @@ to {
     transform:translateY(50%)
 }
 .the-feature.from_left_and_right .info:hover h3{
-    background:rgba(22, 22, 22, 0.85);
+    background:rgba(255,240,245,0.3);
     letter-spacing: 0;
     text-shadow: none;
     font-size:17px;
 }
 
 .the-feature.from_left_and_right .info p {
+    font-family:'Merriweather Sans';
+    font-weight:bold;
     font-style:italic;
-    font-size:12px;
+    font-size:13px;
     position:relative;
-    color:#bbb;
+    color:Magenta;
     padding:20px 20px 20px;
     text-align:center;
     -webkit-transition:all .35s .1s linear;
@@ -6696,7 +6698,7 @@ to {
     transform:scale(1.2)
 }
 .the-feature.from_left_and_right a:hover .info {
-    background: rgba(0,0,0,0.6);
+    background: rgba(255,240,245,0.5);
     visibility:visible;
     opacity:1
 }
