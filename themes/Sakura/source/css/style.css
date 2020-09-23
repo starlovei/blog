@@ -3484,16 +3484,16 @@ li.feature-2 {
 .header-info {
     width:63%;
     margin:auto;
-    font-size:16px;
+    font-size:20px;
     color:#DA70D6;
     background:rgba(255,250,250,0.8);
     padding:15px;
     margin-top:22px;
     letter-spacing:0;
-    line-height:30px;
+    line-height:20px;
     border-radius:10px;
     box-sizing:initial;
-    white-space:nowrap
+    white-space:nowrap;
 }
 .header-info:before {
     content:"";
@@ -3508,41 +3508,38 @@ li.feature-2 {
 .header-info p {
     margin:0;
     font-family:'Ubuntu',sans-serif;
-    font-weight:700
+    font-weight:1000
 }
-.top-social {
-    height:32px;
+/* .top-social {
+    height:2px;
     margin-top:30px;
     margin-left:10px;
     list-style:none;
     display:inline-block
 }
 .top-social img {
-    height:35px;
-    width:35px;
-    padding:6px;
-    background:rgba(0,0,0,.4)
+    height:40px;
+    width:40px;
+    padding:9px;
+    background:rgba(250,250,250)
 }
 .top-social li {
     float:left;
     margin-right:10px
-}
-.top-social_v2 {
-    height:32px;
-    margin-bottom:-15px;
-    margin-left:10px;
+} */
+.top-social_v2, .top-social_v2 img {
     list-style:none;
-    display:inline-block
+    height:40px;
+    padding:9px;
 }
-.top-social_v2 img {
-    height:35px;
-    width:35px;
-    padding:6px;
-    background:transparent
-}
+
 .top-social_v2 li {
-    float:left;
-    margin-right:13px
+    background:rgba(250,250,250,.7);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display:inline-block;
+    margin-right:9px
 }
 .wechat {
     width:35px;

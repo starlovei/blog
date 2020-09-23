@@ -9,6 +9,23 @@
         </a>
       </div>
       <div class="header-info">
+			<!-- 首页一言打字效果 -->
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+			<i class="fa fa-quote-left"></i>
+			<span class="element"></span>
+			<i class="fa fa-quote-right"></i>
+			<span class="element"></span>
+			<script>
+            var typed = new Typed('.element', {
+              strings: ["给时光以生命，给岁月以文明", "寒蝉黎明之时,便是重生之日。"], //输入内容, 支持html标签
+              typeSpeed: 140, //打字速度
+              backSpeed: 50, //回退速度
+              loop: false,//是否循环
+              loopCount: Infinity,
+              showCursor: true//是否开启光标
+            });
+      </script>
+
         <p><%= theme.description %></p>
         <div class="top-social_v2">
           <li id="bg-pre">

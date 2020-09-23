@@ -3,7 +3,7 @@
 favicon: /images/favicon/favicon.ico
 avatar: /img/avatar/01.jpg
 url: https://www.starlovei.com
-description: 欢迎来到小世界
+# description: 欢迎来到小世界
 cdn: https://cdn.jsdelivr.net/gh/starlovei/cdn
 pjax: 1
 # 1开启
