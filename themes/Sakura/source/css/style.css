@@ -273,7 +273,8 @@ body,button,input,select,textarea {
     line-height:1.5
 }
 h1,h2,h3,h4,h5,h6 {
-    clear:both
+    clear:both;
+    color:hotpink;
 }
 p {
     margin-bottom:1.5em;
@@ -1198,13 +1199,14 @@ i.iconfont.hotpost {
 }
 }.post-list-thumb i {
     margin-right:5px;
-    color:#989898;
+    color:#FF69B4;
     font-size:14px
 }
 .post-list-thumb a {
     color:#504e4e
 }
 .post-list-thumb .post-title h3 {
+    color:#504e4e;
     text-overflow:ellipsis;
     display:-webkit-box;
     -webkit-box-orient:vertical;
@@ -7715,7 +7717,7 @@ p.top {
 /*卡片样式*/
 /*大于1024宽度才会生效*/
 @media (min-width: 1024px) {
-    .post-date {
+    /* .post-date {
         background-color: rgb(255,105,180) !important;
         padding: 2px 7px;
         border-radius: 10px;
@@ -7723,7 +7725,7 @@ p.top {
         width: max-content;
         font-size: 10px !important;
         margin-top: 5%;
-    }
+    } */
  
     /* .icon-time::before {
         content: "\e689";

@@ -10,7 +10,7 @@
     <div class="post-content">
       <div class="post-date">
         <i class="iconfont icon-time">
-        </i><%= date(post.date, 'YYYY-M-D HH:MM') %></div>
+        </i><span style=color:hotpink><%= date(post.date, 'YYYY-M-D HH:MM') %></span></div>
       <a href="<%- url_for(post.path) %>" class="post-title">
         <h3><%= post.title %></h3>
       </a>
