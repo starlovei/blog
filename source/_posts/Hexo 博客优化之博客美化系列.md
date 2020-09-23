@@ -49,7 +49,8 @@ live2d:
 		show: false      #是否在手机端显示
 ```
 设置好过后我们就拥有了一个卡通人物
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190803152152975.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190803152152975.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190803152152975.png"></a>
+
 ## 2 添加鼠标点击爱心效果
 在 `\themes\hexo-theme-spfk\source\js` 下新建文件 `love.js`，在 `love.js` 文件中添加以下代码：
 ``` js
@@ -61,7 +62,8 @@ live2d:
 <script type="text/sscript" src="/js/love.js"></script>
 ```
 完成以上操作后，当我们点击鼠标的时候就可以看见爱心的特效了
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/3.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/3.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/3.jfif"></a>
+
 ## 3 添加鼠标点击显示字体效果
 在 `/themes/hexo-theme-spfk/source/js` 下新建文件 `click_show_text.js`，在 `click_show_text.js` 文件中添加以下代码：
 ``` js
@@ -111,7 +113,8 @@ function delay() {
 <script type="text/javascript" src="/js/click_show_text.js"></script>
 ```
 最终实现效果如下：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102038173.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102038173.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102038173.png"></a>
+
 ## 4 添加鼠标点击烟花爆炸效果
 在 `\themes\material-x\source\js` 目录下新建一个 `fireworks.js` 的文件，里面写入以下代码：
 ``` js
@@ -123,8 +126,9 @@ function delay() {
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
 <script type="text/javascript" src="/js/fireworks.js"></script>
 ```
-最终效果：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1MjFlZDhlMy5naWY.jfif %}
+最终效果:
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1MjFlZDhlMy5naWY.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1MjFlZDhlMy5naWY.jfif"></a>
+
 ## 5 自定义鼠标指针样式
 在 `\themes\material-x\source\less\_base.less` 文件 `body` 样式里写入如下代码：
 ``` js
@@ -185,15 +189,20 @@ body {
   </script>
 ```
 最终效果：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1N2RiZmE0MC5naWY.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1N2RiZmE0MC5naWY.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1N2RiZmE0MC5naWY.jfif"></a>
+
 ## 7 添加背景音乐
 打开网页版[网易云音乐](https://music.163.com/)，选择你准备添加的背景音乐，点击生成外链播放器，前提是要有版权，不然是无法生成外链播放器的，复制底下的HTML代码
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MDkzY2I1NS5wbmc.jfif %}
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MzY2MmUzZS5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MDkzY2I1NS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MDkzY2I1NS5wbmc.jfif"></a>
+
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MzY2MmUzZS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MzY2MmUzZS5wbmc.jfif"></a>
+
 然后将此代码放到你想要放的地方，比如放在博客的左侧，则打开 `\themes\hexo-theme-spfk\layout\_partial\left-col.ejs` 文件，将复制的HTML代码粘贴进去，再进行适当的位置设置让播放器更美观，其中 `auto=1` 表示打开网页自动播放音乐，`auto=0` 表示关闭自动播放音乐
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102132566.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102132566.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102132566.png"></a>
+
 最后效果如下：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102211588.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102211588.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102211588.png"></a>
+
 这种网易云音乐外链的方式有很多局限性，因此推荐使用`aplayer`，GitHub地址为：*https://github.com/MoePlayer/APlayer* ，参考教程：[《hexo上的aplayer应用》](https://blog.yleao.com/2018/0902/hexo%E4%B8%8A%E7%9A%84aplayer%E5%BA%94%E7%94%A8.html)
 ## 8 浏览器网页标题恶搞
 当用户访问你的博客时点击到了其他网页，我们可以恶搞一下网页标题，呼唤用户回来，首先在目录 `\themes\material-x\source\js` 下新建一个 `FunnyTitle.js` 文件，在里面填写如下代码：
@@ -222,8 +231,10 @@ document.addEventListener('visibilitychange', function () {
 <script type="text/javascript" src="/js/FunnyTitle.js"></script>
 ```
 再次部署博客后就可以看见标题搞笑的效果了：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150326168.png %}
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150338873.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150326168.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150326168.png"></a>
+
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150338873.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150338873.png"></a>
+
 ## 9 背景添加动态线条效果
 在 `\Hexo\themes\hexo-theme-spfk\layout\layout.ejs` 文件中添加如下代码：
 ``` js
@@ -238,10 +249,11 @@ color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 + count：表示线条的总数量，默认：150
 + zIndex：表示背景的z-index属性，css属性用于控制所在层的位置，默认：-1
 最终实现效果：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102348962.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102348962.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102348962.png"></a>
+
 ## 10 添加人体时钟等有趣的挂件
 无意中发现了个有趣的人体时钟 HONE HONE CLOCK，作者是个日本人，[点击此处](http://chabudai.org/blog/)访问作者博客，[点击此处](http://chabudai.org/blog/?p=59)在作者原博客上查看动态样式，[点击此处](chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf)查看动态大图，如果你的博客上有合适的地方，加上一个人体时钟会很有趣的
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/4.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/4.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/4.jfif"></a>
 
 实现代码：
 ``` js
@@ -259,8 +271,10 @@ http://www.amazingcounters.com/ 免费网站计数器，有非常多的样式供
 https://www.seniverse.com/widget/get 心知天气提供基于Web的免费天气插件，可以为你的网站添加一项简洁美观的天气预报功能，并自动适配PC和手机上的浏览
 ## 11 添加网站雪花飘落效果
 样式一和样式二分别如下：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103144792.png %}
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103041166.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103144792.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103144792.png"></a>
+
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103041166.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103041166.png"></a>
+
 实现方法：在 `\Hexo\themes\hexo-theme-spfk\source\js` 目录下新建一个 `snow.js` 文件，粘贴以下代码：
 ``` js
 /*样式一*/
@@ -449,7 +463,8 @@ snow.start();
 原文链接：[《分享两种圣诞节雪花特效JS代码(网站下雪效果)》](https://ihuan.me/2172.html)
 ## 12 添加背景动态彩带效果
 样式一是鼠标点击后彩带自动更换样式，样式二是飘动的彩带：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103419221.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103419221.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103419221.png"></a>
+
 实现方法：在 `\themes\material-x\layout\layout.ejs` 文件的`body`前面添加如下代码：
 ``` js
 <!-- 样式一（鼠标点击更换样式） -->
@@ -540,6 +555,6 @@ canvas {
   <script type="text/javascript" src="/js/DigitalRain.js"></script>
 ```
 最终效果：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102432525.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102432525.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102432525.png"></a>
 
-转载自: https://itrhx.blog.csdn.net/article/details/85420403
+> 转载自: https://itrhx.blog.csdn.net/article/details/85420403

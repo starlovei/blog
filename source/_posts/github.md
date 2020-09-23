@@ -26,7 +26,9 @@ mac/linux系统的hosts文件的位置如下：/etc/hosts
 140.82.114.4	github.com
 199.232.5.194	github.global.ssl.fastly.net
 ## .命令提示符中输入ping github.com
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-995655f0ee75bb13fb1b602a9ad67201_r.jpg listary %}
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-df6267d10017a68eadb95c7c19bc251a_r.jpg listary %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-995655f0ee75bb13fb1b602a9ad67201_r.jpg" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-995655f0ee75bb13fb1b602a9ad67201_r.jpg"></a>
+
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-df6267d10017a68eadb95c7c19bc251a_r.jpg" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-df6267d10017a68eadb95c7c19bc251a_r.jpg"></a>
+
 再次访问流量器https://github.com, 秒出
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-edc4eecb647a91a45f5bb012181f5d5f_r.jpg listary %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-edc4eecb647a91a45f5bb012181f5d5f_r.jpg" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Github/v2-edc4eecb647a91a45f5bb012181f5d5f_r.jpg"></a>

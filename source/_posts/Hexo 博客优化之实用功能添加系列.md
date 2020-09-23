@@ -29,11 +29,15 @@ tags:
 主流的评论系统有很多，比如：网易云跟帖、多说、友言、畅言、来必力（LiveRe）、Disqus、Valine、Gitment等等，目前网易云跟帖、多说、友言都已经关闭了，还有些可能需要魔法，比较麻烦，百度了一下，最后还是选择了来必力评论系统
 
 进入[来必力官网](https://livere.com/), 注册一个账号（注册时可能需要魔法）
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif"></a>
+
 注册完毕之后，登录，进入安装页面，选择 City 免费版安装，安装之后你会得到一段代码
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103722227.png %}
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103745470.png %}
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyOWU3ZDYyYi5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103722227.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103722227.png"></a>
+
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103745470.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103745470.png"></a>
+
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyOWU3ZDYyYi5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyOWU3ZDYyYi5wbmc.jfif"></a>
+
 我们打开主题文件下的 `_config.yml` 文件，添加如下代码:
 ``` css
 livere:
@@ -62,9 +66,11 @@ livere:
 <!-- City版安装代码已完成 -->
 ```
 打开 `\themes\hexo-theme-spfk\layout\_partial\article.ejs` 文件，在适当位置添加如下红框中的代码：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyZTNlZWJhYS5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyZTNlZWJhYS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyZTNlZWJhYS5wbmc.jfif"></a>
+
 完成以上操作之后，我们就可以使用来必力评论系统了
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103817644.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103817644.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103817644.png"></a>
+
 另外推荐使用 [Valine](https://valine.js.org/) 评论系统，和 gitalk 评论系统
 ## 2 添加字数统计和阅读时长
 先在博客目录下执行以下命令安装 `hexo-wordcount` 插件：
@@ -107,7 +113,8 @@ meta:
 word_count: true
 ```
 效果图：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20191129201331969.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20191129201331969.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20191129201331969.png"></a>
+
 同样的，以 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题为例，在 `\themes\hexo-theme-spfk\layout\_partial\post` 目录下创建 `word.ejs` 文件，在 `word.ejs` 文件中写入以下代码：
 ``` js
 <div style="margin-top:10px;">
@@ -129,21 +136,25 @@ word_count: true
 </div>
 ```
 然后在 `\themes\hexo-theme-spfk\layout\_partial\article.ejs` 中适当位置添加以下代码：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1ZmU0ZTM2YS5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1ZmU0ZTM2YS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1ZmU0ZTM2YS5wbmc.jfif"></a>
+
 最后在主题目录下的 `_config.yml` 添加以下配置即可
 ``` css
 word_count: true
 ```
 如果显示的位置不好，可以自行更改其位置，成功配置后的效果如下：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104015998.png %}
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk2ODkyZTRkYi5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104015998.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104015998.png"></a>
+
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk2ODkyZTRkYi5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk2ODkyZTRkYi5wbmc.jfif"></a>
+
 另外：要在博客底部显示所有文章的总字数，可以[点击此处](https://www.npmjs.com/package/hexo-wordcount)，根据你博客底部文件的类型选择相应的代码放在适当的位置即可，前提是要安装好 `hexo-wordcount` 插件，例如我使用 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题，在 `\themes\material-x\layout\_partial` 目录下的 `footer.ejs` 文件中添加如下代码：
 ``` css
 <i class="fas fa-chart-area"></i>
 <span class="post-count">字数统计：<%= totalcount(site) %></span>
 ```
 实现效果如下：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104042630.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104042630.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104042630.png"></a>
+
 ## 3 添加网站运营时间
 一个比较好的小功能，可以看见自己的博客运行多久了，时间一天天的增加，成就感也会一天天增加的
 在 `\themes\hexo-theme-spfk\layout\_partial\footer.ejs` 文件下添加以下代码：
@@ -167,20 +178,26 @@ setInterval("createtime()",250);
 </script>
 ```
 最后效果如下：
+<a data-fancybox="gallery" href="" id="escape-link"><img src=""></a>
 {% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3ZGRlY2E4YS5wbmc.jfif %}
 ## 4 添加百度统计
 百度统计是百度推出的一款免费的专业网站流量分析工具，能够告诉用户访客是如何找到并浏览用户的网站，在网站上做了些什么，非常有趣，接下来我们把百度统计添加到自己博客当中
 
 访问[百度统计首页](https://tongji.baidu.com/web/welcome/login)，注册一个账号后登陆，添加你的博客网站
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4NTk0Yzg5NS5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4NTk0Yzg5NS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4NTk0Yzg5NS5wbmc.jfif"></a>
+
 接着点击代码获取，复制该代码
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ODE1M2MzNS5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ODE1M2MzNS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ODE1M2MzNS5wbmc.jfif"></a>
+
 然后到目录 `\themes\hexo-theme-spfk\layout\_partial` 下新建一个 `baidu-analytics.ejs` 文件，里面粘贴你刚刚复制的代码
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4YjBiYjRlZi5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4YjBiYjRlZi5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4YjBiYjRlZi5wbmc.jfif"></a>
+
 修改主题文件夹下的 `_config.yml` 文件，将你的key（图中涂掉部分）填写进去：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ZDQzNTQ5ZC5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ZDQzNTQ5ZC5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ZDQzNTQ5ZC5wbmc.jfif"></a>
+
 所有操作完成后可以在百度统计管理页面检查代码是否安装成功，如果代码安装正确，一般20分钟后，可以查看网站分析数据
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk5MDBiOWI4Ny5wbmc.jfif %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk5MDBiOWI4Ny5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk5MDBiOWI4Ny5wbmc.jfif"></a>
+
 另外推荐：[友盟](https://web.umeng.com/main.php?c=user&a=index)，2010年4月在北京成立，安全、可靠、公正、第三方的网站流量统计分析系统
 ## 5 添加RSS订阅
 RSS订阅是站点用来和其他站点之间共享内容的一种简易方式，即Really Simple Syndication（简易信息聚合），如果不会使用，可以参见百度百科：https://baike.baidu.com/item/RSS%E8%AE%A2%E9%98%85/663114 ；首先我们安装feed插件，在本地hexo目录下右键`Git Bash Here`，输入以下命令：
@@ -207,7 +224,8 @@ rss: /atom.xml
 至此，RSS订阅功能添加完成
 ## 6 添加 Fork me on GitHub 效果
 效果图：
-{% fb_img https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104140857.png %}
+<a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104140857.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104140857.png"></a>
+
 [点击此处](https://github.blog/2008-12-19-github-ribbons/)可以查看更多样式，将相应样式的代码复制到你想要放的地方就OK了，代码里的链接也要替换成你的，更多创意，比如 Follow me on CSDN ，只需要用PS改掉图片里的文字，替换掉相应链接即可
 ## 7 更改本地预览端口号
 hexo博客在执行`hexo s`进行本地预览的时候，默认端口号是4000，当该端口号被占用时会报错 `Error: listen EADDRINUSE 0.0.0.0:4000` ，此时可以关闭占用该端口的进程，也可以更换端口号，更换端口号可以通过以下两种方法实现：

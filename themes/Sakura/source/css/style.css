@@ -166,7 +166,8 @@ abbr[title] {
     border-bottom:1px dotted
 }
 b,strong {
-    font-weight:bold
+    font-weight:bold;
+    color:hotpink
 }
 dfn {
     font-style:italic
@@ -1480,7 +1481,7 @@ i.iconfont.hotpost {
 .entry-content h3 {
     padding-bottom:8px;
     border-bottom:1px dashed #ddd;
-    color:#737373
+    color:hotpink
 }
 .entry-content h3,.entry-content h4,.entry-content h5 {
     padding-left:16px
@@ -7885,4 +7886,8 @@ p.top {
     box-shadow:none;
     border-top:0;
     padding-right: 0px !important;
+}
+
+a#escape-link {
+    background-size: 0 0 !important;
 }
