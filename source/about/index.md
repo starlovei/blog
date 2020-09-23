@@ -5,7 +5,7 @@ keywords: 关于
 comments: false
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ---
-<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Orchid">
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「歌单」
 </div>
 
@@ -20,7 +20,7 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 {% endraw %}
 ***
 
-<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Orchid">
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「自述」
 </div>
 
@@ -28,21 +28,16 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 {% raw %}
 <div class="popcontainer" style="min-height: 300px; padding: 2px 6px 4px; background-color: rgba(242, 242, 242, 0.5); border-radius: 100px;">
     <center>
-      <h2>
-      这里是小枫叶
-      </h2>
-      <h2>
-      爱好:电音,天文
-      </h2>
-      <h2>
-      欢迎参观我的博客
-      </h2>
+      <h2>这里是小枫叶</h2>
+      <h2>爱好:电音,天文</h2>
+      <h2>目前在学C,C++</h2>
+      <h2>欢迎大佬参观我的博客</h2>
     </center>
 </div>
 {% endraw %}
 
 ***
-<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Orchid">
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「回顾」
 </div>
 ***
