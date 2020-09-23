@@ -29,14 +29,14 @@
                       border-radius: 16px;
                       font-weight: bold;
                       font-size: 15px;
-                      background-color: Orchid;
+                      background-color: HotPink;
                       transition-duration: 0.3s;
                       box-shadow: 0 3px 8px 0 rgba(0,0,0,0.11), 0 3px 8px 0 rgba(0,0,0,0.11);
                       outline: none;
                   }
                   button#al_expand_collapse:hover {
                       transition: all 0.2s linear 0s;
-                      background-color: Orchid; 
+                      background-color: HotPink; 
                   }
                   </style>
                   <i class="fa fa-bars" aria-hidden="true"></i> 全部展开/收缩
@@ -49,7 +49,7 @@
               <% var currentMonth = parseInt(date(post.date, 'YYYYMM')); %>
               <% if (lastYear != currentYear){ %>
                 <% lastYear = currentYear; %>
-                <span style="color:#DA70D6">
+                <span style="color:#FF69B4">
                 <h3 class="al_year"><%= date(post.date, 'YYYY') %>年</h3></span>
               <% } %>
               <% if (lastMonth != currentMonth){ %>
@@ -64,7 +64,7 @@
               <% } %>
                       <li>
                         <a href="<%- url_for(post.path) %>">
-                          <span style="color:#DA70D6;">
+                          <span style="color:#FF69B4;">
                           <%= date(post.date, 'DD') %>日<%= time(post.date) %></span>
                           <%= post.title %>
                         </a>

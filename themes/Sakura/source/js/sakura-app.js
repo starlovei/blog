@@ -416,7 +416,7 @@ function scrollBar () {
           $('#bar').css('background', '#5aaadb')
         }
       } else {
-        $('#bar').css('background', 'Orchid')
+        $('#bar').css('background', 'HotPink')
       }
       $('.toc-container').css('height', $('.site-content').outerHeight())
       $('.skin-menu').removeClass('show')
@@ -1669,7 +1669,7 @@ function web_audio() {
                             top: p - 20,
                             left: h,
                             position: "absolute",
-                            color: "Orchid"
+                            color: "HotPink"
                         }), cached_body.append(u), u.animate({
                             top: p - 180,
                             opacity: 0
