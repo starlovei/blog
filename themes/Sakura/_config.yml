@@ -9,7 +9,7 @@ pjax: 1
 # 1开启
 
 # notice: 欢迎相遇
-lazyloadImg: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/loader/outload.svg
+lazyloadImg: https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg
 
 menus:
   首页: { path: /, fa: fa-home faa-wrench }
