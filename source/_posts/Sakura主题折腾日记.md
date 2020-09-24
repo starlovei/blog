@@ -146,3 +146,8 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 示例：https://blog.oniuo.com/post/inside-theme-showcase#MathJax
 关于 plugin：https://blog.oniuo.com/theme-inside/docs/misc#plugins
+
+菜单栏位置: `css\style.css`
+```css
+.site-top ul li a
+```
