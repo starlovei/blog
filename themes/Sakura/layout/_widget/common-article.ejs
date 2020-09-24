@@ -4,7 +4,8 @@
 <% if (post.photos && post.photos.length){ %>
   <div class="pattern-center-sakura single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
+    <div class="pattern-attachment-img">
+      <img src="<%- theme.lazyloadImg%>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
     </div>
     <header class="pattern-header single-header">
     <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
@@ -49,7 +50,7 @@
             <hr>
             <center><img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.3/emojis/gif/23.gif"></center>
             <p style="font-size:32px;text-align:center;margin-top:-2px">施工中...</p>
-            <% } %>            
+            <% } %>
         </div>
         <!-- <div class="single-reward">
           <div class="reward-open">赏
