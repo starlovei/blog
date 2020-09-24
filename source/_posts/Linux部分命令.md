@@ -5,7 +5,7 @@ avatar: 'https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg'
 tags:
   - 网络
 date: 2020-07-28 16:27:48
-photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Linux/windows-desktop-tux.png
+photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Linux/81966014_p0.jpg
 categories: 技术
 description: 个人收藏
 ---
