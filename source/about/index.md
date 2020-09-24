@@ -9,7 +9,6 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
   「歌单」
 </div>
 
-***
 {% raw %}
 <meting-js
   server="netease"
@@ -24,14 +23,12 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
   「自述」
 </div>
 
-***
 {% raw %}
-<div class="popcontainer" style="min-height: 300px; padding: 2px 6px 4px; background-color: rgba(242, 242, 242, 0.5); border-radius: 100px;">
+<div class="popcontainer" style="min-height: 300px; font-size: 20px; padding: 2px 6px 4px; background-color: rgba(242, 242, 242, 0.5); border-radius: 100px;">
     <center>
-      <h2>这里是小枫叶</h2>
-      <h2>爱好:电音,天文</h2>
-      <h2>目前在学C,C++</h2>
-      <h2>欢迎大佬参观我的博客</h2>
+      <p>这里是小枫叶</p>
+      <p>爱好:电音,天文 目前在学C,C++</p>
+      <p>欢迎大佬参观我的博客</p>
     </center>
 </div>
 {% endraw %}
@@ -40,7 +37,9 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 <div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「回顾」
 </div>
-***
-<h3><p class='div-border purple'>* 2019/09/03, 博客诞生</p></h3>
-<h3><p class='div-border purple'>* 2020/02/03, WordPress迁移到hexo,主题更换为Skura</p></h3>
-<h3><p class='div-border purple'>* 2020/03/02, 阿里云备案</p></h3>
+
+<div class="meo-mashiro" style="font-size: 20px">
+<p class='div-border purple'>* 2019/09/03, 博客诞生</p>
+<p class='div-border purple'>* 2020/02/03, WordPress迁移到hexo,主题更换为Skura</p>
+<p class='div-border purple'>* 2020/03/02, 阿里云备案</p>
+</div>
