@@ -56,6 +56,7 @@ social:
   telegram: {url: https://t.me/starloveii, img: /img/social/telegram.png}
   # instagram: {url: https://www.instagram.com/star_love_l/, img: /img/social/instagram.png}
   github: {url: https://github.com/starlovei, img: /img/social/github1.png}
+  # steam: {url: https://steamcommunity.com/id/starlovei, img: /img/social/steam.png}
   # zhihu: {url: https://www.zhihu.com/people/qiu-feng-25-10-65, img: /img/social/zhihu.png}
   email: {url: mailto:star_love_i@outlook.com, img: /img/social/email.png}
   # wechat: {url: /#, qrcode: /img/custom/donate/wechat.jpg, img: /img/social/wechat.png}
