@@ -33,8 +33,6 @@ mashiro_global.ini = new function () {
     social_share()
     mashiro_global.post_list_show_animation.ini()
     copy_code_block()
-    //标题触动音乐初加载
-    web_audio();
     if (window.is_app) {
       try {
         setTimeout(function () {
@@ -76,8 +74,6 @@ mashiro_global.ini = new function () {
     social_share()
     mashiro_global.post_list_show_animation.ini()
     copy_code_block()
-    //标题触动音乐重载
-    web_audio();
     if ($('div').hasClass('poem-wrap')) {
       get_poem('#poem', '#info')
     }
@@ -1640,45 +1636,3 @@ $(document).ready(function () {
     $('p').remove('.head-copyright')
   }, 0)
 })
-
-/* 标题触动音乐 */
-var cached_body = $("body");
-function web_audio() {
-    window.AudioContext = window.AudioContext || window.webkitAudioContext,
-        function () {
-            if (window.AudioContext) {
-                var e = new AudioContext,
-                    t = "880 987 1046 987 1046 1318 987 659 659 880 784 880 1046 784 659 659 698 659 698 1046 659 1046 1046 1046 987 698 698 987 987 880 987 1046 987 1046 1318 987 659 659 880 784 880 1046 784 659 698 1046 987 1046 1174 1174 1174 1046 1046 880 987 784 880 1046 1174 1318 1174 1318 1567 1046 987 1046 1318 1318 1174 784 784 880 1046 987 1174 1046 784 784 1396 1318 1174 659 1318 1046 1318 1760 1567 1567 1318 1174 1046 1046 1174 1046 1174 1567 1318 1318 1760 1567 1318 1174 1046 1046 1174 1046 1174 987 880 880 987 880".split(" "),//天空之城
-                    /*t = "329.628 329.628 349.228 391.995 391.995 349.228 329.628 293.665 261.626 261.626 293.665 329.628 329.628 293.665 293.665 329.628 329.628 349.228 391.995 391.995 349.228 329.628 293.665 261.626 261.626 293.665 329.628 293.665 261.626 261.626 293.665 293.665 329.628 261.626 293.665 329.628 349.228 329.628 261.626 293.665 329.628 349.228 329.628 293.665 261.626 293.665 195.998 329.628 329.628 349.228 391.995 391.995 349.228 329.628 293.665 261.626 261.626 293.665 329.628 293.665 261.626 261.626".split(" "),欢乐颂*/
-                    i = 0,
-                    o = 1,
-                    a = "♪ ♩ ♫ ♬ ♭ € § ¶ ♯".split(" "),
-                    n = !1
-                $("site-title, #moblieGoTop, .site-branding, .searchbox, .changeSkin-gear, .menu-list>li#star-bg").mouseenter(function (s) {
-                    var r = t[i]
-                    r || (i = 0, r = t[i]), i += o
-                    var c = e.createOscillator(),
-                        l = e.createGain()
-                    if (c.connect(l), l.connect(e.destination), c.type = "sine", c.frequency.value = r, l.gain.setValueAtTime(0, e.currentTime), l.gain.linearRampToValueAtTime(1, e.currentTime + .01), c.start(e.currentTime), l.gain.exponentialRampToValueAtTime(.001, e.currentTime + 1), c.stop(e.currentTime + 1), n = !0) {
-                        var d = Math.round(7 * Math.random()),
-                            u = $("<b/>").text(a[d]),
-                            h = s.pageX,
-                            p = s.pageY - 5
-                        u.css({
-                            "z-index": 99999,
-                            top: p - 20,
-                            left: h,
-                            position: "absolute",
-                            color: "HotPink"
-                        }), cached_body.append(u), u.animate({
-                            top: p - 180,
-                            opacity: 0
-                        }, 1500, function () {
-                            u.remove()
-                        }), s.stopPropagation()
-                    }
-                    n = !1
-                })
-            }
-        }()
-}
