@@ -5,7 +5,7 @@ keywords: 关于
 comments: false
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ---
-<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+<div class="chinese-font" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「歌单」
 </div>
 
@@ -19,7 +19,7 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 {% endraw %}
 ***
 
-<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+<div class="chinese-font" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「自述」
 </div>
 
@@ -34,12 +34,12 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 {% endraw %}
 
 ***
-<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+<div class="chinese-font" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「回顾」
 </div>
 
-<div class="meo-mashiro" style="font-size: 20px">
+<div class="chinese-font" style="font-size: 20px">
 <p class='div-border purple'>* 2019/09/03, 博客诞生</p>
-<p class='div-border purple'>* 2020/02/03, WordPress迁移到hexo,主题更换为Skura</p>
+<p class='div-border purple'>* 2020/02/03, WordPress迁移到hexo,主题更换为Sakura</p>
 <p class='div-border purple'>* 2020/03/02, 阿里云备案</p>
 </div>

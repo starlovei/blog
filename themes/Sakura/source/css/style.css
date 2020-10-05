@@ -6866,14 +6866,14 @@ to {
     overflow:hidden
 }
 /*原字体*/
-/* .chinese-font {
+.chinese-font {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
-} */
+}
 
 /*现字体*/
-.chinese-font {
+/* .chinese-font {
     font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
-}
+} */
 .chinese-tranditional-font {
     font-family:Helvetica,Tahoma,Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei","標楷體",DFKai-SB,sans-serif
 }
@@ -6890,27 +6890,27 @@ to {
     font-family:'Ubuntu',sans-serif
 }
 /*原字体*/
-/* .serif {
+.serif {
     font-family: 'Noto Sans', 'Noto Sans SC', serif
-} */
+}
 
 /*现字体*/
-.serif {
+/* .serif {
     font-family: 'zhanku', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif
-}
+} */
 /*原字体*/
-/* @media(max-width:860px) {
+@media(max-width:860px) {
     .serif {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
     }
-} */
+}
 
 /*现字体*/
-@media (max-width:860px) {
+/* @media (max-width:860px) {
     .serif {
         font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
     }
-}
+} */
 .moe-mashiro {
     font-family:'Moe-Mashiro','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
