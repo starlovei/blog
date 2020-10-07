@@ -30,10 +30,10 @@ links:
       name: 图库
       desc: 
 
-    - url: https://rss.starlovei.com
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
-      name: RSS订阅
-      desc: 万物皆可~~
+    # - url: https://rss.starlovei.com
+    #   img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
+    #   name: RSS订阅
+    #   desc: 万物皆可~~
 
     - url: https://mir.starlovei.com
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
