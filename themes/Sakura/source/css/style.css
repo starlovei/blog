@@ -286,25 +286,29 @@ dfn,cite,em,i {
 }
 blockquote {
     margin:0;
-    padding:30px 60px;
-    position:relative
+    margin-bottom: 20px;
+    text-align: center;
+    padding:12px 45px;
+    position:relative;
+    border-radius: 1.5rem;
+    background: rgba(225, 225, 225, .43);
 }
 blockquote:before {
     content:"\f10d" !important;
-    font-size:3rem;
+    font-size:2rem;
     position:absolute;
     top:-25px;
-    left:12px;
-    color:HotPink;
+    left:2px;
+    color:hotpink;
     font-family:FontAwesome
 }
 blockquote:after {
     content:'\f10e' !important;
-    font-size:3rem;
+    font-size:2rem;
     position:absolute;
     bottom:-25px;
-    right:-5px;
-    color:HotPink;
+    right:0px;
+    color:hotpink;
     font-family:FontAwesome
 }
 
