@@ -895,7 +895,7 @@ a:hover,a:active {
 .site-top ul li a {
     padding:10px 0;
     display:inline-block;
-    color:HotPink
+    color:#666
 }
 .site-top ul li a:hover {
     color:HotPink
@@ -906,7 +906,7 @@ a:hover,a:active {
     position:absolute;
     bottom:-16px;
     height:6px;
-    background-color:DeepSkyBlue;
+    background-color:hotpink;
     width:100%;
     max-width:0;
     transition:max-width .25s ease-in-out
@@ -5189,7 +5189,7 @@ button.botui-actions-buttons-button {
     transform:rotateX(90deg) translate3d(0,0,30px);
     -webkit-transform:rotateX(90deg) translate3d(0,0,30px)
 }
-.logolink a {
+/* .logolink a {
     color:#464646;
     float:left;
     font-size:20px;
@@ -5240,7 +5240,7 @@ button.botui-actions-buttons-button {
 }
 .logolink.moe-mashiro .shironeko {
     margin-left:-5px
-}
+} */
 .forgetmenot input[type=checkbox] {
     border:1px solid #b4b9be;
     background:#fff;
@@ -7619,7 +7619,7 @@ p.top {
 }
 
 /* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
-@font-face {
+/* @font-face {
     font-family: "zhanku";
     src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot");
     src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"),
@@ -7628,7 +7628,7 @@ p.top {
     url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg");
     font-style: normal;
     font-weight: normal;
-}
+} */
 
 /*  logo  */
 .logolink a {
@@ -7647,7 +7647,7 @@ p.top {
 .logolink .sakuraso {
     background-color: rgba(255, 255, 255, .5);
     border-radius: 5px;
-    color: HotPink;
+    color: #666;
     height: auto;
     line-height: 25px;
     margin-right: 0;
@@ -7669,7 +7669,7 @@ p.top {
 }
  
 .logolink.moe-mashiro a {
-    color: HotPink;
+    color: #666;
     float: left;
     font-size: 25px;
     font-weight: 800;
@@ -7716,7 +7716,7 @@ p.top {
     opacity: 1
 }
 .moe-mashiro {
-    font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;;
+    font-family: 'STXingkai', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;;
 }
 
 /*卡片样式*/
