@@ -5,7 +5,7 @@ keywords: 关于
 comments: false
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 ---
-<div class="chinese-font" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「歌单」
 </div>
 
@@ -19,7 +19,7 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 {% endraw %}
 ***
 
-<div class="chinese-font" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「自述」
 </div>
 
@@ -34,7 +34,7 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
 {% endraw %}
 
 ***
-<div class="chinese-font" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
   「回顾」
 </div>
 
