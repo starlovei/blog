@@ -15,15 +15,15 @@ tags:
 ---
 > 转载自: https://itrhx.blog.csdn.net/article/details/85010191
 
-**本文将讲述一些 Hexo 博客的美化，本文以作者 [luuman](https://blog.luuman.club/Home/H1/index.html) 的 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题和作者 [xaoxuu](https://xaoxuu.com/) 的 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题为例，实际效果欢迎访问[我的博客](https://www.itrhx.com/)进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！**
+本文将讲述一些 Hexo 博客的美化，本文以作者 [luuman](https://blog.luuman.club/Home/H1/index.html) 的 [spfk](https://github.com/luuman/hexo-theme-spfk) 主题和作者 [xaoxuu](https://xaoxuu.com/) 的 [MaterialX](https://xaoxuu.com/wiki/material-x/) 主题为例，实际效果欢迎访问[我的博客](https://www.itrhx.com/)进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！
 
-**请注意**：不同主题可能方法有些不同，相同主题不同版本，配置方法也有所差异！
+请注意：不同主题可能方法有些不同，相同主题不同版本，配置方法也有所差异！
 
-**博客美化前提条件**：有一定的前端基础，了解 HTML、CSS、JS，了解 CSS 预处理语言 Sass、Less、Stylus，搞懂 hexo 的目录结构。
+博客美化前提条件：有一定的前端基础，了解 HTML、CSS、JS，了解 CSS 预处理语言 Sass、Less、Stylus，搞懂 hexo 的目录结构。
 
-**博客美化通用步骤**：选定主题，认真阅读主题文档，分析主题目录结构，了解每个文件是对应网页哪个部分的，认真阅读美化教程，美化教程本质上只为你提供核心代码和思路，具体代码要添加到哪个地方，需要你自己搞懂主题结构，添加到需要的、合适的位置！
+博客美化通用步骤：选定主题，认真阅读主题文档，分析主题目录结构，了解每个文件是对应网页哪个部分的，认真阅读美化教程，美化教程本质上只为你提供核心代码和思路，具体代码要添加到哪个地方，需要你自己搞懂主题结构，添加到需要的、合适的位置！
 
-**博客美化终极奥秘**：创作第一，体验第二，避免繁杂，简洁为上！
+博客美化终极奥秘：创作第一，体验第二，避免繁杂，简洁为上！
 
 ## 1 添加评论系统
 主流的评论系统有很多，比如：网易云跟帖、多说、友言、畅言、来必力（LiveRe）、Disqus、Valine、Gitment等等，目前网易云跟帖、多说、友言都已经关闭了，还有些可能需要魔法，比较麻烦，百度了一下，最后还是选择了来必力评论系统
