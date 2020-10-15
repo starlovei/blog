@@ -7619,7 +7619,7 @@ p.top {
 }
 
 /* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
-/* @font-face {
+@font-face {
     font-family: "zhanku";
     src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot");
     src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"),
@@ -7628,7 +7628,7 @@ p.top {
     url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg");
     font-style: normal;
     font-weight: normal;
-} */
+}
 
 /*  logo  */
 .logolink a {
