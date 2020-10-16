@@ -15,9 +15,8 @@
 }
 #veditor:focus{
 	background-position-y: 200px;
-	transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
 }
-
 /*评论头像旋转*/
 img.vimg {
     transition: all 1s   /* 旋转时间为 1s */
@@ -1535,8 +1534,8 @@ i.iconfont.hotpost {
 }
 /* 文章中的超链接,鼠标悬浮特效*/
 .entry-content a {
-    color:#0087ca;
-    font-family: 'lucida console';
+    color:#ff80bf;
+    /* font-family: 'lucida console'; */
     display: inline;
     padding-bottom: 2px;
     background-repeat: no-repeat;
@@ -7894,4 +7893,44 @@ p.top {
 
 a#escape-link {
     background-size: 0 0 !important;
+}
+
+a.about{    
+    color:#ff80bf;
+    /* font-family: 'lucida console'; */
+    display: inline;
+    padding-bottom: 2px;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    background-position: 50% 100%;
+    -webkit-transition: all .32s ease-in-out;
+    -moz-transition: all .32s ease-in-out;
+    -o-transition: all .32s ease-in-out;
+    transition: all .32s ease-in-out;
+    background-image: linear-gradient(to right, HotPink 0%,HotPink 50%);
+}
+a.about:hover{
+    color:HotPink !important;
+    background-size: 100% 1px;   
+}
+a.link{    
+    color:#404040;
+    display: inline;
+    padding-bottom: 2px;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    background-position: 50% 100%;
+    -webkit-transition: all .32s ease-in-out;
+    -moz-transition: all .32s ease-in-out;
+    -o-transition: all .32s ease-in-out;
+    transition: all .32s ease-in-out;
+    background-image: linear-gradient(to right, HotPink 0%,HotPink 50%);
+}
+a.link:hover{
+    color:HotPink !important;
+    background-size: 100% 1px;   
+}
+a.bangumi{    
+    color:#404040;
+    /* cursor:pointer; */
 }

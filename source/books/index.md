@@ -6,25 +6,29 @@ description:
 comments: false
 photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/65897535_p0.jpg
 ---
-# <center> 「科普」 </center>
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+  「科普」
+</div>
 
-+ ### [从一到无穷大](https://book.douban.com/subject/1102715/)
++ ### <a href="https://book.douban.com/subject/1102715/" target="_blank" rel="noopener" class="about">{从一到无穷大}</a>
 
     - 《从一到无穷大：科学中的事实和臆测》是当今世界最有影响的科普经典名著之一，1970年代末由科学出版社引进出版后，曾在国内引起很大反响，直接影响了众多的科普工作者。
     作品以生动的语言介绍了20世纪以来科学中的一些重大进展。先漫谈一些基本的数学知识，然后用一些有趣的比喻，阐述了爱因斯坦的相对论和四维时空结构，并讨论了人类在认识微观世界（如基本粒子、基因）和宏观世界（如太阳系、星系等）方面的成就。
 
-+ ### [给忙碌者的天体物理学](https://book.douban.com/subject/30246268/)
++ ### <a href="https://book.douban.com/subject/30246268/" target="_blank" rel="noopener" class="about">{给忙碌者的天体物理学}</a>
 
     - 空间和时间的本质是什么？宇宙如何起源的？我们是宇宙中唯一的智慧生命吗？这是萦绕在每个人心灵深处的追问。但当今时代，人们更加忙碌，更没有时间通过读大部头的专业书来获取相关知识。
     谁能引导我们去追索这些知识呢？没有比尼尔·泰森更合适的人了 。他的这本《给忙碌者的天体物理学》简洁而清晰，处处闪烁着智慧的火花，你可以在繁忙的日常里随时随地享受其中隽永的章节。
 
-+ ### [天体物理概论](https://book.douban.com/subject/3353501/)
++ ### <a href="https://book.douban.com/subject/3353501/" target="_blank" rel="noopener" class="about">{天体物理概论}</a>
 
     - 中国科学技术大学精品教材•"十一五"国家重点图书•普通高等教育"十一五"国家级规划教材•国家精品课程教材:《天体物理概论》(彩色修订版)注意把天文学和天体物理学发展史上的主要事件结合到课程内容之中介绍，使读者能够比较生动具体地了解人类对宇宙奥秘的艰苦探索过程。在侧重基础的同时，对一些前沿热门问题也进行了适当的介绍和讨论，读者可以根据自己感兴趣的程度对这些内容进行取舍。
 
-# <center> 「思维」 </center>
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+  「思维」
+</div>
 
-+ ### [博弈论](https://book.douban.com/subject/35140889/)
++ ### <a href="https://book.douban.com/subject/35140889/" target="_blank" rel="noopener" class="about">{博弈论}</a>
 
     - 本书是“博弈论之父”冯·诺依曼的代表作，囊括了迄今为止除演化博弈之外的所有博弈论的理论和方法，代表了博弈论发展的高阶水平。
 
@@ -32,9 +36,11 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/65897535_p0.jpg
 
     怎样找到合适的合伙人？怎样合理分配利益达到各方均衡？怎样在变幻莫测的局势中，摸清对手的意图？《博弈论》将带领读者走进博弈的赛局中，开始一场特殊的“博弈”之旅。
 
-# <center> 「历史」 </center>
+<div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px; color: Hotpink">
+  「历史」
+</div>
 
-+ ### [邓小平时代](https://book.douban.com/subject/20424526/)
++ ### <a href="https://book.douban.com/subject/20424526/" target="_blank" rel="noopener" class="about">{邓小平时代}</a>
 
     - 邓小平深刻影响了中国历史和世界历史的走向，也改变了每一当代中国人的命运。解读邓小平的政治生涯及其行为逻辑，就是解读当代中国，解读个人命运背后的历史变局。
 
