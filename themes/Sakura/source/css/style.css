@@ -5680,7 +5680,7 @@ button.botui-actions-buttons-button {
 .changeSkin-gear {
     position:fixed;
     bottom:-999px;
-    right:5px;
+    left:5px;
     width:auto;
     height:auto;
     z-index:99;
@@ -6920,7 +6920,7 @@ to {
 .skin-menu {
     position:fixed;
     bottom:50px;
-    right:10px;
+    left:10px;
     height:auto;
     width:220px;
     border-radius:5px;
