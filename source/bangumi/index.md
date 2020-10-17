@@ -21,7 +21,7 @@ bangumis:
     desc: 就读水明艺术大学附属高中（通称水高）的神田空太，一年级夏天时在宿舍偷养弃猫而被校长叫去问话，并要他把猫赶走，不然就被迫搬出宿舍。身为爱猫一族的空太，因为反抗权威，结果被撵出宿舍，流落到学生口中“恶名昭彰”的“樱花庄”，开始了他与其他房客的生活。隔年春天，随着世界级天才画家椎名真白搬进了樱花庄，空太开始过着被这名缺乏常识的少女耍得团团转的日子。
 
   - img: https://cdn.jsdelivr.net/gh/starlovei/picgo/bangumi/cosmos.jpg
-    title: <a href="http://open.163.com/newview/movie/courseintro?newurl=/special/opencourse/aspacetimeodyssey.html" target="_blank" rel=noopener" class="bangumi">宇宙时空之旅</a>
+    title: <a href="https://open.163.com/newview/movie/courseintro?newurl=%2Fspecial%2Fopencourse%2Faspacetimeodyssey.html" target="_blank" rel=noopener" class="bangumi">宇宙时空之旅</a>
     status: 已追完
     progress: 100
     # jp: Cosmos:A Spacetime Odyssey
