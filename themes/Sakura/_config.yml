@@ -1,4 +1,6 @@
-# siteName: 小枫叶
+prefixName: 小枫叶
+specialName: の
+siteName: 家
 # favicon and site master avatar
 favicon: /images/favicon/favicon.ico
 avatar: /img/avatar/01.jpg

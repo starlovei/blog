@@ -7685,13 +7685,13 @@ p.top {
     padding-top: 5px;
 }
  
-.logolink.moe-mashiro .no {
+.logolink.moe-mashiro .effect {
     font-size: 20px;
     display: inline-block;
     margin-left: 5px;
 }
  
-.logolink a:hover .no {
+.logolink a:hover .effect {
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
