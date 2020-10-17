@@ -1576,10 +1576,8 @@ h1.entry-title {
     vertical-align:sub
 }
 .entry-content p {
-    color:#797979
-}
-.entry-content p {
-    line-height:30px
+    color:#797979;
+    line-height:30px;
 }
 .entry-content hr {
     margin-top:40px;
