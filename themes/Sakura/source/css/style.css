@@ -1535,7 +1535,7 @@ i.iconfont.hotpost {
 /* 文章中的超链接,鼠标悬浮特效*/
 .entry-content a {
     color:#ff80bf;
-    /* font-family: 'lucida console'; */
+    font-family: 'lucida console';
     display: inline;
     padding-bottom: 2px;
     background-repeat: no-repeat;
@@ -1577,6 +1577,8 @@ h1.entry-title {
 }
 .entry-content p {
     color:#797979;
+    word-break: break-word;
+    overflow-wrap: break-word;
     line-height:30px
 }
 .entry-content hr {
@@ -7897,9 +7899,9 @@ a.about{
     color:#ff80bf;
     /* font-family: 'lucida console'; */
     display: inline;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
     background-repeat: no-repeat;
-    background-size: 0 1px;
+    background-size: 0 2px;
     background-position: 50% 100%;
     -webkit-transition: all .32s ease-in-out;
     -moz-transition: all .32s ease-in-out;
@@ -7909,25 +7911,9 @@ a.about{
 }
 a.about:hover{
     color:HotPink !important;
-    background-size: 100% 1px;   
+    background-size: 100% 2px;   
 }
-a.link{    
-    color:#404040;
-    display: inline;
-    padding-bottom: 2px;
-    background-repeat: no-repeat;
-    background-size: 0 1px;
-    background-position: 50% 100%;
-    -webkit-transition: all .32s ease-in-out;
-    -moz-transition: all .32s ease-in-out;
-    -o-transition: all .32s ease-in-out;
-    transition: all .32s ease-in-out;
-    background-image: linear-gradient(to right, HotPink 0%,HotPink 50%);
-}
-a.link:hover{
-    color:HotPink !important;
-    background-size: 100% 1px;   
-}
+
 a.bangumi{    
     color:#404040;
     /* cursor:pointer; */
