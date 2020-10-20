@@ -36,10 +36,10 @@ homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
   # - https://api.ukenn.top/webp.php
-  - https://img.starlovei.com/alimg.php
-  # - https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/50717513.webp
-  # - https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/57793944_p0.webp
-  # - https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/66952181_p0.webp
+  # - https://img.starlovei.com/alimg.php
+  - https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/50717513.webp
+  - https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/57793944_p0.webp
+  - https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/66952181_p0.webp
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dim
 
