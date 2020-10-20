@@ -14,7 +14,6 @@ description: 半个月没更新博客都快忘了怎么写文章,果然还得不
 ---
 > **作者: 月正明 链接: https://zhuanlan.zhihu.com/p/93436925**
 
-**ps:半个月没更新博客都快忘了怎么写文章,果然还得不停练习**
 ## 修改本地hosts文件
 windows系统的hosts文件的位置如下：C:\Windows\System32\drivers\etc\hosts
 mac/linux系统的hosts文件的位置如下：/etc/hosts
