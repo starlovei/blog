@@ -9,7 +9,14 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/75564215_p0.jpg
   「歌单」
 </div>
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=800 height=300 src="//music.163.com/outchain/player?type=0&id=4994712338&auto=0&height=430"></iframe>
+{% raw %}
+<meting-js
+  server="netease"
+  type="playlist"
+  id="104369664"
+  mutex="true">
+</meting-js>
+{% endraw %}
 
 ***
 
