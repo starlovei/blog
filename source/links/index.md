@@ -25,11 +25,6 @@ links:
       name: 云盘
       desc: 个人网盘
 
-    - url: https://img.starlovei.com
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/favicon.png
-      name: 图库
-      desc: 
-
     # - url: https://rss.starlovei.com
     #   img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
     #   name: RSS订阅
