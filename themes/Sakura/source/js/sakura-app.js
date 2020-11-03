@@ -1051,15 +1051,15 @@ var home = location.href,
         // $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
       }
     },
-    AB: function () {
-      if (window.location.pathname.indexOf('about') > -1) {
-        $.getScript('/js/botui.js', function () {
-          if (typeof(botui) == undefined && !botui.message) {
-            bot_ui_ini()
-          }
-        })
-      }
-    },
+    // AB: function () {
+    //   if (window.location.pathname.indexOf('about') > -1) {
+    //     $.getScript('/js/botui.js', function () {
+    //       if (typeof(botui) == undefined && !botui.message) {
+    //         bot_ui_ini()
+    //       }
+    //     })
+    //   }
+    // },
     VA: function () {
       if (!valine) {
         var valine = new Valine()
@@ -1514,7 +1514,7 @@ $(function () {
       Siren.CE()
       Siren.VA()
       Siren.MJ()
-      Siren.AB()
+      // Siren.AB()
       Siren.TOC()
       if (mashiro_option.NProgressON) NProgress.done()
       mashiro_global.ini.pjax()
