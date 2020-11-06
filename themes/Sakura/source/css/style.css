@@ -6894,7 +6894,7 @@ to {
 }
 /*原字体*/
 .serif {
-    font-family: 'Noto Sans', 'Noto Sans SC', serif
+    font-family:'Source Han Serif SC','Source Han Serif','source-han-serif-sc','PT Serif','SongTi SC','MicroSoft Yahei',Georgia,serif
 }
 
 /*现字体*/
@@ -6905,7 +6905,7 @@ to {
 @media(max-width:860px) {
     .serif {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
-    }
+}
 }
 
 /*现字体*/
