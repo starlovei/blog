@@ -6566,6 +6566,7 @@ to {
 .top-feature-row {
     width: 100%;
     height: auto;
+    font-family: Noto Serif SC;
     margin-top: 55px
 }
 .top-feature-v2 {
