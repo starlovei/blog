@@ -6566,7 +6566,7 @@ to {
 .top-feature-row {
     width: 100%;
     height: auto;
-    font-family: Noto Serif SC;
+    /* font-family: Noto Serif SC; */
     margin-top: 55px
 }
 .top-feature-v2 {
@@ -6868,15 +6868,9 @@ to {
 .code-block-fullscreen-html-scroll {
     overflow:hidden
 }
-/*原字体*/
 .chinese-font {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
-
-/*现字体*/
-/* .chinese-font {
-    font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
-} */
 .chinese-tranditional-font {
     font-family:Helvetica,Tahoma,Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei","標楷體",DFKai-SB,sans-serif
 }
@@ -6892,28 +6886,13 @@ to {
 .Ubuntu-font {
     font-family:'Ubuntu',sans-serif
 }
-/*原字体*/
 .serif {
     font-family:'Source Han Serif SC','Source Han Serif','source-han-serif-sc','PT Serif','SongTi SC','MicroSoft Yahei',Georgia,serif
 }
-
-/*现字体*/
-/* .serif {
-    font-family: 'zhanku', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif
-} */
-/*原字体*/
 @media(max-width:860px) {
     .serif {
     font-family:'Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
-}
-}
-
-/*现字体*/
-/* @media (max-width:860px) {
-    .serif {
-        font-family: 'zhanku', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif
-    }
-} */
+} }
 .moe-mashiro {
     font-family:'Moe-Mashiro','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
 }
@@ -7618,7 +7597,7 @@ p.top {
 }
 
 /* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
-@font-face {
+/* @font-face {
     font-family: "zhanku";
     src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot");
     src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"),
@@ -7627,7 +7606,7 @@ p.top {
     url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg");
     font-style: normal;
     font-weight: normal;
-}
+} */
 
 /*  logo  */
 .logolink a {
