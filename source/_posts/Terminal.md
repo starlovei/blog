@@ -113,3 +113,62 @@ Terminal自带了几种主题,放置在defaults.json文件中
 
 
 快捷键设置暂时先不讲
+
+
+
+## 进阶美化
+
+> 虽然以上方法能够很好的美化powershell，但是代码栏依然还是老样式
+
+接下来我们要用到`oh-my-posh`这个插件啦，这是一个开源的powershell主题，[Github项目地址](https://github.com/JanDeDobbeleer/oh-my-posh)
+
+
+
+### 注意事项
+
+oh-my-posh主题使用了一些特殊字符，如果你用默认的字体会出现乱码
+
+![](https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-02-12_08-06-57.jpg)
+
+Powerline字体下载：https://github.com/powerline/fonts
+
+
+
+### 下载与安装
+
+安装`posh-git`和`oh-my-posh`
+
+``` shell
+Install-Module posh-git -Scope CurrentUser 
+Install-Module oh-my-posh -Scope CurrentUser
+```
+
+编辑Powershell配置文件，这样就可以在每次启动Powershell的时候加载主题。
+
+``` shell
+#新增配置文件
+if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+#用记事本打开文件
+notepad $PROFILE
+```
+
+添加下面的内容：
+
+``` shell
+Import-Module posh-git 
+Import-Module oh-my-posh 
+Set-Theme Paradox
+```
+
+最后一句的`Set-Theme <主题名>`主题选项，可以选择喜欢的主题，例如Paradox：
+
+![](https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/paradox.png)
+
+当然这个命令只是在当前窗口更换主题，如果你要使用主题需要在配置文件的主题选项里修改。
+
+### 定制主题
+
+oh-my-posh内置有十个主题，配置文件的位置在`C:\Users\<用户名>\Documents\WindowsPowerShell\Modules\oh-my-posh\<版本号>\Themes`，具体可以参考官方文档。或者你也可以自己写一个喜欢的主题，在主题文件夹里新建<主题名.psm1>然后按照其他主题的方法修改，我自己魔改了一下[spencerwooo大佬的主题](https://github.com/spencerwooo/dotfiles)存放在[Github](https://github.com/starlovei/Terminal-Theme),感兴趣的朋友可以下载
+
+![](https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-02-12_08-36-24.jpg)
+
