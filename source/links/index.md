@@ -82,11 +82,6 @@ links:
       name: 马同学的BLOG
       desc: 喜欢数码产品，业余敲敲代码，小米科技的发烧粉。
       
-    - url: https://zik05.cn/
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/g.jfif
-      name: 孑然一身
-      desc: 只想这一切自在且不荒唐的度过
-      
     - url: https://www.orchid-any.cf/
       img: https://cdn.jsdelivr.net/gh/BoringHacker/cdn/images/icons/avatar.png
       name: BoringHacker
