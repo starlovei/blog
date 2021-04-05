@@ -20,10 +20,10 @@ links:
       name: 后台
       desc: 评论管理
 
-    - url: https://drive.starlovei.com
-      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/drive.jpg
-      name: 云盘
-      desc: 个人网盘
+    # - url: https://drive.starlovei.com
+    #   img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/drive.jpg
+    #   name: 云盘
+    #   desc: 个人网盘
 
     # - url: https://rss.starlovei.com
     #   img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
@@ -68,7 +68,7 @@ links:
       desc: 半文艺、半动漫的二次元美少女的涂鸦簿！
 
     - url: https://www.radwinter.icu/
-      img: https://cdn.jsdelivr.net/gh/AlexFelix1013/image/header.jpg
+      img: https://cdn.jsdelivr.net/gh/AlexFelix1013/image/My%20Header.jpg
       name: Melancolía
       desc: By Accident?Maybe
 
