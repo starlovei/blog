@@ -68,7 +68,7 @@ links:
       desc: 半文艺、半动漫的二次元美少女的涂鸦簿！
 
     - url: https://www.radwinter.icu/
-      img: https://cdn.jsdelivr.net/gh/AlexFelix1013/image/My%20Header.jpg
+      img: https://raw.githubusercontent.com/AlexFelix1013/image/master/My%20Header.png
       name: Melancolía
       desc: By Accident?Maybe
 
