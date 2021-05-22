@@ -30,7 +30,7 @@ links:
     #   name: RSS订阅
     #   desc: 万物皆可~~
 
-    - url: https://mir.starlovei.com
+    - url: https://stats.uptimerobot.com/EGlpyHWOPA
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
       name: 站点监控
 
