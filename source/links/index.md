@@ -10,12 +10,18 @@ photos: https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/49383596_p0.jpg
 links:
   - group: 管理
     items:
+    
+    - url: https://rss.starlovei.com/
+      img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/weibo-logo.png
+      name: 微博RSS订阅
+      desc:
+    
     - url: https://tongji.baidu.com/
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/agaga.jpg
       name: 统计
       desc: 百度统计
 
-    - url: https://stats.starlovei.com
+    - url: https://stats.starlovei.com/
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/sagasg.jpg
       name: 后台
       desc: 评论管理
@@ -25,14 +31,10 @@ links:
     #   name: 云盘
     #   desc: 个人网盘
 
-    # - url: https://rss.starlovei.com
-    #   img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/RSSHub.jpg
-    #   name: RSS订阅
-    #   desc: 万物皆可~~
-
     - url: https://stats.uptimerobot.com/EGlpyHWOPA
       img: https://cdn.jsdelivr.net/gh/starlovei/picgo/links/monitor.jpg
       name: 站点监控
+      desc:
 
   - group: 伙伴
     items:   
