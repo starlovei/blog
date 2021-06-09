@@ -99,15 +99,15 @@ links:
       name: Yremp
       desc: 流年，谁给过的倾城
 
-    # - url: https://chanshiyu.com
-    #   img: https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg
-    #   name: 蝉时雨
-    #   desc: 蝉鸣如雨，花宵道中
-
     - url: https://kayleh.top/
       img: https://cdn.jsdelivr.net/gh/kayleh/cdn/img/2.jpg
       name: Kayleh
       desc: 求知若渴,虚心若愚
+
+    - url: https://www.lemjuice.cn/
+      img: https://www.lemjuice.cn/00000147.png
+      name: 空山柠语
+      desc: 不怕痛，不服输
 
   - group: 失踪人口
     items:
