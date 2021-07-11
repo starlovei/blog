@@ -49,7 +49,7 @@ links:
       name: ctz's blog
       desc: 来自SD-SLYZ的蒟蒻OIer，基本只在洛谷刷题。
 
-    - url: https://www.cupmoe.com/
+    - url: https://www.snowneko.com/
       img: https://cdn.jsdelivr.net/gh/cutemoe/moepic/img/cover/toutu.jpg
       name: 杯子萌
       desc: 万物皆可萌
