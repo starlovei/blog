@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+
+  <title itemprop="name">Hexo 博客优化之博客美化系列 | 小枫叶</title>
+  
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/zoom.css" media="all">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/sharejs.css"> -->
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "小枫叶家の";
+  mashiro_option.author_name = "家";
+  mashiro_option.site_url = "https://www.starlovei.com";
+  mashiro_option.v_appId = "l3oivT9vXllSnX2DP9CYcCp0-gzGzoHsz";
+  mashiro_option.v_appKey = "jwiXUn9T1cuBDgoPnCfjE4Hu";
+  mashiro_option.mathjax = "";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/50717513.webp,https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/57793944_p0.webp,https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/66952181_p0.webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">
+  .site-top .lower nav{display:block !important;}
+  .author-profile i,
+  .post-like a,
+  .post-share .show-share,
+  .sub-text,
+  .we-info a,
+  span.sitename,
+  .post-more i:hover,
+  #pagination a:hover,
+  .post-content a:hover,
+  .float-content i:hover{color:hotpink}
+  .feature i,
+  .download,
+  .navigator i:hover,
+  .links ul li:before,
+  .ar-time i,
+  span.ar-circle,
+  .object,
+  .comment .comment-reply-link,
+  .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:hotpink}::-webkit-scrollbar-thumb{background:hotpink}
+  .download,
+  .navigator i:hover,.link-title,
+  .links ul li:hover,#pagination a:hover,
+  .comment-respond input[type='submit']:hover{border-color:hotpink}
+  .entry-content a:hover,
+  .site-info a:hover,
+  .comment h4 a,
+  #comments-navi a.prev,
+  #comments-navi a.next,
+  .comment h4 a:hover,
+  .site-top ul li a:hover,
+  .entry-title a:hover,
+  #archives-temp h3,
+  span.page-numbers.current,
+  .sorry li a:hover,
+  .site-title a:hover,
+  i.iconfont.js-toggle-search.iconsearch:hover,
+  .comment-respond input[type='submit']:hover{color:hotpink}
+  .comments .comments-main{display:block !important;}
+  .comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+</head></html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+
+  <!-- 实现换肤功能 -->
+  <div class="skin-menu no-select" id="mainskin"  style="position: fixed">
+    <div class="theme-controls row-container">
+        <ul class="menu-list">
+            <li id="white-bg"> <i class="fa fa-television" aria-hidden="true"></i></li>
+            <li id="sakura-bg"> <i class="iconfont icon-sakura"></i></li>
+            <li id="gribs-bg"> <i class="fa fa-crop-alt" aria-hidden="true"></i></li>
+            <li id="KAdots-bg"> <i class="iconfont icon-dots"></i></li>
+            <li id="totem-bg"> <i class="fa fa-air-freshener" aria-hidden="true"></i></li>
+            <li id="pixiv-bg"> <i class="iconfont icon-pixiv"></i></li>
+            <li id="bing-bg"> <i class="fa fa-picture-o"></i></li>
+            <li id="dark-bg"> <i class="fa fa-moon-o" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+</div>
+<canvas id="night-mode-cover"></canvas> 
+  <div class="changeSkin-gear no-select">
+    <div class="keys" id="setbtn"> 
+        <span id="open-skinMenu">
+            SCHEME TOOL | 主题工具 &nbsp;
+            <i class="iconfont icon-gear inline-block rotating">
+            </i>
+        </span>
+    </div>
+</div>
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-dim">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://www.starlovei.com">
+          <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+			<!-- 首页一言打字效果 -->
+			<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/typed/typed.min.js"></script>
+			<i class="fa fa-quote-left"></i>
+			<span class="element"></span>
+			<i class="fa fa-quote-right"></i>
+			<span class="element"></span>
+			<script>
+            var typed = new Typed('.element', {
+              strings: ["给时光以生命，给岁月以文明", "寒蝉黎明之时,便是重生之日"], //输入内容, 支持html标签
+              typeSpeed: 140, //打字速度
+              backSpeed: 50, //回退速度
+              loop: false,//是否循环
+              loopCount: Infinity,
+              showCursor: false//是否开启光标
+            });
+      </script>
+
+        <!-- <p></p> -->
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/next.png">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://twitter.com/starlove_i" target="_blank" class="social-github" title="twitter">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/twitter1.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://t.me/starloveii" target="_blank" class="social-github" title="telegram">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/telegram.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://github.com/starlovei" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/github1.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="mailto:star_love_i@outlook.com" target="_blank" class="social-github" title="email">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/email.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/next.png">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <!-- <div id="video-btn" class="loadvideo videolive">
+    </div> -->
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select is-homepage gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakuraso">小枫叶</span>
+            <span class="effect">の</span>
+            <span class="sakuraso">家</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-home faa-wrench" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-clock faa-spin" aria-hidden="true"></i>
+                    时光轴
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                          分类
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags/">
+                        <i class="fa fa-tags faa-vertical" aria-hidden="true"></i>
+                          标签
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-list-ul faa-float" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/books/">
+                        <i class="fa fa-book faa-bounce" aria-hidden="true"></i>
+                          书单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                        <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          番组
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/about/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-comments faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-send faa-float" aria-hidden="true"></i>
+                    小伙伴
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-heart faa-vertical" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-rss faa-tada" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center-sakura single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img">
+      <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/78552913_p0.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    </div>
+    <header class="pattern-header single-header">
+    <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
+      <h1 class="entry-title">
+      Hexo 博客优化之博客美化系列</h1>
+      <span class="toppic-line"></span><p class="entry-census">
+      <span>
+        <a href="">
+          <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+        </a>
+      </span>
+      <span>
+        <a href="">小枫叶</a>
+      </span>
+      <span class="bull">.</span>
+      ·2020-2-7
+      <span class="bull">·</span>
+      <span id='/2020/02/07/Hexo 博客优化之博客美化系列/' class="leancloud-visitors" data-flag-title="Hexo 博客优化之博客美化系列"><a class="leancloud-visitors-count">加载中...</a><a class="post-meta-item-text"> 次阅读</a></span>
+      <!--文章标签-->
+      
+        
+      <div>
+            <ul class="spfk-ul">
+              &nbsp<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<li class="spfk-li"><span class="triangle"></span><a href="/tags/主题/" class="butterfly-tags">主题</a></li><li class="spfk-li"><span class="triangle"></span><a href="/tags/网络/" class="butterfly-tags">网络</a></li><li class="spfk-li"><span class="triangle"></span><a href="/tags/转载/" class="butterfly-tags">转载</a></li>
+            </ul>
+          </div>
+          <script>
+              function colorInit(c,num){for(var i=1;i<=num;++i)c.push(i+'');}
+              function paintTags(){
+                  var colorNumber=8,tagColors=[],tags=document.getElementsByClassName('spfk-li');
+                  for(var i = 0 ; i < tags.length ; ++i){
+                      if(!tagColors.length)colorInit(tagColors,colorNumber);
+                      var j=Math.floor(Math.random()*tagColors.length);
+                      tags[i].classList.add("spfk-color"+tagColors[j]);
+                      tagColors.splice(j,1);
+                  }
+              }
+              paintTags()
+          </script>
+      
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>本文将讲述一些 Hexo 博客的美化，本文以作者 <a href="https://luuman.github.io/Home/H1/index.html" target="_blank" rel="noopener">luuman</a> 的 <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank" rel="noopener">spfk</a> 主题和作者 <a href="https://xaoxuu.com/" target="_blank" rel="noopener">xaoxuu</a> 的 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">Material X</a> 主题为例，实际效果欢迎访问我的博客进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！</p>
+<p><strong>请注意</strong>：不同主题可能方法有些不同，相同主题不同版本，配置方法也有所差异！阅读主题文档非常重要！</p>
+<p><strong>博客美化前提条件</strong>：有一定的前端基础，了解 HTML、CSS、JS，了解 CSS 预处理语言 Sass、Less、Stylus，搞懂 hexo 的目录结构。</p>
+<p><strong>博客美化通用步骤</strong>：选定主题，认真阅读主题文档，分析主题目录结构，了解每个文件是对应网页哪个部分的，认真阅读美化教程，美化教程本质上只为你提供核心代码和思路，具体代码要添加到哪个地方，需要你自己搞懂主题结构，添加到需要的、合适的位置！</p>
+<p><strong>博客美化终极奥秘</strong>：创作第一，体验第二，避免繁杂，简洁为上！</p>
+<h2 id="1-添加卡通人物（看板娘）"><a href="#1-添加卡通人物（看板娘）" class="headerlink" title="1 添加卡通人物（看板娘）"></a>1 添加卡通人物（看板娘）</h2><p>我在逛别人博客的时候偶然发现右下角居然有一个萌萌的卡通人物，还能根据你鼠标位置摇头，瞬间被吸引到了，赶紧也给自己博客添加一个吧！<a href="https://github.com/EYHN/hexo-helper-live2d" target="_blank" rel="noopener">点击此处</a>进入该项目地址</p>
+<p>输入如下命令获取 live2d ：</p>
+<pre><code class="lang-css">$ npm install --save hexo-helper-live2d
+</code></pre>
+<p>输入以下命令，下载相应的模型，将 <strong>packagename</strong> 更换成模型名称即可，更多模型选择请<a href="https://github.com/xiazeyu/live2d-widget-models" target="_blank" rel="noopener">点击此处</a>，各个模型的预览请<a href="https://eyhn.in/" target="_blank" rel="noopener">访问原作者的博客</a></p>
+<pre><code class="lang-php">$ npm install packagename
+</code></pre>
+<p>打开站点目录下的 <strong>_config.yml</strong> 文件，添加如下代码：</p>
+<pre><code class="lang-css">live2d:
+    enable: true
+    scriptFrom: local
+    model: 
+        use: live2d-widget-model-haruto #模型选择
+    display: 
+        position: right  #模型位置
+        width: 150       #模型宽度
+        height: 300      #模型高度
+    mobile: 
+        show: false      #是否在手机端显示
+</code></pre>
+<p>设置好过后我们就拥有了一个卡通人物<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190803152152975.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190803152152975.png"></a></p>
+<h2 id="2-添加鼠标点击爱心效果"><a href="#2-添加鼠标点击爱心效果" class="headerlink" title="2 添加鼠标点击爱心效果"></a>2 添加鼠标点击爱心效果</h2><p>在 <code>\themes\hexo-theme-spfk\source\js</code> 下新建文件 <code>love.js</code>，在 <code>love.js</code> 文件中添加以下代码：</p>
+<pre><code class="lang-js">!function(e,t,a){function n(){c(&quot;.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: &#39;&#39;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 500%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}&quot;),o(),r()}function r(){for(var e=0;e&lt;d.length;e++)d[e].alpha&lt;=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText=&quot;left:&quot;+d[e].x+&quot;px;top:&quot;+d[e].y+&quot;px;opacity:&quot;+d[e].alpha+&quot;;transform:scale(&quot;+d[e].scale+&quot;,&quot;+d[e].scale+&quot;) rotate(45deg);background:&quot;+d[e].color+&quot;;z-index:99999&quot;);requestAnimationFrame(r)}function o(){var t=&quot;function&quot;==typeof e.onclick&amp;&amp;e.onclick;e.onclick=function(e){t&amp;&amp;t(),i(e)}}function i(e){var a=t.createElement(&quot;div&quot;);a.className=&quot;heart&quot;,d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement(&quot;style&quot;);a.type=&quot;text/css&quot;;try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a)}function s(){return&quot;rgb(&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;)&quot;}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);
+</code></pre>
+<p>在 <code>\themes\hexo-theme-spfk\layout\layout.ejs</code> 文件末尾添加以下代码：</p>
+<pre><code class="lang-js">&lt;!-- 页面点击小红心 --&gt;
+&lt;script type=&quot;text/sscript&quot; src=&quot;/js/love.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>完成以上操作后，当我们点击鼠标的时候就可以看见爱心的特效了<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/3.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/3.jfif"></a></p>
+<h2 id="3-添加鼠标点击显示字体效果"><a href="#3-添加鼠标点击显示字体效果" class="headerlink" title="3 添加鼠标点击显示字体效果"></a>3 添加鼠标点击显示字体效果</h2><p>在 <code>/themes/hexo-theme-spfk/source/js</code> 下新建文件 <code>click_show_text.js</code>，在 <code>click_show_text.js</code> 文件中添加以下代码：</p>
+<pre><code class="lang-js">var a_idx = 0;
+jQuery(document).ready(function($) {
+    $(&quot;body&quot;).click(function(e) {
+        var a = new Array
+        (&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot;, &quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;);
+        var $i = $(&quot;&lt;span/&gt;&quot;).text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            &quot;z-index&quot;: 5,
+            &quot;top&quot;: y - 20,
+            &quot;left&quot;: x,
+            &quot;position&quot;: &quot;absolute&quot;,
+            &quot;font-weight&quot;: &quot;bold&quot;,
+            &quot;color&quot;: &quot;#FF0000&quot;
+        });
+        $(&quot;body&quot;).append($i);
+        $i.animate({
+            &quot;top&quot;: y - 180,
+            &quot;opacity&quot;: 0
+        },
+            3000,
+            function() {
+                $i.remove();
+            });
+    });
+    setTimeout(&#39;delay()&#39;, 2000);
+});
+
+function delay() {
+    $(&quot;.buryit&quot;).removeAttr(&quot;onclick&quot;);
+}
+</code></pre>
+<p>其中的社会主义核心价值观可以根据你自己的创意替换为其他文字</p>
+<p>如果想要每次点击显示的文字为不同颜色，可以将其中 <code>color</code> 值进行如下更改：</p>
+<pre><code class="lang-css">&quot;color&quot;: &quot;rgb(&quot; + ~~(255 * Math.random()) + &quot;,&quot; + ~~(255 * Math.random()) + &quot;,&quot; + ~~(255 * Math.random()) + &quot;)&quot;
+</code></pre>
+<p>然后在 <code>\themes\hexo-theme-spfk\layout\layout.ejs</code> 文件末尾添加以下代码：</p>
+<pre><code class="lang-js">&lt;!--单击显示文字--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/click_show_text.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>最终实现效果如下：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102038173.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102038173.png"></a></p>
+<h2 id="4-添加鼠标点击烟花爆炸效果"><a href="#4-添加鼠标点击烟花爆炸效果" class="headerlink" title="4 添加鼠标点击烟花爆炸效果"></a>4 添加鼠标点击烟花爆炸效果</h2><p>在 <code>\themes\material-x\source\js</code> 目录下新建一个 <code>fireworks.js</code> 的文件，里面写入以下代码：</p>
+<pre><code class="lang-js">&quot;use strict&quot;;function updateCoords(e){pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[0].clientY-canvasEl.getBoundingClientRect().top}function setParticuleDirection(e){var t=anime.random(0,360)*Math.PI/180,a=anime.random(50,180),n=[-1,1][anime.random(0,1)]*a;return{x:e.x+n*Math.cos(t),y:e.y+n*Math.sin(t)}}function createParticule(e,t){var a={};return a.x=e,a.y=t,a.color=colors[anime.random(0,colors.length-1)],a.radius=anime.random(16,32),a.endPos=setParticuleDirection(a),a.draw=function(){ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.fillStyle=a.color,ctx.fill()},a}function createCircle(e,t){var a={};return a.x=e,a.y=t,a.color=&quot;#F00&quot;,a.radius=0.1,a.alpha=0.5,a.lineWidth=6,a.draw=function(){ctx.globalAlpha=a.alpha,ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.lineWidth=a.lineWidth,ctx.strokeStyle=a.color,ctx.stroke(),ctx.globalAlpha=1},a}function renderParticule(e){for(var t=0;t&lt;e.animatables.length;t++){e.animatables[t].target.draw()}}function animateParticules(e,t){for(var a=createCircle(e,t),n=[],i=0;i&lt;numberOfParticules;i++){n.push(createParticule(e,t))}anime.timeline().add({targets:n,x:function(e){return e.endPos.x},y:function(e){return e.endPos.y},radius:0.1,duration:anime.random(1200,1800),easing:&quot;easeOutExpo&quot;,update:renderParticule}).add({targets:a,radius:anime.random(80,160),lineWidth:0,alpha:{value:0,easing:&quot;linear&quot;,duration:anime.random(600,800)},duration:anime.random(1200,1800),easing:&quot;easeOutExpo&quot;,update:renderParticule,offset:0})}function debounce(e,t){var a;return function(){var n=this,i=arguments;clearTimeout(a),a=setTimeout(function(){e.apply(n,i)},t)}}var canvasEl=document.querySelector(&quot;.fireworks&quot;);if(canvasEl){var ctx=canvasEl.getContext(&quot;2d&quot;),numberOfParticules=30,pointerX=0,pointerY=0,tap=&quot;mousedown&quot;,colors=[&quot;#FF1461&quot;,&quot;#18FF92&quot;,&quot;#5A87FF&quot;,&quot;#FBF38C&quot;],setCanvasSize=debounce(function(){canvasEl.width=2*window.innerWidth,canvasEl.height=2*window.innerHeight,canvasEl.style.width=window.innerWidth+&quot;px&quot;,canvasEl.style.height=window.innerHeight+&quot;px&quot;,canvasEl.getContext(&quot;2d&quot;).scale(2,2)},500),render=anime({duration:1/0,update:function(){ctx.clearRect(0,0,canvasEl.width,canvasEl.height)}});document.addEventListener(tap,function(e){&quot;sidebar&quot;!==e.target.id&amp;&amp;&quot;toggle-sidebar&quot;!==e.target.id&amp;&amp;&quot;A&quot;!==e.target.nodeName&amp;&amp;&quot;IMG&quot;!==e.target.nodeName&amp;&amp;(render.play(),updateCoords(e),animateParticules(pointerX,pointerY))},!1),setCanvasSize(),window.addEventListener(&quot;resize&quot;,setCanvasSize,!1)}&quot;use strict&quot;;function updateCoords(e){pointerX=(e.clientX||e.touches[0].clientX)-canvasEl.getBoundingClientRect().left,pointerY=e.clientY||e.touches[0].clientY-canvasEl.getBoundingClientRect().top}function setParticuleDirection(e){var t=anime.random(0,360)*Math.PI/180,a=anime.random(50,180),n=[-1,1][anime.random(0,1)]*a;return{x:e.x+n*Math.cos(t),y:e.y+n*Math.sin(t)}}function createParticule(e,t){var a={};return a.x=e,a.y=t,a.color=colors[anime.random(0,colors.length-1)],a.radius=anime.random(16,32),a.endPos=setParticuleDirection(a),a.draw=function(){ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.fillStyle=a.color,ctx.fill()},a}function createCircle(e,t){var a={};return a.x=e,a.y=t,a.color=&quot;#F00&quot;,a.radius=0.1,a.alpha=0.5,a.lineWidth=6,a.draw=function(){ctx.globalAlpha=a.alpha,ctx.beginPath(),ctx.arc(a.x,a.y,a.radius,0,2*Math.PI,!0),ctx.lineWidth=a.lineWidth,ctx.strokeStyle=a.color,ctx.stroke(),ctx.globalAlpha=1},a}function renderParticule(e){for(var t=0;t&lt;e.animatables.length;t++){e.animatables[t].target.draw()}}function animateParticules(e,t){for(var a=createCircle(e,t),n=[],i=0;i&lt;numberOfParticules;i++){n.push(createParticule(e,t))}anime.timeline().add({targets:n,x:function(e){return e.endPos.x},y:function(e){return e.endPos.y},radius:0.1,duration:anime.random(1200,1800),easing:&quot;easeOutExpo&quot;,update:renderParticule}).add({targets:a,radius:anime.random(80,160),lineWidth:0,alpha:{value:0,easing:&quot;linear&quot;,duration:anime.random(600,800)},duration:anime.random(1200,1800),easing:&quot;easeOutExpo&quot;,update:renderParticule,offset:0})}function debounce(e,t){var a;return function(){var n=this,i=arguments;clearTimeout(a),a=setTimeout(function(){e.apply(n,i)},t)}}var canvasEl=document.querySelector(&quot;.fireworks&quot;);if(canvasEl){var ctx=canvasEl.getContext(&quot;2d&quot;),numberOfParticules=30,pointerX=0,pointerY=0,tap=&quot;mousedown&quot;,colors=[&quot;#FF1461&quot;,&quot;#18FF92&quot;,&quot;#5A87FF&quot;,&quot;#FBF38C&quot;],setCanvasSize=debounce(function(){canvasEl.width=2*window.innerWidth,canvasEl.height=2*window.innerHeight,canvasEl.style.width=window.innerWidth+&quot;px&quot;,canvasEl.style.height=window.innerHeight+&quot;px&quot;,canvasEl.getContext(&quot;2d&quot;).scale(2,2)},500),render=anime({duration:1/0,update:function(){ctx.clearRect(0,0,canvasEl.width,canvasEl.height)}});document.addEventListener(tap,function(e){&quot;sidebar&quot;!==e.target.id&amp;&amp;&quot;toggle-sidebar&quot;!==e.target.id&amp;&amp;&quot;A&quot;!==e.target.nodeName&amp;&amp;&quot;IMG&quot;!==e.target.nodeName&amp;&amp;(render.play(),updateCoords(e),animateParticules(pointerX,pointerY))},!1),setCanvasSize(),window.addEventListener(&quot;resize&quot;,setCanvasSize,!1)};
+</code></pre>
+<p>然后在 <code>\themes\material-x\layout\layout.ejs</code> 文件中写入以下代码：</p>
+<pre><code class="lang-js">&lt;canvas class=&quot;fireworks&quot; style=&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;/canvas&gt; 
+&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/animejs/2.2.0/anime.min.js&quot;&gt;&lt;/script&gt; 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/fireworks.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>最终效果:<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1MjFlZDhlMy5naWY.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1MjFlZDhlMy5naWY.jfif"></a></p>
+<h2 id="5-自定义鼠标指针样式"><a href="#5-自定义鼠标指针样式" class="headerlink" title="5 自定义鼠标指针样式"></a>5 自定义鼠标指针样式</h2><p>在 <code>\themes\material-x\source\less\_base.less</code> 文件 <code>body</code> 样式里写入如下代码：</p>
+<pre><code class="lang-js">body {
+    cursor: url(https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur),auto;
+    background-color: @theme_background;
+    ......
+    ......
+}
+</code></pre>
+<p>鼠标指针可以用 Axialis CursorWorkshop 这个软件自己制作，不同主题具体放的文件有所不同，确保在博客主体 body 的 CSS 文件中即可，其中的鼠标指针链接可替换成自己的，首先尝试加载<em><a href="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.1.6/images/mouse.cur</a></em> ，如果该文件不存在或由于其他原因无效，那么 auto 会被使用，也就是自动默认效果，图片格式为.ico、.ani、.cur，建议使用.cur，如果使用.ani或者其他格式无效，原因是浏览器兼容问题，请阅读<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Basic_User_Interface/Using_URL_values_for_the_cursor_property" target="_blank" rel="noopener">参考文档</a>或者参考以下兼容表：<br><a href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/140633.jpg" data-fancybox="images" data-caption="主人没有描述我哦~" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/140633.jpg"></a><br>拓展阅读：<a href="https://blog.csdn.net/ixygj197875/article/details/79338360" target="_blank" rel="noopener">《CSS鼠标样式cursor属性》</a> （By：歪脖先生的博客）</p>
+<h2 id="6-添加彩色滚动变换字体"><a href="#6-添加彩色滚动变换字体" class="headerlink" title="6 添加彩色滚动变换字体"></a>6 添加彩色滚动变换字体</h2><p>在你想要添加彩色滚动变换字体的地方写入以下代码即可，其中文字可自行更改</p>
+<pre><code class="lang-js">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;
+  &lt;script&gt;
+    var binft = function (r) {
+      function t() {
+        return b[Math.floor(Math.random() * b.length)]
+      }  
+      function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+      }
+      function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) {
+          var l = document.createElement(&quot;span&quot;);
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+      }
+      function i() {
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+      }
+      var l = &quot;&quot;,
+      o = [&quot;青青陵上柏，磊磊涧中石。&quot;, &quot;人生天地间，忽如远行客。&quot;,&quot;斗酒相娱乐，聊厚不为薄。&quot;, &quot;驱车策驽马，游戏宛与洛。&quot;,&quot;洛中何郁郁，冠带自相索。&quot;,&quot;长衢罗夹巷，王侯多第宅。&quot;,&quot;两宫遥相望，双阙百余尺。&quot;,&quot;极宴娱心意，戚戚何所迫？&quot;].map(function (r) {
+      return r + &quot;&quot;
+      }),
+      a = 2,
+      g = 1,
+      s = 5,
+      d = 75,
+      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],
+      c = {
+        text: &quot;&quot;,
+        prefixP: -s,
+        skillI: 0,
+        skillP: 0,
+        direction: &quot;forward&quot;,
+        delay: a,
+        step: g
+      };
+      i()
+      };
+      binft(document.getElementById(&#39;binft&#39;));
+  &lt;/script&gt;
+</code></pre>
+<p>最终效果：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1N2RiZmE0MC5naWY.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1N2RiZmE0MC5naWY.jfif"></a></p>
+<h2 id="7-添加背景音乐"><a href="#7-添加背景音乐" class="headerlink" title="7 添加背景音乐"></a>7 添加背景音乐</h2><p>打开网页版<a href="https://music.163.com/" target="_blank" rel="noopener">网易云音乐</a>，选择你准备添加的背景音乐，点击生成外链播放器，前提是要有版权，不然是无法生成外链播放器的，复制底下的HTML代码<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MDkzY2I1NS5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MDkzY2I1NS5wbmc.jfif"></a></p>
+<p><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MzY2MmUzZS5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3MzY2MmUzZS5wbmc.jfif"></a></p>
+<p>然后将此代码放到你想要放的地方，比如放在博客的左侧，则打开 <code>\themes\hexo-theme-spfk\layout\_partial\left-col.ejs</code> 文件，将复制的HTML代码粘贴进去，再进行适当的位置设置让播放器更美观，其中 <code>auto=1</code> 表示打开网页自动播放音乐，<code>auto=0</code> 表示关闭自动播放音乐<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102132566.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102132566.png"></a></p>
+<p>最后效果如下：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102211588.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102211588.png"></a></p>
+<p>这种网易云音乐外链的方式有很多局限性，因此推荐使用<code>aplayer</code>，GitHub地址为：<em><a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener">https://github.com/MoePlayer/APlayer</a></em> ，参考教程：<a href="https://blog.yleao.com/2018/0902/hexo%E4%B8%8A%E7%9A%84aplayer%E5%BA%94%E7%94%A8.html" target="_blank" rel="noopener">《hexo上的aplayer应用》</a></p>
+<h2 id="8-浏览器网页标题恶搞"><a href="#8-浏览器网页标题恶搞" class="headerlink" title="8 浏览器网页标题恶搞"></a>8 浏览器网页标题恶搞</h2><p>当用户访问你的博客时点击到了其他网页，我们可以恶搞一下网页标题，呼唤用户回来，首先在目录 <code>\themes\material-x\source\js</code> 下新建一个 <code>FunnyTitle.js</code> 文件，在里面填写如下代码：</p>
+<pre><code class="lang-js">// 浏览器搞笑标题
+var OriginTitle = document.title;
+var titleTime;
+document.addEventListener(&#39;visibilitychange&#39;, function () {
+    if (document.hidden) {
+        $(&#39;[rel=&quot;icon&quot;]&#39;).attr(&#39;href&#39;, &quot;/funny.ico&quot;);
+        document.title = &#39;╭(°A°`)╮ 页面崩溃啦 ~&#39;;
+        clearTimeout(titleTime);
+    }
+    else {
+        $(&#39;[rel=&quot;icon&quot;]&#39;).attr(&#39;href&#39;, &quot;/favicon.ico&quot;);
+        document.title = &#39;(ฅ&gt;ω&lt;*ฅ) 噫又好啦 ~&#39; + OriginTitle;
+        titleTime = setTimeout(function () {
+            document.title = OriginTitle;
+        }, 2000);
+    }
+});
+</code></pre>
+<p>其中 <code>funny.ico</code> 是用户切换到其他标签后你网站的图标，<code>favicon.ico</code> 是正常图标，然后在 <code>\themes\material-x\layout\layout.ejs</code> 文件中添加如下代码：</p>
+<pre><code class="lang-js">&lt;!--浏览器搞笑标题--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/FunnyTitle.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>再次部署博客后就可以看见标题搞笑的效果了：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150326168.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150326168.png"></a></p>
+<p><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150338873.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20191229150338873.png"></a></p>
+<h2 id="9-背景添加动态线条效果"><a href="#9-背景添加动态线条效果" class="headerlink" title="9 背景添加动态线条效果"></a>9 背景添加动态线条效果</h2><p>在 <code>\Hexo\themes\hexo-theme-spfk\layout\layout.ejs</code> 文件中添加如下代码：</p>
+<pre><code class="lang-js">&lt;!--动态线条背景--&gt;
+&lt;script type=&quot;text/javascript&quot;
+color=&quot;220,220,220&quot; opacity=&#39;0.7&#39; zIndex=&quot;-2&quot; count=&quot;200&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+<p>其中：</p>
+<ul>
+<li>color：表示线条颜色，三个数字分别为(R,G,B)，默认：（0,0,0）</li>
+<li>opacity：表示线条透明度（0~1），默认：0.5</li>
+<li>count：表示线条的总数量，默认：150</li>
+<li>zIndex：表示背景的z-index属性，css属性用于控制所在层的位置，默认：-1<br>最终实现效果：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102348962.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102348962.png"></a></li>
+</ul>
+<h2 id="10-添加人体时钟等有趣的挂件"><a href="#10-添加人体时钟等有趣的挂件" class="headerlink" title="10 添加人体时钟等有趣的挂件"></a>10 添加人体时钟等有趣的挂件</h2><p>无意中发现了个有趣的人体时钟 HONE HONE CLOCK，作者是个日本人，<a href="http://chabudai.org/blog/" target="_blank" rel="noopener">点击此处</a>访问作者博客，<a href="http://chabudai.org/blog/?p=59" target="_blank" rel="noopener">点击此处</a>在作者原博客上查看动态样式，<a href="chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf">点击此处</a>查看动态大图，如果你的博客上有合适的地方，加上一个人体时钟会很有趣的<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/4.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/4.jfif"></a></p>
+<p>实现代码：</p>
+<pre><code class="lang-js">&lt;!--人体时钟背景透明--&gt;
+&lt;script charset=&quot;Shift_JIS&quot; src=&quot;http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--人体时钟背景白--&gt;
+&lt;script charset=&quot;Shift_JIS&quot; src=&quot;http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>其他网页小挂件推荐：</p>
+<p><a href="http://abowman.com/" target="_blank" rel="noopener">http://abowman.com/</a> 里面有很多有趣的小挂件，可以养养鱼、龟、狗、仓鼠等各式各样的虚拟宠物，能根据你的鼠标指针位置移动，直接复制代码就可以用<br><a href="http://www.revolvermaps.com/" target="_blank" rel="noopener">http://www.revolvermaps.com/</a> 它提供网站访客地理信息，可以以2D、3D等形式显示<br><a href="http://www.amazingcounters.com/" target="_blank" rel="noopener">http://www.amazingcounters.com/</a> 免费网站计数器，有非常多的样式供你选择，可以设置计数器初始数值，可以设置按访问量计数，也可以按独立访问者计数<br><a href="https://www.seniverse.com/widget/get" target="_blank" rel="noopener">https://www.seniverse.com/widget/get</a> 心知天气提供基于Web的免费天气插件，可以为你的网站添加一项简洁美观的天气预报功能，并自动适配PC和手机上的浏览</p>
+<h2 id="11-添加网站雪花飘落效果"><a href="#11-添加网站雪花飘落效果" class="headerlink" title="11 添加网站雪花飘落效果"></a>11 添加网站雪花飘落效果</h2><p>样式一和样式二分别如下：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103144792.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103144792.png"></a></p>
+<p><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103041166.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103041166.png"></a></p>
+<p>实现方法：在 <code>\Hexo\themes\hexo-theme-spfk\source\js</code> 目录下新建一个 <code>snow.js</code> 文件，粘贴以下代码：</p>
+<pre><code class="lang-js">/*样式一*/
+(function($){
+    $.fn.snow = function(options){
+    var $flake = $(&#39;&lt;div id=&quot;snowbox&quot; /&gt;&#39;).css({&#39;position&#39;: &#39;absolute&#39;,&#39;z-index&#39;:&#39;9999&#39;, &#39;top&#39;: &#39;-50px&#39;}).html(&#39;&amp;#10052;&#39;),
+    documentHeight     = $(document).height(),
+    documentWidth    = $(document).width(),
+    defaults = {
+        minSize        : 10,
+        maxSize        : 20,
+        newOn        : 1000,
+        flakeColor    : &quot;#AFDAEF&quot; /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+    },
+    options    = $.extend({}, defaults, options);
+    var interval= setInterval( function(){
+    var startPositionLeft = Math.random() * documentWidth - 100,
+    startOpacity = 0.5 + Math.random(),
+    sizeFlake = options.minSize + Math.random() * options.maxSize,
+    endPositionTop = documentHeight - 200,
+    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+    durationFall = documentHeight * 10 + Math.random() * 5000;
+    $flake.clone().appendTo(&#39;body&#39;).css({
+        left: startPositionLeft,
+        opacity: startOpacity,
+        &#39;font-size&#39;: sizeFlake,
+        color: options.flakeColor
+    }).animate({
+        top: endPositionTop,
+        left: endPositionLeft,
+        opacity: 0.2
+    },durationFall,&#39;linear&#39;,function(){
+        $(this).remove()
+    });
+    }, options.newOn);
+    };
+})(jQuery);
+$(function(){
+    $.fn.snow({ 
+        minSize: 5, /* 定义雪花最小尺寸 */
+        maxSize: 50,/* 定义雪花最大尺寸 */
+        newOn: 300  /* 定义密集程度，数字越小越密集 */
+    });
+});
+</code></pre>
+<pre><code class="lang-js">/*样式二*/
+/* 控制下雪 */
+function snowFall(snow) {
+    /* 可配置属性 */
+    snow = snow || {};
+    this.maxFlake = snow.maxFlake || 200;   /* 最多片数 */
+    this.flakeSize = snow.flakeSize || 10;  /* 雪花形状 */
+    this.fallSpeed = snow.fallSpeed || 1;   /* 坠落速度 */
+}
+/* 兼容写法 */
+requestAnimationFrame = window.requestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    function(callback) { setTimeout(callback, 1000 / 60); };
+
+cancelAnimationFrame = window.cancelAnimationFrame ||
+    window.mozCancelAnimationFrame ||
+    window.webkitCancelAnimationFrame ||
+    window.msCancelAnimationFrame ||
+    window.oCancelAnimationFrame;
+/* 开始下雪 */
+snowFall.prototype.start = function(){
+    /* 创建画布 */
+    snowCanvas.apply(this);
+    /* 创建雪花形状 */
+    createFlakes.apply(this);
+    /* 画雪 */
+    drawSnow.apply(this)
+}
+/* 创建画布 */
+function snowCanvas() {
+    /* 添加Dom结点 */
+    var snowcanvas = document.createElement(&quot;canvas&quot;);
+    snowcanvas.id = &quot;snowfall&quot;;
+    snowcanvas.width = window.innerWidth;
+    snowcanvas.height = document.body.clientHeight;
+    snowcanvas.setAttribute(&quot;style&quot;, &quot;position:absolute; top: 0; left: 0; z-index: 1; pointer-events: none;&quot;);
+    document.getElementsByTagName(&quot;body&quot;)[0].appendChild(snowcanvas);
+    this.canvas = snowcanvas;
+    this.ctx = snowcanvas.getContext(&quot;2d&quot;);
+    /* 窗口大小改变的处理 */
+    window.onresize = function() {
+        snowcanvas.width = window.innerWidth;
+        /* snowcanvas.height = window.innerHeight */
+    }
+}
+/* 雪运动对象 */
+function flakeMove(canvasWidth, canvasHeight, flakeSize, fallSpeed) {
+    this.x = Math.floor(Math.random() * canvasWidth);   /* x坐标 */
+    this.y = Math.floor(Math.random() * canvasHeight);  /* y坐标 */
+    this.size = Math.random() * flakeSize + 2;          /* 形状 */
+    this.maxSize = flakeSize;                           /* 最大形状 */
+    this.speed = Math.random() * 1 + fallSpeed;         /* 坠落速度 */
+    this.fallSpeed = fallSpeed;                         /* 坠落速度 */
+    this.velY = this.speed;                             /* Y方向速度 */
+    this.velX = 0;                                      /* X方向速度 */
+    this.stepSize = Math.random() / 30;                 /* 步长 */
+    this.step = 0                                       /* 步数 */
+}
+flakeMove.prototype.update = function() {
+    var x = this.x,
+        y = this.y;
+    /* 左右摆动(余弦) */
+    this.velX *= 0.98;
+    if (this.velY &lt;= this.speed) {
+        this.velY = this.speed
+    }
+    this.velX += Math.cos(this.step += .05) * this.stepSize;
+
+    this.y += this.velY;
+    this.x += this.velX;
+    /* 飞出边界的处理 */
+    if (this.x &gt;= canvas.width || this.x &lt;= 0 || this.y &gt;= canvas.height || this.y &lt;= 0) {
+        this.reset(canvas.width, canvas.height)
+    }
+};
+/* 飞出边界-放置最顶端继续坠落 */
+flakeMove.prototype.reset = function(width, height) {
+    this.x = Math.floor(Math.random() * width);
+    this.y = 0;
+    this.size = Math.random() * this.maxSize + 2;
+    this.speed = Math.random() * 1 + this.fallSpeed;
+    this.velY = this.speed;
+    this.velX = 0;
+};
+// 渲染雪花-随机形状（此处可修改雪花颜色！！！）
+flakeMove.prototype.render = function(ctx) {
+    var snowFlake = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
+    snowFlake.addColorStop(0, &quot;rgba(255, 255, 255, 0.9)&quot;);  /* 此处是雪花颜色，默认是白色 */
+    snowFlake.addColorStop(.5, &quot;rgba(255, 255, 255, 0.5)&quot;); /* 若要改为其他颜色，请自行查 */
+    snowFlake.addColorStop(1, &quot;rgba(255, 255, 255, 0)&quot;);    /* 找16进制的RGB 颜色代码。 */
+    ctx.save();
+    ctx.fillStyle = snowFlake;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+};
+/* 创建雪花-定义形状 */
+function createFlakes() {
+    var maxFlake = this.maxFlake,
+        flakes = this.flakes = [],
+        canvas = this.canvas;
+    for (var i = 0; i &lt; maxFlake; i++) {
+        flakes.push(new flakeMove(canvas.width, canvas.height, this.flakeSize, this.fallSpeed))
+    }
+}
+/* 画雪 */
+function drawSnow() {
+    var maxFlake = this.maxFlake,
+        flakes = this.flakes;
+    ctx = this.ctx, canvas = this.canvas, that = this;
+    /* 清空雪花 */
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (var e = 0; e &lt; maxFlake; e++) {
+        flakes[e].update();
+        flakes[e].render(ctx);
+    }
+    /*  一帧一帧的画 */
+    this.loop = requestAnimationFrame(function() {
+        drawSnow.apply(that);
+    });
+}
+/* 调用及控制方法 */
+var snow = new snowFall({maxFlake:60});
+snow.start();
+</code></pre>
+<p>然后在 <code>\Hexo\themes\hexo-theme-spfk\layout\layout.ejs</code> 文件里引用即可：</p>
+<pre><code class="lang-js">&lt;!-- 雪花特效 --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;\js\snow.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>如果没效果，请确认网页是否已载入JQurey，如果没有请在下雪代码之前引入JQ即可：</p>
+<pre><code class="lang-js">&lt;script type=&quot;text/javascript&quot; src=&quot;http://libs.baidu.com/jquery/1.8.3/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://libs.baidu.com/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>原文链接：<a href="https://ihuan.me/2172.html" target="_blank" rel="noopener">《分享两种圣诞节雪花特效JS代码(网站下雪效果)》</a></p>
+<h2 id="12-添加背景动态彩带效果"><a href="#12-添加背景动态彩带效果" class="headerlink" title="12 添加背景动态彩带效果"></a>12 添加背景动态彩带效果</h2><p>样式一是鼠标点击后彩带自动更换样式，样式二是飘动的彩带：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103419221.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807103419221.png"></a></p>
+<p>实现方法：在 <code>\themes\material-x\layout\layout.ejs</code> 文件的<code>body</code>前面添加如下代码：</p>
+<pre><code class="lang-js">&lt;!-- 样式一（鼠标点击更换样式） --&gt;
+&lt;script src=&quot;https://g.joyinshare.com/hc/ribbon.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+</code></pre>
+<pre><code class="lang-js">&lt;!-- 样式二（飘动的彩带） --&gt;
+&lt;script src=&quot;https://g.joyinshare.com/hc/piao.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h2 id="13-添加背景代码雨特效"><a href="#13-添加背景代码雨特效" class="headerlink" title="13 添加背景代码雨特效"></a>13 添加背景代码雨特效</h2><p>新建 <code>DigitalRain.js</code>，写入以下代码：</p>
+<pre><code class="lang-js">window.onload = function(){
+    //获取画布对象
+    var canvas = document.getElementById(&quot;canvas&quot;);
+    //获取画布的上下文
+    var context =canvas.getContext(&quot;2d&quot;);
+    var s = window.screen;
+    var W = canvas.width = s.width;
+    var H = canvas.height;
+    //获取浏览器屏幕的宽度和高度
+    //var W = window.innerWidth;
+    //var H = window.innerHeight;
+    //设置canvas的宽度和高度
+    canvas.width = W;
+    canvas.height = H;
+    //每个文字的字体大小
+    var fontSize = 12;
+    //计算列
+    var colunms = Math.floor(W /fontSize);    
+    //记录每列文字的y轴坐标
+    var drops = [];
+    //给每一个文字初始化一个起始点的位置
+    for(var i=0;i&lt;colunms;i++){
+        drops.push(0);
+    }
+    //运动的文字
+    var str =&quot;WELCOME TO WWW.ITRHX.COM&quot;;
+    //4:fillText(str,x,y);原理就是去更改y的坐标位置
+    //绘画的函数
+    function draw(){
+        context.fillStyle = &quot;rgba(238,238,238,.08)&quot;;//遮盖层
+        context.fillRect(0,0,W,H);
+        //给字体设置样式
+        context.font = &quot;600 &quot;+fontSize+&quot;px  Georgia&quot;;
+        //给字体添加颜色
+        context.fillStyle = [&quot;#33B5E5&quot;, &quot;#0099CC&quot;, &quot;#AA66CC&quot;, &quot;#9933CC&quot;, &quot;#99CC00&quot;, &quot;#669900&quot;, &quot;#FFBB33&quot;, &quot;#FF8800&quot;, &quot;#FF4444&quot;, &quot;#CC0000&quot;][parseInt(Math.random() * 10)];//randColor();可以rgb,hsl, 标准色，十六进制颜色
+        //写入画布中
+        for(var i=0;i&lt;colunms;i++){
+            var index = Math.floor(Math.random() * str.length);
+            var x = i*fontSize;
+            var y = drops[i] *fontSize;
+            context.fillText(str[index],x,y);
+            //如果要改变时间，肯定就是改变每次他的起点
+            if(y &gt;= canvas.height &amp;&amp; Math.random() &gt; 0.99){
+                drops[i] = 0;
+            }
+            drops[i]++;
+        }
+    };
+    function randColor(){//随机颜色
+        var r = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        return &quot;rgb(&quot;+r+&quot;,&quot;+g+&quot;,&quot;+b+&quot;)&quot;;
+    }
+    draw();
+    setInterval(draw,35);
+};
+</code></pre>
+<p>在主题文件的相关css文件中（以 <code>Material X 1.2.1</code> 主题为例，在<code>\themes\material-x-1.2.1\source\less\_main.less</code> 文件末尾）添加以下代码：</p>
+<pre><code class="lang-less">canvas {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+}
+</code></pre>
+<p>然后在主题的 <code>layout.ejs</code> 文件中引入即可：</p>
+<pre><code class="lang-css">  &lt;!-- 数字雨 --&gt;
+  &lt;canvas id=&quot;canvas&quot; width=&quot;1440&quot; height=&quot;900&quot; &gt;&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;/js/DigitalRain.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>最终效果：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102432525.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/20190807102432525.png"></a></p>
+<blockquote>
+<p>转载自: <a href="https://itrhx.blog.csdn.net/article/details/85420403" target="_blank" rel="noopener">https://itrhx.blog.csdn.net/article/details/85420403</a></p>
+</blockquote>
+
+          
+            <hr>
+            <center><img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.3/emojis/gif/23.gif"></center>
+            <p style="font-size:32px;text-align:center;margin-top:-2px">施工中...</p>
+            
+        </div>
+        <!-- <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/custom/donate/AlipayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/custom/donate/WechatQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer> -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2020/02/09/黑洞/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Black-hole/600px-BH_LMC.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Black-hole/600px-BH_LMC.png">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                黑洞</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2020/02/07/Hexo 博客优化之实用功能添加系列/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/68422578_p0.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/68422578_p0.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                博客优化之实用功能添加系列</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "l3oivT9vXllSnX2DP9CYcCp0-gzGzoHsz",
+        appKey: "jwiXUn9T1cuBDgoPnCfjE4Hu",
+        master: '5c6349399eaa71523af5bd5e1aa5734c',   //博主邮箱md5
+        tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+        friends:  [
+          "261294d20e9e42234ae2fb2a7f1c46cd",
+          "29c4d17e7407432f87a422dcd736d2d2",
+          "9e547d05b6be799568cc2dacf8263179",
+          "4e5df3b131c1319aaf3e082e7bc6d639",
+          "87c193a34cedc5db6706383d4f2b50c1",
+          "f43c1a5126008491e61b5cd11aae4704",
+          "173bbeb60e5a1fc5f7a7dcda0a9a0a1d"
+        ],  //小伙伴邮箱Md5
+        metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）","link":"网址 (https)"},
+        placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
+        avatar: 'wavatar',
+        visitor: true,  //点击量统计
+        enableQQ: true,
+        path: window.location.pathname,
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <!-- <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg" itemprop="image" alt="小枫叶" height="70" width="70"></a> -->
+          <!-- <div class="meta"> -->
+            <!-- <span class="title">Author</span> -->
+            <!-- <h3 itemprop="name"> -->
+            <!-- <a href="" itemprop="url" rel="author">小枫叶</a> -->
+            <!-- </h3> -->
+          <!-- </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section> -->
+    </main>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+
+<script>
+  function imgInit(){
+      var imgs=document.getElementsByClassName('entry-content').item(0).getElementsByTagName('img'),dsrc=record.getAttribute("data-src");
+      for(var i=0;i<imgs.length;++i){
+          var element = document.createElement("a"),record=imgs[i];
+          element.setAttribute("data-fancybox","gallery");
+          element.setAttribute("href",dsrc||imgs[i].src);
+          imgs[i].parentNode.appendChild(element);
+          imgs[i].parentNode.removeChild(imgs[i]);
+          element.appendChild(record);
+      }
+  }
+  imgInit();
+</script>
+<!-- post.md  -->
+<script>
+  window.MathJax && MathJax.Hub && MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
+</script>
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/ball.svg">
+        <!-- <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/disqus-preloader.svg"> -->
+      </div>
+      <!-- <p style="color: #666666;">&copy 2020</p> -->
+
+      <div>
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+        <script>
+            var now = new Date();
+            function createtime() {
+                var grt= new Date("02/02/2020 00:00:00");
+                now.setTime(now.getTime()+250);
+                days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+                hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+                if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+                mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+                seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+                document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+                document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+        setInterval("createtime()",250);
+        </script>
+        <a href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
+        </div>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by GitHub Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/av-min/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/Valine.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HE1H811ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0HE1H811ZR');
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-157728544-1');
+</script>
+<!--百度统计-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?eaade43aebeaf333b0eaf3881a080da4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">小枫叶</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-home faa-wrench" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-clock faa-spin" aria-hidden="true"></i>
+            时光轴
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  分类
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags/">
+                  <i class="fa fa-tags faa-vertical" aria-hidden="true"></i>
+                  标签
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-float" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/books/">
+                  <i class="fa fa-book faa-bounce" aria-hidden="true"></i>
+                  书单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  番组
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/about/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-comments faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-send faa-float" aria-hidden="true"></i>
+            小伙伴
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-vertical" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-tada" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/APlayer/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/APlayer/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: STXingkai;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: HotPink;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: #FF69B4(255, 255, 255, 0.8);
+  }
+</style>
+<!-- <meting-js
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script> -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

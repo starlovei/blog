@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+
+  <title itemprop="name">在Hexo中使用MathJax插入数学公式 | 小枫叶</title>
+  
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/zoom.css" media="all">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/sharejs.css"> -->
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "小枫叶家の";
+  mashiro_option.author_name = "家";
+  mashiro_option.site_url = "https://www.starlovei.com";
+  mashiro_option.v_appId = "l3oivT9vXllSnX2DP9CYcCp0-gzGzoHsz";
+  mashiro_option.v_appKey = "jwiXUn9T1cuBDgoPnCfjE4Hu";
+  mashiro_option.mathjax = "";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/50717513.webp,https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/57793944_p0.webp,https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/66952181_p0.webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">
+  .site-top .lower nav{display:block !important;}
+  .author-profile i,
+  .post-like a,
+  .post-share .show-share,
+  .sub-text,
+  .we-info a,
+  span.sitename,
+  .post-more i:hover,
+  #pagination a:hover,
+  .post-content a:hover,
+  .float-content i:hover{color:hotpink}
+  .feature i,
+  .download,
+  .navigator i:hover,
+  .links ul li:before,
+  .ar-time i,
+  span.ar-circle,
+  .object,
+  .comment .comment-reply-link,
+  .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:hotpink}::-webkit-scrollbar-thumb{background:hotpink}
+  .download,
+  .navigator i:hover,.link-title,
+  .links ul li:hover,#pagination a:hover,
+  .comment-respond input[type='submit']:hover{border-color:hotpink}
+  .entry-content a:hover,
+  .site-info a:hover,
+  .comment h4 a,
+  #comments-navi a.prev,
+  #comments-navi a.next,
+  .comment h4 a:hover,
+  .site-top ul li a:hover,
+  .entry-title a:hover,
+  #archives-temp h3,
+  span.page-numbers.current,
+  .sorry li a:hover,
+  .site-title a:hover,
+  i.iconfont.js-toggle-search.iconsearch:hover,
+  .comment-respond input[type='submit']:hover{color:hotpink}
+  .comments .comments-main{display:block !important;}
+  .comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+</head></html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+
+  <!-- 实现换肤功能 -->
+  <div class="skin-menu no-select" id="mainskin"  style="position: fixed">
+    <div class="theme-controls row-container">
+        <ul class="menu-list">
+            <li id="white-bg"> <i class="fa fa-television" aria-hidden="true"></i></li>
+            <li id="sakura-bg"> <i class="iconfont icon-sakura"></i></li>
+            <li id="gribs-bg"> <i class="fa fa-crop-alt" aria-hidden="true"></i></li>
+            <li id="KAdots-bg"> <i class="iconfont icon-dots"></i></li>
+            <li id="totem-bg"> <i class="fa fa-air-freshener" aria-hidden="true"></i></li>
+            <li id="pixiv-bg"> <i class="iconfont icon-pixiv"></i></li>
+            <li id="bing-bg"> <i class="fa fa-picture-o"></i></li>
+            <li id="dark-bg"> <i class="fa fa-moon-o" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+</div>
+<canvas id="night-mode-cover"></canvas> 
+  <div class="changeSkin-gear no-select">
+    <div class="keys" id="setbtn"> 
+        <span id="open-skinMenu">
+            SCHEME TOOL | 主题工具 &nbsp;
+            <i class="iconfont icon-gear inline-block rotating">
+            </i>
+        </span>
+    </div>
+</div>
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-dim">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://www.starlovei.com">
+          <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+			<!-- 首页一言打字效果 -->
+			<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/typed/typed.min.js"></script>
+			<i class="fa fa-quote-left"></i>
+			<span class="element"></span>
+			<i class="fa fa-quote-right"></i>
+			<span class="element"></span>
+			<script>
+            var typed = new Typed('.element', {
+              strings: ["给时光以生命，给岁月以文明", "寒蝉黎明之时,便是重生之日"], //输入内容, 支持html标签
+              typeSpeed: 140, //打字速度
+              backSpeed: 50, //回退速度
+              loop: false,//是否循环
+              loopCount: Infinity,
+              showCursor: false//是否开启光标
+            });
+      </script>
+
+        <!-- <p></p> -->
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/next.png">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://twitter.com/starlove_i" target="_blank" class="social-github" title="twitter">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/twitter1.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://t.me/starloveii" target="_blank" class="social-github" title="telegram">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/telegram.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://github.com/starlovei" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/github1.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="mailto:star_love_i@outlook.com" target="_blank" class="social-github" title="email">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/email.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/next.png">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <!-- <div id="video-btn" class="loadvideo videolive">
+    </div> -->
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select is-homepage gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakuraso">小枫叶</span>
+            <span class="effect">の</span>
+            <span class="sakuraso">家</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-home faa-wrench" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-clock faa-spin" aria-hidden="true"></i>
+                    时光轴
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                          分类
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags/">
+                        <i class="fa fa-tags faa-vertical" aria-hidden="true"></i>
+                          标签
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-list-ul faa-float" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/books/">
+                        <i class="fa fa-book faa-bounce" aria-hidden="true"></i>
+                          书单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                        <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          番组
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/about/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-comments faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-send faa-float" aria-hidden="true"></i>
+                    小伙伴
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-heart faa-vertical" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-rss faa-tada" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center-sakura single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img">
+      <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Math/Airflow-Obstructed-Duct.png" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    </div>
+    <header class="pattern-header single-header">
+    <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
+      <h1 class="entry-title">
+      在Hexo中使用MathJax插入数学公式</h1>
+      <span class="toppic-line"></span><p class="entry-census">
+      <span>
+        <a href="">
+          <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+        </a>
+      </span>
+      <span>
+        <a href="">小枫叶</a>
+      </span>
+      <span class="bull">.</span>
+      ·2020-2-10
+      <span class="bull">·</span>
+      <span id='/2020/02/10/数学公式/' class="leancloud-visitors" data-flag-title="在Hexo中使用MathJax插入数学公式"><a class="leancloud-visitors-count">加载中...</a><a class="post-meta-item-text"> 次阅读</a></span>
+      <!--文章标签-->
+      
+        
+      <div>
+            <ul class="spfk-ul">
+              &nbsp<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<li class="spfk-li"><span class="triangle"></span><a href="/tags/主题/" class="butterfly-tags">主题</a></li><li class="spfk-li"><span class="triangle"></span><a href="/tags/网络/" class="butterfly-tags">网络</a></li><li class="spfk-li"><span class="triangle"></span><a href="/tags/公式/" class="butterfly-tags">公式</a></li>
+            </ul>
+          </div>
+          <script>
+              function colorInit(c,num){for(var i=1;i<=num;++i)c.push(i+'');}
+              function paintTags(){
+                  var colorNumber=8,tagColors=[],tags=document.getElementsByClassName('spfk-li');
+                  for(var i = 0 ; i < tags.length ; ++i){
+                      if(!tagColors.length)colorInit(tagColors,colorNumber);
+                      var j=Math.floor(Math.random()*tagColors.length);
+                      tags[i].classList.add("spfk-color"+tagColors[j]);
+                      tagColors.splice(j,1);
+                  }
+              }
+              paintTags()
+          </script>
+      
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>日常工作喜欢用markdown写技术文档，免不了会碰到数学公式。最近迁移到hexo后，遇到了同样的麻烦，原生的Hexo并不支持数学公式的显示。google之，发现了MathJax，著名的Stackoverflow网站上的漂亮公式，就是使用了MathJax插件的效果。Mathjax号称Beautiful math in all browsers，在展示数学公式方面是不错的选择。</p>
+<p>MathJax使用网络字体（大部分浏览器都支持）去产生高质量的排版，使其在所有分辨率都可缩放和显示，这远比使用包含公式的图片要有效得多。使用MathJax显示数学公式是基于文本的，而非图片。它可以被搜索引擎使用，这意味着方程式和页面上的文字一样是可以被搜索的。 MathJax允许页面作者使用TeX、LaTeX符号和 MathML 或者 AsciiMath 去书写公式。 MathJax甚至可以将Tex格式转化为MathML格式，使其可以被原生支持MathML格式的浏览器更多的渲染。转化为MathML格式后你可以复制粘贴它们到其他程序中。</p>
+<p>MathJax是模块化的，所以它仅仅在需要时才加载它的组件，同时也可以被扩展以实现更多功能。 MathJax同时也是高度可配置的，允许作者作出更适宜网站自身的自定义。 如果你需要，MathJax的API甚至可以让你在你的网页上动态的创建公式。</p>
+<h2 id="插件集成"><a href="#插件集成" class="headerlink" title="插件集成"></a>插件集成</h2><p>安装方法如下:</p>
+<pre><code class="lang-css">$ npm install hexo-math --save
+</code></pre>
+<p>在 <code>_config.yml</code> 文件中添加：</p>
+<pre><code class="lang-css">math:
+  engine: &#39;mathjax&#39; # or &#39;katex&#39;
+  mathjax:
+    # src: custom_mathjax_source
+    config:
+      # MathJax config
+</code></pre>
+<p>如果你和笔者一样使用了next的主题，那么简单了。编辑主题的 <code>_config.yml</code>，将 <code>mathjax</code> 设定为 <code>true</code> 即可。</p>
+<pre><code class="lang-css"># MathJax Support
+mathjax: true
+</code></pre>
+<p>此外，当然也可以手工集成，只需要在markdown文件中(hexo的文章页面因为需要页面解析，要添加在title等栏目后)，添加<code>MathJax CDN</code>，代码如下：</p>
+<pre><code class="lang-css">&lt;script type=&quot;text/javascript&quot;
+   src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+<p>就可以在md文件中插入Tex格式的公式了。<br>具体用法见<a href="http://catx.me/2014/03/09/hexo-mathjax-plugin/" target="_blank" rel="noopener">Hexo MathJax插件</a>.</p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>行内公式的形式，例如\(f(x)=x^{2}\)，代码如下：</p>
+<pre><code class="lang-css">\\( 此处插入公式 \\)
+</code></pre>
+<p>行间公式的形式，例如</p>
+<script type="math/tex; mode=display">f(x)=x^{2}</script><p>代码如下:</p>
+<pre><code class="lang-css">$$ 此处插入公式 $$
+</code></pre>
+<h2 id="书写规则"><a href="#书写规则" class="headerlink" title="书写规则"></a>书写规则</h2><p>看到别的网站上有MathJax解析的公式时，你可以通过右键菜单<code>”Show Math As &gt; TeX Commands”</code>查看Tex格式。</p>
+<h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">大写</th>
+<th style="text-align:center">Tex</th>
+<th style="text-align:center">小写</th>
+<th style="text-align:center">Tex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">alpha</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">$\alpha$</td>
+<td style="text-align:center">\alpha</td>
+</tr>
+<tr>
+<td style="text-align:center">beta</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">$\beta$</td>
+<td style="text-align:center">\beta</td>
+</tr>
+<tr>
+<td style="text-align:center">gamma</td>
+<td style="text-align:center">$\Gamma$</td>
+<td style="text-align:center">\Gamma</td>
+<td style="text-align:center">$\gamma$</td>
+<td style="text-align:center">\gamma</td>
+</tr>
+<tr>
+<td style="text-align:center">delta</td>
+<td style="text-align:center">$\Delta$</td>
+<td style="text-align:center">\Delta</td>
+<td style="text-align:center">$\delta$</td>
+<td style="text-align:center">\delta</td>
+</tr>
+<tr>
+<td style="text-align:center">epsilon</td>
+<td style="text-align:center">E</td>
+<td style="text-align:center">E</td>
+<td style="text-align:center">$\epsilon$</td>
+<td style="text-align:center">\epsilon</td>
+</tr>
+<tr>
+<td style="text-align:center">zeta</td>
+<td style="text-align:center">Z</td>
+<td style="text-align:center">Z</td>
+<td style="text-align:center">$\zeta$</td>
+<td style="text-align:center">\zeta</td>
+</tr>
+<tr>
+<td style="text-align:center">eta</td>
+<td style="text-align:center">H</td>
+<td style="text-align:center">H</td>
+<td style="text-align:center">$\eta$</td>
+<td style="text-align:center">\eta</td>
+</tr>
+<tr>
+<td style="text-align:center">theta</td>
+<td style="text-align:center">$\Theta$</td>
+<td style="text-align:center">\Theta</td>
+<td style="text-align:center">$\theta$</td>
+<td style="text-align:center">\theta</td>
+</tr>
+<tr>
+<td style="text-align:center">iota</td>
+<td style="text-align:center">I</td>
+<td style="text-align:center">I</td>
+<td style="text-align:center">$\iota$</td>
+<td style="text-align:center">\iota</td>
+</tr>
+<tr>
+<td style="text-align:center">kappa</td>
+<td style="text-align:center">K</td>
+<td style="text-align:center">K</td>
+<td style="text-align:center">$\kappa$</td>
+<td style="text-align:center">\kappa</td>
+</tr>
+<tr>
+<td style="text-align:center">lambda</td>
+<td style="text-align:center">$\Lambda$</td>
+<td style="text-align:center">\Lambda</td>
+<td style="text-align:center">$\lambda$</td>
+<td style="text-align:center">\lambda</td>
+</tr>
+<tr>
+<td style="text-align:center">mu</td>
+<td style="text-align:center">M</td>
+<td style="text-align:center">M</td>
+<td style="text-align:center">$\mu$</td>
+<td style="text-align:center">\mu</td>
+</tr>
+<tr>
+<td style="text-align:center">nu</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">$\nu$</td>
+<td style="text-align:center">\nu</td>
+</tr>
+<tr>
+<td style="text-align:center">xi</td>
+<td style="text-align:center">$\Xi$</td>
+<td style="text-align:center">\Xi</td>
+<td style="text-align:center">$\xi$</td>
+<td style="text-align:center">\xi</td>
+</tr>
+<tr>
+<td style="text-align:center">omicron</td>
+<td style="text-align:center">O</td>
+<td style="text-align:center">O</td>
+<td style="text-align:center">$\omicron$</td>
+<td style="text-align:center">\omicron</td>
+</tr>
+<tr>
+<td style="text-align:center">pi</td>
+<td style="text-align:center">$\Pi$</td>
+<td style="text-align:center">\Pi</td>
+<td style="text-align:center">$\pi$</td>
+<td style="text-align:center">\pi</td>
+</tr>
+<tr>
+<td style="text-align:center">rho</td>
+<td style="text-align:center">P</td>
+<td style="text-align:center">P</td>
+<td style="text-align:center">$\rho$</td>
+<td style="text-align:center">\rho</td>
+</tr>
+<tr>
+<td style="text-align:center">sigma</td>
+<td style="text-align:center">$\Sigma$</td>
+<td style="text-align:center">\Sigma</td>
+<td style="text-align:center">$\sigma$</td>
+<td style="text-align:center">\sigma</td>
+</tr>
+<tr>
+<td style="text-align:center">tau</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">$\tau$</td>
+<td style="text-align:center">\tau</td>
+</tr>
+<tr>
+<td style="text-align:center">upsilon</td>
+<td style="text-align:center">$\Upsilon$</td>
+<td style="text-align:center">\Upsilon</td>
+<td style="text-align:center">$\upsilon$</td>
+<td style="text-align:center">\upsilon</td>
+</tr>
+<tr>
+<td style="text-align:center">phi</td>
+<td style="text-align:center">$\Phi$</td>
+<td style="text-align:center">\Phi</td>
+<td style="text-align:center">$\phi$</td>
+<td style="text-align:center">\phi</td>
+</tr>
+<tr>
+<td style="text-align:center">chi</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">$\chi$</td>
+<td style="text-align:center">\chi</td>
+</tr>
+<tr>
+<td style="text-align:center">psi</td>
+<td style="text-align:center">$\Psi$</td>
+<td style="text-align:center">\Psi</td>
+<td style="text-align:center">$\psi$</td>
+<td style="text-align:center">\psi</td>
+</tr>
+<tr>
+<td style="text-align:center">omega</td>
+<td style="text-align:center">$\Omega$</td>
+<td style="text-align:center">\Omega</td>
+<td style="text-align:center">$\omega$</td>
+<td style="text-align:center">\omega</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>一些字母变体 \epsilon \varepsilon \phi \varphi：$ \color{red}{\epsilon \varepsilon \phi \varphi} $</p>
+<h3 id="上标和下标"><a href="#上标和下标" class="headerlink" title="上标和下标"></a>上标和下标</h3><p>使用符号 ^ 和 _. 如, x_i^2: $ \color{red}{x_i^2} $.<br>此外，还需要了解一个”组”的概念。这个组既可以是一个符号也可以使是一个用{}括起来的公式。 比如10^10显示为$ \color{red}{10^10} $, 10^{10}才是你想要的结果：$ \color{red}{10^{10}} $.</p>
+<p>$ \color{red}{在markdown中书写，因为$, \{, \}都是有特殊含义的，所以需要加\转义} $.</p>
+<h3 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h3><ul>
+<li>小括号与方括号：使用原始的( )，[ ]即可，如，(2+3)[4+4]：$ \color{red}{(2+3)[4+4]} $.</li>
+<li>大括号：时由于大括号{ }被用来分组，因此需要使用\{和\}表示大括号，如，\{a \ast b\} : $ \color{red}{\{a \ast b\}} $,还可以使用\lbrace 和\rbrace来表示,如，\lbrace a \ast b \rbrace：$ \color{red}{\lbrace a \ast b \rbrace} $.</li>
+<li>尖括号：使用\langle 和 \rangle表示左尖括号和右尖括号。如，\langle x \rangle：$ \color{red}{\langle x \rangle} $.</li>
+<li>上取整：使用\lceil 和 \rceil 表示。 如，\lceil x \rceil：$ \color{red}{\lceil x \rceil} $.</li>
+<li>下取整：使用\lfloor 和 \rfloor 表示。如，\lfloor x \rfloor：$ \color{red}{\lfloor x \rfloor} $.</li>
+<li>不可见括号：使用.表示。<br>需要注意的是，原始符号并不会随着公式大小缩放。如，(\frac12)：(12)(12)。可以使用\left(…\right)来自适应的调整括号大小。如下，<script type="math/tex; mode=display">\{\sum_{i=0}^{n} i^{2} = \frac {(n^{2} + n)(2n + 1)} {6}\}</script><script type="math/tex; mode=display">\left\{\sum_{i=0}^{n} i^{2} = \frac {(n^{2} + n)(2n + 1)} {6}\right\}</script>可以看到，第二个公式中的括号是经过缩放的。</li>
+</ul>
+<h3 id="分式与根式-分号与开方"><a href="#分式与根式-分号与开方" class="headerlink" title="分式与根式(分号与开方)"></a>分式与根式(分号与开方)</h3><ul>
+<li>\frac ab 显示为$ \frac ab $ 而\frac{a+1}{b+1}显示为$ \color{red}{\frac{a+1}{b+1}} $</li>
+<li>\over: {a+1\over b+1}为 $ \color{red}{a+1\over b+1} $</li>
+<li>\sqrt: \sqrt{x^3} 为$ \color{red}{\sqrt{x^3}} $, \sqrt[3]{\frac xy}为$ \color{red}{\sqrt[3]{\frac xy}} $,更复杂的考虑{…}^{1/2}:$ \color{red}{…^{1/2}} $</li>
+</ul>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p>\mathbb 和 \Bbb: $ \color{red}{\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}} $$ \color{red}{\Bbb{abcdefghijklmnopqrstuvwxyz}} $黑板体<br>\mathbf:$ \color{red}{\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}} $粗体<br>\mathtt:$ \color{red}{\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}} $打印体<br>\mathrm:$ \color{red}{\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}} $罗马体<br>\mathcal:$ \color{red}{\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}} $<br>\mathscr:$ \color{red}{\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}} $手写体<br>\mathfrak:$ \color{red}{\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}} $德国体<br>特殊的函数符号，考虑使用罗马字体， 如\lim, \sin， 而不是普通的lim, sin。 如 \sin x $ \color{red}{\sin x} $,而不是 sin x$ \color{red}{sin x} $。 对于</p>
+<h3 id="数学符号"><a href="#数学符号" class="headerlink" title="数学符号"></a>数学符号</h3><p>可以参考LaTeX符号简表和 LaTex符号列表。</p>
+<ul>
+<li>求和：\sum，可使用上下标。如，\sum_1^n: $ \color{red}{\sum_1^n} $</li>
+<li>积分：\int，可使用上下限。如，\int_1^\infty:$ \color{red}{\int_1^\infty} $</li>
+<li>连乘：\prod:$ \color{red}{\prod} $</li>
+<li>\bigcup:$ \color{red}{\bigcup} $</li>
+<li>\bigcap:$ \color{red}{\bigcap} $</li>
+<li>\iint:$ \color{red}{\iint} $</li>
+<li>极限：\lim可以使用下标, \lim_{x\to 0}:$ \color{red}{\lim_{x\to 0}} $</li>
+<li>比较：\lt \gt \le \ge \neq:$ \color{red}{\lt\gt\le\ge\neq} $, 可以前面加\not否定: $ \color{red}{\not\lt\not\gt\not\le\not\ge\not\neq} $</li>
+<li>运算：\times \div \pm \mp$ \color{red}{\times\div\pm\mp} $， \cdot居中，x \cdot y:$ \color{red}{x \cdot y} $</li>
+<li>集合：\cup \cap \setminus \subset \subseteq \subsetneq \supset \in \notin \emptyset \varnothing:<br>$ \color{red}{\cup \cap \setminus \subset \subseteq \subsetneq \supset \in \notin \emptyset \varnothing} $</li>
+<li>排列：\choose 或 \binom, {n+1 \choose 2k} or \binom{n+1}{2k} :$ \color{red}{\binom{n+1}{2k}} $</li>
+<li>箭头：\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto \implies \iff \longrightarrow:<br>$ \color{red}{\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto \implies \iff \longrightarrow} $</li>
+<li>逻辑：\land \lor \lnot \forall \exists \top \bot \vdash \vDash:$ \color{red}{\land \lor \lnot \forall \exists \top \bot \vdash \vDash} $</li>
+<li>空格：或者\quad 和 \qquad，MathJax自己决定是否增加空格。所以一般你指定空格是没用的， 除非你用转义\。</li>
+<li>\star \ast \oplus \circ \bullet: $ \color{red}{\star \ast \oplus \circ \bullet} $</li>
+<li>\approx \sim \cong \equiv \prec: $ \color{red}{\approx \sim \cong \equiv \prec} $</li>
+<li>\infty \aleph_0 \nabla \partial \Im \Re:$ \color{red}{\infty \aleph_0 \nabla \partial \Im \Re} $</li>
+<li>a\equiv b\pmod n: $ \color{red}{a\equiv b\pmod n} $</li>
+<li>\ldots:$ \color{red}{\ldots a} $</li>
+<li>\cdots:$ \color{red}{\cdots a} $</li>
+<li>\hat:$ \color{red}{\hat x} $</li>
+<li>\widehat:$ \color{red}{\widehat {xy}} $</li>
+<li>\bar:$ \color{red}{\bar x} $</li>
+<li>\overline:$ \color{red}{\overline {xyz}} $</li>
+<li>\vec:$ \color{red}{\vec x} $</li>
+<li>\overrightarrow:$ \color{red}{\overrightarrow {xyz}} $</li>
+<li>\dot 和 \ddot:$ \color{red}{\dot x \ddot y} $</li>
+</ul>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>使用这样的形式来创建表格，列样式可以是clr表示居中，左，右对齐，还可以使用|表示一条竖线。表格中 各行使用\分隔(hexo markdown中,需要使用\)，各列使用&amp;分隔。使用\hline在本行前加入一条直线。 例如，</p>
+<pre><code class="lang-css">\begin{array}{c|lcr}
+n &amp; \text{Left} &amp; \text{Center} &amp; \text{Right} \\\\
+\hline
+1 &amp; 0.24 &amp; 1 &amp; 125 \\\\
+2 &amp; -1 &amp; 189 &amp; -8 \\\\
+3 &amp; -20 &amp; 2000 &amp; 1+10i \\\\
+\end{array}
+</code></pre>
+<p>结果<br>\begin{array}{c|lcr}<br>n &amp; \text{Left} &amp; \text{Center} &amp; \text{Right} \\\\<br>\hline<br>1 &amp; 0.24 &amp; 1 &amp; 125 \\\\<br>2 &amp; -1 &amp; 189 &amp; -8 \\\\<br>3 &amp; -20 &amp; 2000 &amp; 1+10i \\\\<br>\end{array}</p>
+<h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p>和表格很类似，使用这样的形式来表示矩阵，在\begin与\end之间加入矩阵中的元素即可。矩阵的行之间使用\分隔(hexo markdown中,需要使用\)，列之间使用&amp;分隔。例如，</p>
+<pre><code class="lang-css">\begin{matrix}
+1 &amp; x &amp; x^2 \\\\
+1 &amp; y &amp; y^2 \\\\
+1 &amp; z &amp; z^2 \\\\
+\end{matrix}
+</code></pre>
+<p>结果</p>
+<p>\begin{matrix}<br>1 &amp; x &amp; x^2 \\\\<br>1 &amp; y &amp; y^2 \\\\<br>1 &amp; z &amp; z^2 \\\\<br>\end{matrix}</p>
+<p>如果要对矩阵加括号，可以像上文中提到的一样，使用\left与\right配合表示括号符号。也可以使用特殊的matrix。即替换begin{matrix}…end{matrix}中的matrix为pmatrix，bmatrix，Bmatrix，vmatrix,Vmatrix.<br>如pmatrix:$ \color{red}{\begin{pmatrix} 1&amp;2\\\\ 3&amp;4\\\\ \end{pmatrix}} $bmatrix:$ \color{red}{\begin{bmatrix} 1&amp;2\\\\ 3&amp;4\\\\ \end{bmatrix}} $Bmatrix:$ \color{red}{\begin{Bmatrix} 1&amp;2\\\\ 3&amp;4\\\\ \end{Bmatrix}} $vmatrix:$ \color{red}{\begin{vmatrix} 1&amp;2\\\\ 3&amp;4\\\\ \end{vmatrix}} $Vmatrix:$ \color{red}{\begin{Vmatrix} 1&amp;2\\\\ 3&amp;4\\\\ \end{Vmatrix}} $</p>
+<p><strong>增广矩阵</strong>, 需要使用前面的array来实现, 如</p>
+<pre><code class="lang-css">\left[
+\begin{array}{cc|c}
+    1&amp;2&amp;3\\\\
+    4&amp;5&amp;6
+\end{array}
+\right]
+</code></pre>
+<p>结果：</p>
+<script type="math/tex; mode=display">\left[ \begin{array}{cc|c}     1&2&3\\     4&5&6 \end{array} \right]</script><p><strong>内联矩阵</strong>, <code>\bigl(\begin{smallmatrix} ... \end{smallmatrix}\bigr)</code>, 效果如：</p>
+<script type="math/tex; mode=display">\bigl( \begin{smallmatrix} a & b \\ c & d \end{smallmatrix} \bigr)</script><p>可以使用\cdots$\color{red}{\cdots}$\ddots$\color{red}{\ddots}$\vdots$\color{red}{\vdots}$来省略矩阵中的元素，如：</p>
+<script type="math/tex; mode=display">\begin{pmatrix} 1 & a_1 & a_1^2 & \cdots & a_1^n \\ 1 & a_2 & a_2^2 & \cdots & a_2^n \\ \vdots & \vdots& \vdots & \ddots & \vdots \\ 1 & a_m & a_m^2 & \cdots & a_m^n \end{pmatrix}</script><h3 id="公式对齐"><a href="#公式对齐" class="headerlink" title="公式对齐"></a>公式对齐</h3><p>有时候可能需要一系列的公式中等号对齐，如：</p>
+<script type="math/tex; mode=display">\begin{align} \sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\  & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\  & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\  & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\  & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right) \end{align}</script><p>这需要使用形如 <code>\begin{align}…\end{align}</code> 的格式，其中需要使用&amp;来指示需要对齐的位置。请使用右键查看上述公式的代码。</p>
+<h3 id="分类表达式"><a href="#分类表达式" class="headerlink" title="分类表达式"></a>分类表达式</h3><p>定义函数的时候经常需要分情况给出表达式，可使用 <code>\begin{cases}…\end{cases}</code>。其中，使用\来分类，使用&amp;指示需要对齐的位置。如：</p>
+<script type="math/tex; mode=display">f(n) = \begin{cases} n/2,  & \text{if $n$ is even} \\ 3n+1, & \text{if $n$ is odd}  \\ \end{cases}</script><p>上述公式的括号也可以移动到右侧，不过需要使用array来实现，如下：</p>
+<script type="math/tex; mode=display">\left. \begin{array}{l} \text{if $n$ is even:}&n/2\\ \text{if $n$ is odd:}&3n+1 \end{array} \right\} =f(n)</script><p>最后，如果想分类之间的垂直间隔变大，可以使用[2ex]代替\来分隔不同的情况。(3ex,4ex也可以用，1ex相当于原始距离）。</p>
+<h3 id="空间问题"><a href="#空间问题" class="headerlink" title="空间问题"></a>空间问题</h3><p><strong>不要在指数或者积分中使用 \frac</strong><br>在指数或者积分表达式中使用\frac会使表达式看起来不清晰，因此在专业的数学排版中很少被使用。应该使用一个水平的/来代替，效果如下：</p>
+<script type="math/tex; mode=display">\begin{array}{cc} \mathrm{Bad} & \mathrm{Better} \\ \hline \\ e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}& e^{i\pi/2} \\ \int_{-\frac\pi2}^\frac\pi2 \sin x\,dx & \int_{-\pi/2}^{\pi/2}\sin x\,dx \\ \end{array}</script><p><strong>使用 \mid 代替 | 作为分隔符</strong><br>符号|作为分隔符时有排版空间大小的问题，应该使用\mid代替。效果如下：</p>
+<script type="math/tex; mode=display">\begin{array}{cc} \mathrm{Bad} & \mathrm{Better} \\ \hline \\ {x|x^2\in\Bbb Z} & {x\mid x^2\in\Bbb Z} \\ \end{array}</script><p>此外，在微分前应该使用\,来增加些许空间，否则$\TeX$会将微分紧凑地排列在一起。如下：</p>
+<script type="math/tex; mode=display">\begin{array}{cc} \mathrm{Bad} & \mathrm{Better} \\ \hline \\ \iiint_V f(x)dz dy dx & \iiint_V f(x)\,dz\,dy\,dx \end{array}</script><h3 id="连分数"><a href="#连分数" class="headerlink" title="连分数"></a>连分数</h3><p>书写连分数表达式时，请使用\cfrac代替\frac或者\over两者效果对比如下：</p>
+<script type="math/tex; mode=display">x = a_0 + \cfrac{1^2}{a_1 + \cfrac{2^2}{a_2 + \cfrac{3^2}{a_3 + \cfrac{4^4}{a_4 + \cdots}}}} \tag{\cfrac}</script><script type="math/tex; mode=display">x = a_0 + \frac{1^2}{a_1 + \frac{2^2}{a_2 + \frac{3^2}{a_3 + \frac{4^4}{a_4 + \cdots}}}} \tag{\frac}</script><h3 id="方程组"><a href="#方程组" class="headerlink" title="方程组"></a>方程组</h3><p>使用<code>\begin{array} … \end{array}</code>与<code>\left{…\right</code>.配合，表示方程组，如：</p>
+<script type="math/tex; mode=display">\left\{ \begin{array}{c} a_1x+b_1y+c_1z=d_1 \\ a_2x+b_2y+c_2z=d_2 \\ a_3x+b_3y+c_3z=d_3 \end{array} \right.</script><p>同时，还可以使用<code>\begin{cases}…\end{cases}</code>表达同样的方程组，如：</p>
+<script type="math/tex; mode=display">\begin{cases} a_1x+b_1y+c_1z=d_1 \\ a_2x+b_2y+c_2z=d_2 \\ a_3x+b_3y+c_3z=d_3 \end{cases}</script><p>对齐方程组中的 = 号，可以使用 <code>\being{aligned} .. \end{aligned}</code>，如：</p>
+<script type="math/tex; mode=display">\left\{ \begin{array}{ll} a_1x+b_1y+c_1z &=d_1+e_1 \\ a_2x+b_2y &=d_2 \\ a_3x+b_3y+c_3z &=d_3 \end{array} \right.</script><h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><p>命名颜色是浏览器相关的，如果浏览器没有定义相关的颜色名称，则相关文本将被渲染为黑色。以下颜色是HTML4与CSS2标准中定义的一些颜色，其应该被大多数浏览器定义了。</p>
+<script type="math/tex; mode=display">\begin{array}{|rc|} \hline \verb+\color{black}{text}+ & \color{black}{text} \\ \verb+\color{gray}{text}+ & \color{gray}{text} \\ \verb+\color{silver}{text}+ & \color{silver}{text} \\ \verb+\color{white}{text}+ & \color{white}{text} \\ \hline \verb+\color{maroon}{text}+ & \color{maroon}{text} \\ \verb+\color{red}{text}+ & \color{red}{text} \\ \verb+\color{yellow}{text}+ & \color{yellow}{text} \\ \verb+\color{lime}{text}+ & \color{lime}{text} \\ \verb+\color{olive}{text}+ & \color{olive}{text} \\ \verb+\color{green}{text}+ & \color{green}{text} \\ \verb+\color{teal}{text}+ & \color{teal}{text} \\ \verb+\color{aqua}{text}+ & \color{aqua}{text} \\ \verb+\color{blue}{text}+ & \color{blue}{text} \\ \verb+\color{navy}{text}+ & \color{navy}{text} \\ \verb+\color{purple}{text}+ & \color{purple}{text} \\ \verb+\color{fuchsia}{text}+ & \color{magenta}{text} \\ \hline \end{array}</script><p>此外，HTML5与CSS3也定义了一些颜色名称。同时，颜色也可以使用#rgb的形式来表示，r、g、b分别表示代表颜色值得16进制数，如：<code>\color{\#0F0}{text}</code>.<a href="http://www.w3.org/TR/css3-color/#svg-color" target="_blank" rel="noopener">更多点击这里</a> 或 <a href="http://www.w3schools.com/html/html_colors.asp" target="_blank" rel="noopener">HTML色彩快速参考手册</a></p>
+<h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><script type="math/tex; mode=display">\require{cancel}\begin{array}{rl} \verb|y+\cancel{x}| & y+\cancel{x}\\ \verb|\cancel{y+x}| & \cancel{y+x}\\ \verb|y+\bcancel{x}| & y+\bcancel{x}\\ \verb|y+\xcancel{x}| & y+\xcancel{x}\\ \verb|y+\cancelto{0}{x}| & y+\cancelto{0}{x}\\ \verb+\frac{1\cancel9}{\cancel95} = \frac15+& \frac{1\cancel9}{\cancel95} = \frac15 \\ \end{array}</script><script type="math/tex; mode=display">\require{enclose}\begin{array}{rl} \verb|\enclose{horizontalstrike}{x+y}| & \enclose{horizontalstrike}{x+y}\\ \verb|\enclose{verticalstrike}{\frac xy}| & \enclose{verticalstrike}{\frac xy}\\ \verb|\enclose{updiagonalstrike}{x+y}| & \enclose{updiagonalstrike}{x+y}\\ \verb|\enclose{downdiagonalstrike}{x+y}| & \enclose{downdiagonalstrike}{x+y}\\ \verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}| & \enclose{horizontalstrike,updiagonalstrike}{x+y}\\ \end{array}</script><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax basic tutorial and quick reference - StackExchange</a></li>
+<li><a href="http://docs.mathjax.org/en/latest/start.html" target="_blank" rel="noopener">MathJax Docs</a></li>
+<li><a href="http://easy-copy-mathjax.xxxx7.com/" target="_blank" rel="noopener">Easy Copy MathJax</a></li>
+<li><a href="http://mohu.org/info/symbols/symbols.htm" target="_blank" rel="noopener">常用数学符号的 LaTeX 表示方法</a></li>
+</ul>
+<p><strong>转载自: <a href="http://blog.mobing.net/content/hexo/hexo-mathjax.html" target="_blank" rel="noopener">http://blog.mobing.net/content/hexo/hexo-mathjax.html</a></strong></p>
+
+          
+            <hr>
+            <center><img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/ctz45562/cdn@2.0.3/emojis/gif/23.gif"></center>
+            <p style="font-size:32px;text-align:center;margin-top:-2px">施工中...</p>
+            
+        </div>
+        <!-- <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/custom/donate/AlipayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/custom/donate/WechatQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer> -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2020/02/11/白矮星/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/white-dwar/white-dwarfWhiteDwarf_mass-radius.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/picgo/white-dwar/white-dwarfWhiteDwarf_mass-radius.jpg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                白矮星</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2020/02/09/黑洞/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Black-hole/600px-BH_LMC.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Black-hole/600px-BH_LMC.png">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                黑洞</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "l3oivT9vXllSnX2DP9CYcCp0-gzGzoHsz",
+        appKey: "jwiXUn9T1cuBDgoPnCfjE4Hu",
+        master: '5c6349399eaa71523af5bd5e1aa5734c',   //博主邮箱md5
+        tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+        friends:  [
+          "261294d20e9e42234ae2fb2a7f1c46cd",
+          "29c4d17e7407432f87a422dcd736d2d2",
+          "9e547d05b6be799568cc2dacf8263179",
+          "4e5df3b131c1319aaf3e082e7bc6d639",
+          "87c193a34cedc5db6706383d4f2b50c1",
+          "f43c1a5126008491e61b5cd11aae4704",
+          "173bbeb60e5a1fc5f7a7dcda0a9a0a1d"
+        ],  //小伙伴邮箱Md5
+        metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）","link":"网址 (https)"},
+        placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
+        avatar: 'wavatar',
+        visitor: true,  //点击量统计
+        enableQQ: true,
+        path: window.location.pathname,
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <!-- <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg" itemprop="image" alt="小枫叶" height="70" width="70"></a> -->
+          <!-- <div class="meta"> -->
+            <!-- <span class="title">Author</span> -->
+            <!-- <h3 itemprop="name"> -->
+            <!-- <a href="" itemprop="url" rel="author">小枫叶</a> -->
+            <!-- </h3> -->
+          <!-- </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section> -->
+    </main>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+
+<script>
+  function imgInit(){
+      var imgs=document.getElementsByClassName('entry-content').item(0).getElementsByTagName('img'),dsrc=record.getAttribute("data-src");
+      for(var i=0;i<imgs.length;++i){
+          var element = document.createElement("a"),record=imgs[i];
+          element.setAttribute("data-fancybox","gallery");
+          element.setAttribute("href",dsrc||imgs[i].src);
+          imgs[i].parentNode.appendChild(element);
+          imgs[i].parentNode.removeChild(imgs[i]);
+          element.appendChild(record);
+      }
+  }
+  imgInit();
+</script>
+<!-- post.md  -->
+<script>
+  window.MathJax && MathJax.Hub && MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
+</script>
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/ball.svg">
+        <!-- <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/disqus-preloader.svg"> -->
+      </div>
+      <!-- <p style="color: #666666;">&copy 2020</p> -->
+
+      <div>
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+        <script>
+            var now = new Date();
+            function createtime() {
+                var grt= new Date("02/02/2020 00:00:00");
+                now.setTime(now.getTime()+250);
+                days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+                hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+                if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+                mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+                seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+                document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+                document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+        setInterval("createtime()",250);
+        </script>
+        <a href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
+        </div>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by GitHub Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/av-min/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/Valine.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HE1H811ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0HE1H811ZR');
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-157728544-1');
+</script>
+<!--百度统计-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?eaade43aebeaf333b0eaf3881a080da4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">小枫叶</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-home faa-wrench" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-clock faa-spin" aria-hidden="true"></i>
+            时光轴
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  分类
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags/">
+                  <i class="fa fa-tags faa-vertical" aria-hidden="true"></i>
+                  标签
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-float" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/books/">
+                  <i class="fa fa-book faa-bounce" aria-hidden="true"></i>
+                  书单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  番组
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/about/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-comments faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-send faa-float" aria-hidden="true"></i>
+            小伙伴
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-vertical" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-tada" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/APlayer/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/APlayer/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: STXingkai;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: HotPink;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: #FF69B4(255, 255, 255, 0.8);
+  }
+</style>
+<!-- <meting-js
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script> -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

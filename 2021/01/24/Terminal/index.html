@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+
+  <title itemprop="name">Windows-Terminal | 小枫叶</title>
+  
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/zoom.css" media="all">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/sharejs.css"> -->
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "小枫叶家の";
+  mashiro_option.author_name = "家";
+  mashiro_option.site_url = "https://www.starlovei.com";
+  mashiro_option.v_appId = "l3oivT9vXllSnX2DP9CYcCp0-gzGzoHsz";
+  mashiro_option.v_appKey = "jwiXUn9T1cuBDgoPnCfjE4Hu";
+  mashiro_option.mathjax = "";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/50717513.webp,https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/57793944_p0.webp,https://cdn.jsdelivr.net/gh/starlovei/picgo/Image/66952181_p0.webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">
+  .site-top .lower nav{display:block !important;}
+  .author-profile i,
+  .post-like a,
+  .post-share .show-share,
+  .sub-text,
+  .we-info a,
+  span.sitename,
+  .post-more i:hover,
+  #pagination a:hover,
+  .post-content a:hover,
+  .float-content i:hover{color:hotpink}
+  .feature i,
+  .download,
+  .navigator i:hover,
+  .links ul li:before,
+  .ar-time i,
+  span.ar-circle,
+  .object,
+  .comment .comment-reply-link,
+  .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:hotpink}::-webkit-scrollbar-thumb{background:hotpink}
+  .download,
+  .navigator i:hover,.link-title,
+  .links ul li:hover,#pagination a:hover,
+  .comment-respond input[type='submit']:hover{border-color:hotpink}
+  .entry-content a:hover,
+  .site-info a:hover,
+  .comment h4 a,
+  #comments-navi a.prev,
+  #comments-navi a.next,
+  .comment h4 a:hover,
+  .site-top ul li a:hover,
+  .entry-title a:hover,
+  #archives-temp h3,
+  span.page-numbers.current,
+  .sorry li a:hover,
+  .site-title a:hover,
+  i.iconfont.js-toggle-search.iconsearch:hover,
+  .comment-respond input[type='submit']:hover{color:hotpink}
+  .comments .comments-main{display:block !important;}
+  .comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+</head></html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+
+  <!-- 实现换肤功能 -->
+  <div class="skin-menu no-select" id="mainskin"  style="position: fixed">
+    <div class="theme-controls row-container">
+        <ul class="menu-list">
+            <li id="white-bg"> <i class="fa fa-television" aria-hidden="true"></i></li>
+            <li id="sakura-bg"> <i class="iconfont icon-sakura"></i></li>
+            <li id="gribs-bg"> <i class="fa fa-crop-alt" aria-hidden="true"></i></li>
+            <li id="KAdots-bg"> <i class="iconfont icon-dots"></i></li>
+            <li id="totem-bg"> <i class="fa fa-air-freshener" aria-hidden="true"></i></li>
+            <li id="pixiv-bg"> <i class="iconfont icon-pixiv"></i></li>
+            <li id="bing-bg"> <i class="fa fa-picture-o"></i></li>
+            <li id="dark-bg"> <i class="fa fa-moon-o" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+</div>
+<canvas id="night-mode-cover"></canvas> 
+  <div class="changeSkin-gear no-select">
+    <div class="keys" id="setbtn"> 
+        <span id="open-skinMenu">
+            SCHEME TOOL | 主题工具 &nbsp;
+            <i class="iconfont icon-gear inline-block rotating">
+            </i>
+        </span>
+    </div>
+</div>
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-dim">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://www.starlovei.com">
+          <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+			<!-- 首页一言打字效果 -->
+			<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/typed/typed.min.js"></script>
+			<i class="fa fa-quote-left"></i>
+			<span class="element"></span>
+			<i class="fa fa-quote-right"></i>
+			<span class="element"></span>
+			<script>
+            var typed = new Typed('.element', {
+              strings: ["给时光以生命，给岁月以文明", "寒蝉黎明之时,便是重生之日"], //输入内容, 支持html标签
+              typeSpeed: 140, //打字速度
+              backSpeed: 50, //回退速度
+              loop: false,//是否循环
+              loopCount: Infinity,
+              showCursor: false//是否开启光标
+            });
+      </script>
+
+        <!-- <p></p> -->
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/next.png">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://twitter.com/starlove_i" target="_blank" class="social-github" title="twitter">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/twitter1.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://t.me/starloveii" target="_blank" class="social-github" title="telegram">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/telegram.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://github.com/starlovei" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/github1.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="mailto:star_love_i@outlook.com" target="_blank" class="social-github" title="email">
+                    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/social/email.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/next.png">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <!-- <div id="video-btn" class="loadvideo videolive">
+    </div> -->
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select is-homepage gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakuraso">小枫叶</span>
+            <span class="effect">の</span>
+            <span class="sakuraso">家</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-home faa-wrench" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-clock faa-spin" aria-hidden="true"></i>
+                    时光轴
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                          分类
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags/">
+                        <i class="fa fa-tags faa-vertical" aria-hidden="true"></i>
+                          标签
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-list-ul faa-float" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/books/">
+                        <i class="fa fa-book faa-bounce" aria-hidden="true"></i>
+                          书单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                        <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          番组
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/about/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-comments faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-send faa-float" aria-hidden="true"></i>
+                    小伙伴
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-heart faa-vertical" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                  <i class="fa  fa-rss faa-tada" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center-sakura single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img">
+      <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/yzavvq4we0ao5akst1d2.png" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    </div>
+    <header class="pattern-header single-header">
+    <header class="pattern-header single-header" style="text-shadow: 0 0 7px #000,0 0 7px #000">
+      <h1 class="entry-title">
+      Windows-Terminal</h1>
+      <span class="toppic-line"></span><p class="entry-census">
+      <span>
+        <a href="">
+          <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+        </a>
+      </span>
+      <span>
+        <a href="">小枫叶</a>
+      </span>
+      <span class="bull">.</span>
+      ·2021-1-24
+      <span class="bull">·</span>
+      <span id='/2021/01/24/Terminal/' class="leancloud-visitors" data-flag-title="Windows-Terminal"><a class="leancloud-visitors-count">加载中...</a><a class="post-meta-item-text"> 次阅读</a></span>
+      <!--文章标签-->
+      
+        
+      <div>
+            <ul class="spfk-ul">
+              &nbsp<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<li class="spfk-li"><span class="triangle"></span><a href="/tags/主题/" class="butterfly-tags">主题</a></li>
+            </ul>
+          </div>
+          <script>
+              function colorInit(c,num){for(var i=1;i<=num;++i)c.push(i+'');}
+              function paintTags(){
+                  var colorNumber=8,tagColors=[],tags=document.getElementsByClassName('spfk-li');
+                  for(var i = 0 ; i < tags.length ; ++i){
+                      if(!tagColors.length)colorInit(tagColors,colorNumber);
+                      var j=Math.floor(Math.random()*tagColors.length);
+                      tags[i].classList.add("spfk-color"+tagColors[j]);
+                      tagColors.splice(j,1);
+                  }
+              }
+              paintTags()
+          </script>
+      
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <blockquote>
+<p>Windows Terminal是微软公司于西雅图开幕的Build 2019大会上所公布的面向Windows10的新命令行程序,系统自带的powershell颜值实在有些不敢恭维</p>
+</blockquote>
+<p>我们可以通过<a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab" target="_blank" rel="noopener">Microsoft应用商店</a>或者<a href="https://github.com/microsoft/terminal/releases" target="_blank" rel="noopener">Github</a>下载安装</p>
+<h2 id="Terminal-配置"><a href="#Terminal-配置" class="headerlink" title="Terminal 配置"></a>Terminal 配置</h2><p>下拉菜单打开设置(Terminal配置文件)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-01-24_09-40-02.jpg" alt></p>
+<p>配置文件大概分为四种类型:<strong>全局设置</strong>,<strong>终端配置</strong>,<strong>主题配置</strong>以及<strong>快捷键</strong></p>
+<h3 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h3><p>也就是最前面的一部分,列举几个比较重要的设置</p>
+<ul>
+<li>默认配置: 即打开自动进入的环境,通过GUID识别<ul>
+<li>属性名称: <code>defaultProfile</code></li>
+</ul>
+</li>
+<li>深色/浅色主题<ul>
+<li>属性名称: <code>theme</code></li>
+<li>分为<code>system</code>(跟随系统),<code>light</code>和<code>dark</code></li>
+</ul>
+</li>
+<li>启动大小: <ul>
+<li>属性名称: launchMode</li>
+<li>分为<code>default</code> ,<code>maximized</code>, <code>fullscreen</code>,默认为<code>default</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="终端配置"><a href="#终端配置" class="headerlink" title="终端配置"></a>终端配置</h3><p>下拉菜单的不同终端入口,整体分为<code>defaults</code>和<code>list</code></p>
+<ul>
+<li>默认配置”defaults”: 如果你想要应用于所有配置文件可以在这里添加</li>
+<li>单独配置”list”: 单独对某个环境配置</li>
+</ul>
+<p>Windows Terminal可以自定义坏境</p>
+<ul>
+<li>guid(必需): 配置文件可将 GUID 用作唯一标识符。 若要将某个配置文件设置为默认配置文件，则需要 <code>defaultProfile</code> 全局设置的 GUID。<ul>
+<li>如果你想要新建一个环境必须设置guid</li>
+</ul>
+</li>
+<li>commandline: 执行路径例如”cmd.exe”.如果没有配置坏境变量需要填写绝对路径</li>
+<li>name: 名称</li>
+<li>hidden: 是否在下拉菜单隐藏配置</li>
+<li>fontface: 字体</li>
+<li>backgroud: 背景颜色</li>
+<li>backgroundImage: 背景图片</li>
+<li>useAcrylic: 亚克力效果</li>
+<li>colorScheme: 主题设置,填写主题配置中的name</li>
+</ul>
+<h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><p>主题配置定义在schemes,通过以下格式写入:</p>
+<pre><code class="lang-json">{
+    &quot;name&quot; : &quot;Campbell&quot;,
+
+    &quot;cursorColor&quot;: &quot;#FFFFFF&quot;,
+    &quot;selectionBackground&quot;: &quot;#FFFFFF&quot;,
+
+    &quot;background&quot; : &quot;#0C0C0C&quot;,
+    &quot;foreground&quot; : &quot;#CCCCCC&quot;,
+
+    &quot;black&quot; : &quot;#0C0C0C&quot;,
+    &quot;blue&quot; : &quot;#0037DA&quot;,
+    &quot;cyan&quot; : &quot;#3A96DD&quot;,
+    &quot;green&quot; : &quot;#13A10E&quot;,
+    &quot;purple&quot; : &quot;#881798&quot;,
+    &quot;red&quot; : &quot;#C50F1F&quot;,
+    &quot;white&quot; : &quot;#CCCCCC&quot;,
+    &quot;yellow&quot; : &quot;#C19C00&quot;,
+    &quot;brightBlack&quot; : &quot;#767676&quot;,
+    &quot;brightBlue&quot; : &quot;#3B78FF&quot;,
+    &quot;brightCyan&quot; : &quot;#61D6D6&quot;,
+    &quot;brightGreen&quot; : &quot;#16C60C&quot;,
+    &quot;brightPurple&quot; : &quot;#B4009E&quot;,
+    &quot;brightRed&quot; : &quot;#E74856&quot;,
+    &quot;brightWhite&quot; : &quot;#F2F2F2&quot;,
+    &quot;brightYellow&quot; : &quot;#F9F1A5&quot;
+},
+</code></pre>
+<p>Terminal自带了几种主题,放置在defaults.json文件中</p>
+<h5 id="Campbell"><a href="#Campbell" class="headerlink" title="Campbell"></a>Campbell</h5><p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/campbell-color-scheme.png" alt></p>
+<h5 id="Campbell-Powershell"><a href="#Campbell-Powershell" class="headerlink" title="Campbell Powershell"></a>Campbell Powershell</h5><p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/campbell-powershell-color-scheme.png" alt></p>
+<p>快捷键设置暂时先不讲</p>
+<h2 id="进阶美化"><a href="#进阶美化" class="headerlink" title="进阶美化"></a>进阶美化</h2><blockquote>
+<p>虽然以上方法能够很好的美化powershell，但是代码栏依然还是老样式</p>
+</blockquote>
+<p>接下来我们要用到<code>oh-my-posh</code>这个插件啦，这是一个开源的powershell主题，<a href="https://github.com/JanDeDobbeleer/oh-my-posh" target="_blank" rel="noopener">Github项目地址</a></p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>oh-my-posh主题使用了一些特殊字符，如果你用默认的字体会出现乱码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-02-12_08-06-57.jpg" alt></p>
+<p>Powerline字体下载：<a href="https://github.com/powerline/fonts" target="_blank" rel="noopener">https://github.com/powerline/fonts</a></p>
+<h3 id="下载与安装"><a href="#下载与安装" class="headerlink" title="下载与安装"></a>下载与安装</h3><p>安装<code>posh-git</code>和<code>oh-my-posh</code></p>
+<pre><code class="lang-shell">Install-Module posh-git -Scope CurrentUser 
+Install-Module oh-my-posh -Scope CurrentUser
+</code></pre>
+<p>编辑Powershell配置文件，这样就可以在每次启动Powershell的时候加载主题。</p>
+<pre><code class="lang-shell">#新增配置文件
+if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+#用记事本打开文件
+notepad $PROFILE
+</code></pre>
+<p>添加下面的内容：</p>
+<pre><code class="lang-shell">Import-Module posh-git 
+Import-Module oh-my-posh 
+Set-Theme Paradox
+</code></pre>
+<p>最后一句的<code>Set-Theme &lt;主题名&gt;</code>主题选项，可以选择喜欢的主题，例如Paradox：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/paradox.png" alt></p>
+<p>当然这个命令只是在当前窗口更换主题，如果你要使用主题需要在配置文件的主题选项里修改。</p>
+<h3 id="定制主题"><a href="#定制主题" class="headerlink" title="定制主题"></a>定制主题</h3><p>oh-my-posh内置有十个主题，配置文件的位置在<code>C:\Users\&lt;用户名&gt;\Documents\WindowsPowerShell\Modules\oh-my-posh\&lt;版本号&gt;\Themes</code>，具体可以参考官方文档。或者你也可以自己写一个喜欢的主题，在主题文件夹里新建&lt;主题名.psm1&gt;然后按照其他主题的方法修改，我自己魔改了一下<a href="https://github.com/spencerwooo/dotfiles" target="_blank" rel="noopener">spencerwooo大佬的主题</a>存放在<a href="https://github.com/starlovei/Terminal-Theme" target="_blank" rel="noopener">Github</a>,感兴趣的朋友可以下载</p>
+<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-02-12_08-36-24.jpg" alt></p>
+
+          
+        </div>
+        <!-- <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/custom/donate/AlipayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/custom/donate/WechatQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer> -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/07/28/Linux部分命令/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Linux/81966014_p0.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Linux/81966014_p0.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                Linux部分命令</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "l3oivT9vXllSnX2DP9CYcCp0-gzGzoHsz",
+        appKey: "jwiXUn9T1cuBDgoPnCfjE4Hu",
+        master: '5c6349399eaa71523af5bd5e1aa5734c',   //博主邮箱md5
+        tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+        friends:  [
+          "261294d20e9e42234ae2fb2a7f1c46cd",
+          "29c4d17e7407432f87a422dcd736d2d2",
+          "9e547d05b6be799568cc2dacf8263179",
+          "4e5df3b131c1319aaf3e082e7bc6d639",
+          "87c193a34cedc5db6706383d4f2b50c1",
+          "f43c1a5126008491e61b5cd11aae4704",
+          "173bbeb60e5a1fc5f7a7dcda0a9a0a1d"
+        ],  //小伙伴邮箱Md5
+        metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）","link":"网址 (https)"},
+        placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
+        avatar: 'wavatar',
+        visitor: true,  //点击量统计
+        enableQQ: true,
+        path: window.location.pathname,
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <!-- <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg" itemprop="image" alt="小枫叶" height="70" width="70"></a> -->
+          <!-- <div class="meta"> -->
+            <!-- <span class="title">Author</span> -->
+            <!-- <h3 itemprop="name"> -->
+            <!-- <a href="" itemprop="url" rel="author">小枫叶</a> -->
+            <!-- </h3> -->
+          <!-- </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section> -->
+    </main>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+
+<script>
+  function imgInit(){
+      var imgs=document.getElementsByClassName('entry-content').item(0).getElementsByTagName('img'),dsrc=record.getAttribute("data-src");
+      for(var i=0;i<imgs.length;++i){
+          var element = document.createElement("a"),record=imgs[i];
+          element.setAttribute("data-fancybox","gallery");
+          element.setAttribute("href",dsrc||imgs[i].src);
+          imgs[i].parentNode.appendChild(element);
+          imgs[i].parentNode.removeChild(imgs[i]);
+          element.appendChild(record);
+      }
+  }
+  imgInit();
+</script>
+<!-- post.md  -->
+<script>
+  window.MathJax && MathJax.Hub && MathJax.Hub.Queue(['Typeset', MathJax.Hub, document.querySelector('main')]);
+</script>
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/ball.svg">
+        <!-- <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/disqus-preloader.svg"> -->
+      </div>
+      <!-- <p style="color: #666666;">&copy 2020</p> -->
+
+      <div>
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+        <script>
+            var now = new Date();
+            function createtime() {
+                var grt= new Date("02/02/2020 00:00:00");
+                now.setTime(now.getTime()+250);
+                days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+                hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+                if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+                mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+                seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+                document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+                document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+        setInterval("createtime()",250);
+        </script>
+        <a href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
+        </div>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by GitHub Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/av-min/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/Valine.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HE1H811ZR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0HE1H811ZR');
+</script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-157728544-1');
+</script>
+<!--百度统计-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?eaade43aebeaf333b0eaf3881a080da4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/avatar/01.jpg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">小枫叶</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-home faa-wrench" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-clock faa-spin" aria-hidden="true"></i>
+            时光轴
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  分类
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags/">
+                  <i class="fa fa-tags faa-vertical" aria-hidden="true"></i>
+                  标签
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-float" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/books/">
+                  <i class="fa fa-book faa-bounce" aria-hidden="true"></i>
+                  书单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  番组
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/about/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-comments faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-send faa-float" aria-hidden="true"></i>
+            小伙伴
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-vertical" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-tada" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/starlovei/cdn/css/APlayer/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/APlayer/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: STXingkai;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: HotPink;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: #FF69B4(255, 255, 255, 0.8);
+  }
+</style>
+<!-- <meting-js
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script> -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
