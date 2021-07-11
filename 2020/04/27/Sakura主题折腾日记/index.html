@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
@@ -100,11 +100,12 @@
   .comments .comments-main{display:block !important;}
   .comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
   </style>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="小枫叶" type="application/atom+xml">
 </head>
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-</head></html>
+</head>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
 
   <!-- 实现换肤功能 -->
@@ -441,30 +442,30 @@
         
         <div class="entry-content">
           <blockquote>
-<p>记录一下博客瞎折腾过程,以及遇到过的bug,借用了不少大佬的灵感<br><a href="https://ctz45562.github.io/" target="_blank" rel="noopener">https://ctz45562.github.io/</a><br><a href="https://blog.ukenn.top/sakura7/" target="_blank" rel="noopener">https://blog.ukenn.top/sakura7/</a></p>
+<p>记录一下博客瞎折腾过程,以及遇到过的bug,借用了不少大佬的灵感<br><a target="_blank" rel="noopener" href="https://ctz45562.github.io/">https://ctz45562.github.io/</a><br><a target="_blank" rel="noopener" href="https://blog.ukenn.top/sakura7/">https://blog.ukenn.top/sakura7/</a></p>
 </blockquote>
 <h2 id="超链接鼠标悬浮特效"><a href="#超链接鼠标悬浮特效" class="headerlink" title="超链接鼠标悬浮特效"></a>超链接鼠标悬浮特效</h2><pre><code class="lang-css">/* 文章中的超链接,鼠标悬浮特效*/
-.article-entry a{
+.article-entry a&#123;
     display: inline-block;
     position: relative;
     color: #9400D3;
     font-family: lucida console;/* 这种字体的英文比较好看（像代码样式） */
-}
+&#125;
 /* 鼠标悬浮时，变色可自行修改,需要了解颜色16进制编码 */
-.article-entry a:hover{
+.article-entry a:hover&#123;
     color: #9400D3;
     transition:.8s;
-}
+&#125;
 /* 鼠标悬浮时，下划线从中间向两边延伸 */
-.article-entry a:hover::after{
+.article-entry a:hover::after&#123;
   transform: scaleX(1);
   /* 旋转，与transform连用；这里作用：鼠标悬浮时，底部的下划线从中间扩散到两边。
    bottom right :左到右出现，左到右消失（需配合上面的::after）
   */
   transform-origin: bottom center;
-}
+&#125;
 /* 鼠标移开后，下划线从两边向中间消失 */
-.article-entry a::after{
+.article-entry a::after&#123;
   content: &#39;&#39;;
   position: absolute;
   width: 100%;
@@ -476,18 +477,18 @@
   /*旋转，与transform连用；这里作用：鼠标移开后，底部的下划线从中间开始消失*/
   transform-origin: bottom center;
   transition: transform 0.5s ease-out;
-}
+&#125;
 </code></pre>
-<p>如果开启了fancybox可能会出现鼠标放到图片链接显示特效的情况,看起来有点奇怪.<br>解决方案:从<a href="https://ctz45562.github.io/" target="_blank" rel="noopener">ctz45562</a>大佬嫖来的,在<code>Sakura\source\css\style.css</code>里添加</p>
-<pre><code class="lang-css">a#escape-link {
+<p>如果开启了fancybox可能会出现鼠标放到图片链接显示特效的情况,看起来有点奇怪.<br>解决方案:从<a target="_blank" rel="noopener" href="https://ctz45562.github.io/">ctz45562</a>大佬嫖来的,在<code>Sakura\source\css\style.css</code>里添加</p>
+<pre><code class="lang-css">a#escape-link &#123;
     background-size: 0 0 !important;
-}
+&#125;
 </code></pre>
 <p>图片引用格式:</p>
 <pre><code class="lang-css">&lt;a data-fancybox=&quot;gallery&quot; href=&quot;图片链接&quot; id=&quot;escape-link&quot;&gt;&lt;img src=&quot;图片链接&quot;&gt;&lt;/a&gt;
 </code></pre>
 <h2 id="归档页面时间轴颜色"><a href="#归档页面时间轴颜色" class="headerlink" title="归档页面时间轴颜色"></a>归档页面时间轴颜色</h2><p>找了好久才找到<br>在<code>Sakura\source\css\style.css</code>里</p>
-<pre><code class="lang-css">.art-content #archives .al_mon_list:before {
+<pre><code class="lang-css">.art-content #archives .al_mon_list:before &#123;
     max-height:100%;
     height:100%;
     width:4px;
@@ -496,40 +497,40 @@
     left:120px;
     content:&quot;&quot;;
     top:0
-}
+&#125;
 </code></pre>
 <p>和</p>
-<pre><code class="lang-css">.art-content #archives .al_mon_list .al_mon:after,.art .art-content .al_mon_list .al_post_list&gt;li:after {
+<pre><code class="lang-css">.art-content #archives .al_mon_list .al_mon:after,.art .art-content .al_mon_list .al_post_list&gt;li:after &#123;
     background:#8A2Be2
-}
+&#125;
 </code></pre>
 <p>修改颜色编码</p>
 <h2 id="网站灰色代码"><a href="#网站灰色代码" class="headerlink" title="网站灰色代码"></a>网站灰色代码</h2><p>一些特殊节日有些网站会把网站变成灰色,同样在<code>Sakura\source\css\style.css</code>添加</p>
-<pre><code class="lang-css">html {
+<pre><code class="lang-css">html &#123;
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
     -webkit-filter: grayscale(100%);
-}
+&#125;
 </code></pre>
-<h2 id="公式渲染问题"><a href="#公式渲染问题" class="headerlink" title="公式渲染问题"></a>公式渲染问题</h2><p>有时可能会出现刷新才能渲染的情况<br>感谢<a href="https://github.com/ikeq/hexo-theme-inside/issues/29" target="_blank" rel="noopener">https://github.com/ikeq/hexo-theme-inside/issues/29</a> 的帮助<br>公式渲染有两种方案：</p>
+<h2 id="公式渲染问题"><a href="#公式渲染问题" class="headerlink" title="公式渲染问题"></a>公式渲染问题</h2><p>有时可能会出现刷新才能渲染的情况<br>感谢<a target="_blank" rel="noopener" href="https://github.com/ikeq/hexo-theme-inside/issues/29">https://github.com/ikeq/hexo-theme-inside/issues/29</a> 的帮助<br>公式渲染有两种方案：</p>
 <h3 id="方案1"><a href="#方案1" class="headerlink" title="方案1"></a>方案1</h3><p>在需要渲染公式的 post 里这样写：</p>
 <pre><code class="lang-css">&lt;!-- post.md  --&gt;
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+$$x = &#123;-b \pm \sqrt&#123;b^2-4ac&#125; \over 2a&#125;.$$
 
 &lt;script&gt;
-if (!window.MathJax || !MathJax.Hub) {
+if (!window.MathJax || !MathJax.Hub) &#123;
   const script = document.createElement(&#39;script&#39;);
   script.src=&#39;//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&#39;;
   document.head.appendChild(script);
-} else MathJax.Hub.Queue([&#39;Typeset&#39;, MathJax.Hub, document.querySelector(&#39;main&#39;)]);
+&#125; else MathJax.Hub.Queue([&#39;Typeset&#39;, MathJax.Hub, document.querySelector(&#39;main&#39;)]);
 &lt;/script&gt;
 </code></pre>
 <p>如果是同步加载的 MathJax 脚本，去掉加载脚本的 js：</p>
 <pre><code class="lang-css">&lt;!-- post.md  --&gt;
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+$$x = &#123;-b \pm \sqrt&#123;b^2-4ac&#125; \over 2a&#125;.$$
 
 &lt;script&gt;
 window.MathJax &amp;&amp; MathJax.Hub &amp;&amp; MathJax.Hub.Queue([&#39;Typeset&#39;, MathJax.Hub, document.querySelector(&#39;main&#39;)]);
@@ -540,11 +541,11 @@ window.MathJax &amp;&amp; MathJax.Hub &amp;&amp; MathJax.Hub.Queue([&#39;Typeset
   - position: post
      template: |
         &lt;script&gt;
-        if (!window.MathJax || !MathJax.Hub) {
+        if (!window.MathJax || !MathJax.Hub) &#123;
           const script = document.createElement(&#39;script&#39;);
           script.src=&#39;//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&#39;;
           document.head.appendChild(script);
-        } else MathJax.Hub.Queue([&#39;Typeset&#39;, MathJax.Hub, document.querySelector(&#39;main&#39;)]);
+        &#125; else MathJax.Hub.Queue([&#39;Typeset&#39;, MathJax.Hub, document.querySelector(&#39;main&#39;)]);
         &lt;/script&gt;
 </code></pre>
 <p>同方案1，如果是同步加载 MathJax 脚本，去掉多余 js：</p>
@@ -559,19 +560,19 @@ window.MathJax &amp;&amp; MathJax.Hub &amp;&amp; MathJax.Hub.Queue([&#39;Typeset
 <pre><code class="lang-css">&lt;!-- post.md  --&gt;
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+$$x = &#123;-b \pm \sqrt&#123;b^2-4ac&#125; \over 2a&#125;.$$
 </code></pre>
 <p>关于为什么第一次打开网页时无法加载公式，因为这个主题是个 SPA，页面渲染是异步的，在 MathJax 脚本加载完成之后，post 还未渲染，所以关键就在使用 <code>MathJax.Hub.Queue()</code> 这个方法手动渲染。</p>
-<p>示例：<a href="https://blog.oniuo.com/post/inside-theme-showcase#MathJax" target="_blank" rel="noopener">https://blog.oniuo.com/post/inside-theme-showcase#MathJax</a><br>关于 plugin：<a href="https://blog.oniuo.com/theme-inside/docs/misc#plugins" target="_blank" rel="noopener">https://blog.oniuo.com/theme-inside/docs/misc#plugins</a></p>
+<p>示例：<a target="_blank" rel="noopener" href="https://blog.oniuo.com/post/inside-theme-showcase#MathJax">https://blog.oniuo.com/post/inside-theme-showcase#MathJax</a><br>关于 plugin：<a target="_blank" rel="noopener" href="https://blog.oniuo.com/theme-inside/docs/misc#plugins">https://blog.oniuo.com/theme-inside/docs/misc#plugins</a></p>
 <h2 id="菜单栏"><a href="#菜单栏" class="headerlink" title="菜单栏"></a>菜单栏</h2><h3 id="菜单栏位置-css-style-css"><a href="#菜单栏位置-css-style-css" class="headerlink" title="菜单栏位置: css\style.css"></a>菜单栏位置: <code>css\style.css</code></h3><pre><code class="lang-css">.site-top ul li a
 </code></pre>
 <h3 id="社交图标"><a href="#社交图标" class="headerlink" title="社交图标"></a>社交图标</h3><p>就是这个<br><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste02.jpg" alt="logo"></p>
 <p><code>C:\Hexo\themes\Sakura\_config.yml</code></p>
 <pre><code class="lang-yml">social:
-  名称: {url: 链接, img: 图标位置}
+  名称: &#123;url: 链接, img: 图标位置&#125;
 </code></pre>
-<p>可以在<a href="https://icons8.cn" target="_blank" rel="noopener">ICONS8</a>里寻找,如果是矢量图标到<a href="https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a" target="_blank" rel="noopener">阿里巴巴矢量图标库</a>最好选择200x200像素</p>
-<h4 id="更换图标颜色"><a href="#更换图标颜色" class="headerlink" title="更换图标颜色"></a>更换图标颜色</h4><p>PS打开图标<br>双击图层-选择颜色叠加-选择自己喜欢的颜色-点击确定<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste.jpg" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste.jpg"></a><br>可以看到颜色已经改变,保存<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste01.jpg" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste01.jpg"></a></p>
+<p>可以在<a target="_blank" rel="noopener" href="https://icons8.cn">ICONS8</a>里寻找,如果是矢量图标到<a target="_blank" rel="noopener" href="https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a">阿里巴巴矢量图标库</a>最好选择200x200像素</p>
+<h4 id="更换图标颜色"><a href="#更换图标颜色" class="headerlink" title="更换图标颜色"></a>更换图标颜色</h4><p>PS打开图标<br>双击图层-选择颜色叠加-选择自己喜欢的颜色-点击确定<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste.jpg" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste.jpg"></a><br>可以看到颜色已经改变,保存<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste01.jpg" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Sakura/Snipaste01.jpg"></a></p>
 <h2 id="首页打字特效"><a href="#首页打字特效" class="headerlink" title="首页打字特效"></a>首页打字特效</h2><p>首先把主题配置里的标题注释掉,然后打开<code>Sakura\layout\_partial\headertop.ejs</code>在<code>&lt;div class=&quot;header-info&quot;&gt;</code>后面添加</p>
 <pre><code class="lang-js">            &lt;!-- 首页一言打字效果 --&gt;
             &lt;script src=&quot;https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js&quot;&gt;&lt;/script&gt;
@@ -580,14 +581,14 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
             &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
             &lt;span class=&quot;element&quot;&gt;&lt;/span&gt;
             &lt;script&gt;
-            var typed = new Typed(&#39;.element&#39;, {
+            var typed = new Typed(&#39;.element&#39;, &#123;
               strings: [&quot;给时光以生命，给岁月以文明&quot;, &quot;寒蝉黎明之时,便是重生之日。&quot;,&quot;当你在凝视着网页的时候,网页也正在凝视着你&quot;], //输入内容, 支持html标签
               typeSpeed: 140, //打字速度
               backSpeed: 50, //回退速度
               loop: false,//是否循环
               loopCount: Infinity,
               showCursor: true//是否开启光标
-            });
+            &#125;);
             &lt;/script&gt;
 </code></pre>
 
@@ -621,7 +622,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
           
             <div class="post-nepre half previous">
           
-            <a href="/2020/04/29/超新星/" rel="prev">
+            <a href="/2020/04/29/%E8%B6%85%E6%96%B0%E6%98%9F/" rel="prev">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Supernova/SN1994D.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Supernova/SN1994D.jpg">
               </div>
@@ -780,7 +781,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
             }
         setInterval("createtime()",250);
         </script>
-        <a href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
+        <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
         </div>
     </div>
     <div class="footer-device">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
@@ -100,11 +100,12 @@
   .comments .comments-main{display:block !important;}
   .comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
   </style>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="小枫叶" type="application/atom+xml">
 </head>
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-</head></html>
+</head>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
 
   <!-- 实现换肤功能 -->
@@ -443,9 +444,9 @@
           <blockquote>
 <p>Windows Terminal是微软公司于西雅图开幕的Build 2019大会上所公布的面向Windows10的新命令行程序,系统自带的powershell颜值实在有些不敢恭维</p>
 </blockquote>
-<p>我们可以通过<a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab" target="_blank" rel="noopener">Microsoft应用商店</a>或者<a href="https://github.com/microsoft/terminal/releases" target="_blank" rel="noopener">Github</a>下载安装</p>
+<p>我们可以通过<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Microsoft应用商店</a>或者<a target="_blank" rel="noopener" href="https://github.com/microsoft/terminal/releases">Github</a>下载安装</p>
 <h2 id="Terminal-配置"><a href="#Terminal-配置" class="headerlink" title="Terminal 配置"></a>Terminal 配置</h2><p>下拉菜单打开设置(Terminal配置文件)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-01-24_09-40-02.jpg" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-01-24_09-40-02.jpg" alt=""></p>
 <p>配置文件大概分为四种类型:<strong>全局设置</strong>,<strong>终端配置</strong>,<strong>主题配置</strong>以及<strong>快捷键</strong></p>
 <h3 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h3><p>也就是最前面的一部分,列举几个比较重要的设置</p>
 <ul>
@@ -485,7 +486,7 @@
 <li>colorScheme: 主题设置,填写主题配置中的name</li>
 </ul>
 <h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><p>主题配置定义在schemes,通过以下格式写入:</p>
-<pre><code class="lang-json">{
+<pre><code class="lang-json">&#123;
     &quot;name&quot; : &quot;Campbell&quot;,
 
     &quot;cursorColor&quot;: &quot;#FFFFFF&quot;,
@@ -510,26 +511,26 @@
     &quot;brightRed&quot; : &quot;#E74856&quot;,
     &quot;brightWhite&quot; : &quot;#F2F2F2&quot;,
     &quot;brightYellow&quot; : &quot;#F9F1A5&quot;
-},
+&#125;,
 </code></pre>
 <p>Terminal自带了几种主题,放置在defaults.json文件中</p>
-<h5 id="Campbell"><a href="#Campbell" class="headerlink" title="Campbell"></a>Campbell</h5><p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/campbell-color-scheme.png" alt></p>
-<h5 id="Campbell-Powershell"><a href="#Campbell-Powershell" class="headerlink" title="Campbell Powershell"></a>Campbell Powershell</h5><p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/campbell-powershell-color-scheme.png" alt></p>
+<h5 id="Campbell"><a href="#Campbell" class="headerlink" title="Campbell"></a>Campbell</h5><p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/campbell-color-scheme.png" alt=""></p>
+<h5 id="Campbell-Powershell"><a href="#Campbell-Powershell" class="headerlink" title="Campbell Powershell"></a>Campbell Powershell</h5><p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/campbell-powershell-color-scheme.png" alt=""></p>
 <p>快捷键设置暂时先不讲</p>
 <h2 id="进阶美化"><a href="#进阶美化" class="headerlink" title="进阶美化"></a>进阶美化</h2><blockquote>
 <p>虽然以上方法能够很好的美化powershell，但是代码栏依然还是老样式</p>
 </blockquote>
-<p>接下来我们要用到<code>oh-my-posh</code>这个插件啦，这是一个开源的powershell主题，<a href="https://github.com/JanDeDobbeleer/oh-my-posh" target="_blank" rel="noopener">Github项目地址</a></p>
+<p>接下来我们要用到<code>oh-my-posh</code>这个插件啦，这是一个开源的powershell主题，<a target="_blank" rel="noopener" href="https://github.com/JanDeDobbeleer/oh-my-posh">Github项目地址</a></p>
 <h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>oh-my-posh主题使用了一些特殊字符，如果你用默认的字体会出现乱码</p>
-<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-02-12_08-06-57.jpg" alt></p>
-<p>Powerline字体下载：<a href="https://github.com/powerline/fonts" target="_blank" rel="noopener">https://github.com/powerline/fonts</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-02-12_08-06-57.jpg" alt=""></p>
+<p>Powerline字体下载：<a target="_blank" rel="noopener" href="https://github.com/powerline/fonts">https://github.com/powerline/fonts</a></p>
 <h3 id="下载与安装"><a href="#下载与安装" class="headerlink" title="下载与安装"></a>下载与安装</h3><p>安装<code>posh-git</code>和<code>oh-my-posh</code></p>
 <pre><code class="lang-shell">Install-Module posh-git -Scope CurrentUser 
 Install-Module oh-my-posh -Scope CurrentUser
 </code></pre>
 <p>编辑Powershell配置文件，这样就可以在每次启动Powershell的时候加载主题。</p>
 <pre><code class="lang-shell">#新增配置文件
-if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+if (!(Test-Path -Path $PROFILE )) &#123; New-Item -Type File -Path $PROFILE -Force &#125;
 #用记事本打开文件
 notepad $PROFILE
 </code></pre>
@@ -539,10 +540,10 @@ Import-Module oh-my-posh
 Set-Theme Paradox
 </code></pre>
 <p>最后一句的<code>Set-Theme &lt;主题名&gt;</code>主题选项，可以选择喜欢的主题，例如Paradox：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/paradox.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/paradox.png" alt=""></p>
 <p>当然这个命令只是在当前窗口更换主题，如果你要使用主题需要在配置文件的主题选项里修改。</p>
-<h3 id="定制主题"><a href="#定制主题" class="headerlink" title="定制主题"></a>定制主题</h3><p>oh-my-posh内置有十个主题，配置文件的位置在<code>C:\Users\&lt;用户名&gt;\Documents\WindowsPowerShell\Modules\oh-my-posh\&lt;版本号&gt;\Themes</code>，具体可以参考官方文档。或者你也可以自己写一个喜欢的主题，在主题文件夹里新建&lt;主题名.psm1&gt;然后按照其他主题的方法修改，我自己魔改了一下<a href="https://github.com/spencerwooo/dotfiles" target="_blank" rel="noopener">spencerwooo大佬的主题</a>存放在<a href="https://github.com/starlovei/Terminal-Theme" target="_blank" rel="noopener">Github</a>,感兴趣的朋友可以下载</p>
-<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-02-12_08-36-24.jpg" alt></p>
+<h3 id="定制主题"><a href="#定制主题" class="headerlink" title="定制主题"></a>定制主题</h3><p>oh-my-posh内置有十个主题，配置文件的位置在<code>C:\Users\&lt;用户名&gt;\Documents\WindowsPowerShell\Modules\oh-my-posh\&lt;版本号&gt;\Themes</code>，具体可以参考官方文档。或者你也可以自己写一个喜欢的主题，在主题文件夹里新建&lt;主题名.psm1&gt;然后按照其他主题的方法修改，我自己魔改了一下<a target="_blank" rel="noopener" href="https://github.com/spencerwooo/dotfiles">spencerwooo大佬的主题</a>存放在<a target="_blank" rel="noopener" href="https://github.com/starlovei/Terminal-Theme">Github</a>,感兴趣的朋友可以下载</p>
+<p><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Windows-Terminal/2021-02-12_08-36-24.jpg" alt=""></p>
 
           
         </div>
@@ -575,7 +576,7 @@ Set-Theme Paradox
           
             <div class="post-nepre full next">
           
-            <a href="/2020/07/28/Linux部分命令/" rel="next">
+            <a href="/2020/07/28/Linux%E9%83%A8%E5%88%86%E5%91%BD%E4%BB%A4/" rel="next">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Linux/81966014_p0.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Linux/81966014_p0.jpg">
               </div>
@@ -716,7 +717,7 @@ Set-Theme Paradox
             }
         setInterval("createtime()",250);
         </script>
-        <a href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
+        <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
         </div>
     </div>
     <div class="footer-device">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
@@ -100,11 +100,12 @@
   .comments .comments-main{display:block !important;}
   .comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
   </style>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="小枫叶" type="application/atom+xml">
 </head>
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-</head></html>
+</head>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
 
   <!-- 实现换肤功能 -->
@@ -441,18 +442,18 @@
         
         <div class="entry-content">
           <blockquote>
-<p>转载自: <a href="https://itrhx.blog.csdn.net/article/details/85010191" target="_blank" rel="noopener">https://itrhx.blog.csdn.net/article/details/85010191</a></p>
+<p>转载自: <a target="_blank" rel="noopener" href="https://itrhx.blog.csdn.net/article/details/85010191">https://itrhx.blog.csdn.net/article/details/85010191</a></p>
 </blockquote>
-<p>本文将讲述一些 Hexo 博客的美化，本文以作者 <a href="https://blog.luuman.club/Home/H1/index.html" target="_blank" rel="noopener">luuman</a> 的 <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank" rel="noopener">spfk</a> 主题和作者 <a href="https://xaoxuu.com/" target="_blank" rel="noopener">xaoxuu</a> 的 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">MaterialX</a> 主题为例，实际效果欢迎访问<a href="https://www.itrhx.com/" target="_blank" rel="noopener">我的博客</a>进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！</p>
+<p>本文将讲述一些 Hexo 博客的美化，本文以作者 <a target="_blank" rel="noopener" href="https://blog.luuman.club/Home/H1/index.html">luuman</a> 的 <a target="_blank" rel="noopener" href="https://github.com/luuman/hexo-theme-spfk">spfk</a> 主题和作者 <a target="_blank" rel="noopener" href="https://xaoxuu.com/">xaoxuu</a> 的 <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/material-x/">MaterialX</a> 主题为例，实际效果欢迎访问<a target="_blank" rel="noopener" href="https://www.itrhx.com/">我的博客</a>进行查看，本文章会不定时进行更新。文章涉及有关参考资料、教程、链接如有侵权请联系我删除！</p>
 <p>请注意：不同主题可能方法有些不同，相同主题不同版本，配置方法也有所差异！</p>
 <p>博客美化前提条件：有一定的前端基础，了解 HTML、CSS、JS，了解 CSS 预处理语言 Sass、Less、Stylus，搞懂 hexo 的目录结构。</p>
 <p>博客美化通用步骤：选定主题，认真阅读主题文档，分析主题目录结构，了解每个文件是对应网页哪个部分的，认真阅读美化教程，美化教程本质上只为你提供核心代码和思路，具体代码要添加到哪个地方，需要你自己搞懂主题结构，添加到需要的、合适的位置！</p>
 <p>博客美化终极奥秘：创作第一，体验第二，避免繁杂，简洁为上！</p>
 <h2 id="1-添加评论系统"><a href="#1-添加评论系统" class="headerlink" title="1 添加评论系统"></a>1 添加评论系统</h2><p>主流的评论系统有很多，比如：网易云跟帖、多说、友言、畅言、来必力（LiveRe）、Disqus、Valine、Gitment等等，目前网易云跟帖、多说、友言都已经关闭了，还有些可能需要魔法，比较麻烦，百度了一下，最后还是选择了来必力评论系统</p>
-<p>进入<a href="https://livere.com/" target="_blank" rel="noopener">来必力官网</a>, 注册一个账号（注册时可能需要魔法）<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif"></a></p>
-<p>注册完毕之后，登录，进入安装页面，选择 City 免费版安装，安装之后你会得到一段代码<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103722227.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103722227.png"></a></p>
-<p><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103745470.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103745470.png"></a></p>
-<p><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyOWU3ZDYyYi5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyOWU3ZDYyYi5wbmc.jfif"></a></p>
+<p>进入<a target="_blank" rel="noopener" href="https://livere.com/">来必力官网</a>, 注册一个账号（注册时可能需要魔法）<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzAvNWM5ZjkxZWQ4OTczYS5wbmc.jfif"></a></p>
+<p>注册完毕之后，登录，进入安装页面，选择 City 免费版安装，安装之后你会得到一段代码<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103722227.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103722227.png"></a></p>
+<p><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103745470.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103745470.png"></a></p>
+<p><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyOWU3ZDYyYi5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyOWU3ZDYyYi5wbmc.jfif"></a></p>
 <p>我们打开主题文件下的 <code>_config.yml</code> 文件，添加如下代码:</p>
 <pre><code class="lang-css">livere:
   on: true
@@ -462,31 +463,31 @@
 <pre><code class="lang-cs">&lt;!-- 来必力City版安装代码 --&gt;
 &lt;div id=&quot;lv-container&quot; data-id=&quot;city&quot; data-uid=&quot;这里是你的uid&quot;&gt;
     &lt;script type=&quot;text/javascript&quot;&gt;
-        (function(d, s) {
+        (function(d, s) &#123;
         var j, e = d.getElementsByTagName(s)[0];
 
-        if (typeof LivereTower === &#39;function&#39;) { return; }
+        if (typeof LivereTower === &#39;function&#39;) &#123; return; &#125;
 
         j = d.createElement(s);
         j.src = &#39;https://cdn-city.livere.com/js/embed.dist.js&#39;;
         j.async = true;
 
         e.parentNode.insertBefore(j, e);
-        })(document, &#39;script&#39;);
+        &#125;)(document, &#39;script&#39;);
     &lt;/script&gt;
     &lt;noscript&gt;为正常使用来必力评论功能请激活JavaScript&lt;/noscript&gt;
 &lt;/div&gt;
 &lt;!-- City版安装代码已完成 --&gt;
 </code></pre>
-<p>打开 <code>\themes\hexo-theme-spfk\layout\_partial\article.ejs</code> 文件，在适当位置添加如下红框中的代码：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyZTNlZWJhYS5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyZTNlZWJhYS5wbmc.jfif"></a></p>
-<p>完成以上操作之后，我们就可以使用来必力评论系统了<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103817644.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103817644.png"></a></p>
-<p>另外推荐使用 <a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 评论系统，和 gitalk 评论系统</p>
+<p>打开 <code>\themes\hexo-theme-spfk\layout\_partial\article.ejs</code> 文件，在适当位置添加如下红框中的代码：<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyZTNlZWJhYS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5ZjkyZTNlZWJhYS5wbmc.jfif"></a></p>
+<p>完成以上操作之后，我们就可以使用来必力评论系统了<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103817644.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807103817644.png"></a></p>
+<p>另外推荐使用 <a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a> 评论系统，和 gitalk 评论系统</p>
 <h2 id="2-添加字数统计和阅读时长"><a href="#2-添加字数统计和阅读时长" class="headerlink" title="2 添加字数统计和阅读时长"></a>2 添加字数统计和阅读时长</h2><p>先在博客目录下执行以下命令安装 <code>hexo-wordcount</code> 插件：</p>
 <pre><code class="lang-css">$ npm i --save hexo-wordcount
 </code></pre>
-<p>注意：在 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">MaterialX</a> 主题中，字数统计和阅读时长的功能我已提交 PR，在最新版本中，只需要安装插件后，在主题 <code>config.yml</code> 配置文件里，将 <code>word_count</code> 关键字设置为 <code>true</code> 即可，对于旧版本，可以通过以下方法实现：<br>以 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">MaterialX</a> 主题（版本 1.2.1）为例，在 <code>\themes\material-x\layout\_meta</code> 目录下创建 <code>word.ejs</code> 文件，在 <code>word.ejs</code> 文件中写入以下代码：</p>
-<pre><code class="lang-js">&lt;% if(isPostList || !isPostList){ %&gt;
-  &lt;% if (theme.word_count &amp;&amp; !post.no_word_count) { %&gt;
+<p>注意：在 <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/material-x/">MaterialX</a> 主题中，字数统计和阅读时长的功能我已提交 PR，在最新版本中，只需要安装插件后，在主题 <code>config.yml</code> 配置文件里，将 <code>word_count</code> 关键字设置为 <code>true</code> 即可，对于旧版本，可以通过以下方法实现：<br>以 <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/material-x/">MaterialX</a> 主题（版本 1.2.1）为例，在 <code>\themes\material-x\layout\_meta</code> 目录下创建 <code>word.ejs</code> 文件，在 <code>word.ejs</code> 文件中写入以下代码：</p>
+<pre><code class="lang-js">&lt;% if(isPostList || !isPostList)&#123; %&gt;
+  &lt;% if (theme.word_count &amp;&amp; !post.no_word_count) &#123; %&gt;
     &lt;div style=&quot;margin-right: 10px;&quot;&gt;
       &lt;span class=&quot;post-time&quot;&gt;
         &lt;span class=&quot;post-meta-item-icon&quot;&gt;
@@ -504,8 +505,8 @@
         &lt;/span&gt;
       &lt;/span&gt;
     &lt;/div&gt;
-  &lt;% } %&gt;
-&lt;% } %&gt;
+  &lt;% &#125; %&gt;
+&lt;% &#125; %&gt;
 </code></pre>
 <p>然后在主题的配置文件 <code>_config.yml</code> 找到 <code>meta</code> 关键字，将 <code>word</code> 填入 <code>header</code> 中：</p>
 <pre><code class="lang-css">meta:
@@ -515,8 +516,8 @@
 <p>最后在主题目录下的 <code>_config.yml</code> 添加以下配置即可</p>
 <pre><code class="lang-css">word_count: true
 </code></pre>
-<p>效果图：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20191129201331969.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20191129201331969.png"></a></p>
-<p>同样的，以 <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank" rel="noopener">spfk</a> 主题为例，在 <code>\themes\hexo-theme-spfk\layout\_partial\post</code> 目录下创建 <code>word.ejs</code> 文件，在 <code>word.ejs</code> 文件中写入以下代码：</p>
+<p>效果图：<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20191129201331969.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20191129201331969.png"></a></p>
+<p>同样的，以 <a target="_blank" rel="noopener" href="https://github.com/luuman/hexo-theme-spfk">spfk</a> 主题为例，在 <code>\themes\hexo-theme-spfk\layout\_partial\post</code> 目录下创建 <code>word.ejs</code> 文件，在 <code>word.ejs</code> 文件中写入以下代码：</p>
 <pre><code class="lang-js">&lt;div style=&quot;margin-top:10px;&quot;&gt;
     &lt;span class=&quot;post-time&quot;&gt;
       &lt;span class=&quot;post-meta-item-icon&quot;&gt;
@@ -535,45 +536,45 @@
     &lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
-<p>然后在 <code>\themes\hexo-theme-spfk\layout\_partial\article.ejs</code> 中适当位置添加以下代码：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1ZmU0ZTM2YS5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1ZmU0ZTM2YS5wbmc.jfif"></a></p>
+<p>然后在 <code>\themes\hexo-theme-spfk\layout\_partial\article.ejs</code> 中适当位置添加以下代码：<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1ZmU0ZTM2YS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk1ZmU0ZTM2YS5wbmc.jfif"></a></p>
 <p>最后在主题目录下的 <code>_config.yml</code> 添加以下配置即可</p>
 <pre><code class="lang-css">word_count: true
 </code></pre>
-<p>如果显示的位置不好，可以自行更改其位置，成功配置后的效果如下：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104015998.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104015998.png"></a></p>
-<p><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk2ODkyZTRkYi5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk2ODkyZTRkYi5wbmc.jfif"></a></p>
-<p>另外：要在博客底部显示所有文章的总字数，可以<a href="https://www.npmjs.com/package/hexo-wordcount" target="_blank" rel="noopener">点击此处</a>，根据你博客底部文件的类型选择相应的代码放在适当的位置即可，前提是要安装好 <code>hexo-wordcount</code> 插件，例如我使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" rel="noopener">MaterialX</a> 主题，在 <code>\themes\material-x\layout\_partial</code> 目录下的 <code>footer.ejs</code> 文件中添加如下代码：</p>
+<p>如果显示的位置不好，可以自行更改其位置，成功配置后的效果如下：<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104015998.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104015998.png"></a></p>
+<p><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk2ODkyZTRkYi5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk2ODkyZTRkYi5wbmc.jfif"></a></p>
+<p>另外：要在博客底部显示所有文章的总字数，可以<a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-wordcount">点击此处</a>，根据你博客底部文件的类型选择相应的代码放在适当的位置即可，前提是要安装好 <code>hexo-wordcount</code> 插件，例如我使用 <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/material-x/">MaterialX</a> 主题，在 <code>\themes\material-x\layout\_partial</code> 目录下的 <code>footer.ejs</code> 文件中添加如下代码：</p>
 <pre><code class="lang-css">&lt;i class=&quot;fas fa-chart-area&quot;&gt;&lt;/i&gt;
 &lt;span class=&quot;post-count&quot;&gt;字数统计：&lt;%= totalcount(site) %&gt;&lt;/span&gt;
 </code></pre>
-<p>实现效果如下：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104042630.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104042630.png"></a></p>
+<p>实现效果如下：<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104042630.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104042630.png"></a></p>
 <h2 id="3-添加网站运营时间"><a href="#3-添加网站运营时间" class="headerlink" title="3 添加网站运营时间"></a>3 添加网站运营时间</h2><p>一个比较好的小功能，可以看见自己的博客运行多久了，时间一天天的增加，成就感也会一天天增加的<br>在 <code>\themes\hexo-theme-spfk\layout\_partial\footer.ejs</code> 文件下添加以下代码：</p>
 <pre><code class="lang-js">&lt;span id=&quot;timeDate&quot;&gt;载入天数...&lt;/span&gt;&lt;span id=&quot;times&quot;&gt;载入时分秒...&lt;/span&gt;
 &lt;script&gt;
     var now = new Date(); 
-    function createtime() { 
+    function createtime() &#123; 
         var grt= new Date(&quot;08/10/2018 17:38:00&quot;);//在此处修改你的建站时间，格式：月/日/年 时:分:秒
         now.setTime(now.getTime()+250); 
         days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
         hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-        if(String(hnum).length ==1 ){hnum = &quot;0&quot; + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = &quot;0&quot; + mnum;} 
+        if(String(hnum).length ==1 )&#123;hnum = &quot;0&quot; + hnum;&#125; minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 )&#123;mnum = &quot;0&quot; + mnum;&#125; 
         seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = &quot;0&quot; + snum;} 
+        snum = Math.round(seconds); if(String(snum).length ==1 )&#123;snum = &quot;0&quot; + snum;&#125; 
         document.getElementById(&quot;timeDate&quot;).innerHTML = &quot;本站已安全运行 &quot;+dnum+&quot; 天 &quot;; 
         document.getElementById(&quot;times&quot;).innerHTML = hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;; 
-    } 
+    &#125; 
 setInterval(&quot;createtime()&quot;,250);
 &lt;/script&gt;
 </code></pre>
-<p>最后效果如下：<br><a data-fancybox="gallery" href id="escape-link"><img src></a><br><a href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3ZGRlY2E4YS5wbmc.jfif" data-fancybox="images" data-caption="主人没有描述我哦~" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3ZGRlY2E4YS5wbmc.jfif"></a></p>
+<p>最后效果如下：<br><a data-fancybox="gallery" href="" id="escape-link"><img src=""></a><br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3ZGRlY2E4YS5wbmc.jfif" data-fancybox="images" data-caption="主人没有描述我哦~"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk3ZGRlY2E4YS5wbmc.jfif" /></a></p>
 <h2 id="4-添加百度统计"><a href="#4-添加百度统计" class="headerlink" title="4 添加百度统计"></a>4 添加百度统计</h2><p>百度统计是百度推出的一款免费的专业网站流量分析工具，能够告诉用户访客是如何找到并浏览用户的网站，在网站上做了些什么，非常有趣，接下来我们把百度统计添加到自己博客当中</p>
-<p>访问<a href="https://tongji.baidu.com/web/welcome/login" target="_blank" rel="noopener">百度统计首页</a>，注册一个账号后登陆，添加你的博客网站<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4NTk0Yzg5NS5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4NTk0Yzg5NS5wbmc.jfif"></a></p>
-<p>接着点击代码获取，复制该代码<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ODE1M2MzNS5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ODE1M2MzNS5wbmc.jfif"></a></p>
-<p>然后到目录 <code>\themes\hexo-theme-spfk\layout\_partial</code> 下新建一个 <code>baidu-analytics.ejs</code> 文件，里面粘贴你刚刚复制的代码<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4YjBiYjRlZi5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4YjBiYjRlZi5wbmc.jfif"></a></p>
-<p>修改主题文件夹下的 <code>_config.yml</code> 文件，将你的key（图中涂掉部分）填写进去：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ZDQzNTQ5ZC5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ZDQzNTQ5ZC5wbmc.jfif"></a></p>
-<p>所有操作完成后可以在百度统计管理页面检查代码是否安装成功，如果代码安装正确，一般20分钟后，可以查看网站分析数据<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk5MDBiOWI4Ny5wbmc.jfif" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk5MDBiOWI4Ny5wbmc.jfif"></a></p>
-<p>另外推荐：<a href="https://web.umeng.com/main.php?c=user&amp;a=index" target="_blank" rel="noopener">友盟</a>，2010年4月在北京成立，安全、可靠、公正、第三方的网站流量统计分析系统</p>
-<h2 id="5-添加RSS订阅"><a href="#5-添加RSS订阅" class="headerlink" title="5 添加RSS订阅"></a>5 添加RSS订阅</h2><p>RSS订阅是站点用来和其他站点之间共享内容的一种简易方式，即Really Simple Syndication（简易信息聚合），如果不会使用，可以参见百度百科：<a href="https://baike.baidu.com/item/RSS%E8%AE%A2%E9%98%85/663114" target="_blank" rel="noopener">https://baike.baidu.com/item/RSS%E8%AE%A2%E9%98%85/663114</a> ；首先我们安装feed插件，在本地hexo目录下右键<code>Git Bash Here</code>，输入以下命令：</p>
+<p>访问<a target="_blank" rel="noopener" href="https://tongji.baidu.com/web/welcome/login">百度统计首页</a>，注册一个账号后登陆，添加你的博客网站<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4NTk0Yzg5NS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4NTk0Yzg5NS5wbmc.jfif"></a></p>
+<p>接着点击代码获取，复制该代码<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ODE1M2MzNS5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ODE1M2MzNS5wbmc.jfif"></a></p>
+<p>然后到目录 <code>\themes\hexo-theme-spfk\layout\_partial</code> 下新建一个 <code>baidu-analytics.ejs</code> 文件，里面粘贴你刚刚复制的代码<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4YjBiYjRlZi5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4YjBiYjRlZi5wbmc.jfif"></a></p>
+<p>修改主题文件夹下的 <code>_config.yml</code> 文件，将你的key（图中涂掉部分）填写进去：<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ZDQzNTQ5ZC5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk4ZDQzNTQ5ZC5wbmc.jfif"></a></p>
+<p>所有操作完成后可以在百度统计管理页面检查代码是否安装成功，如果代码安装正确，一般20分钟后，可以查看网站分析数据<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk5MDBiOWI4Ny5wbmc.jfif" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMzEvNWM5Zjk5MDBiOWI4Ny5wbmc.jfif"></a></p>
+<p>另外推荐：<a target="_blank" rel="noopener" href="https://web.umeng.com/main.php?c=user&amp;a=index">友盟</a>，2010年4月在北京成立，安全、可靠、公正、第三方的网站流量统计分析系统</p>
+<h2 id="5-添加RSS订阅"><a href="#5-添加RSS订阅" class="headerlink" title="5 添加RSS订阅"></a>5 添加RSS订阅</h2><p>RSS订阅是站点用来和其他站点之间共享内容的一种简易方式，即Really Simple Syndication（简易信息聚合），如果不会使用，可以参见百度百科：<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/RSS%E8%AE%A2%E9%98%85/663114">https://baike.baidu.com/item/RSS%E8%AE%A2%E9%98%85/663114</a> ；首先我们安装feed插件，在本地hexo目录下右键<code>Git Bash Here</code>，输入以下命令：</p>
 <pre><code class="lang-css">$ npm install hexo-generator-feed
 </code></pre>
 <p>等待安装完成后，打开hexo目录下的配置文件 <code>_config.yml</code>，在末尾添加以下配置：</p>
@@ -592,8 +593,8 @@ limit: 20
 <pre><code class="lang-css">rss: /atom.xml
 </code></pre>
 <p>至此，RSS订阅功能添加完成</p>
-<h2 id="6-添加-Fork-me-on-GitHub-效果"><a href="#6-添加-Fork-me-on-GitHub-效果" class="headerlink" title="6 添加 Fork me on GitHub 效果"></a>6 添加 Fork me on GitHub 效果</h2><p>效果图：<br><a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104140857.png" id="escape-link" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104140857.png"></a></p>
-<p><a href="https://github.blog/2008-12-19-github-ribbons/" target="_blank" rel="noopener">点击此处</a>可以查看更多样式，将相应样式的代码复制到你想要放的地方就OK了，代码里的链接也要替换成你的，更多创意，比如 Follow me on CSDN ，只需要用PS改掉图片里的文字，替换掉相应链接即可</p>
+<h2 id="6-添加-Fork-me-on-GitHub-效果"><a href="#6-添加-Fork-me-on-GitHub-效果" class="headerlink" title="6 添加 Fork me on GitHub 效果"></a>6 添加 Fork me on GitHub 效果</h2><p>效果图：<br><a data-fancybox="gallery" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104140857.png" id="escape-link"><img src="https://cdn.jsdelivr.net/gh/starlovei/picgo/NEXT/20190807104140857.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://github.blog/2008-12-19-github-ribbons/">点击此处</a>可以查看更多样式，将相应样式的代码复制到你想要放的地方就OK了，代码里的链接也要替换成你的，更多创意，比如 Follow me on CSDN ，只需要用PS改掉图片里的文字，替换掉相应链接即可</p>
 <h2 id="7-更改本地预览端口号"><a href="#7-更改本地预览端口号" class="headerlink" title="7 更改本地预览端口号"></a>7 更改本地预览端口号</h2><p>hexo博客在执行<code>hexo s</code>进行本地预览的时候，默认端口号是4000，当该端口号被占用时会报错 <code>Error: listen EADDRINUSE 0.0.0.0:4000</code> ，此时可以关闭占用该端口的进程，也可以更换端口号，更换端口号可以通过以下两种方法实现：<br>方法一：在根目录的<code>_config.yml</code>配置文件内加上如下代码更改<code>hexo s</code>运行时的端口号：</p>
 <pre><code class="lang-css">server:
   port: 5000
@@ -636,7 +637,7 @@ limit: 20
           
             <div class="post-nepre half previous">
           
-            <a href="/2020/02/07/Hexo 博客优化之博客美化系列/" rel="prev">
+            <a href="/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E7%B3%BB%E5%88%97/" rel="prev">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/outload.svg" data-src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/78552913_p0.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/starlovei/picgo/Meihua/78552913_p0.jpg">
               </div>
@@ -795,7 +796,7 @@ limit: 20
             }
         setInterval("createtime()",250);
         </script>
-        <a href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
+        <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
         </div>
     </div>
     <div class="footer-device">
