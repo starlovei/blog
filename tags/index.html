@@ -417,37 +417,10 @@
                   </a>
                   
                   
-                  <a href="/tags/%E4%B8%BB%E9%A2%98/" title="主题: 5">
-                      <span class="chip center-align waves-effect waves-light
-                               chip-default "
-                              data-tagname="主题" style="background-color: #F5EEF8;">主题
-                          <span class="tag-length">5</span>
-                      </span>
-                  </a>
-                  
-                  
-                  <a href="/tags/%E7%BD%91%E7%BB%9C/" title="网络: 7">
-                      <span class="chip center-align waves-effect waves-light
-                               chip-default "
-                              data-tagname="网络" style="background-color: #D5F5E3;">网络
-                          <span class="tag-length">7</span>
-                      </span>
-                  </a>
-                  
-                  
-                  <a href="/tags/%E8%BD%AC%E8%BD%BD/" title="转载: 4">
-                      <span class="chip center-align waves-effect waves-light
-                               chip-default "
-                              data-tagname="转载" style="background-color: #E8F8F5;">转载
-                          <span class="tag-length">4</span>
-                      </span>
-                  </a>
-                  
-                  
                   <a href="/tags/web/" title="web: 1">
                       <span class="chip center-align waves-effect waves-light
                                chip-default "
-                              data-tagname="web" style="background-color: #FEF9E7;">web
+                              data-tagname="web" style="background-color: #F5EEF8;">web
                           <span class="tag-length">1</span>
                       </span>
                   </a>
@@ -456,8 +429,35 @@
                   <a href="/tags/%E6%82%A6%E8%AF%BB/" title="悦读: 1">
                       <span class="chip center-align waves-effect waves-light
                                chip-default "
-                              data-tagname="悦读" style="background-color: #F8F9F9;">悦读
+                              data-tagname="悦读" style="background-color: #D5F5E3;">悦读
                           <span class="tag-length">1</span>
+                      </span>
+                  </a>
+                  
+                  
+                  <a href="/tags/%E4%B8%BB%E9%A2%98/" title="主题: 5">
+                      <span class="chip center-align waves-effect waves-light
+                               chip-default "
+                              data-tagname="主题" style="background-color: #E8F8F5;">主题
+                          <span class="tag-length">5</span>
+                      </span>
+                  </a>
+                  
+                  
+                  <a href="/tags/%E7%BD%91%E7%BB%9C/" title="网络: 7">
+                      <span class="chip center-align waves-effect waves-light
+                               chip-default "
+                              data-tagname="网络" style="background-color: #FEF9E7;">网络
+                          <span class="tag-length">7</span>
+                      </span>
+                  </a>
+                  
+                  
+                  <a href="/tags/%E8%BD%AC%E8%BD%BD/" title="转载: 4">
+                      <span class="chip center-align waves-effect waves-light
+                               chip-default "
+                              data-tagname="转载" style="background-color: #F8F9F9;">转载
+                          <span class="tag-length">4</span>
                       </span>
                   </a>
                   
@@ -877,5 +877,20 @@ $(document).ready(function() {
     })
   });
 </script> -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
