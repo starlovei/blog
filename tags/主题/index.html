@@ -474,9 +474,9 @@
       </span>
       <span><i class="fa fa-tags"></i>
       
-          <a href="/tags/%E4%B8%BB%E9%A2%98/" class="set-color">主题<em>·</em></a>
-        
           <a href="/tags/%E7%BD%91%E7%BB%9C/" class="set-color">网络<em>·</em></a>
+        
+          <a href="/tags/%E4%B8%BB%E9%A2%98/" class="set-color">主题<em>·</em></a>
         
       </span>
       <style>
@@ -525,9 +525,9 @@
       </span>
       <span><i class="fa fa-tags"></i>
       
-          <a href="/tags/%E4%B8%BB%E9%A2%98/" class="set-color">主题<em>·</em></a>
-        
           <a href="/tags/%E7%BD%91%E7%BB%9C/" class="set-color">网络<em>·</em></a>
+        
+          <a href="/tags/%E4%B8%BB%E9%A2%98/" class="set-color">主题<em>·</em></a>
         
           <a href="/tags/%E5%85%AC%E5%BC%8F/" class="set-color">公式<em>·</em></a>
         
@@ -578,9 +578,9 @@
       </span>
       <span><i class="fa fa-tags"></i>
       
-          <a href="/tags/%E4%B8%BB%E9%A2%98/" class="set-color">主题<em>·</em></a>
-        
           <a href="/tags/%E7%BD%91%E7%BB%9C/" class="set-color">网络<em>·</em></a>
+        
+          <a href="/tags/%E4%B8%BB%E9%A2%98/" class="set-color">主题<em>·</em></a>
         
           <a href="/tags/%E8%BD%AC%E8%BD%BD/" class="set-color">转载<em>·</em></a>
         
@@ -631,9 +631,9 @@
       </span>
       <span><i class="fa fa-tags"></i>
       
-          <a href="/tags/%E4%B8%BB%E9%A2%98/" class="set-color">主题<em>·</em></a>
-        
           <a href="/tags/%E7%BD%91%E7%BB%9C/" class="set-color">网络<em>·</em></a>
+        
+          <a href="/tags/%E4%B8%BB%E9%A2%98/" class="set-color">主题<em>·</em></a>
         
           <a href="/tags/%E8%BD%AC%E8%BD%BD/" class="set-color">转载<em>·</em></a>
         
@@ -1002,5 +1002,20 @@ $(document).ready(function() {
     })
   });
 </script> -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

@@ -1076,7 +1076,8 @@ var home = location.href,
                 "4e5df3b131c1319aaf3e082e7bc6d639",
                 "87c193a34cedc5db6706383d4f2b50c1",
                 "f43c1a5126008491e61b5cd11aae4704",
-                "173bbeb60e5a1fc5f7a7dcda0a9a0a1d"
+                "173bbeb60e5a1fc5f7a7dcda0a9a0a1d",
+                "26fb4e9d679e499d8545df9f2aea519c"
           ],  //小伙伴邮箱Md5
           metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）","link":"网址 (https)"},
           placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
