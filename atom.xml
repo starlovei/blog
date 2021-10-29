@@ -3,11 +3,11 @@
   <title>小枫叶</title>
   
   
-  <link href="https://www.starlovei.com/atom.xml" rel="self"/>
+  <link href="https://www.smallmaple.com/atom.xml" rel="self"/>
   
-  <link href="https://www.starlovei.com/"/>
+  <link href="https://www.smallmaple.com/"/>
   <updated>2021-07-15T16:27:33.678Z</updated>
-  <id>https://www.starlovei.com/</id>
+  <id>https://www.smallmaple.com/</id>
   
   <author>
     <name>小枫叶</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Windows-Terminal</title>
-    <link href="https://www.starlovei.com/2021/01/24/Terminal/"/>
-    <id>https://www.starlovei.com/2021/01/24/Terminal/</id>
+    <link href="https://www.smallmaple.com/2021/01/24/Terminal/"/>
+    <id>https://www.smallmaple.com/2021/01/24/Terminal/</id>
     <published>2021-01-24T01:43:25.000Z</published>
     <updated>2021-07-15T16:27:33.678Z</updated>
     
@@ -37,17 +37,17 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="主题" scheme="https://www.starlovei.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    <category term="主题" scheme="https://www.smallmaple.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>Linux部分命令</title>
-    <link href="https://www.starlovei.com/2020/07/28/Linux%E9%83%A8%E5%88%86%E5%91%BD%E4%BB%A4/"/>
-    <id>https://www.starlovei.com/2020/07/28/Linux%E9%83%A8%E5%88%86%E5%91%BD%E4%BB%A4/</id>
+    <link href="https://www.smallmaple.com/2020/07/28/Linux%E9%83%A8%E5%88%86%E5%91%BD%E4%BB%A4/"/>
+    <id>https://www.smallmaple.com/2020/07/28/Linux%E9%83%A8%E5%88%86%E5%91%BD%E4%BB%A4/</id>
     <published>2020-07-28T08:27:48.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -56,17 +56,17 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="网络" scheme="https://www.starlovei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://www.smallmaple.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>24G银河系中心图</title>
-    <link href="https://www.starlovei.com/2020/05/31/24G%E9%93%B6%E6%B2%B3%E7%B3%BB%E4%B8%AD%E5%BF%83%E5%9B%BE/"/>
-    <id>https://www.starlovei.com/2020/05/31/24G%E9%93%B6%E6%B2%B3%E7%B3%BB%E4%B8%AD%E5%BF%83%E5%9B%BE/</id>
+    <link href="https://www.smallmaple.com/2020/05/31/24G%E9%93%B6%E6%B2%B3%E7%B3%BB%E4%B8%AD%E5%BF%83%E5%9B%BE/"/>
+    <id>https://www.smallmaple.com/2020/05/31/24G%E9%93%B6%E6%B2%B3%E7%B3%BB%E4%B8%AD%E5%BF%83%E5%9B%BE/</id>
     <published>2020-05-31T09:29:01.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -75,17 +75,17 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="资源" scheme="https://www.starlovei.com/tags/%E8%B5%84%E6%BA%90/"/>
+    <category term="资源" scheme="https://www.smallmaple.com/tags/%E8%B5%84%E6%BA%90/"/>
     
   </entry>
   
   <entry>
     <title>极超新星</title>
-    <link href="https://www.starlovei.com/2020/05/29/%E6%9E%81%E8%B6%85%E6%96%B0%E6%98%9F/"/>
-    <id>https://www.starlovei.com/2020/05/29/%E6%9E%81%E8%B6%85%E6%96%B0%E6%98%9F/</id>
+    <link href="https://www.smallmaple.com/2020/05/29/%E6%9E%81%E8%B6%85%E6%96%B0%E6%98%9F/"/>
+    <id>https://www.smallmaple.com/2020/05/29/%E6%9E%81%E8%B6%85%E6%96%B0%E6%98%9F/</id>
     <published>2020-05-29T11:02:52.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -94,21 +94,21 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="恒星" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F/"/>
+    <category term="恒星" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F/"/>
     
-    <category term="宇宙" scheme="https://www.starlovei.com/tags/%E5%AE%87%E5%AE%99/"/>
+    <category term="宇宙" scheme="https://www.smallmaple.com/tags/%E5%AE%87%E5%AE%99/"/>
     
-    <category term="恒星演化" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F%E6%BC%94%E5%8C%96/"/>
+    <category term="恒星演化" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F%E6%BC%94%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>沃尔夫-拉叶星</title>
-    <link href="https://www.starlovei.com/2020/05/29/%E6%B2%83%E5%B0%94%E5%A4%AB-%E6%8B%89%E5%8F%B6%E6%98%9F/"/>
-    <id>https://www.starlovei.com/2020/05/29/%E6%B2%83%E5%B0%94%E5%A4%AB-%E6%8B%89%E5%8F%B6%E6%98%9F/</id>
+    <link href="https://www.smallmaple.com/2020/05/29/%E6%B2%83%E5%B0%94%E5%A4%AB-%E6%8B%89%E5%8F%B6%E6%98%9F/"/>
+    <id>https://www.smallmaple.com/2020/05/29/%E6%B2%83%E5%B0%94%E5%A4%AB-%E6%8B%89%E5%8F%B6%E6%98%9F/</id>
     <published>2020-05-29T10:20:52.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -117,21 +117,21 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="恒星" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F/"/>
+    <category term="恒星" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F/"/>
     
-    <category term="宇宙" scheme="https://www.starlovei.com/tags/%E5%AE%87%E5%AE%99/"/>
+    <category term="宇宙" scheme="https://www.smallmaple.com/tags/%E5%AE%87%E5%AE%99/"/>
     
-    <category term="恒星演化" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F%E6%BC%94%E5%8C%96/"/>
+    <category term="恒星演化" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F%E6%BC%94%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>黑矮星</title>
-    <link href="https://www.starlovei.com/2020/05/29/%E9%BB%91%E7%9F%AE%E6%98%9F/"/>
-    <id>https://www.starlovei.com/2020/05/29/%E9%BB%91%E7%9F%AE%E6%98%9F/</id>
+    <link href="https://www.smallmaple.com/2020/05/29/%E9%BB%91%E7%9F%AE%E6%98%9F/"/>
+    <id>https://www.smallmaple.com/2020/05/29/%E9%BB%91%E7%9F%AE%E6%98%9F/</id>
     <published>2020-05-29T09:46:27.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -140,19 +140,19 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="恒星" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F/"/>
+    <category term="恒星" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F/"/>
     
-    <category term="宇宙" scheme="https://www.starlovei.com/tags/%E5%AE%87%E5%AE%99/"/>
+    <category term="宇宙" scheme="https://www.smallmaple.com/tags/%E5%AE%87%E5%AE%99/"/>
     
   </entry>
   
   <entry>
     <title>工具汇集</title>
-    <link href="https://www.starlovei.com/2020/05/04/%E5%B7%A5%E5%85%B7%E6%B1%87%E9%9B%86/"/>
-    <id>https://www.starlovei.com/2020/05/04/%E5%B7%A5%E5%85%B7%E6%B1%87%E9%9B%86/</id>
+    <link href="https://www.smallmaple.com/2020/05/04/%E5%B7%A5%E5%85%B7%E6%B1%87%E9%9B%86/"/>
+    <id>https://www.smallmaple.com/2020/05/04/%E5%B7%A5%E5%85%B7%E6%B1%87%E9%9B%86/</id>
     <published>2020-05-03T23:59:19.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -161,19 +161,19 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="网络" scheme="https://www.starlovei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://www.smallmaple.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="转载" scheme="https://www.starlovei.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    <category term="转载" scheme="https://www.smallmaple.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>超新星</title>
-    <link href="https://www.starlovei.com/2020/04/29/%E8%B6%85%E6%96%B0%E6%98%9F/"/>
-    <id>https://www.starlovei.com/2020/04/29/%E8%B6%85%E6%96%B0%E6%98%9F/</id>
+    <link href="https://www.smallmaple.com/2020/04/29/%E8%B6%85%E6%96%B0%E6%98%9F/"/>
+    <id>https://www.smallmaple.com/2020/04/29/%E8%B6%85%E6%96%B0%E6%98%9F/</id>
     <published>2020-04-29T00:53:16.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -182,21 +182,21 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="恒星" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F/"/>
+    <category term="恒星" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F/"/>
     
-    <category term="宇宙" scheme="https://www.starlovei.com/tags/%E5%AE%87%E5%AE%99/"/>
+    <category term="宇宙" scheme="https://www.smallmaple.com/tags/%E5%AE%87%E5%AE%99/"/>
     
-    <category term="恒星演化" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F%E6%BC%94%E5%8C%96/"/>
+    <category term="恒星演化" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F%E6%BC%94%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Sakura主题折腾日记</title>
-    <link href="https://www.starlovei.com/2020/04/27/Sakura%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/"/>
-    <id>https://www.starlovei.com/2020/04/27/Sakura%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/</id>
+    <link href="https://www.smallmaple.com/2020/04/27/Sakura%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/"/>
+    <id>https://www.smallmaple.com/2020/04/27/Sakura%E4%B8%BB%E9%A2%98%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/</id>
     <published>2020-04-27T11:23:53.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -205,19 +205,19 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="主题" scheme="https://www.starlovei.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    <category term="主题" scheme="https://www.smallmaple.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
-    <category term="网络" scheme="https://www.starlovei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://www.smallmaple.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>listary-本地搜索神器</title>
-    <link href="https://www.starlovei.com/2020/03/31/listary/"/>
-    <id>https://www.starlovei.com/2020/03/31/listary/</id>
+    <link href="https://www.smallmaple.com/2020/03/31/listary/"/>
+    <id>https://www.smallmaple.com/2020/03/31/listary/</id>
     <published>2020-03-31T00:41:25.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -226,17 +226,17 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="文件" scheme="https://www.starlovei.com/tags/%E6%96%87%E4%BB%B6/"/>
+    <category term="文件" scheme="https://www.smallmaple.com/tags/%E6%96%87%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>GitHub访问速度慢</title>
-    <link href="https://www.starlovei.com/2020/03/03/github/"/>
-    <id>https://www.starlovei.com/2020/03/03/github/</id>
+    <link href="https://www.smallmaple.com/2020/03/03/github/"/>
+    <id>https://www.smallmaple.com/2020/03/03/github/</id>
     <published>2020-03-03T07:33:11.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -245,19 +245,19 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="网络" scheme="https://www.starlovei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://www.smallmaple.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="转载" scheme="https://www.starlovei.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    <category term="转载" scheme="https://www.smallmaple.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>脉冲星</title>
-    <link href="https://www.starlovei.com/2020/02/12/%E8%84%89%E5%86%B2%E6%98%9F/"/>
-    <id>https://www.starlovei.com/2020/02/12/%E8%84%89%E5%86%B2%E6%98%9F/</id>
+    <link href="https://www.smallmaple.com/2020/02/12/%E8%84%89%E5%86%B2%E6%98%9F/"/>
+    <id>https://www.smallmaple.com/2020/02/12/%E8%84%89%E5%86%B2%E6%98%9F/</id>
     <published>2020-02-12T02:05:24.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -266,19 +266,19 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="恒星" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F/"/>
+    <category term="恒星" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F/"/>
     
-    <category term="宇宙" scheme="https://www.starlovei.com/tags/%E5%AE%87%E5%AE%99/"/>
+    <category term="宇宙" scheme="https://www.smallmaple.com/tags/%E5%AE%87%E5%AE%99/"/>
     
   </entry>
   
   <entry>
     <title>中子星</title>
-    <link href="https://www.starlovei.com/2020/02/11/%E4%B8%AD%E5%AD%90%E6%98%9F/"/>
-    <id>https://www.starlovei.com/2020/02/11/%E4%B8%AD%E5%AD%90%E6%98%9F/</id>
+    <link href="https://www.smallmaple.com/2020/02/11/%E4%B8%AD%E5%AD%90%E6%98%9F/"/>
+    <id>https://www.smallmaple.com/2020/02/11/%E4%B8%AD%E5%AD%90%E6%98%9F/</id>
     <published>2020-02-11T12:43:36.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -287,19 +287,19 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="恒星" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F/"/>
+    <category term="恒星" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F/"/>
     
-    <category term="宇宙" scheme="https://www.starlovei.com/tags/%E5%AE%87%E5%AE%99/"/>
+    <category term="宇宙" scheme="https://www.smallmaple.com/tags/%E5%AE%87%E5%AE%99/"/>
     
   </entry>
   
   <entry>
     <title>白矮星</title>
-    <link href="https://www.starlovei.com/2020/02/11/%E7%99%BD%E7%9F%AE%E6%98%9F/"/>
-    <id>https://www.starlovei.com/2020/02/11/%E7%99%BD%E7%9F%AE%E6%98%9F/</id>
+    <link href="https://www.smallmaple.com/2020/02/11/%E7%99%BD%E7%9F%AE%E6%98%9F/"/>
+    <id>https://www.smallmaple.com/2020/02/11/%E7%99%BD%E7%9F%AE%E6%98%9F/</id>
     <published>2020-02-11T12:43:36.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -308,19 +308,19 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="恒星" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F/"/>
+    <category term="恒星" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F/"/>
     
-    <category term="宇宙" scheme="https://www.starlovei.com/tags/%E5%AE%87%E5%AE%99/"/>
+    <category term="宇宙" scheme="https://www.smallmaple.com/tags/%E5%AE%87%E5%AE%99/"/>
     
   </entry>
   
   <entry>
     <title>在Hexo中使用MathJax插入数学公式</title>
-    <link href="https://www.starlovei.com/2020/02/10/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
-    <id>https://www.starlovei.com/2020/02/10/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</id>
+    <link href="https://www.smallmaple.com/2020/02/10/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    <id>https://www.smallmaple.com/2020/02/10/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</id>
     <published>2020-02-10T04:47:39.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -329,21 +329,21 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="主题" scheme="https://www.starlovei.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    <category term="主题" scheme="https://www.smallmaple.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
-    <category term="网络" scheme="https://www.starlovei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://www.smallmaple.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="公式" scheme="https://www.starlovei.com/tags/%E5%85%AC%E5%BC%8F/"/>
+    <category term="公式" scheme="https://www.smallmaple.com/tags/%E5%85%AC%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>黑洞</title>
-    <link href="https://www.starlovei.com/2020/02/09/%E9%BB%91%E6%B4%9E/"/>
-    <id>https://www.starlovei.com/2020/02/09/%E9%BB%91%E6%B4%9E/</id>
+    <link href="https://www.smallmaple.com/2020/02/09/%E9%BB%91%E6%B4%9E/"/>
+    <id>https://www.smallmaple.com/2020/02/09/%E9%BB%91%E6%B4%9E/</id>
     <published>2020-02-09T13:23:31.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -352,19 +352,19 @@
     
     
     
-    <category term="天文" scheme="https://www.starlovei.com/categories/%E5%A4%A9%E6%96%87/"/>
+    <category term="天文" scheme="https://www.smallmaple.com/categories/%E5%A4%A9%E6%96%87/"/>
     
     
-    <category term="恒星" scheme="https://www.starlovei.com/tags/%E6%81%92%E6%98%9F/"/>
+    <category term="恒星" scheme="https://www.smallmaple.com/tags/%E6%81%92%E6%98%9F/"/>
     
-    <category term="宇宙" scheme="https://www.starlovei.com/tags/%E5%AE%87%E5%AE%99/"/>
+    <category term="宇宙" scheme="https://www.smallmaple.com/tags/%E5%AE%87%E5%AE%99/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 博客优化之博客美化系列</title>
-    <link href="https://www.starlovei.com/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E7%B3%BB%E5%88%97/"/>
-    <id>https://www.starlovei.com/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E7%B3%BB%E5%88%97/</id>
+    <link href="https://www.smallmaple.com/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E7%B3%BB%E5%88%97/"/>
+    <id>https://www.smallmaple.com/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E7%B3%BB%E5%88%97/</id>
     <published>2020-02-07T05:47:47.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -373,21 +373,21 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="主题" scheme="https://www.starlovei.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    <category term="主题" scheme="https://www.smallmaple.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
-    <category term="网络" scheme="https://www.starlovei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://www.smallmaple.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="转载" scheme="https://www.starlovei.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    <category term="转载" scheme="https://www.smallmaple.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>博客优化之实用功能添加系列</title>
-    <link href="https://www.starlovei.com/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0%E7%B3%BB%E5%88%97/"/>
-    <id>https://www.starlovei.com/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0%E7%B3%BB%E5%88%97/</id>
+    <link href="https://www.smallmaple.com/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0%E7%B3%BB%E5%88%97/"/>
+    <id>https://www.smallmaple.com/2020/02/07/Hexo%20%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E4%B9%8B%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD%E6%B7%BB%E5%8A%A0%E7%B3%BB%E5%88%97/</id>
     <published>2020-02-07T04:22:00.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -396,21 +396,21 @@
     
     
     
-    <category term="技术" scheme="https://www.starlovei.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.smallmaple.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="主题" scheme="https://www.starlovei.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    <category term="主题" scheme="https://www.smallmaple.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
-    <category term="网络" scheme="https://www.starlovei.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    <category term="网络" scheme="https://www.smallmaple.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
-    <category term="转载" scheme="https://www.starlovei.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    <category term="转载" scheme="https://www.smallmaple.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>函数, 图像和直线</title>
-    <link href="https://www.starlovei.com/2020/02/05/function/"/>
-    <id>https://www.starlovei.com/2020/02/05/function/</id>
+    <link href="https://www.smallmaple.com/2020/02/05/function/"/>
+    <id>https://www.smallmaple.com/2020/02/05/function/</id>
     <published>2020-02-05T04:47:39.000Z</published>
     <updated>2021-07-10T21:27:36.000Z</updated>
     
@@ -419,12 +419,12 @@
     
     
     
-    <category term="高数" scheme="https://www.starlovei.com/categories/%E9%AB%98%E6%95%B0/"/>
+    <category term="高数" scheme="https://www.smallmaple.com/categories/%E9%AB%98%E6%95%B0/"/>
     
     
-    <category term="微积分" scheme="https://www.starlovei.com/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    <category term="微积分" scheme="https://www.smallmaple.com/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
     
-    <category term="函数" scheme="https://www.starlovei.com/tags/%E5%87%BD%E6%95%B0/"/>
+    <category term="函数" scheme="https://www.smallmaple.com/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
