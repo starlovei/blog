@@ -3496,7 +3496,7 @@ li.feature-2 {
     padding:15px;
     margin-top:22px;
     letter-spacing:0;
-    line-height:20px;
+    line-height:25px;
     border-radius:10px;
     box-sizing:initial;
     white-space:nowrap;
@@ -7896,4 +7896,7 @@ a.about:hover{
 a.bangumi{    
     color:#404040;
     /* cursor:pointer; */
+}
+a.bangumi:hover {
+    color: hotpink;
 }
