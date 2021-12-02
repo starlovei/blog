@@ -5,7 +5,7 @@ var _typeof = typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol
   return a && typeof Symbol === 'function' && a.constructor === Symbol && a !== Symbol.prototype ? 'symbol' : typeof a
 }
 
-function cloneObject (a) {
+function cloneObject(a) {
   if (a == null || (typeof a === 'undefined' ? 'undefined' : _typeof(a)) != 'object') return a
   if (a instanceof Date) {
     var e = new Date(a.getDate())
@@ -38,13 +38,13 @@ mashiro_global.ini = new function () {
         setTimeout(function () {
           mashiro_option.app_update(true)
         }, 10000)
-      } catch (e) {}
+      } catch (e) { }
     }
     if ($('div').hasClass('poem-wrap')) {
       get_poem('#poem', '#info')
     }
     $(function () {
-      function waveloop1 () {
+      function waveloop1() {
         $('#banner_wave_1').css({
           'left': '-236px'
         }).animate({
@@ -52,7 +52,7 @@ mashiro_global.ini = new function () {
         }, 25000, 'linear', waveloop1)
       }
 
-      function waveloop2 () {
+      function waveloop2() {
         $('#banner_wave_2').css({
           'left': '0px'
         }).animate({
@@ -131,7 +131,7 @@ mashiro_global.lib = new function () {
   }
 }()
 
-function setCookie (name, value, days) {
+function setCookie(name, value, days) {
   var expires = ''
   if (days) {
     var date = new Date()
@@ -141,7 +141,7 @@ function setCookie (name, value, days) {
   document.cookie = name + mashiro_option.cookie_version_control + '=' + (value || '') + expires + '; path=/'
 }
 
-function getCookie (name) {
+function getCookie(name) {
   var nameEQ = name + mashiro_option.cookie_version_control + '='
   var ca = document.cookie.split(';')
   for (var i = 0; i < ca.length; i++) {
@@ -152,21 +152,21 @@ function getCookie (name) {
   return null
 }
 
-function removeCookie (name) {
+function removeCookie(name) {
   document.cookie = name + mashiro_option.cookie_version_control + '=; Max-Age=-99999999;'
 }
 
-function jumpTo (url) {
+function jumpTo(url) {
   return mashiro_global.lib.pjax_to_url(url, '#page')
 }
 
-function injectStyles (rule) {
+function injectStyles(rule) {
   var div = $('<div />', {
     html: '&shy;<style>' + rule + '</style>'
   }).appendTo('body')
 }
 
-function imgError (ele, type) {
+function imgError(ele, type) {
   switch (type) {
     case 1:
       if (ele.src.includes('https://cn.gravatar.com/avatar')) {
@@ -244,8 +244,8 @@ mashiro_global.font_control = new function () {
 }()
 mashiro_global.font_control.ini()
 
-function code_highlight_style () {
-  function gen_top_bar (i) {
+function code_highlight_style() {
+  function gen_top_bar(i) {
     var attributes = {
       'autocomplete': 'off',
       'autocorrect': 'off',
@@ -273,17 +273,17 @@ function code_highlight_style () {
     gen_top_bar(i)
   }
   //$('pre').on('click', function (e) {
-    //if (e.target !== this) return
-    // $(this).toggleClass('code-block-fullscreen')
-    // $('html').toggleClass('code-block-fullscreen-html-scroll')
+  //if (e.target !== this) return
+  // $(this).toggleClass('code-block-fullscreen')
+  // $('html').toggleClass('code-block-fullscreen-html-scroll')
   // })
   hljs.initLineNumbersOnLoad()
 }
 try {
   code_highlight_style()
-} catch (e) {}
+} catch (e) { }
 
-function copy_code_block () {
+function copy_code_block() {
   $('pre code').each(function (i, block) {
     $(block).attr({ id: 'hljs-' + i })
     $(this).after('<a class="copy-code" href="javascript:" data-clipboard-target="#hljs-' + i + '" title="复制代码"><i class="fa fa-clone" aria-hidden="true"></i></a>')
@@ -291,7 +291,7 @@ function copy_code_block () {
   var clipboard = new ClipboardJS('.copy-code')
 }
 
-function attach_image () {
+function attach_image() {
   $('#upload-img-file').change(function () {
     if (this.files.length > 10) {
       addComment.createButterbar('每次上传上限为10张.<br>10 files max per request.')
@@ -337,11 +337,11 @@ function attach_image () {
   })
 }
 
-function clean_upload_images () {
+function clean_upload_images() {
   $('#upload-img-show').html('')
 }
 
-function add_upload_tips () {
+function add_upload_tips() {
   $('<div class="insert-image-tips popup"><i class="fa fa-picture-o" aria-hidden="true"></i><span class="insert-img-popuptext" id="uploadTipPopup">上传图片</span></div><input id="upload-img-file" type="file" accept="image/*" multiple="multiple" class="insert-image-button">').insertAfter($('.form-submit #submit'))
   attach_image()
   $('#upload-img-file').hover(function () {
@@ -353,7 +353,7 @@ function add_upload_tips () {
   })
 }
 
-function click_to_view_image () {
+function click_to_view_image() {
   $('.comment_inline_img').click(function () {
     var temp_url = $(this).attr('src')
     window.open(temp_url)
@@ -361,19 +361,19 @@ function click_to_view_image () {
 }
 click_to_view_image()
 
-function original_emoji_click () {
+function original_emoji_click() {
   $('.emoji-item').click(function () {
     grin($(this).text(), type = 'custom', before = '`', after = '` ')
   })
 }
 original_emoji_click()
 
-function showPopup (ele) {
+function showPopup(ele) {
   var popup = ele.querySelector('#thePopup')
   popup.classList.toggle('show')
 }
 
-function cmt_showPopup (ele) {
+function cmt_showPopup(ele) {
   var popup = $(ele).find('#thePopup')
   popup.addClass('show')
   $(ele).find('input').blur(function () {
@@ -381,14 +381,14 @@ function cmt_showPopup (ele) {
   })
 }
 
-function headertop_down () {
+function headertop_down() {
   var coverOffset = $('#content').offset().top
   $('html,body').animate({
     scrollTop: coverOffset
   }, 600)
 }
 
-function scrollBar () {
+function scrollBar() {
   if (document.body.clientWidth > 860) {
     $(window).scroll(function () {
       var s = $(window).scrollTop()
@@ -422,7 +422,7 @@ function scrollBar () {
 scrollBar()
 '主题切换代码好恶心，有空一定要重构'
 
-function checkBgImgCookie () {
+function checkBgImgCookie() {
   var bgurl = getCookie('bgImgSetting')
   if (!bgurl) {
     $('#banner_wave_1').removeClass('banner_wave_hide_fit_skin')
@@ -448,7 +448,7 @@ function checkBgImgCookie () {
       $('.blank').css('background-color', 'rgba(255,255,255,1)')
       // $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
       $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
-    } else {}
+    } else { }
   } else {
     return false
   }
@@ -457,7 +457,7 @@ if (document.body.clientWidth > 860) {
   checkBgImgCookie()
 }
 
-function no_right_click () {
+function no_right_click() {
   $('.post-thumb img').bind('contextmenu', function (e) {
     return false
   })
@@ -468,7 +468,7 @@ if (mashiro_global.variables.isNight) {
   $('.changeSkin-gear, .toc').css('background', 'none')
 }
 $(document).ready(function () {
-  function changeBG (tagid, url) {
+  function changeBG(tagid, url) {
     $('.skin-menu ' + tagid).click(function () {
       mashiro_global.variables.skinSecter = true
       mashiro_global.variables.isNight = false
@@ -484,7 +484,7 @@ $(document).ready(function () {
     })
   }
 
-  function changeBGnoTrans (tagid, url) {
+  function changeBGnoTrans(tagid, url) {
     $('.skin-menu ' + tagid).click(function () {
       mashiro_global.variables.skinSecter = true
       mashiro_global.variables.isNight = true
@@ -531,7 +531,7 @@ $(document).ready(function () {
     closeSkinMenu()
   })
 
-  function closeSkinMenu () {
+  function closeSkinMenu() {
     $('.skin-menu').removeClass('show')
     setTimeout(function () {
       $('.changeSkin-gear').css('visibility', 'visible')
@@ -556,13 +556,13 @@ $(document).ready(function () {
   add_upload_tips()
 })
 
-function nextBG () {
+function nextBG() {
   bgindex = bgindex + 1
   console.log(bg[Math.abs(bgindex % bg.length)])
   $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
 }
 
-function preBG () {
+function preBG() {
   bgindex = bgindex - 1
   console.log(bg[Math.abs(bgindex % bg.length)])
   $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
@@ -582,7 +582,7 @@ if (document.body.clientWidth <= 860 && !window.is_app) {
     scrollFunction()
   }
 
-  function scrollFunction () {
+  function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('moblieGoTop').style.display = 'block'
     } else {
@@ -590,13 +590,13 @@ if (document.body.clientWidth <= 860 && !window.is_app) {
     }
   }
 
-  function topFunction () {
+  function topFunction() {
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
   }
 }
 
-function reload_show_date_time () {
+function reload_show_date_time() {
   BirthDay = new Date('06/02/2017 18:00:00')
   today = new Date()
   timeold = (today.getTime() - BirthDay.getTime())
@@ -608,7 +608,7 @@ function reload_show_date_time () {
   monitorday.innerHTML = daysold
 }
 
-function timeSeriesReload (flag) {
+function timeSeriesReload(flag) {
   if (flag == true) {
     $('#archives span.al_mon').click(function () {
       $(this).next().slideToggle(400)
@@ -668,17 +668,17 @@ var pjaxInit = function () {
   $('p').remove('.head-copyright')
   try {
     code_highlight_style()
-  } catch (e) {};
+  } catch (e) { };
   try {
     inlojv_js_getqqinfo()
-  } catch (e) {};
+  } catch (e) { };
   lazyload()
-    // if ($("div").hasClass("popcontainer")) {
-    //     loadBotui();
-    // }
+  // if ($("div").hasClass("popcontainer")) {
+  //     loadBotui();
+  // }
   try {
     reload_show_date_time()
-  } catch (e) {}
+  } catch (e) { }
   if (mashiro_global.variables.skinSecter === true) {
     // $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
     $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
@@ -729,7 +729,7 @@ $.fn.commentPrivate = function () {
   }
 }
 
-function show_date_time () {
+function show_date_time() {
   BirthDay = new Date('06/02/2017 18:00:00')
   today = new Date()
   timeold = (today.getTime() - BirthDay.getTime())
@@ -742,12 +742,12 @@ function show_date_time () {
 }
 try {
   show_date_time()
-} catch (e) {}
+} catch (e) { }
 POWERMODE.colorful = true
 POWERMODE.shake = false
 document.body.addEventListener('input', POWERMODE)
 
-function motionSwitch (ele) {
+function motionSwitch(ele) {
   var motionEles = ['.bili', '.menhera', '.tieba']
   for (var i in motionEles) {
     $(motionEles[i] + '-bar').removeClass('on-hover')
@@ -763,7 +763,7 @@ $('.comt-smilies a').click(function () {
   $(this).parent().hide()
 })
 
-function smileBoxToggle () {
+function smileBoxToggle() {
   $(document).ready(function () {
     $('#emotion-toggle').click(function () {
       $('.emotion-toggle-off').toggle(0)
@@ -774,7 +774,7 @@ function smileBoxToggle () {
 }
 smileBoxToggle()
 
-function grin (tag, type, before, after) {
+function grin(tag, type, before, after) {
   var myField
   if (type == 'custom') {
     tag = before + tag + after
@@ -816,14 +816,14 @@ function grin (tag, type, before, after) {
 //     loadBotui();
 // });
 
-function add_copyright () {
+function add_copyright() {
   document.body.addEventListener('copy', function (e) {
     if (!mashiro_global.is_user_logged_in && window.getSelection().toString().length > 30) {
       setClipboardText(e)
     }
   })
 
-  function setClipboardText (event) {
+  function setClipboardText(event) {
     event.preventDefault()
     var htmlData = window.getSelection()
     var textData = window.getSelection()
@@ -842,7 +842,7 @@ $(function () {
   inlojv_js_getqqinfo()
 })
 
-function inlojv_js_getqqinfo () {
+function inlojv_js_getqqinfo() {
   var is_get_by_qq = false
   var qq_test = /^[0-9]+$/
   if (!getCookie('user_qq') && !getCookie('user_qq_email') && !getCookie('user_author')) {
@@ -973,7 +973,7 @@ function inlojv_js_getqqinfo () {
   })
 }
 
-function get_poem (poem_ele, info_ele) {
+function get_poem(poem_ele, info_ele) {
   var poem = document.querySelector(poem_ele)
   var info = document.querySelector(info_ele)
   var xhr = new XMLHttpRequest()
@@ -989,12 +989,12 @@ function get_poem (poem_ele, info_ele) {
   xhr.send()
 }
 
-function mail_me () {
+function mail_me() {
   var mail = 'mailto:' + mashiro_option.email_name + '@' + mashiro_option.email_domain
   window.open(mail)
 }
 
-function hearthstone_deck_iframe () {
+function hearthstone_deck_iframe() {
   if ($('iframe').hasClass('hearthstone-deck')) {
     $('.hearthstone-deck').each(function () {
       $(this).attr('height', $(this).width() * 5 / 9 + 'px')
@@ -1016,27 +1016,27 @@ var home = location.href,
       if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
         if ($(".pattern-center").length > 0) { //有图的情况
           tocbot.init({
-              // Where to render the table of contents.
-              tocSelector: '.toc', // 放置目录的容器
-              // Where to grab the headings to build the table of contents.
-              contentSelector: '.entry-content', // 正文内容所在
-              // Which headings to grab inside of the contentSelector element.
-              scrollSmooth: true,
-              headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-              headingsOffset: -400,
-              scrollSmoothOffset: -85
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.entry-content', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            scrollSmooth: true,
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            headingsOffset: -400,
+            scrollSmoothOffset: -85
           });
         } else {
           tocbot.init({
-              // Where to render the table of contents.
-              tocSelector: '.toc', // 放置目录的容器
-              // Where to grab the headings to build the table of contents.
-              contentSelector: '.entry-content', // 正文内容所在
-              // Which headings to grab inside of the contentSelector element.
-              scrollSmooth: true,
-              headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-              headingsOffset: -85,
-              scrollSmoothOffset: -85
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.entry-content', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            scrollSmooth: true,
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            headingsOffset: -85,
+            scrollSmoothOffset: -85
           });
         }
         var offsetTop = $('.toc').offset().top - 135
@@ -1060,37 +1060,37 @@ var home = location.href,
     //     })
     //   }
     // },
-    VA: function () {
-      if (!valine) {
-        var valine = new Valine()
-        valine.init({
-          el: '#vcomments',
-          appId: mashiro_option.v_appId,
-          appKey: mashiro_option.v_appKey,
-          master: '5c6349399eaa71523af5bd5e1aa5734c',   //博主邮箱md5
-          tagMeta: ["博主","小伙伴","访客"],     //标识字段名
-          friends: [
-                "261294d20e9e42234ae2fb2a7f1c46cd",
-                "29c4d17e7407432f87a422dcd736d2d2",
-                "9e547d05b6be799568cc2dacf8263179",
-                "4e5df3b131c1319aaf3e082e7bc6d639",
-                "87c193a34cedc5db6706383d4f2b50c1",
-                "f43c1a5126008491e61b5cd11aae4704",
-                "173bbeb60e5a1fc5f7a7dcda0a9a0a1d",
-                "26fb4e9d679e499d8545df9f2aea519c"
-          ],  //小伙伴邮箱Md5
-          metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）","link":"网址 (https)"},
-          placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
-          avatar: 'wavatar',
-          visitor: true,  //点击量统计
-          path: window.location.pathname,
-        })
-      }
-    },
+    // VA: function () {
+    //   if (!valine) {
+    //     var valine = new Valine()
+    //     valine.init({
+    //       el: '#vcomments',
+    //       appId: mashiro_option.v_appId,
+    //       appKey: mashiro_option.v_appKey,
+    //       master: '5c6349399eaa71523af5bd5e1aa5734c',   //博主邮箱md5
+    //       tagMeta: ["博主", "小伙伴", "访客"],     //标识字段名
+    //       friends: [
+    //         "261294d20e9e42234ae2fb2a7f1c46cd",
+    //         "29c4d17e7407432f87a422dcd736d2d2",
+    //         "9e547d05b6be799568cc2dacf8263179",
+    //         "4e5df3b131c1319aaf3e082e7bc6d639",
+    //         "87c193a34cedc5db6706383d4f2b50c1",
+    //         "f43c1a5126008491e61b5cd11aae4704",
+    //         "173bbeb60e5a1fc5f7a7dcda0a9a0a1d",
+    //         "26fb4e9d679e499d8545df9f2aea519c"
+    //       ],  //小伙伴邮箱Md5
+    //       metaPlaceholder: { "nick": "昵称/QQ号", "mail": "邮箱（完全保密）", "link": "网址 (https)" },
+    //       placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
+    //       avatar: 'wavatar',
+    //       visitor: true,  //点击量统计
+    //       path: window.location.pathname,
+    //     })
+    //   }
+    // },
     MJ: function () {
       if (mashiro_option.mathjax == '1') {
         $.getScript('https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML', function () {
-          MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}})
+          MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] } })
           var math = document.getElementsByClassName('entry-content')[0]
           MathJax.Hub.Queue(['Typeset', MathJax.Hub, math])
         })
@@ -1123,14 +1123,14 @@ var home = location.href,
       })
       $('#banner_wave_1').addClass('banner_wave_hide')
       $('#banner_wave_2').addClass('banner_wave_hide')
-            // for (var i = 0; i < ap.length; i++) {
-            //     try {
-            //         ap[i].destroy()
-            //     } catch (e) {}
-            // }
-            // try {
-            //     hermitInit()
-            // } catch (e) {}
+      // for (var i = 0; i < ap.length; i++) {
+      //     try {
+      //         ap[i].destroy()
+      //     } catch (e) {}
+      // }
+      // try {
+      //     hermitInit()
+      // } catch (e) {}
       s.play()
     }, spause: function () {
       $('#video-btn').addClass('video-play').removeClass('video-pause')
@@ -1340,29 +1340,29 @@ var home = location.href,
             t.createButterbar(request.responseText)
           }, success: function (data) {
             jQuery('textarea').each(function () {
-                this.value = ''
-              })
+              this.value = ''
+            })
             var t = addComment,
-                cancel = t.I('cancel-comment-reply-link'),
-                temp = t.I('wp-temp-form-div'),
-                respond = t.I(t.respondId),
-                post = t.I('comment_post_ID').value,
-                parent = t.I('comment_parent').value
+              cancel = t.I('cancel-comment-reply-link'),
+              temp = t.I('wp-temp-form-div'),
+              respond = t.I(t.respondId),
+              post = t.I('comment_post_ID').value,
+              parent = t.I('comment_parent').value
             if (parent != '0') {
-                jQuery('#respond').before('<ol class="children">' + data + '</ol>')
-              } else if (!jQuery('.' + __list).length) {
-                  if (Poi.formpostion == 'bottom') {
-                    jQuery('#respond').before('<ol class="' + __list + '">' + data + '</ol>')
-                  } else {
-                    jQuery('#respond').after('<ol class="' + __list + '">' + data + '</ol>')
-                  }
-                } else {
-                  if (Poi.order == 'asc') {
-                    jQuery('.' + __list).append(data)
-                  } else {
-                    jQuery('.' + __list).prepend(data)
-                  }
-                }
+              jQuery('#respond').before('<ol class="children">' + data + '</ol>')
+            } else if (!jQuery('.' + __list).length) {
+              if (Poi.formpostion == 'bottom') {
+                jQuery('#respond').before('<ol class="' + __list + '">' + data + '</ol>')
+              } else {
+                jQuery('#respond').after('<ol class="' + __list + '">' + data + '</ol>')
+              }
+            } else {
+              if (Poi.order == 'asc') {
+                jQuery('.' + __list).append(data)
+              } else {
+                jQuery('.' + __list).prepend(data)
+              }
+            }
             t.createButterbar('提交成功(Succeed)')
             lazyload()
             code_highlight_style()
@@ -1372,9 +1372,9 @@ var home = location.href,
             cancel.onclick = null
             t.I('comment_parent').value = '0'
             if (temp && respond) {
-                temp.parentNode.insertBefore(respond, temp)
-                temp.parentNode.removeChild(temp)
-              }
+              temp.parentNode.insertBefore(respond, temp)
+              temp.parentNode.removeChild(temp)
+            }
           }
         })
         return false
@@ -1394,7 +1394,7 @@ var home = location.href,
             div.id = 'wp-temp-form-div'
             div.style.display = 'none'
             respond.parentNode.insertBefore(div, respond)
-          }!comm ? (temp = t.I('wp-temp-form-div'), t.I('comment_parent').value = '0', temp.parentNode.insertBefore(respond, temp), temp.parentNode.removeChild(temp)) : comm.parentNode.insertBefore(respond, comm.nextSibling)
+          } !comm ? (temp = t.I('wp-temp-form-div'), t.I('comment_parent').value = '0', temp.parentNode.insertBefore(respond, temp), temp.parentNode.removeChild(temp)) : comm.parentNode.insertBefore(respond, comm.nextSibling)
           jQuery('body').animate({
             scrollTop: jQuery('#respond').offset().top - 180
           }, 400)
@@ -1415,24 +1415,24 @@ var home = location.href,
           }
           try {
             t.I('comment').focus()
-          } catch (e) {}
+          } catch (e) { }
           return false
         }, I: function (e) {
           return document.getElementById(e)
         }, clearButterbar: function (e) {
           if (jQuery('.butterBar').length > 0) {
-              jQuery('.butterBar').remove()
-            }
-        }, createButterbar: function (message, showtime) {
-            var t = this
-            t.clearButterbar()
-            jQuery('body').append('<div class="butterBar butterBar--center"><p class="butterBar-message">' + message + '</p></div>')
-            if (showtime > 0) {
-                setTimeout("jQuery('.butterBar').remove()", showtime)
-              } else {
-                setTimeout("jQuery('.butterBar').remove()", 6000)
-              }
+            jQuery('.butterBar').remove()
           }
+        }, createButterbar: function (message, showtime) {
+          var t = this
+          t.clearButterbar()
+          jQuery('body').append('<div class="butterBar butterBar--center"><p class="butterBar-message">' + message + '</p></div>')
+          if (showtime > 0) {
+            setTimeout("jQuery('.butterBar').remove()", showtime)
+          } else {
+            setTimeout("jQuery('.butterBar').remove()", 6000)
+          }
+        }
       }
     }, XCP: function () {
       $body = (window.opera) ? (document.compatMode == 'CSS1Compat' ? $('html') : $('body')) : $('html,body')
@@ -1446,8 +1446,8 @@ var home = location.href,
             $('ul.commentwrap').remove()
             $('#loading-comments').slideDown()
             $body.animate({
-                scrollTop: $('#comments-list-title').offset().top - 65
-              }, 800)
+              scrollTop: $('#comments-list-title').offset().top - 65
+            }, 800)
           }, dataType: 'html',
           success: function (out) {
             result = $(out).find('ul.commentwrap')
@@ -1472,27 +1472,27 @@ var home = location.href,
         $back_to_top = $('.cd-top')
       $(window).scroll(function () {
         if ($(this).scrollTop() > offset) {
-            $back_to_top.addClass('cd-is-visible')
-            $('.changeSkin-gear').css('bottom', '0')
-            if ($(window).height() > 950) {
-                $('.cd-top.cd-is-visible').css('top', '0')
-              } else {
-                $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
-              }
+          $back_to_top.addClass('cd-is-visible')
+          $('.changeSkin-gear').css('bottom', '0')
+          if ($(window).height() > 950) {
+            $('.cd-top.cd-is-visible').css('top', '0')
           } else {
-            $('.changeSkin-gear').css('bottom', '-999px')
-            $('.cd-top.cd-is-visible').css('top', '-900px')
-            $back_to_top.removeClass('cd-is-visible cd-fade-out')
+            $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
           }
+        } else {
+          $('.changeSkin-gear').css('bottom', '-999px')
+          $('.cd-top.cd-is-visible').css('top', '-900px')
+          $back_to_top.removeClass('cd-is-visible cd-fade-out')
+        }
         if ($(this).scrollTop() > offset_opacity) {
-            $back_to_top.addClass('cd-fade-out')
-          }
+          $back_to_top.addClass('cd-fade-out')
+        }
       })
       $back_to_top.on('click', function (event) {
         event.preventDefault()
         $('body,html').animate({
-            scrollTop: 0
-          }, scroll_top_duration)
+          scrollTop: 0
+        }, scroll_top_duration)
       })
     }
   }
@@ -1521,7 +1521,7 @@ $(function () {
       Siren.AH()
       Siren.PE()
       Siren.CE()
-      Siren.VA()
+      // Siren.VA()
       Siren.MJ()
       // Siren.AB()
       Siren.TOC()
@@ -1615,7 +1615,7 @@ if ((isWebkit || isOpera || isIe) && document.getElementById && window.addEventL
 // loadCSS("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700");
 // loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.9/css/sharejs.css");;
 
-function render (template, context) {
+function render(template, context) {
   var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g
   return template.replace(tokenReg, function (word, slash1, token, slash2) {
     if (slash1 || slash2) {

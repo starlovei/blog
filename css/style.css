@@ -5,6 +5,16 @@
 } */
 
 /*输入界面背景图*/
+#waline textarea {
+    box-sizing: border-box;
+    background: url(https://cdn.jsdelivr.net/gh/starlovei/picgo/valine/20200409110727.webp) 100% 100% no-repeat;
+
+}
+#waline textarea:focus{
+	background-position-y: 200px;
+    transition: all 0.2s ease-in-out 0s;
+}
+/* valine版本 */
 #veditor {
     background-image: url(https://cdn.jsdelivr.net/gh/starlovei/picgo/valine/20200409110727.webp);
     background-size: contain;

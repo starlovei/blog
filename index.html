@@ -926,27 +926,34 @@
       <div>
         <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
         <script>
-            var now = new Date();
-            function createtime() {
-                var grt= new Date("02/02/2020 00:00:00");
-                now.setTime(now.getTime()+250);
-                days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
-                hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
-                if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-                mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
-                seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-                snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-                document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
-                document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-            }
-        setInterval("createtime()",250);
+          var now = new Date();
+          function createtime() {
+            var grt = new Date("02/02/2020 00:00:00");
+            now.setTime(now.getTime() + 250);
+            days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+            hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+            if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+            seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+            document.getElementById("timeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+          }
+          setInterval("createtime()", 250);
         </script>
         <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">晋ICP备20001242号</a>
-        </div>
+      </div>
     </div>
     <div class="footer-device">
-    <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by GitHub Pages</a>
+      <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank"
+            style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i
+            class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a
+            href="https://2heng.xin/" target="_blank"
+            style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a
+            href="https://www.hojun.cn/" target="_blank"
+            style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo,
+          Hosted by GitHub Pages</a>
         </span>
       </p>
     </div>
@@ -961,11 +968,12 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/zoom.min.js"></script>
 <script type="text/javascript" src="/js/sakura-app.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/av-min/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/Valine.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/starlovei/cdn/js/Valine.min.js"></script> -->
+<script src='//cdn.jsdelivr.net/npm/@waline/client'></script>
 <!--百度统计-->
 <script>
   var _hmt = _hmt || [];
-  (function() {
+  (function () {
     var hm = document.createElement("script");
     hm.src = "https://hm.baidu.com/hm.js?cc556693d6533ad41a9da00a66f2cfb0";
     var s = document.getElementsByTagName("script")[0];
@@ -982,20 +990,20 @@
   gtag('config', 'G-XM7FFPXY95');
 </script> -->
 <script type="text/javascript">
-/* <![CDATA[ */
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-} else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
-}
+  /* <![CDATA[ */
+  if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    var Poi = { "pjax": "1", "movies": { "url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2", "name": "Unbroken.mp4", "live": "close" }, "windowheight": "fixed", "codelamp": "close", "ajaxurl": "", "order": "asc", "formpostion": "bottom" };
+  } else {
+    var Poi = { "pjax": "1", "movies": { "url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2", "name": "Unbroken.mp4", "live": "open" }, "windowheight": "auto", "codelamp": "close", "ajaxurl": "", "order": "asc", "formpostion": "bottom" };
+  }
 /* ]]> */
 
 </script>
 <script>
-$(document).ready(function() {
-  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
-    if ($(".pattern-center").length > 0) { //有图的情况
-      tocbot.init({
+  $(document).ready(function () {
+    if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+      if ($(".pattern-center").length > 0) { //有图的情况
+        tocbot.init({
           // Where to render the table of contents.
           tocSelector: '.toc', // 放置目录的容器
           // Where to grab the headings to build the table of contents.
@@ -1005,9 +1013,9 @@ $(document).ready(function() {
           headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
           headingsOffset: -400,
           scrollSmoothOffset: -85
-      });
-    } else {
-      tocbot.init({
+        });
+      } else {
+        tocbot.init({
           // Where to render the table of contents.
           tocSelector: '.toc', // 放置目录的容器
           // Where to grab the headings to build the table of contents.
@@ -1017,19 +1025,19 @@ $(document).ready(function() {
           headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
           headingsOffset: -85,
           scrollSmoothOffset: -85
-      });
-    }
-    var offsetTop = $('.toc').offset().top - 95;
-    window.onscroll = function() {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop >= offsetTop) {
-        $('.toc').addClass('toc-fixed');
-      } else {
-        $('.toc').removeClass('toc-fixed');
+        });
+      }
+      var offsetTop = $('.toc').offset().top - 95;
+      window.onscroll = function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop >= offsetTop) {
+          $('.toc').addClass('toc-fixed');
+        } else {
+          $('.toc').removeClass('toc-fixed');
+        }
       }
     }
-  }
-});
+  });
 </script>
     <div class="openNav no-select" style="height: 50px;">
       <div class="iconflat no-select" style="width: 50px; height: 50px;">
