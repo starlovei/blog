@@ -8,7 +8,6 @@
 #waline textarea {
     box-sizing: border-box;
     background: url(https://cdn.jsdelivr.net/gh/starlovei/picgo/valine/20200409110727.webp) 100% 100% no-repeat;
-
 }
 #waline textarea:focus{
 	background-position-y: 200px;
