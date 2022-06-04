@@ -4442,7 +4442,7 @@ i.iconfont.js-toggle-search.iconsearch {
     background-color:#eee
 }
 ::-webkit-scrollbar-thumb {
-    background-color:#69d2e7
+    background-color: hotpink
 }
 @keyframes poi-deg {
     0% {
