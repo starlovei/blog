@@ -7,7 +7,7 @@
 /*输入界面背景图*/
 #waline textarea {
     box-sizing: border-box;
-    background: url(https://cdn.jsdelivr.net/gh/starlovei/picgo/valine/20200409110727.webp) 100% 100% no-repeat;
+    background: url(https://gcore.jsdelivr.net/gh/starlovei/picgo/valine/20200409110727.webp) 100% 100% no-repeat;
 }
 #waline textarea:focus{
 	background-position-y: 200px;
@@ -133,13 +133,13 @@ audio:not([controls]) {
 a {
     background-color:transparent;
     text-decoration:none;
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/ayuda.cur), auto
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/ayuda.cur), auto
 }
 a:active,a:hover {
     outline:0
 }
 a:active {
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/work.cur), alias
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/work.cur), alias
 }
 abbr[title] {
     border-bottom:1px dotted
@@ -258,7 +258,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     margin-bottom:1.5em;
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/texto.cur), auto
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/texto.cur), auto
 }
 dfn,cite,em,i {
     font-style:italic
@@ -349,7 +349,7 @@ html {
 body {
     background:#fff;
     background-attachment:fixed;
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/normal.cur), auto
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/normal.cur), auto
 }
 blockquote:before,blockquote:after,q:before,q:after {
     content:""
@@ -497,13 +497,13 @@ a:hover,a:active {
     opacity:1
 }
 .video-play,.loadvideo {
-    background-image: url('https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/play@32x32.png')
+    background-image: url('https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/play@32x32.png')
 }
 .video-pause {
-    background-image: url('https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/pause@32x32.png')
+    background-image: url('https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/pause@32x32.png')
 }
 #video-add {
-    background-image: url('https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/add@32x32.png');
+    background-image: url('https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/add@32x32.png');
     bottom:45px;
     display:none
 }
@@ -1628,11 +1628,11 @@ h1.page-title.mb- {
     z-index:99;
     width:70px;
     height:900px;
-    background: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/scroll.png) no-repeat center;
+    background: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/scroll.png) no-repeat center;
     background-size:contain;
     -webkit-transition:all .5s ease-in-out;
     transition:all .5s ease-in-out;
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/No_Disponible.cur), auto;
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/No_Disponible.cur), auto;
     opacity:1
 }
 .cd-top.cd-is-visible {
@@ -2209,7 +2209,7 @@ to {
     height:40px;
     text-align:center;
     line-height:45px;
-    background-image: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/disqus-preloader.svg");
+    background-image: url("https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/disqus-preloader.svg");
     background-position:center;
     background-repeat:no-repeat;
     background-size:auto 100%
@@ -2996,7 +2996,7 @@ a.page-numbers {
     background-color:rgba(255,255,255,0)
 }
 .comment-respond textarea {
-    background-image: url('https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/comment-bg.png');
+    background-image: url('https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/comment-bg.png');
     background-size:contain;
     background-repeat:no-repeat;
     background-position:right;
@@ -3275,14 +3275,14 @@ li.feature-2 {
     background-color:rgba(0,0,0,.3)
 }
 .headertop.filter-grid::before {
-    background-image: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/grid.png)
+    background-image: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/grid.png)
 }
 .headertop.filter-dot::before {
-    background-image: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/dot.gif)
+    background-image: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/dot.gif)
 }
 @media(max-width:860px) {
     .headertop.filter-dot::before {
-    background-image: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/grid.png)
+    background-image: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/grid.png)
 }
 }.headertop-bar::after {
     content:'';
@@ -3345,7 +3345,7 @@ li.feature-2 {
     }
     .top-social_v2 li {
         margin-right: 0px !important; 
-        cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/ayuda.cur), auto !important;
+        cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/ayuda.cur), auto !important;
     }
 }
 #bgvideo {
@@ -3635,7 +3635,7 @@ i.iconfont.js-toggle-search.iconsearch {
     visibility:visible;
     opacity:.99;
     animation:elastic .5s;
-    background-image: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/iloli.gif);
+    background-image: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/iloli.gif);
     background-repeat:no-repeat;
     background-position:bottom right
 }
@@ -4025,7 +4025,7 @@ i.iconfont.down {
     color:HotPink
 }
 #pagination .loading {
-    background: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/ball.svg");
+    background: url("https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/ball.svg");
     background-position:center;
     background-repeat:no-repeat;
     color:#555;
@@ -4804,7 +4804,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }.oshimai {
     height:2em;
     width:6.11em;
-    background: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/oshimai.svg");
+    background: url("https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/oshimai.svg");
     background-size:cover;
     margin:0 auto
 }
@@ -4950,7 +4950,7 @@ i.iconfont.js-toggle-search.iconsearch {
     border:0;
     color:#fff;
     line-height:1;
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/No_Disponible.cur), auto;
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/No_Disponible.cur), auto;
     font-size:14px;
     font-weight:500;
     padding:7px 15px;
@@ -5076,7 +5076,7 @@ button.botui-actions-buttons-button::-moz-focus-inner,input.botui-actions-text-i
     padding:0
 }
 button.botui-actions-buttons-button {
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/No_Disponible.cur), auto;
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/No_Disponible.cur), auto;
     -webkit-appearance:button
 }
 .botui-app-container {
@@ -6316,7 +6316,7 @@ to {
     background-color:rgba(245,245,245,.8)
 }
 #emotion-toggle,.emotion-box,.on-hover,.emotion-item,.emoji-item,.tieba-container span {
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/No_Disponible.cur), auto
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/No_Disponible.cur), auto
 }
 .alignright {
     width:auto !important
@@ -6730,7 +6730,7 @@ to {
     padding:2px;
     text-shadow:none;
     border-radius:0 0 5px 5px;
-    cursor: url(https://cdn.jsdelivr.net/gh/starlovei/cdn/img/cursor/texto.cur), auto
+    cursor: url(https://gcore.jsdelivr.net/gh/starlovei/cdn/img/cursor/texto.cur), auto
 }
 .highlight-wrap code[data-rel]:before {
     color:#fff;
@@ -7034,7 +7034,7 @@ img[src*="#in-center"] {
 #banner_wave_1 {
     width:auto;
     height:65px;
-    background: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/wave1.png") repeat-x;
+    background: url("https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/wave1.png") repeat-x;
     position:absolute;
     bottom:0;
     width:400%;
@@ -7047,7 +7047,7 @@ img[src*="#in-center"] {
 #banner_wave_2 {
     width:auto;
     height:80px;
-    background: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/img/other/wave2.png") repeat-x;
+    background: url("https://gcore.jsdelivr.net/gh/starlovei/cdn/img/other/wave2.png") repeat-x;
     position:absolute;
     bottom:0;
     width:400%;
@@ -7579,11 +7579,11 @@ p.top {
 /* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
 /* @font-face {
     font-family: "zhanku";
-    src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot");
-        src: url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"),
-            url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.woff") format("woff"),
-            url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.ttf") format("truetype"),
-            url("https://cdn.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg");
+    src: url("https://gcore.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot");
+        src: url("https://gcore.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"),
+            url("https://gcore.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.woff") format("woff"),
+            url("https://gcore.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.ttf") format("truetype"),
+            url("https://gcore.jsdelivr.net/gh/starlovei/cdn/fonts/zhanku/zhanku.svg#zhanku") format("svg");
     font-style: normal;
     font-weight: normal;
 } */
