@@ -490,20 +490,20 @@
                   </a>
                   
                   
-                  <a href="/tags/%E6%81%92%E6%98%9F%E6%BC%94%E5%8C%96/" title="恒星演化: 3">
+                  <a href="/tags/%E5%85%AC%E5%BC%8F/" title="公式: 1">
                       <span class="chip center-align waves-effect waves-light
                                chip-default "
-                              data-tagname="恒星演化" style="background-color: #85C1E9;">恒星演化
-                          <span class="tag-length">3</span>
+                              data-tagname="公式" style="background-color: #85C1E9;">公式
+                          <span class="tag-length">1</span>
                       </span>
                   </a>
                   
                   
-                  <a href="/tags/%E5%85%AC%E5%BC%8F/" title="公式: 1">
+                  <a href="/tags/%E6%81%92%E6%98%9F%E6%BC%94%E5%8C%96/" title="恒星演化: 3">
                       <span class="chip center-align waves-effect waves-light
                                chip-default "
-                              data-tagname="公式" style="background-color: #F8C471;">公式
-                          <span class="tag-length">1</span>
+                              data-tagname="恒星演化" style="background-color: #F8C471;">恒星演化
+                          <span class="tag-length">3</span>
                       </span>
                   </a>
                   
@@ -521,7 +521,35 @@
 <div id="content" class="site-content">
   <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
       
-      
+      <!--  -->
+
+  <head>
+    <!-- ... -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+    />
+    <!-- ... -->
+  </head>
+  <body>
+    <!-- ... -->
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  
+      init({
+        el: '#waline',
+        serverURL: 'https://cmt.smallmaple.com',
+        lang: 'zh-CN',
+            // 设置 emoji 为微博与哔哩小黄脸
+        emoji: [
+          '//unpkg.com/@waline/emojis@1.2.0/weibo',
+          '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+        ],
+        search: true,
+      });
+    </script>
+  </body>
   </article>
 </div>
     </div>    

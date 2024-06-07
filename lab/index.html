@@ -410,7 +410,35 @@
   <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
       <h2 id="sakura主题"><a href="#sakura主题" class="headerlink" title="sakura主题"></a>sakura主题</h2><p>balabala</p>
 
-      
+      <!--  -->
+
+  <head>
+    <!-- ... -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+    />
+    <!-- ... -->
+  </head>
+  <body>
+    <!-- ... -->
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  
+      init({
+        el: '#waline',
+        serverURL: 'https://cmt.smallmaple.com',
+        lang: 'zh-CN',
+            // 设置 emoji 为微博与哔哩小黄脸
+        emoji: [
+          '//unpkg.com/@waline/emojis@1.2.0/weibo',
+          '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+        ],
+        search: true,
+      });
+    </script>
+  </body>
   </article>
 </div>
     </div>    

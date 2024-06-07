@@ -631,18 +631,22 @@ a.link:hover{
         
       </div>
     
-    
+    <!-- 
   <script src="//gcore.jsdelivr.net/npm/@waline/client"></script>
   <div id="waline"></div>
   <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
   <script>
     Waline({
       el: '#waline',
       serverURL: 'https://cmt.smallmaple.com',
-      pageSize: '10',
+      pageSize: '',
       lang: 'zh-CN',
       requiredFields: ['nick', 'mail'], //设置必填项
-      placeholder: '填写邮箱可以及时收到回复哦',
+      placeholder: '',
       visitor: true,
       emoji: [
         'https://gcore.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
@@ -654,7 +658,35 @@ a.link:hover{
       dark: 'false',
     });
   </script>
+   -->
+
+  <head>
+    <!-- ... -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+    />
+    <!-- ... -->
+  </head>
+  <body>
+    <!-- ... -->
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
   
+      init({
+        el: '#waline',
+        serverURL: 'https://cmt.smallmaple.com',
+        lang: 'zh-CN',
+            // 设置 emoji 为微博与哔哩小黄脸
+        emoji: [
+          '//unpkg.com/@waline/emojis@1.2.0/weibo',
+          '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+        ],
+        search: true,
+      });
+    </script>
+  </body>
     <!-- <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div> -->
   </article>
 </div>
